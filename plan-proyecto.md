@@ -1,40 +1,44 @@
 # Plan del Proyecto
 
-**Versión:** 1.0  
+**Versión:** 1.1
 **Fecha de inicio:** 10/05/2025
-**Autor(es):** Franco Andrés Albornoz  
+**Autor(es):** Franco Andrés Albornoz
 
 ---
 
-## 2. Cronograma General
+## 1. Cronograma General
 
 | Fase         | Fecha Inicio | Fecha Fin  | Responsable            |
 | ------------ | ------------ | ---------- | ---------------------- |
 | Incepción    | 10-05-2025   | 30-05-2025 | Franco Andrés Albornoz |
-| Elaboración  | YYYY‑MM‑DD   | YYYY‑MM‑DD | Franco Andrés Albornoz |
-| Construcción | YYYY‑MM‑DD   | YYYY‑MM‑DD | Franco Andrés Albornoz |
-| Transición   | YYYY‑MM‑DD   | YYYY‑MM‑DD | Franco Andrés Albornoz |
+| Elaboración  | 31-05-2025   | 11-07-2025 | Franco Andrés Albornoz |
+| Construcción | 12-07-2025   | 31-10-2025 | Franco Andrés Albornoz |
+| Transición   | 01-11-2025   | 15-11-2025 | Franco Andrés Albornoz |
 
-## 3. Iteraciones
+---
 
-| Iteración | Fechas          | Fase UP      | Objetivo principal                                                                              | Entregables clave                                                                                                                       |
-| :-------: | :-------------- | :----------- | :---------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-|     0     | 10 May – 16 May | Incepción    | Plan global, repo & estructura, Visión y alcance preliminares, Cuestionario a alumnos avanzados | `vision.md`<br>`plan-proyecto.md`<br>`docs/iteraciones/iteracion-0/iteracion-0.md`<br>`docs/iteraciones/iteracion-0/retrospectiva-0.md` |
-|     1     | 17 May – 30 May | Incepción    | Documento de Visión refinado, glosario y casos de uso esbozados                                 | Actualizaciones en `vision.md`<br>`docs/glosario.md`                                                                                    |
-|     2     | 31 May – 13 Jun | Elaboración  | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     3     | 14 May – 27 Jun | Elaboración  | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     4     | 26 May – 08 Jun | Construcción | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     5     | 26 May – 08 Jun | Construcción | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     6     | 26 May – 08 Jun | Construcción | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     7     | 26 May – 08 Jun | Construcción | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     8     | 26 May – 08 Jun | Construcción | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|     9     | 26 May – 08 Jun | Elaboration  | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|    10     | 26 May – 08 Jun | Elaboration  | 20 % CU modelados, boceto de arquitectura mínima                                                | `docs/modelo-casos-uso.md`                                                                                                              |
-|    12     | …               | …            | …                                                                                               | …                                                                                                                                       |
-|    13     | …               | …            | …                                                                                               | …                                                                                                                                       |
-|    14     | 10 Nov – 15 Nov | Transition   | Ajustes finales, build de entrega y manual de usuario                                           | `build/prod/`<br>`docs/manual_usuario.md`                                                                                               |
+## 2. Iteraciones
 
-## 4. Roles y Responsabilidades
+| Iteración | Fechas          | Fase UP      | Objetivo principal                                                                                                                                                                 | Entregables clave                                                                                                                                                                                                                                                         |
+| :-------: | :-------------- | :----------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|     0     | 10 May – 16 May | Incepción    | Plan global <br> Repositorio y estructura <br> Visión y alcance preliminares                                                                                                       | `vision.md`<br>`plan-proyecto.md`<br>`docs/iteraciones/iteracion-0/iteracion-0.md`<br>`docs/iteraciones/iteracion-0/retrospectiva-0.md`                                                                                                                                   |
+|     1     | 17 May – 30 May | Incepción    | Doc. de Visión completo <br> Glosario <br> Requisitos Funcionales <br> Requisitos No Funcionales <br> Factibilidad (Técnica, Económica y Operativa) <br> Diagrama CU Ligero (~20%) | Actualizaciones en `vision.md`<br>`docs/glosario.md`<br>`docs/analisis/requisitos-funcionales.md`<br>`docs/analisis/requisitos-no-funcionales.md`<br>`docs/analisis/estudio-factibilidad.md`<br>`docs/modelo-casos-uso.md`<br>`diagramas/vista-casos-de-uso.puml`(ligero) |
+|     2     | 31 May – 13 Jun | Elaboración  | Diagrama CU completo <br> 80% CU Especificados <br>                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     3     | 14 Jun – 27 Jun | Elaboración  | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     4     | 28 Jun – 11 Jul | Elaboración  | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     5     | 12 Jul – 25 Jul | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     6     | 26 Jul – 08 Ago | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     7     | 09 Ago – 22 Ago | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     8     | 23 Ago – 05 Sep | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|     9     | 06 Sep – 19 Sep | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|    10     | 20 Sep – 03 Oct | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|    12     | 04 Oct – 17 Oct | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|    13     | 18 Oct – 31 Oct | Construcción | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+|    14     | 01 Nov – 15 Nov | Transition   | ...                                                                                                                                                                                | ...                                                                                                                                                                                                                                                                       |
+
+---
+
+## 3. Roles y Responsabilidades
 
 | Rol                     | Responsable     | Responsabilidades                                     |
 | ----------------------- | --------------- | ----------------------------------------------------- |
@@ -45,7 +49,9 @@
 | Tester                  | Franco Albornoz | Pruebas unitarias e integración                       |
 | Gestor de Proyecto      | Franco Albornoz | Seguimiento de iteraciones, hitos y riesgos           |
 
-## 5. Riesgos y Mitigaciones
+---
+
+## 4. Riesgos y Mitigaciones
 
 | Riesgo                                   | Severidad | Mitigación                                  |
 | ---------------------------------------- | --------- | ------------------------------------------- |
@@ -53,12 +59,16 @@
 | Retrasos en entregas de prototipos UI    | Media     | Iteraciones de 1 semana, buffer de 1 semana |
 | Baja participación en pruebas de usuario | Alta      | Incentivos y recordatorios proactivos       |
 
-## 7. Plan de Comunicaciones
+---
+
+## 5. Plan de Comunicaciones
 
 | Destinatario | Canal                   | Frecuencia        | Responsable     |
 | ------------ | ----------------------- | ----------------- | --------------- |
 | Profesor     | Presentación de avances | Semanal (Lunes)   | Franco Albornoz |
 | Profesor     | Estado de avance        | Semanal (Viernes) | Franco Albornoz |
+
+---
 
 ## 6. Herramientas
 
