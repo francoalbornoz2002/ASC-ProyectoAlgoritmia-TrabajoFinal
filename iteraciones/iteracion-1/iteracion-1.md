@@ -37,6 +37,7 @@
 - `diagramas/vista-casos-de-uso.puml`(ligero)
 
 ## 5. Definition of Done (DoD)
+- [ ] Documento de vision completo con la problematica, propuesta, alcance, objetivos y modulos del sistema.
 - [ ] Glosario completo con sus definiciones.
 - [ ] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
 - [ ] Requisitos funcionales y no funcionales iniciales y descriptos.
@@ -48,10 +49,8 @@
 | Riesgo                | Mitigación                                  |
 | --------------------- | ------------------------------------------- |
 | Requisitos inestables | Revisiones semanales con docentes y tutores |
-| Falta de experiencia  | Pair programming y formación inicial        |
 
 ---
 
 ## 7. Notas Adicionales
-
-* Dependencias, feedback y recordatorios generales.
+- 
