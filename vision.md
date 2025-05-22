@@ -1,7 +1,7 @@
 # Documento de Visión
 
 **Versión:** 1.0
-**Fecha:** 16/05/2025
+**Fecha:** 10/05/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -9,13 +9,7 @@
 ## 1. Introducción
 
 ### 1.1 Propósito  
-Describe el propósito de este documento.
-
-### 1.2 Definiciones, acrónimos y abreviaturas  
-| Término | Definición |
-| ------- | ---------- |
-|         |            |
-|         |            |
+El proposito de este documento es proporcionar la información necesaria del proyecto a desarrollar. En este documento se podrá encontrar el contexto del negocio, los problemas o necesidades a abordar y el impacto que tendrá el desarrollo del software, asi como también la visión del producto explicada en objetivos y alcance del mismo.
 
 ---
 
@@ -23,11 +17,20 @@ Describe el propósito de este documento.
 
 ### 2.1 Descripción del negocio
 
-Breve descripción de la organización o contexto académico donde se enmarca el proyecto.
+El desarrollo de este proyecto se sitúa en la Facultad de Ciencias Exactas, Químicas y Naturales (Módulo Apóstoles) de la Universidad Nacional de Misiones donde se dictan las carreras de informática: Analista en Sistemas de Computación (Pregrado, 3 años), Profesorado Universitario en Computación (Grado, 4 años) y Licenciatura en Sistemas de Información (Grado, 5 años).
+
+En el plan de estudio de cada una de las carreras se encuentra una materia sumamente importante que es la principal y más importante cuando uno ingresa a estudiar alguna de las carreras. "Algoritmos y Estructuras de Datos I" es la materia principal e introductoria de las carreras informáticas del Modulo Apóstoles de la FCEQyN.
+
+El contenido que se dicta en la materia es muy importante, ya que se introducen los conceptos básicos de la carrera: algoritmos, lógica proposicional, secuencia, estructuras de control (condicionales y bucles), variables (enteros, caracteres, reales, ...), procedimientos, funciones, estructuras de datos como strings, arrays, matrices, arrays de registros y archivos.
+
+La materia es anual, es decir que se dicta en el primer cuatrimestre y segundo cuatrimestre del año lectivo. El contenido de la materia se divide en teoría y práctica. En la teoría se presentan los contenidos teóricos básicos para comprender los fundamentos de cada tema dado. En la práctica se ponen, justamente, en práctica los contenidos teóricos dados mediante ejercicios y trabajos prácticos.
+
+Esta materia es la más importante al momento de ingresar a las carreras de informática, ya que su contenido es fundamental e indispensable para el avance a lo largo de la carrera. Por lo tanto, la cátedra busca garantizar que todos los alumnos puedan aprender de manera adecuada y poseer conocimientos sólidos y afianzados de los contenidos tanto teóricos como prácticos.
 
 ### 2.2 Problema o necesidad
 
-* Describe la situación actual y las limitaciones de las soluciones existentes.
+
+
 1. Baja motivación por interfaz anticuada.  
 2. Repetitividad sin progresión.  
 3. Falta de feedback formativo.  

@@ -6,6 +6,7 @@
 **Duración:** `2 semanas`
 
 ---
+
 ## 1. Objetivos de la Iteración
 - Completar el documento de visión del producto
 - Realizar estudio de factibilidad (Técnica, Económica y Operativa)
@@ -17,15 +18,17 @@
 * **Artefactos** a actualizar: documento de visión
 
 ## 3. Actividades y Tareas 
-| Actividad                     | Tarea concreta                                                                                                                             | Artefacto                                  |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| Completar documento de visión | Transcribir y refactorizar propuesta, alcance, objetivos del sistema y modulos clave                                                       | `vision.md`                                |
-| Realizar glosario             | Revisar todos los documentos hasta ahora y extraer abreviaturas, acrónimos o palabras que tengan cierto significado y añadirlo al glosario | `glosario.md`                              |
-| Estudio de Factibilidad       | Identificar aspectos técnicos, económicos y operativos para el estudio de factibilidad                                                     | `docs/analisis/estudio-de-factibilidad.md` |
-| Estudio de Factibilidad       | De los aspectos identificados, desarrollar cada uno en base al proyecto y justificar cada apartado                                         | `docs/analisis/estudio-de-factibilidad.md` |
-| Modelo de casos de uso        | Identificar los actores principales del sistema y una breve descripción de las acciones que realizará dentro del sistema                   | `docs/analisis/modelo-casos-de-uso.md`     |
-| Modelo de casos de uso        | Listar los principales casos de uso del sistema y una breve descripción de los mismos                                                      | `docs/analisis/modelo-casos-de-uso.md`     |
-| Diagrama de Casos de Uso      | Realizar un diagrama de casos de uso preliminar con los actores y casos de uso identificados anteriormente                                 | `diagramas/vista-casos-de-uso.puml`        |
+| Actividad                           | Tarea concreta                                                                                                                             | Artefacto                                                                      |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Completar documento de visión       | Transcribir y refactorizar propuesta, alcance, objetivos del sistema y modulos clave                                                       | `vision.md`                                                                    |
+| Colocar definiciones en el glosario | Revisar todos los documentos hasta ahora y extraer abreviaturas, acrónimos o palabras que tengan cierto significado y añadirlo al glosario | `glosario.md`                                                                  |
+| Estudio de Factibilidad             | Identificar aspectos técnicos, económicos y operativos para el estudio de factibilidad                                                     | `docs/analisis/estudio-de-factibilidad.md`                                     |
+| Factibilidad Técnica                | De los aspectos técnicos identificados, desarrollar cada uno en base al proyecto y justificar                                              | Sección "Factibilidad Técnica" en `docs/analisis/estudio-de-factibilidad.md`   |
+| Factibilidad Operativa              | De los aspectos operativos identificados, desarrollar cada uno en base al proyecto y justificar                                            | Sección "Factibilidad Operativa" en `docs/analisis/estudio-de-factibilidad.md` |
+| Factibilidad Económica              | De los aspectos económicos identificados, desarrollar cada uno en base al proyecto y justificar                                            | Sección "Factibilidad Económica" en `docs/analisis/estudio-de-factibilidad.md` |
+| Modelo de casos de uso              | Identificar los actores principales del sistema y una breve descripción de las acciones que realizará dentro del sistema                   | Sección "Actores del sistema" en `docs/analisis/modelo-casos-de-uso.md`        |
+| Modelo de casos de uso              | Listar los principales casos de uso del sistema y una breve descripción de los mismos                                                      | `docs/analisis/modelo-casos-de-uso.md`                                         |
+| Diagrama de Casos de Uso            | Realizar un diagrama de casos de uso preliminar con los actores y casos de uso identificados anteriormente                                 | `diagramas/vista-casos-de-uso.puml`                                            |
 
 ## 4. Entregables
 - `vision.md`
@@ -46,9 +49,10 @@
 
 ## 6. Riesgos y Mitigaciones
 
-| Riesgo                | Mitigación                                  |
-| --------------------- | ------------------------------------------- |
-| Requisitos inestables | Revisiones semanales con docentes y tutores |
+| Riesgo                                     | Mitigación                                                                     |
+| ------------------------------------------ | ------------------------------------------------------------------------------ |
+| Requisitos inestables                      | Revisiones con docentes y tutores                                              |
+| Desorganización en las tareas del proyecto | Implementar un tablero Kanban en Notion para la gestión de tareas del proyecto |
 
 ---
 
