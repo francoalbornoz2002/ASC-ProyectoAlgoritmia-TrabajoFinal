@@ -19,10 +19,7 @@ El proposito de este documento es proporcionar la información necesaria del pro
 
 El desarrollo de este proyecto se sitúa en la Facultad de Ciencias Exactas, Químicas y Naturales (Módulo Apóstoles) de la Universidad Nacional de Misiones donde se dictan las carreras de informática: Analista en Sistemas de Computación (Pregrado, 3 años), Profesorado Universitario en Computación (Grado, 4 años) y Licenciatura en Sistemas de Información (Grado, 5 años).
 
-En el plan de estudio de cada una de las carreras se encuentra la materia principal e introductora a los conceptos base para progresar en la carrera, la cual es sumamente importante: "Algoritmos y Estructuras de Datos I".
-
-La materia es anual, es decir que se dicta en el primer cuatrimestre y segundo cuatrimestre del año lectivo. El contenido de la materia se divide en teoría y práctica.
-En la teoría se presentan los contenidos teóricos básicos para comprender los fundamentos de cada tema dado. En la práctica se ponen, justamente, en práctica los contenidos teóricos dados mediante ejercicios y trabajos prácticos.
+En el plan de estudio de cada una de las carreras se encuentra la materia principal e introductora a los conceptos base para progresar en la carrera, la cual es sumamente importante: "Algoritmos y Estructuras de Datos I". La materia es anual, es decir que se dicta duante el primer cuatrimestre y segundo cuatrimestre del año lectivo.
 
 El contenido de la materia se divide en los siguientes temas:
 - Algoritmos y Secuencia
@@ -57,15 +54,72 @@ Las clases se dividen en teoría y práctica y los días y horarios son los sigu
 Esta materia es la más importante al momento de ingresar a las carreras de informática, ya que su contenido es fundamental e indispensable para el avance de la carrera por su contenido y correlatividad. Por lo tanto, la cátedra busca garantizar que todos los alumnos puedan aprender de manera adecuada y poseer conocimientos sólidos y afianzados de los contenidos tanto teóricos como prácticos.
 
 ### 2.2 Problema o necesidad
+Actualmente en la cátedra, las prácticas de los temas que van desde algoritmos hasta prodecimientos y funciones se llevan a cabo y se enfocan en el programa llamado "Visual DaVinci", el cual tiene como escenario a un robot que recorre una ciudad juntando flores y papeles en las esquinas de la misma. La ciudad está representada como una matriz de 100x100 y la misma tiene calles (filas), avenidas (columnas) y esquinas (intersección de una calle y una avenida).
 
+Este programa ya se viene implementando hace muchos años en la cátedra, aproximadamente desde 1998, siendo que el programa salió en 1997. Permite realizar edición de codigo con una serie de instrucciones disponibles. El alumno puede diseñar un algoritmo para resolver distintos problemas y al momento de ejecutar se tiene un visor simulado la ciudad con cuadros azules, el robot con un punto rojo y negro, flores con un circulo rojo con centro amarillo y papeles con circulos blancos. Algunas de las instrucciones disponibles son:
+- mover: el robot avanza a la siguiente esquina
+- derecha: el robot gira a la derecha
+- tomarFlor: el robot toma una flor en la esquina
+- tomarPapel: el robot toma un papel en la esquina
+- HayFlorEnLaEsquina: el robot se pregunta si existe una flor en la esquina en la que está posicionado actualmente.
+- HayPapelEnLaEsquina: el robot se pregunta si existe un papel en la esquina en la que está posicionado actualmente.
+- Pos(x, y): el robot se posiciona en la calle "x" y en la avenida "y".
+- Entre otras...
 
-1. Baja motivación por interfaz anticuada.  
-2. Repetitividad sin progresión.  
-3. Falta de feedback formativo.  
+![Ejemplo del area de trabajo de Visual DaVinci](imagenes/ejemploDaVinci.png "Ejemplo del area de trabajo de Visual DaVinci")
+Ejemplo del area de trabajo de Visual DaVinci.
+Video Youtube: Visual DaVinci - Capítulo 2: Estructura si - ChamanDEV
+
+Los principales problemas que se encuentran en esta plataforma es que el programa no brinda ningún tipo de sugerencia o dinámica de aprendizaje según el código que ejecutemos, sino que se limita solamente a la prueba del mismo. No evalúa indentación, repetición de primitivas o secuencia ineficiente, no ofrece ningún tipo de feedback para mejorar la solución propuesta. Además, debido a la antiguedad del sistema, su interfaz con componentes en su mayoría grises y pocos colores se quedó muy atras y no resulta atractiva.
+
+Aparte del programa, otro problema relacionado a la cátedra es que tienen problemas para llevar el **seguimiento** de los alumnos en cuanto a su nivel de aprendizaje y la toma de decisiones al respecto. Los docentes indican que “El seguimiento está en su cabeza”, es decir, no tienen una forma de llevar el seguimiento o progreso del alumno en su aprendizaje y conocimientos. Esto es otra cosa que el programa actual no permite, no se evidencia el progreso del alumno en el uso ni conocimientos aprendidos a lo largo del tiempo, no tiene dificultad progresiva ni presenta grandes desafios de mejora para el alumno.
+
+Al ser la primer materia de la carrera, cada año se tiene una gran cantidad de alumnos cursando y llegado un punto del año se torna imposible para los docentes llevar un seguimiento y brindar apoyo adicional a aquellos alumnos que quedaron atrasados en los contenidos y que no lograron afianzar conocimientos.
+Por otro lado, cada alumno que ingresa a la carrera tiene una personalidad diferente. Aquellos que son mas introvertivos o con poca confianza, si se llegan a atrasar, les cuesta mucho tomar la iniciativa para solicitar apoyo de los docentes.
+
+En resumen, los problemas específicos identificados son:
+
+1. Baja motivación
+   - Interfaz anticuada (tonos grises, componentes básicos) que no despierta interés.
+   - Ausencia de alguna narrativa que enganche al estudiante.
+
+2. Repetitividad
+   - Flujos y primitivas siempre iguales, sin novedades que mantengan vivo el desafío.
+   - Falta de progresión de dificultad estructurada.
+
+3. Falta de feedback formativo.
+   - Solo valida si el código funciona o no; no sugiere optimizaciones, mejoras de indentación o patrones eficientes.
+   - No muestra métricas de calidad de código (reutilización de primitivas, complejidad cíclica).
+
 4. Carencia de seguimiento académico.  
+   - Los docentes “llevan el seguimiento en la cabeza”: no existe registro centralizado de avances ni estadísticas de desempeño por alumno.
+   - Imposible detectar a tiempo qué alumnos quedan rezagados o necesitan apoyo adicional.
+
 5. Barreras de colaboración.
+   - Estudiantes introvertidos o con baja confianza quedan aislados, al no existir mecanismos de colaboración.
 
 ### 2.3 Oportunidad e impacto
+
+Teniendo en cuenta la situación actual y la problemática, se realizará una propuesta de solución: el desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", que permitirá a los alumnos aprender algoritmos, lógica y estructuras de control y para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos.
+La plataforma incorporará y se enfocará el concepto de “Gamificación” y lucirá una estética visual de “Pixel Art”.
+
+#### La gamificación
+El concepto de "gamificación" se refiere a la aplicación de narrativa, mecánicas y elementos propios de los videojuegos (como niveles, experiencia, puntos, logros, desafíos, tablas de clasificación y recompensas) en contextos no lúdicos, como la educación y el trabajo.
+Aumenta la motivación, participación y mejora la experiencia de aprendizaje haciendo que las personas sientan que están jugando. Esta técnica se utiliza para hacer que las actividades sean más interesantes, atractivas y divertidas aumentando el compromiso de los participantes. Algunos de los beneficios más importantes de la gamificación, según especialistas, son:
+- Incrementa la motivación: potencia la predisposición del alumno a aprender y genera menor rechazo comparándolo con el estudio tradicional.
+- Brinda diferentes niveles de dificultad: a medida que se avanza y completa los desafíos, éstos se vuelven cada vez más complejos.
+- Mejora la lógica y las estrategias para la resolución de problemas: los estudiantes deberán utilizar el pensamiento lógico para resolver el problema que tienen delante con las herramientas disponibles.
+- Aumenta la atención y la concentración: para los alumnos será como estar jugando un videojuego, y por ello se esforzarán, aumentará su motivación y comprenderán bien los contenidos.
+- Incrementa el rendimiento académico: al entender los conceptos correctamente y estar motivado, hay altas probabilidades de que el alumno pueda aprobar sus exámenes con éxito.
+
+#### Pixel Art
+El pixel art es un estilo artístico digital utilizado para crear imágenes con píxeles individuales para formar un mosaico visual. Este estilo es reconocido por su estética retro y la conexión que tiene con los videojuegos clásicos, en donde la resolución y recursos eran limitados. Algunas de sus características son:
+- Creación pixel a pixel: se centra en crear imágenes colocando un color en cada píxel individual. Es un estilo muy artesanal con el cual se pueden lograr resultados muy detallados pero con componentes simples.
+- Estilo retro: el pixel art nos recuerda a los primeros videojuegos y computadoras, con paleta de colores limitada y gráficos de baja resolución.
+- Influencia en los videojuegos: es un estilo popular en el diseño de videojuegos, donde se utiliza para crear sprites, personajes, entornos y gráficos de interfaz de usuario.
+
+
+
 
 * ¿Qué oportunidades aporta la nueva solución?
 * Beneficios esperados a corto y largo plazo.
@@ -105,6 +159,9 @@ Algoritmos y Estructuras de Datos con estética Pixel Art.
 - Foros o chat interno.  
 - Estructuras de datos avanzadas (strings, matrices, archivos).
 
+### 3.4 Oportunidad e impacto
+* ¿Qué oportunidades aporta la nueva solución?
+* Beneficios esperados a corto y largo plazo.
 ---
 
 ## 4. Stakeholders
