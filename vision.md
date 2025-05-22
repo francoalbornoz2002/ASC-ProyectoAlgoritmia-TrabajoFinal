@@ -119,10 +119,25 @@ El pixel art es un estilo artístico digital utilizado para crear imágenes con 
 - Influencia en los videojuegos: es un estilo popular en el diseño de videojuegos, donde se utiliza para crear sprites, personajes, entornos y gráficos de interfaz de usuario.
 
 
+El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como docentes.
+Para alumnos:
+- Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
+- Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones o habilidades manteniendo la participación y motivación en utilizar el sistema.
+- El sistema detectará los errores cometidos, evaluará metricas de código y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
+Para docentes:
+- Podrán contar con un seguimiento académico exhaustivo de todos sus alumnos.
+- Ver las estadisticas, rendimiento semanal, porcentaje de avance en los temas de cada alumno.
+- Detectar a aquellos alumnos rezagados o con bajo rendimiento en los contenidos para la toma de decisiones.
 
+Con el desarrollo del sistema se esperan los siguientes beneficios a corto plazo:
+1. Alumnos motivados: se espera que los alumnos se sientan enganchados y atraidos con el entorno de videojuego con gamificación y estética pixel art.
+2. Seguimiento global e individual del grupo de alumnos: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiriese.
+3. Proceso de aprendizaje dinámico: con las mejoras y feedback formativo que brindará el sistema, se espera que los alumnos puedan comprender y aprender los contenidos de manera rápida.
 
-* ¿Qué oportunidades aporta la nueva solución?
-* Beneficios esperados a corto y largo plazo.
+Los beneficios a largo plazo:
+1. Menos alumnos atrasados: con el seguimiento academico y mejora constante, Se espera que se tome menos tiempo de cursada "oficial" para el refuerzo de los contenidos y que haya una menor cantidad de alumnos atrasados al momento de, por ejemplo, la toma de exámenes o al final de la cursada.
+2. Alumnos con conocimientos solidificados: mediante la resolución de ejercicios y feedback formativo constante, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores soluciones a futuro.
+3. Plataforma oficial para el dictado en la cátedra: se espera que a largo plazo el sistema quede consolidado como herramienta principal en el dictado de la cátedra reemplazando al VisualDaVinci, integrando la resolución de ejercicios y seguimiento académico de los alumnos en un solo lugar.
 
 ---
 
