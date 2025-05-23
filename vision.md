@@ -48,8 +48,8 @@ El contenido de la materia se divide en los siguientes temas:
 
 Las clases se dividen en teoría y práctica y los días y horarios son los siguientes (al momento de la redacción de este documento):
 - La **teoría** se dictan los Lunes de 10:00 AM a 12:00 PM. En la teoría se presenta mediante diapositivas el contenido teórico y fundamental del tema de la semana. Dicho contenido, luego de la clase, queda disponible en el aula virtual para que los alumnos puedan consultarlo en cualquier momento.
-- La **práctica** se dictan los días lunes de 17:00 PM a 19:00 PM, miercoles de 10:30 AM a 12:30 PM. En las clases de práctica se llevan a cabo la presentación y resolución de los ejercicios y trabajos prácticos sobre los contenidos teóricos dados el día lunes.
-- Adicionalmente, se tiene una clase de **consulta** los días jueves de 19:00 PM a 20:00 PM. La clase de consulta sirve para que los alumnos puedan, si asi lo requieren, llevar sus dudas inconclusas acerca de los temas o ejercicios y pedir una revisión de los ejerciciso ya resueltos para obtener retroalimentación de los docentes.
+- La **práctica** se dictan los días lunes de 17:00 PM a 19:00 PM, miércoles de 10:30 AM a 12:30 PM. En las clases de práctica se llevan a cabo la presentación y resolución de los ejercicios y trabajos prácticos sobre los contenidos teóricos dados el día lunes.
+- Adicionalmente, se tiene una clase de **consulta** los días jueves de 19:00 PM a 20:00 PM. La clase de consulta sirve para que los alumnos puedan, si asi lo requieren, llevar sus dudas inconclusas acerca de los temas o ejercicios y pedir una revisión de los ejercicios ya resueltos para obtener retroalimentación de los docentes.
 
 Esta materia es la más importante al momento de ingresar a las carreras de informática, ya que su contenido es fundamental e indispensable para el avance de la carrera por su contenido y correlatividad. Por lo tanto, la cátedra busca garantizar que todos los alumnos puedan aprender de manera adecuada y poseer conocimientos sólidos y afianzados de los contenidos tanto teóricos como prácticos.
 
@@ -63,19 +63,19 @@ Este programa ya se viene implementando hace muchos años en la cátedra, aproxi
 - tomarPapel: el robot toma un papel en la esquina
 - HayFlorEnLaEsquina: el robot se pregunta si existe una flor en la esquina en la que está posicionado actualmente.
 - HayPapelEnLaEsquina: el robot se pregunta si existe un papel en la esquina en la que está posicionado actualmente.
-- Pos(x, y): el robot se posiciona en la calle "x" y en la avenida "y".
+- Pos(x, y): el robot salta se posiciona en la calle "x" y en la avenida "y".
 - Entre otras...
 
 ![Ejemplo del area de trabajo de Visual DaVinci](imagenes/ejemploDaVinci.png "Ejemplo del area de trabajo de Visual DaVinci")
 Ejemplo del area de trabajo de Visual DaVinci.
 Video Youtube: Visual DaVinci - Capítulo 2: Estructura si - ChamanDEV
 
-Los principales problemas que se encuentran en esta plataforma es que el programa no brinda ningún tipo de sugerencia o dinámica de aprendizaje según el código que ejecutemos, sino que se limita solamente a la prueba del mismo. No evalúa indentación, repetición de primitivas o secuencia ineficiente, no ofrece ningún tipo de feedback para mejorar la solución propuesta. Además, debido a la antiguedad del sistema, su interfaz con componentes en su mayoría grises y pocos colores se quedó muy atras y no resulta atractiva.
+Los principales problemas que se encuentran en esta plataforma es que el programa no brinda ningún tipo de sugerencia o dinámica de aprendizaje según el código que ejecutemos, sino que se limita solamente a la prueba del mismo. No evalúa indentación, repetición de primitivas o secuencia ineficiente, no ofrece ningún tipo de feedback para mejorar la solución propuesta. Además, debido a la antigüedad del sistema, su interfaz con componentes en su mayoría grises y pocos colores se quedó muy atrás y no resulta atractiva.
 
-Aparte del programa, otro problema relacionado a la cátedra es que tienen problemas para llevar el **seguimiento** de los alumnos en cuanto a su nivel de aprendizaje y la toma de decisiones al respecto. Los docentes indican que “El seguimiento está en su cabeza”, es decir, no tienen una forma de llevar el seguimiento o progreso del alumno en su aprendizaje y conocimientos. Esto es otra cosa que el programa actual no permite, no se evidencia el progreso del alumno en el uso ni conocimientos aprendidos a lo largo del tiempo, no tiene dificultad progresiva ni presenta grandes desafios de mejora para el alumno.
+Aparte del programa, otro problema relacionado a la cátedra es que tienen problemas para llevar a cabo el **seguimiento** de los alumnos en cuanto a su nivel de aprendizaje y la toma de decisiones al respecto. Los docentes indican que “El seguimiento está en su cabeza”, es decir, no tienen una forma de llevar el seguimiento o progreso del alumno en su aprendizaje y conocimientos. Esto es otra cosa que el programa actual no permite, no se evidencia el progreso del alumno en el uso ni conocimientos aprendidos a lo largo del tiempo, no tiene dificultad progresiva ni presenta grandes desafios de mejora para el alumno.
 
-Al ser la primer materia de la carrera, cada año se tiene una gran cantidad de alumnos cursando y llegado un punto del año se torna imposible para los docentes llevar un seguimiento y brindar apoyo adicional a aquellos alumnos que quedaron atrasados en los contenidos y que no lograron afianzar conocimientos.
-Por otro lado, cada alumno que ingresa a la carrera tiene una personalidad diferente. Aquellos que son mas introvertivos o con poca confianza, si se llegan a atrasar, les cuesta mucho tomar la iniciativa para solicitar apoyo de los docentes.
+Al ser la primera materia de la carrera, cada año se tiene una gran cantidad de alumnos cursando y llegado un punto del año se torna imposible para los docentes llevar un seguimiento y brindar apoyo adicional a aquellos alumnos que quedaron atrasados en los contenidos y que no lograron afianzar conocimientos.
+Por otro lado, cada alumno que ingresa a la carrera tiene una personalidad diferente. Aquellos que son más introvertidos o con poca confianza, si se llegan a atrasar, les cuesta mucho tomar la iniciativa para solicitar apoyo de los docentes.
 
 En resumen, los problemas específicos identificados son:
 
@@ -119,25 +119,27 @@ El pixel art es un estilo artístico digital utilizado para crear imágenes con 
 - Influencia en los videojuegos: es un estilo popular en el diseño de videojuegos, donde se utiliza para crear sprites, personajes, entornos y gráficos de interfaz de usuario.
 
 
-El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como docentes.
+El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
+
 Para alumnos:
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
 - Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones o habilidades manteniendo la participación y motivación en utilizar el sistema.
-- El sistema detectará los errores cometidos, evaluará metricas de código y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
+- El sistema detectará los errores cometidos, evaluará métricas de código y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
+
 Para docentes:
 - Podrán contar con un seguimiento académico exhaustivo de todos sus alumnos.
 - Ver las estadisticas, rendimiento semanal, porcentaje de avance en los temas de cada alumno.
 - Detectar a aquellos alumnos rezagados o con bajo rendimiento en los contenidos para la toma de decisiones.
 
 Con el desarrollo del sistema se esperan los siguientes beneficios a corto plazo:
-1. Alumnos motivados: se espera que los alumnos se sientan enganchados y atraidos con el entorno de videojuego con gamificación y estética pixel art.
-2. Seguimiento global e individual del grupo de alumnos: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiriese.
-3. Proceso de aprendizaje dinámico: con las mejoras y feedback formativo que brindará el sistema, se espera que los alumnos puedan comprender y aprender los contenidos de manera rápida.
+1. **Alumnos motivados**: se espera que los alumnos se sientan enganchados y atraídos con el entorno de videojuego con gamificación y estética pixel art.
+2. **Seguimiento global e individual del grupo de alumnos**: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiriese.
+3. **Proceso de aprendizaje dinámico**: con las mejoras y feedback formativo que brindará el sistema, se espera que los alumnos puedan comprender y aprender los contenidos de manera rápida.
 
 Los beneficios a largo plazo:
-1. Menos alumnos atrasados: con el seguimiento academico y mejora constante, Se espera que se tome menos tiempo de cursada "oficial" para el refuerzo de los contenidos y que haya una menor cantidad de alumnos atrasados al momento de, por ejemplo, la toma de exámenes o al final de la cursada.
-2. Alumnos con conocimientos solidificados: mediante la resolución de ejercicios y feedback formativo constante, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores soluciones a futuro.
-3. Plataforma oficial para el dictado en la cátedra: se espera que a largo plazo el sistema quede consolidado como herramienta principal en el dictado de la cátedra reemplazando al VisualDaVinci, integrando la resolución de ejercicios y seguimiento académico de los alumnos en un solo lugar.
+1. **Menos alumnos atrasados**: con el seguimiento academico y mejora constante, Se espera que se tome menos tiempo de cursada "oficial" para el refuerzo de los contenidos y que haya una menor cantidad de alumnos atrasados al momento de, por ejemplo, la toma de exámenes o al final de la cursada.
+2. **Alumnos con conocimientos solidificado**s: mediante la resolución de ejercicios y feedback formativo constante, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores soluciones a futuro.
+3. **Plataforma oficial para el dictado en la cátedra**: se espera que a largo plazo el sistema quede consolidado como herramienta principal en el dictado de la cátedra reemplazando al Visual DaVinci, integrando la resolución de ejercicios y seguimiento académico de los alumnos en un solo lugar.
 
 ---
 
@@ -145,13 +147,14 @@ Los beneficios a largo plazo:
 
 ### 3.1 Perspectiva del producto
 
-Explica cómo encaja el producto en el entorno actual o con otros sistemas.
+El desarrollo de este sistema encaja perfecamente en la situación actual debido a los siguientes puntos:
+- Facil adaptación: el sistema seguirá con la dinámica de aprendizaje de edición de código y ejecución de la "prueba de escritorio" mediante un visor, con la principal diferencia que tendrá un contexto gamificado con visuales y componentes propios de los videojuegos.
+- Seguimiento docente: los docentes carecen de un seguimiendo académico exhaustivo de cada uno de los alumnos. El sistema proveerá este seguimiento y hará que los docentes tengan una mejor visión del estado de avance tanto del grupo de alumnos como cada uno individualmente.
 
 ### 3.2 Objetivos
 
 #### 3.2.1 Objetivo General
-Desarrollar la Plataforma Gamificada para Aprendizaje de Lógica,  
-Algoritmos y Estructuras de Datos con estética Pixel Art.
+Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos y Estructuras de Control (PGA) con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
 
 #### 3.2.2 Objetivos Específicos
 1. Motivar al estudiante con mecánicas lúdicas y narrativa coherente.  
