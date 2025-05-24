@@ -1,20 +1,20 @@
 # Glosario
 
-| Término   | Definición                                                                                                                           |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| EXP       | Puntos de experiencia que suben el nivel del usuario.                                                                                |
-| Nivel     | Estado del usuario basado en EXP acumulada.                                                                                          |
-| Pixel‑art | Estilo gráfico basado en píxeles.                                                                                                    |
-| FCEQyN    | Facultad de Ciencias Exáctas, Químicas y Naturales. Es una institución educativa que pertenece a la Universidad Nacional de Misiones |
-| Algoritmo | Un algoritmo es una secuencia de pasos ordenados para resolver un problema específico.                                               |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
-| ...       | ...                                                                                                                                  |
+| Término      | Definición                                                                                                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| FCEQyN       | Facultad de Ciencias Exáctas, Químicas y Naturales. Es una institución educativa que pertenece a la Universidad Nacional de Misiones                                                                                     |
+| Algoritmo    | Un algoritmo es una secuencia de pasos ordenados para resolver un problema específico.                                                                                                                                   |
+| Gamificación | Es la aplicación de narrativa, mecánicas y elementos propios de los videojuegos en contextos no lúdicos, como la educación y el trabajo.                                                                                 |
+| Pixel art    | Estilo gráfico basado en píxeles.                                                                                                                                                                                        |
+| EXP          | Puntos de experiencia que suben el nivel del usuario.                                                                                                                                                                    |
+| Nivel        | Estado del usuario basado en EXP acumulada.                                                                                                                                                                              |
+| Feedback     | Tambien conocido como retroalimentación, es el proceso de comunicación en el que una persona recibe información sobre su desempeño, comportamiento o resultados con el objetivo de mejorar y tomar decisiones informadas |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |
+| ...          | ...                                                                                                                                                                                                                      |

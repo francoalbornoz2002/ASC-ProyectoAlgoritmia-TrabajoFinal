@@ -1,7 +1,7 @@
 # Plan de Iteración
 
 **Iteración Nº:** `1`  
-**Fase UP:** `<Incepción>`  
+**Fase UP:** `<Inception>`  
 **Fechas:** `17/05/2025 – 30/05/2025`  
 **Duración:** `2 semanas`
 

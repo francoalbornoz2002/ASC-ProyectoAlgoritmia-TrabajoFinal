@@ -106,27 +106,27 @@ La plataforma incorporará y se enfocará el concepto de “Gamificación” y l
 #### La gamificación
 El concepto de "gamificación" se refiere a la aplicación de narrativa, mecánicas y elementos propios de los videojuegos (como niveles, experiencia, puntos, logros, desafíos, tablas de clasificación y recompensas) en contextos no lúdicos, como la educación y el trabajo.
 Aumenta la motivación, participación y mejora la experiencia de aprendizaje haciendo que las personas sientan que están jugando. Esta técnica se utiliza para hacer que las actividades sean más interesantes, atractivas y divertidas aumentando el compromiso de los participantes. Algunos de los beneficios más importantes de la gamificación, según especialistas, son:
-- Incrementa la motivación: potencia la predisposición del alumno a aprender y genera menor rechazo comparándolo con el estudio tradicional.
-- Brinda diferentes niveles de dificultad: a medida que se avanza y completa los desafíos, éstos se vuelven cada vez más complejos.
-- Mejora la lógica y las estrategias para la resolución de problemas: los estudiantes deberán utilizar el pensamiento lógico para resolver el problema que tienen delante con las herramientas disponibles.
-- Aumenta la atención y la concentración: para los alumnos será como estar jugando un videojuego, y por ello se esforzarán, aumentará su motivación y comprenderán bien los contenidos.
-- Incrementa el rendimiento académico: al entender los conceptos correctamente y estar motivado, hay altas probabilidades de que el alumno pueda aprobar sus exámenes con éxito.
+- **Incrementa la motivación**: potencia la predisposición del alumno a aprender y genera menor rechazo comparándolo con el estudio tradicional.
+- **Brinda diferentes niveles de dificultad**: a medida que se avanza y completa los desafíos, éstos se vuelven cada vez más complejos.
+- **Mejora la lógica y las estrategias para la resolución de problemas**: los estudiantes deberán utilizar el pensamiento lógico para resolver el problema que tienen delante con las herramientas disponibles.
+- **Aumenta la atención y la concentración**: para los alumnos será como estar jugando un videojuego, y por ello se esforzarán, aumentará su motivación y comprenderán bien los contenidos.
+- **Incrementa el rendimiento académico**: al entender los conceptos correctamente y estar motivado, hay altas probabilidades de que el alumno pueda aprobar sus exámenes con éxito.
 
 #### Pixel Art
 El pixel art es un estilo artístico digital utilizado para crear imágenes con píxeles individuales para formar un mosaico visual. Este estilo es reconocido por su estética retro y la conexión que tiene con los videojuegos clásicos, en donde la resolución y recursos eran limitados. Algunas de sus características son:
-- Creación pixel a pixel: se centra en crear imágenes colocando un color en cada píxel individual. Es un estilo muy artesanal con el cual se pueden lograr resultados muy detallados pero con componentes simples.
-- Estilo retro: el pixel art nos recuerda a los primeros videojuegos y computadoras, con paleta de colores limitada y gráficos de baja resolución.
-- Influencia en los videojuegos: es un estilo popular en el diseño de videojuegos, donde se utiliza para crear sprites, personajes, entornos y gráficos de interfaz de usuario.
+- **Creación pixel a pixe**l: se centra en crear imágenes colocando un color en cada píxel individual. Es un estilo muy artesanal con el cual se pueden lograr resultados muy detallados pero con componentes simples.
+- **Estilo retro**: el pixel art nos recuerda a los primeros videojuegos y computadoras, con paleta de colores limitada y gráficos de baja resolución.
+- **Influencia en los videojuegos**: es un estilo popular en el diseño de videojuegos, donde se utiliza para crear sprites, personajes, entornos y gráficos de interfaz de usuario.
 
 
 El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
 
-Para alumnos:
+**Para alumnos**:
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
 - Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones o habilidades manteniendo la participación y motivación en utilizar el sistema.
 - El sistema detectará los errores cometidos, evaluará métricas de código y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
 
-Para docentes:
+**Para docentes**:
 - Podrán contar con un seguimiento académico exhaustivo de todos sus alumnos.
 - Ver las estadisticas, rendimiento semanal, porcentaje de avance en los temas de cada alumno.
 - Detectar a aquellos alumnos rezagados o con bajo rendimiento en los contenidos para la toma de decisiones.
@@ -147,9 +147,10 @@ Los beneficios a largo plazo:
 
 ### 3.1 Perspectiva del producto
 
-El desarrollo de este sistema encaja perfecamente en la situación actual debido a los siguientes puntos:
-- Facil adaptación: el sistema seguirá con la dinámica de aprendizaje de edición de código y ejecución de la "prueba de escritorio" mediante un visor, con la principal diferencia que tendrá un contexto gamificado con visuales y componentes propios de los videojuegos.
-- Seguimiento docente: los docentes carecen de un seguimiendo académico exhaustivo de cada uno de los alumnos. El sistema proveerá este seguimiento y hará que los docentes tengan una mejor visión del estado de avance tanto del grupo de alumnos como cada uno individualmente.
+El desarrollo e implementación de este sistema encaja perfecamente en la situación y escenario actual debido a los siguientes puntos:
+- **Facil adaptación**: el sistema seguirá con la dinámica de aprendizaje de edición de código y ejecución de la "prueba de escritorio" mediante un visor, con la principal diferencia que tendrá un contexto gamificado con visuales y componentes propios de los videojuegos.
+- **Seguimiento docente**: los docentes carecen de un seguimiendo académico exhaustivo de cada uno de los alumnos. La incorporación del seguimiento académico mediante el sistema hará que los docentes tengan una mejor visión del estado de avance tanto del grupo de alumnos como cada uno individualmente.
+- **Producto propio de la FCEQyN**: el Visual Da Vinci es un proyecto de Tesis de la Universidad Nacional de La Plata (UNLP). Entonces, al desarrollar e implementar un proyecto propio y desarrollado en la misma FCEQyN, engrandecerá el sentido de pertenencia e identidad de los docentes y alumnos.
 
 ### 3.2 Objetivos
 
@@ -157,19 +158,57 @@ El desarrollo de este sistema encaja perfecamente en la situación actual debido
 Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos y Estructuras de Control (PGA) con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
 
 #### 3.2.2 Objetivos Específicos
-1. Motivar al estudiante con mecánicas lúdicas y narrativa coherente.  
-2. Ofrecer ejercicios de dificultad progresiva y desbloqueables.  
-3. Proveer feedback formativo inmediato y métricas de calidad de código.  
-4. Facilitar seguimiento académico con tableros de progreso y alertas.  
-5. Fomentar colaboración y refuerzo entre alumnos.  
-6. Recopilar datos de uso y rendimiento para evaluación continua.  
+1. Generar motivación en el estudiante con mecánicas y narrativa de videojuegos
+   1. Diseñar e implementar una interfaz Pixel Art atractiva y con una narrativa interesante, de modo que el entorno se perciba como un videojuego.
+   2. Integrar mecánicas de misiones, niveles, puntos de experiencia (EXP) y puntuación (en estrellas) para premiar el progreso y mantener el interés del usuario.
+
+2. Ofrecer ejercicios de dificultad progresiva y desbloqueables.
+   1. Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones.
+   2. Implementar un sistema de desbloqueo de nuevos retos conforme el alumno avance, garantizando una curva de aprendizaje controlada.
+
+3. Proveer feedback formativo inmediato
+   1. Analizar automáticamente la solución del alumno y generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas redundantes y simplificación de estructuras.
+   2. Mostrar métricas de calidad de la solución tras cada envío para reforzar la reflexión sobre buenas prácticas.
+  
+4. Ofrecer seguimiento académico exhaustivo con tableros de progreso y alertas.
+   1. Desarrollar un tablero de progreso y reportes para docentes que muestre el avance y rendimiento individual y grupal de los alumnos (nivel actual, cantidad de ejercicios completados, estrellas obtenidas, promedio de intentos por ejercicio, porcentaje de avance en temas específicos y avance global, ultima conexión) pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma.
+   2. Configurar alertas automáticas periódicas para el docente cuando un alumno o grupo de alumnos supere un umbral de atraso en contenidos o se detecte inactividad prolongada.
+   3. Configuración de reportes automáticos semanales para que el docente pueda visualizar el tablero de progreso y rendimiento semanal de los alumnos de forma individual y grupal.
+
+5. Programar sesiones de refuerzo de contenido automáticas
+   1. Implementar un sistema que detecte a los alumnos con menor progreso y, de forma automática, sugiera al docente conformar un grupo de refuerzo; el docente podrá confirmar la sesión adicional en la siguiente clase presencial y los alumnos indicarán su disponibilidad.
 
 ### 3.3 Alcance y Limitaciones
 
-#### 3.3.1 Incluye
-- Gestión de Usuarios, Banco de Ejercicios, Gamificación,  
-  Entorno de Programación & Feedback, Seguimiento Académico.  
-- Temas: condicionales, bucles, variables, procedimientos y funciones.
+#### 3.3.1 Ejercicios y temas
+Para el desarrollo del sistema, en una primera versión, NO se tomarán todos los temas de la materia, debido al tiempo de desarrollo disponible para el mismo. Por recomendación y solicitud de los profesores, los conceptos más importantes que si o si se deben afianzar y solidificar:
+- Algoritmos y secuencia de pasos
+- Lógica proposicional
+- Estructuras de control como los condicionales y bucles.
+
+Adicionalmente, también se abordará los conceptos de:
+- Variables
+- Procedimientos con y sin parámetros de E/S
+- Funciones con y sin parámetros de E/S
+
+#### 3.3.2 Gamificación
+Para crear el entorno basado en gamificación, se tendrán en cuenta los siguientes apartados
+##### Componentes
+Se incorporarán varios componentes de videojuegos, explicando primero su significado propio de los videojuegos y luego lo que representarán, análogamente, del dominio del problema.
+
+Los componentes de gamificación a incorporar en el sistema son los siguientes:
+- Misiones (ejercicios): una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
+  
+- Acciones, habilidades y objetos: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Las acciones representarán las primitivas que puede realizar el jugador, como moverse, las habilidades especiales representarán a las estructuras de control, procedimientos y funciones y los objetos representarán las variables.
+Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
+
+- Niveles (progreso): en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
+  
+- Puntos de experiencia (XP): los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
+  
+- Puntuación en estrellas (evaluación): la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja.
+#### 3.3.3 Feedback formativo
+
 
 #### 3.3.2 Excluye
 - Personalización de ejercicios por usuario.  
@@ -177,9 +216,6 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 - Foros o chat interno.  
 - Estructuras de datos avanzadas (strings, matrices, archivos).
 
-### 3.4 Oportunidad e impacto
-* ¿Qué oportunidades aporta la nueva solución?
-* Beneficios esperados a corto y largo plazo.
 ---
 
 ## 4. Stakeholders
