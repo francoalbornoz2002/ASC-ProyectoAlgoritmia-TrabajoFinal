@@ -1,7 +1,7 @@
 # Documento de Visión
 
-**Versión:** 1.0
-**Fecha:** 10/05/2025
+**Versión:** 1.2
+**Fecha:** 29/05/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -178,20 +178,33 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 5. Programar sesiones de refuerzo de contenido automáticas
    1. Implementar un sistema que detecte a los alumnos con menor progreso y, de forma automática, sugiera al docente conformar un grupo de refuerzo; el docente podrá confirmar la sesión adicional en la siguiente clase presencial y los alumnos indicarán su disponibilidad.
 
-### 3.3 Alcance y Limitaciones
+### 3.3 Modulos del sistema
+#### 3.3.1 Funcionales
+- Gestión de usuarios
+- Banco de ejercicios
+- Gamificación
+- Programación, ejecución y feedback
+- Gestión Docente
+#### 3.3.2 No Funcionales
+- Seguridad y autenticación
+- Auditoría
 
-#### 3.3.1 Ejercicios y temas
+### 3.4 Alcance y Limitaciones
+
+#### 3.4.1 Gestión de usuarios
+#### 3.4.2 Banco de ejercicios
 Para el desarrollo del sistema, en una primera versión, NO se tomarán todos los temas de la materia, debido al tiempo de desarrollo disponible para el mismo. Por recomendación y solicitud de los profesores, los conceptos más importantes que si o si se deben afianzar y solidificar:
 - Algoritmos y secuencia de pasos
-- Lógica proposicional
-- Estructuras de control como los condicionales y bucles.
+- Lógica proposicional (Operadores lógicos: OR, AND, NOT)
+- Estructuras de control (Si-Sino, Mientras y Repetir)
 
 Adicionalmente, también se abordará los conceptos de:
-- Variables
+- Variables (globales y locales)
 - Procedimientos con y sin parámetros de E/S
 - Funciones con y sin parámetros de E/S
 
-#### 3.3.2 Gamificación
+#### 3.4.3 Programación, ejecución y feedback
+#### 3.4.4 Gamificación
 Para crear el entorno basado en gamificación, se tendrán en cuenta los siguientes apartados
 ##### Componentes
 Se incorporarán varios componentes de videojuegos, explicando primero su significado propio de los videojuegos y luego lo que representarán, análogamente, del dominio del problema.
@@ -207,13 +220,88 @@ Primero se comenzará con un abanico limitado de acciones básicas para resolver
 - Puntos de experiencia (XP): los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
   
 - Puntuación en estrellas (evaluación): la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja.
-#### 3.3.3 Feedback formativo
+
+#### 3.4.5 Feedback formativo
+El sistema ofrecerá tres tipos de feedback formativo durante la resolución de un ejercicio: previo a la ejecución, al momento de ejecutar y posterior a la ejecución. A continuación, detallaremos los aspectos que el sistema analizará y ofrecerá retroalimentación al alumno.
+
+- Previo a la ejecución: el sistema estará analizando en tiempo real la estructura y forma de escribir de la solución del alumno para poder indicar errores y sugerencias.
+- Al momento de ejecutar: si la solución posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si la solución tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
+- Posterior a la ejecución: el sistema analizará la solución del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones de la solución.
+
+Detallaremos las sugerencias y optimizaciones específicas que el sistema ofrecerá en cada tipo de feeback
+
+##### Previo a la ejecución
+Mientras el alumno diseña su solución para un ejercicio, el sistema estará analizando y controlando en tiempo real la estructura y sintaxis de la misma para poder indicar errores y sugerencias antes de ejecutar la solución. La siguiente tabla muestra los "problemas" a analizar previo a la ejecución de la solución y el feedback correspondiente.
+
+| Problema                                           | Descripción                                                                                  | Feedback                                                                                    |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Errores de sintaxis                                | Instrucciones o estructuras mal escritas                                                     | Resaltado en rojo en la instrucción o estructura mal escrita.                               |
+| Variable no declarada                              | Cuando se quiere utilizar una variable (globales o locales) que no fue declarada previamente | Resaltado en rojo en donde se quiere utilizar la variable con un mensaje de "no declarada"  |
+| Variable declarada pero no utilizada               | Cuando se declara una variable pero nunca se utiliza                                         | Resaltado en amarillo en la variable declarada pero no utilizada                            |
+| Procedimiento o función definida pero no utilizada | Cuando se define un procedimiento o función pero nunca se utiliza                            | Resaltado en amarillo en la cabecera del procedimiento o funcion definida pero no utilizada |
+
+##### Al momento de ejecutar
+Cuando el alumno terminó de diseñar su solución y decida ejecutar, el sistema verificará que la estructura y sintaxis esté correctamente escrita para ejecutar. La siguiente tabla muestra los "problemas" a analizar al momento de ejecutar la solución y el feedback correspondiente.
+
+| Problema                                           | Descripción                                                                                              | Feedback                                                                                                                        | ¿Es posible ejecutar la solución? |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Error de sintaxis                                  | Instrucciones o estructuras mal escritas                                                                 | Mensaje de error en la ejecución y resaltado en rojo en la instrucción o estructura mal escrita.                                | No                                |
+| Variable no declarada                              | Cuando se quiere ejecutar la solución pero se quiere utilizar una variable (global o local) no declarada | Mensaje de error en la ejecución y resaltado en rojo en la variable no declarada                                                | No                                |
+| Variable decladara pero no utilizada               | Cuando se declara una variable (global o local) pero nunca se utiliza                                    | Mensaje de advertencia de variables declaradas pero no utilizadas con opción de ejecutar la solución igualmente                 | Si                                |
+| Procedimiento o función definida pero no utilizada | Cuando se define un procedimiento o función pero nunca se utiliza                                        | Mensaje de advertencia de procedimientos o funciones definidas pero no utilizadas con opción de ejecutar la solución igualmente | Si                                |
+
+##### Posterior a la ejecución
+Luego de la ejecución de la solución del alumno, completado el ejercicio y dada la puntuación obtenida, el sistema analizará la solución proponiendo mejoras y optimizaciones para la solución. El sistema mostrará el antes y después de la solución del alumno y una breve explicación de los cambios realizados y el por qué.
+El alumno decidirá si implementar o no las sugerencias y optimizaciones brindadas por el sistema o dejar la solución como está. Si decide implementar las optimizaciones, esto no aumentará la puntuación ni experiencia obtenida, debido a que esta funcionalidad del sistema es a modo formativo y para evitar aprovechamientos.
+La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución de la solución y el feedback correspondiente.
+
+| Problema                                      | Descripción                                                                                                                                                                   | Feedback                                                                                                                                         |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Secuencia de múltiples instrucciones iguales  | Cuando se utiliza una misma instrucción multiples veces una debajo de otra de manera innecesaria (con un como mínimo de 3 instrucciones)                                      | Reemplazar el conjunto de multiples instrucciones por una estructura repetitiva (mientras o repetir) para reducir el uso del procesador          |
+| Secuencia de múltiples estructuras de control | Cuando se utiliza una misma estructura de control multiples veces una dentro de otra o una debajo de la otra de manera innecesaria (con un mínimo de 3 estructuras de contro) | Identificar aquellas estructuras de control innecesarias, refactorizar y reordenar la estructuras de control para reducir la complejidad cíclica |
+| Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                         | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
+| 
 
 
-#### 3.3.2 Excluye
+#### 3.4.6 Gestion Docente
+En este módulo del sistema, los docentes tendrán diferentes funcionalidades para realizar el seguimiento a sus alumnos.
+
+**Creación de cursos**
+El docente podrá crear un curso para agrupar los dinstintos grupos de alumnos de las distintas instituciones de las cuales da clases. Podrá especificar el nombre del curso, institución, materia y definir una contraseña para permitirle a sus alumnos ingresar al curso.
+
+**Definición de días y horarios de cursada**
+Los docentes podrán configurar los días y horarios de cursada de la materia. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
+
+**Visualización del estado de avance de los alumnos**
+Los docentes podrán consultar el estado de avance de los diferentes cursos que tenga a cargo. Podrá visualizar el estado de avance del curso en general y de forma individual por alumno. Los datos que podrá visualizar son los siguientes:
+- Porcentaje de avance del curso en la historia (programa total)
+- Porcentaje de avance del curso en cada tema
+- Estadisticas del alumno
+  - Nombre completo
+  - Nivel actual
+  - Misión actual
+  - Cantidad de misiones completadas hasta el momento
+  - Cantidad de estrellas obtenidas hasta el momento
+  - Promedio de intentos por misión
+  - Porcentaje de avance individual en la historia
+  - Porcentaje de avance individual en un tema
+  - Ultimo ingreso a la plataforma.
+
+Todos estos datos se podrán ordenar de manera ascendente o descendente en la vista. Tambien se podrán aplicar los siguientes filtros de búsqueda:
+- Por fechas (desde - hasta)
+- Por tema
+- 
+
+**Creación de sesiones de refuerzo**: los docentes podrán crear sesiones de refuerzo eligiendo a los alumnos que ellos consideren atrasados en los contenidos o con inactividad prolongada, elegir el día y horario de la sesión de refuerzo.
+
+#### 3.4.7 Seguridad y autenticación
+#### 3.4.8 Auditoría
+
+
+### 3.5 Excluye
 - Personalización de ejercicios por usuario.  
-- Soporte multi‑idioma.  
-- Foros o chat interno.  
+- Soporte multi‑idioma.
+- Foros o chat interno.
 - Estructuras de datos avanzadas (strings, matrices, archivos).
 
 ---
