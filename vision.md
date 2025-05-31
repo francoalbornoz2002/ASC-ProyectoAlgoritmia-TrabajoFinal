@@ -203,17 +203,17 @@ Adicionalmente, también se abordará los conceptos de:
 - Procedimientos con y sin parámetros de E/S
 - Funciones con y sin parámetros de E/S
 
-#### 3.4.3 Programación, ejecución y feedback
 #### 3.4.4 Gamificación
 Para crear el entorno basado en gamificación, se tendrán en cuenta los siguientes apartados
+##### Narrativa
+Historia principal, narrativa, objetivos del heroe, personaje, secciones/islas/mazmorras, etc.
 ##### Componentes
 Se incorporarán varios componentes de videojuegos, explicando primero su significado propio de los videojuegos y luego lo que representarán, análogamente, del dominio del problema.
 
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
 - Misiones (ejercicios): una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
   
-- Acciones, habilidades y objetos: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Las acciones representarán las primitivas que puede realizar el jugador, como moverse, las habilidades especiales representarán a las estructuras de control, procedimientos y funciones y los objetos representarán las variables.
-Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
+- Acciones, habilidades y objetos: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Las acciones representarán las primitivas que puede realizar el jugador, como moverse, las habilidades especiales representarán a las estructuras de control, procedimientos y funciones y los objetos representarán las variables. Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
 
 - Niveles (progreso): en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
   
@@ -221,7 +221,11 @@ Primero se comenzará con un abanico limitado de acciones básicas para resolver
   
 - Puntuación en estrellas (evaluación): la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja.
 
-#### 3.4.5 Feedback formativo
+#### 3.4.5 Programación, ejecución y feedback
+
+**Defincion de primitivas, narrativa de ejecución, componentes (visor, editor, etc.) al resolver ejercicios, manual héroe, escenario, limitaciones del escenario.**
+
+#### 3.4.6 Feedback formativo
 El sistema ofrecerá tres tipos de feedback formativo durante la resolución de un ejercicio: previo a la ejecución, al momento de ejecutar y posterior a la ejecución. A continuación, detallaremos los aspectos que el sistema analizará y ofrecerá retroalimentación al alumno.
 
 - Previo a la ejecución: el sistema estará analizando en tiempo real la estructura y forma de escribir de la solución del alumno para poder indicar errores y sugerencias.
@@ -260,11 +264,11 @@ La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución 
 | Secuencia de múltiples instrucciones iguales  | Cuando se utiliza una misma instrucción multiples veces una debajo de otra de manera innecesaria (con un como mínimo de 3 instrucciones)                                      | Reemplazar el conjunto de multiples instrucciones por una estructura repetitiva (mientras o repetir) para reducir el uso del procesador          |
 | Secuencia de múltiples estructuras de control | Cuando se utiliza una misma estructura de control multiples veces una dentro de otra o una debajo de la otra de manera innecesaria (con un mínimo de 3 estructuras de contro) | Identificar aquellas estructuras de control innecesarias, refactorizar y reordenar la estructuras de control para reducir la complejidad cíclica |
 | Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                         | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
-| 
+|                                               |
 
 
 #### 3.4.6 Gestion Docente
-En este módulo del sistema, los docentes tendrán diferentes funcionalidades para realizar el seguimiento a sus alumnos.
+En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
 **Creación de cursos**
 El docente podrá crear un curso para agrupar los dinstintos grupos de alumnos de las distintas instituciones de las cuales da clases. Podrá especificar el nombre del curso, institución, materia y definir una contraseña para permitirle a sus alumnos ingresar al curso.
@@ -272,10 +276,10 @@ El docente podrá crear un curso para agrupar los dinstintos grupos de alumnos d
 **Definición de días y horarios de cursada**
 Los docentes podrán configurar los días y horarios de cursada de la materia. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
 
-**Visualización del estado de avance de los alumnos**
-Los docentes podrán consultar el estado de avance de los diferentes cursos que tenga a cargo. Podrá visualizar el estado de avance del curso en general y de forma individual por alumno. Los datos que podrá visualizar son los siguientes:
-- Porcentaje de avance del curso en la historia (programa total)
-- Porcentaje de avance del curso en cada tema
+**Visualización y reportes del estado de avance de los alumnos**
+Los docentes podrán consultar y realizar reportes del estado de avance de los diferentes cursos que tenga a cargo. Dentro de un curso, podrá visualizar el estado de avance del curso en general y de forma individual por alumno. Los datos que podrá visualizar son los siguientes:
+- Porcentaje promedio de avance del curso en la historia (programa total)
+- Porcentaje promedio de avance del curso en cada tema
 - Estadisticas del alumno
   - Nombre completo
   - Nivel actual
@@ -290,13 +294,46 @@ Los docentes podrán consultar el estado de avance de los diferentes cursos que 
 Todos estos datos se podrán ordenar de manera ascendente o descendente en la vista. Tambien se podrán aplicar los siguientes filtros de búsqueda:
 - Por fechas (desde - hasta)
 - Por tema
-- 
+**(VER MÁS FILTROS)**
 
-**Creación de sesiones de refuerzo**: los docentes podrán crear sesiones de refuerzo eligiendo a los alumnos que ellos consideren atrasados en los contenidos o con inactividad prolongada, elegir el día y horario de la sesión de refuerzo.
+
+La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
+- Alumnos atrasados en color **amarillo** suave: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
+- Alumnos en estado crítico en color **rojo** suave: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el tema está muy por debajo del promedio del curso.
+
+
+**Sesiones de refuerzo de contenidos**: los docentes podrán crear una sesión para reforzar los contenidos a aquellos alumnos que se encuentren atrasados o con una inactividad prolongada. Para la sesión de refuerzo de contenidos el docente deberá:
+- Seleccionar a los alumnos involucrados: se mostrarán los alumnos resaltados en rojo y amarillo.
+- Seleccionar los temas a reforzar: se mostrarán los temas a reforzar segun los alumnos seleccionados.
+- Definir la duración de la sesión en minutos con un máximo de 30.
+- Definir el día y horario para la sesión
+- Definir el tipo de sesión: presencial o virtual.
+
+Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible hasta 3 horas antes de la sesión. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia.
+
+**Automatización del reporte semanal y sesión de refuerzo de contenidos**
+El sistema tendrá como uno de los procesos automatizados la generación de un reporte semanal del estado de avance de un curso junto con la creación de la sesión de refuerzo de contenidos.
+
+En este proceso automatizado el sistema generará automaticamente todos los domingos a las 20:00 PM un reporte de estado de avance y rendimiento de todos los alumnos de un curso y lo enviará a los docentes por correo electrónico. Junto con el reporte, el sistema creará una sesión de refuerzo de contenidos planeada para que se realice 20 minutos previa a la próxima clase de la materia, incluyendo de manera como prioridad a todos los alumnos en estado crítico.
+Para que la sesión sea válida, uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales  dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para indicar si se realizó la sesión de refuerzo y checkear los temas abordados.
+
+**Flujo de decisión**
+1. Si un docente confirma la sesión antes que un alumno, se notifica a todos los alumnos involucrados vía mail para que confirmen su asistencia con recordatorios cada 2 horas. Dado este caso
+   1. Si mínimamente un alumno confirma la asistencia a la sesión en el tiempo determinado, se realiza la sesión de refuerzo de los contenidos propuestos y en el día y horario definidos por el sistema.
+   2. Si ningún alumno confirma la asistencia a la sesión en el tiempo determinado (no confirman o no responden), se le notificará esto a los involucrados y se reagendará la sesión para la proxima clase prevista de manera automática.
+
+2. Si un alumno confirma su asistencia antes del docente, se notifica a todos los docente vía mail de forma urgente solicitando la realización de la sesión debido a que minimamente un alumno requiere un refuerzo de contenidos la misma. Dado este caso.
+   1. Si ningún docente confirma la sesión en el tiempo determinado (no confirman o no responden), el sistema notificará esto a los involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
+3.  Si ninguno de los involucrados confirma ni responde a la sesión en el tiempo determinado, el sistema reagendará la sesión para la próxima clase prevista de manera automática. 
+4.  Si existe una sesión de refuerzo en pie:
+    1.  Si el docente a cargo cambia su respuesta y no confirma la sesión, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
+    2.  Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
+
 
 #### 3.4.7 Seguridad y autenticación
+**Formas de autenticación, reglas de autenticación, tockens, etc.**
 #### 3.4.8 Auditoría
-
+**Qué modulos se van a auditar, cómo, etc.**
 
 ### 3.5 Excluye
 - Personalización de ejercicios por usuario.  
