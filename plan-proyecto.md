@@ -95,11 +95,11 @@
 - **Gestión de proyectos:** Notion
 - **Documentación:** Markdown
 - **Control de versiones:** GitHub
-- **Motor de Base de Datos:**
+- **Motor de Base de Datos:** PostgreSQL
 - **Tecnologías front-end:** HTML, CSS y JavaScript con SvelteKit + Tailwind CSS. Phaser para el entorno de videojuego.
 - **Tecnologías back-end:** Node.js + Express.js
+- **IDE:** Visual Studio Code
 - **Herramientas de modelado:**
   - Digramas UML: PlantUML
   - Interfaz de usuario: Frame 0, Aseprite (Pixel Art)
   - Modelado de Base de Datos: dbdiagram.io
-- **CI/CD:** GitHub Actions

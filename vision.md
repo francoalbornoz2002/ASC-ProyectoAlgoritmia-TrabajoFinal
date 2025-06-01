@@ -1,7 +1,7 @@
 # Documento de Visión
 
-**Versión:** 1.2
-**Fecha:** 29/05/2025
+**Versión:** 1.3
+**Fecha:** 31/05/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -143,7 +143,7 @@ Los beneficios a largo plazo:
 
 ---
 
-## 3. Visión general del producto
+## 3. Visión del producto
 
 ### 3.1 Perspectiva del producto
 
@@ -158,25 +158,25 @@ El desarrollo e implementación de este sistema encaja perfecamente en la situac
 Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos y Estructuras de Control (PGA) con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
 
 #### 3.2.2 Objetivos Específicos
-1. Generar motivación en el estudiante con mecánicas y narrativa de videojuegos
-   1. Diseñar e implementar una interfaz Pixel Art atractiva y con una narrativa interesante, de modo que el entorno se perciba como un videojuego.
-   2. Integrar mecánicas de misiones, niveles, puntos de experiencia (EXP) y puntuación (en estrellas) para premiar el progreso y mantener el interés del usuario.
+1. **Generar motivación en el estudiante con mecánicas y narrativa de videojuegos**
+   - Diseñar e implementar una interfaz Pixel Art atractiva y con una narrativa interesante, de modo que el entorno se perciba como un videojuego.
+   - Integrar mecánicas de misiones, niveles, puntos de experiencia (EXP) y puntuación (en estrellas) para premiar el progreso y mantener el interés del usuario.
 
-2. Ofrecer ejercicios de dificultad progresiva y desbloqueables.
-   1. Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones.
-   2. Implementar un sistema de desbloqueo de nuevos retos conforme el alumno avance, garantizando una curva de aprendizaje controlada.
+2. **Ofrecer ejercicios de dificultad progresiva y desbloqueables.**
+   - Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones.
+   - Implementar un sistema de desbloqueo de nuevos retos conforme el alumno avance, garantizando una curva de aprendizaje controlada.
 
-3. Proveer feedback formativo inmediato
-   1. Analizar automáticamente la solución del alumno y generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas redundantes y simplificación de estructuras.
-   2. Mostrar métricas de calidad de la solución tras cada envío para reforzar la reflexión sobre buenas prácticas.
+3. **Proveer feedback formativo inmediato**
+   - Analizar automáticamente la solución del alumno y generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas redundantes y simplificación de estructuras.
+   - Mostrar métricas de calidad de la solución tras cada envío para reforzar la reflexión sobre buenas prácticas.
   
-4. Ofrecer seguimiento académico exhaustivo con tableros de progreso y alertas.
-   1. Desarrollar un tablero de progreso y reportes para docentes que muestre el avance y rendimiento individual y grupal de los alumnos (nivel actual, cantidad de ejercicios completados, estrellas obtenidas, promedio de intentos por ejercicio, porcentaje de avance en temas específicos y avance global, ultima conexión) pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma.
-   2. Configurar alertas automáticas periódicas para el docente cuando un alumno o grupo de alumnos supere un umbral de atraso en contenidos o se detecte inactividad prolongada.
-   3. Configuración de reportes automáticos semanales para que el docente pueda visualizar el tablero de progreso y rendimiento semanal de los alumnos de forma individual y grupal.
+4. **Ofrecer seguimiento académico exhaustivo con tableros de progreso y alertas.**
+   - Desarrollar un tablero de progreso y reportes para docentes que muestre el avance y rendimiento individual y grupal de los alumnos (nivel actual, cantidad de ejercicios completados, estrellas obtenidas, promedio de intentos por ejercicio, porcentaje de avance en temas específicos y avance global, ultima conexión) pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma.
+   - Configurar alertas automáticas periódicas para el docente cuando un alumno o grupo de alumnos supere un umbral de atraso en contenidos o se detecte inactividad prolongada.
+   - Configuración de reportes automáticos semanales para que el docente pueda visualizar el tablero de progreso y rendimiento semanal de los alumnos de forma individual y grupal.
 
-5. Programar sesiones de refuerzo de contenido automáticas
-   1. Implementar un sistema que detecte a los alumnos con menor progreso y, de forma automática, sugiera al docente conformar un grupo de refuerzo; el docente podrá confirmar la sesión adicional en la siguiente clase presencial y los alumnos indicarán su disponibilidad.
+5. **Programar sesiones de refuerzo de contenido automáticas**
+   - Implementar un sistema que detecte a los alumnos con menor progreso y, de forma automática, sugiera al docente conformar un grupo de refuerzo; el docente podrá confirmar la sesión adicional en la siguiente clase presencial y los alumnos indicarán su disponibilidad.
 
 ### 3.3 Modulos del sistema
 #### 3.3.1 Funcionales
@@ -184,7 +184,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 - Banco de ejercicios
 - Gamificación
 - Programación, ejecución y feedback
-- Gestión Docente
+- Gestión Académica y Docente
 #### 3.3.2 No Funcionales
 - Seguridad y autenticación
 - Auditoría
@@ -192,10 +192,15 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 ### 3.4 Alcance y Limitaciones
 
 #### 3.4.1 Gestión de usuarios
+En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acesso al sistema:
+- **Administrador**: Acceso al banco de ejercicios, gestionar las instituciones y cursos, dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
+- **Alumno**: Acceso a la resolución de los ejercicios, revisar su perfil con sus estadísticas, ingresar a los cursos.
+- **Docente**: Acceso principal al módulo de Gestión Docente, donde podrá realizar los reportes, consultar el estado de avance de los alumnos, generar sesiones de refuerzo y administrar sus cursos.
+
 #### 3.4.2 Banco de ejercicios
 Para el desarrollo del sistema, en una primera versión, NO se tomarán todos los temas de la materia, debido al tiempo de desarrollo disponible para el mismo. Por recomendación y solicitud de los profesores, los conceptos más importantes que si o si se deben afianzar y solidificar:
 - Algoritmos y secuencia de pasos
-- Lógica proposicional (Operadores lógicos: OR, AND, NOT)
+- Lógica proposicional (Proposiciones simples y compuestas, operadores lógicos: OR, AND, NOT)
 - Estructuras de control (Si-Sino, Mientras y Repetir)
 
 Adicionalmente, también se abordará los conceptos de:
@@ -206,31 +211,70 @@ Adicionalmente, también se abordará los conceptos de:
 #### 3.4.4 Gamificación
 Para crear el entorno basado en gamificación, se tendrán en cuenta los siguientes apartados
 ##### Narrativa
-Historia principal, narrativa, objetivos del heroe, personaje, secciones/islas/mazmorras, etc.
+
+
+"Cuenta la leyenda que en lo profundo del reino de **"Algoritmia"** se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo. No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
+Muchos guerreros han intentado llegar hasta este anhelado tesoro, pero ninguno ha podido aún. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores.
+La leyenda indica que solo aquel guerrero que cumpla con una serie de características y habilidades muy especiales será digno de encontrar el algoritmo sagrado
+- Gran capacidad de razonamiento lógico.
+- Planificación ordenada sus acciones.
+- Toma de decisiones precisas evaluando los posibles caminos y qué hacer en cada uno.
+- Tenacidad para repertir una acción las veces que sean necesarias conociendo o no su fin.
+- Administración de los suministros y objetos en el viaje.
+- Definición de planes de acción para diferentes situaciones.
+Y lo más importante, el guerrero deberá tener presente las tres sagradas reglas de la Algoritmia:
+1. **Finitud** de acciones a realizar
+2. **Precisión** en cada acción sin ambiguedad y con exactitud.
+3. **Definición** de comportamiento para producir los mismos resultados en diferentes situaciones.
+
+¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
+
+Otra cosa que tengo pensada es un cambio argumental motivador para el alumno: Resultará que al final del camino, cuando el heroe encuentre el tesoro y lo abra, encontrará un pergamino viejo y descuidado, pero brillando en luces y emanando poder. Pero finalmente estaría vacío, ya que el heroe para ese momento ya habrá aprendido todo lo necesario para diseñar algoritmos eficientes que resuelvan todo tipo de problemas.
+Lo que quiero transmitir es que no existe un algoritmo mágico, sino que en la travesía fué aprendiendo todo lo necesario para tener la capacidad de diseñar un algoritmo así, que pueda resolver un problema determinado y que pueda adaptarse a diferentes situaciones cumpliendo con el objetivo. Lo que importó fue el camino y lo aprendido, no el final.
+
+Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas habilidades que lo acerquen aún más a su objetivo.
+
+La historia principal se dividirá en episodios temáticos de cada contenido de la materia.
+- Primeros pasos
+- 
+
+
 ##### Componentes
 Se incorporarán varios componentes de videojuegos, explicando primero su significado propio de los videojuegos y luego lo que representarán, análogamente, del dominio del problema.
 
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
-- Misiones (ejercicios): una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
+- **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
   
-- Acciones, habilidades y objetos: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Las acciones representarán las primitivas que puede realizar el jugador, como moverse, las habilidades especiales representarán a las estructuras de control, procedimientos y funciones y los objetos representarán las variables. Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
+- **Acciones, habilidades y objetos**: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Las acciones representarán las primitivas que puede realizar el jugador, como moverse, las habilidades especiales representarán a las estructuras de control, procedimientos y funciones y los objetos representarán las variables. Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
 
-- Niveles (progreso): en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
+- **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
   
-- Puntos de experiencia (XP): los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
+- **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
   
-- Puntuación en estrellas (evaluación): la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja.
+- **Puntuación en estrellas (evaluación)**: la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja.
 
 #### 3.4.5 Programación, ejecución y feedback
+El entorno de resolución de ejercicios estará compuesto de manera general con:
+- **Enunciado**: se mostrará el enunciado del ejercicio en todo momento durante la resolución de una misión
+- **Editor de código**: es donde el alumno diseñará y escribirá la solución del ejercicio. El editor soportará una opción de autocompletado para ayudar al alumno a seguir de manera correcta la sintaxis del lenguaje gamificado.
+- **Libro de habilidades**: es una pequeña "documentación" de sintaxis y semántica de las posibles acciones, habilidades y objetos que el alumno tiene disponible para resolver el ejercicio.
+- **Botón ejecutar**: para comenzar la ejecución de la solución del alumno en el visor animado. Para que se pueda ejecutar la solución, esta no debe contener errores de sintaxis.
+- **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real la solución del alumno.
 
-**Defincion de primitivas, narrativa de ejecución, componentes (visor, editor, etc.) al resolver ejercicios, manual héroe, escenario, limitaciones del escenario.**
+**Acciones, habilidades y objetos**
+Se listarán las posibles acciones, habilidades y objetos disponibles para la resolución de ejercicios.
+- mover
+- saltar
+- atacar
+
+**Defincion de primitivas, narrativa de ejecución, componentes (visor, editor, etc.) al resolver ejercicios, libro de habilidades, escenario, limitaciones del escenario.**
 
 #### 3.4.6 Feedback formativo
 El sistema ofrecerá tres tipos de feedback formativo durante la resolución de un ejercicio: previo a la ejecución, al momento de ejecutar y posterior a la ejecución. A continuación, detallaremos los aspectos que el sistema analizará y ofrecerá retroalimentación al alumno.
 
-- Previo a la ejecución: el sistema estará analizando en tiempo real la estructura y forma de escribir de la solución del alumno para poder indicar errores y sugerencias.
-- Al momento de ejecutar: si la solución posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si la solución tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
-- Posterior a la ejecución: el sistema analizará la solución del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones de la solución.
+- **Previo a la ejecución**: el sistema estará analizando en tiempo real la estructura y forma de escribir de la solución del alumno para poder indicar errores y sugerencias.
+- **Al momento de ejecutar**: si la solución posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si la solución tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
+- **Posterior a la ejecución**: el sistema analizará la solución del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones de la solución.
 
 Detallaremos las sugerencias y optimizaciones específicas que el sistema ofrecerá en cada tipo de feeback
 
@@ -298,8 +342,8 @@ Todos estos datos se podrán ordenar de manera ascendente o descendente en la vi
 
 
 La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
-- Alumnos atrasados en color **amarillo** suave: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
-- Alumnos en estado crítico en color **rojo** suave: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el tema está muy por debajo del promedio del curso.
+- **Alumnos atrasados en color **amarillo** suave**: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
+- **Alumnos en estado crítico en color **rojo** suave**: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el tema está muy por debajo del promedio del curso.
 
 
 **Sesiones de refuerzo de contenidos**: los docentes podrán crear una sesión para reforzar los contenidos a aquellos alumnos que se encuentren atrasados o con una inactividad prolongada. Para la sesión de refuerzo de contenidos el docente deberá:
@@ -318,28 +362,129 @@ En este proceso automatizado el sistema generará automaticamente todos los domi
 Para que la sesión sea válida, uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales  dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para indicar si se realizó la sesión de refuerzo y checkear los temas abordados.
 
 **Flujo de decisión**
-1. Si un docente confirma la sesión antes que un alumno, se notifica a todos los alumnos involucrados vía mail para que confirmen su asistencia con recordatorios cada 2 horas. Dado este caso
-   1. Si mínimamente un alumno confirma la asistencia a la sesión en el tiempo determinado, se realiza la sesión de refuerzo de los contenidos propuestos y en el día y horario definidos por el sistema.
-   2. Si ningún alumno confirma la asistencia a la sesión en el tiempo determinado (no confirman o no responden), se le notificará esto a los involucrados y se reagendará la sesión para la proxima clase prevista de manera automática.
+1. **Si un docente confirma la sesión antes que un alumno**, se notifica a todos los alumnos involucrados vía mail para que confirmen su asistencia con recordatorios cada 2 horas. Dado este caso
+   1. **Si mínimamente un alumno confirma la asistencia** a la sesión en el tiempo determinado, se realiza la sesión de refuerzo de los contenidos propuestos y en el día y horario definidos por el sistema.
+   2. **Si ningún alumno confirma la asistencia a la sesión** en el tiempo determinado (no confirman o no responden), se le notificará esto a los involucrados y se reagendará la sesión para la proxima clase prevista de manera automática.
 
-2. Si un alumno confirma su asistencia antes del docente, se notifica a todos los docente vía mail de forma urgente solicitando la realización de la sesión debido a que minimamente un alumno requiere un refuerzo de contenidos la misma. Dado este caso.
+2. **Si un alumno confirma su asistencia antes del docente**, se notifica a todos los docente vía mail de forma urgente solicitando la realización de la sesión debido a que minimamente un alumno requiere un refuerzo de contenidos la misma. Dado este caso.
    1. Si ningún docente confirma la sesión en el tiempo determinado (no confirman o no responden), el sistema notificará esto a los involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
-3.  Si ninguno de los involucrados confirma ni responde a la sesión en el tiempo determinado, el sistema reagendará la sesión para la próxima clase prevista de manera automática. 
-4.  Si existe una sesión de refuerzo en pie:
-    1.  Si el docente a cargo cambia su respuesta y no confirma la sesión, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
-    2.  Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
+3.  **Si ninguno de los involucrados confirma ni responde** a la sesión en el tiempo determinado, el sistema reagendará la sesión para la próxima clase prevista de manera automática. 
+4.  **Si existe una sesión de refuerzo en pie**:
+    1.  **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
+    2.  **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
 
 
 #### 3.4.7 Seguridad y autenticación
-**Formas de autenticación, reglas de autenticación, tockens, etc.**
-#### 3.4.8 Auditoría
-**Qué modulos se van a auditar, cómo, etc.**
+El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
 
-### 3.5 Excluye
-- Personalización de ejercicios por usuario.  
-- Soporte multi‑idioma.
-- Foros o chat interno.
-- Estructuras de datos avanzadas (strings, matrices, archivos).
+**Reglas de registro e inicio de sesión según el tipo de usuario**
+**Alumnos**
+El registro de alumnos estará habilitado desde el sistema (se pueden registrar solos)
+- **Opción 1**: Registro mediante formulario.
+- **Opción 2**: Registro con Google (autenticación con Google y luego completar datos adicionales el formulario).
+- Almacenamiento en la base de datos con posibilidad de iniciar sesión por cualquiera de los dos medios (usuario/contraseña o Google).
+
+**Docentes**
+El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden registrar solos).
+- Los docentes deberán proporcionar sus datos al administrador del sistema mediante un formulario.
+- El administrador se encargará de verificar los datos del docente y deberá darlo de alta manualmente desde un panel interno.
+- El administrador crea el usuario del docente con los datos necesarios
+- Luego, el sistema envía automáticamente el usuario y contraseña inciales del docente al correo declarado.
+- El inicio de sesión del docente solo será por usuario y contraseña (sin Google).
+
+#### 3.4.8 Auditoría
+
+Este módulo estará principalmente disponible para el rol **administrador**, que es quien supervisa el uso y funcionamiento general de la plataforma.
+
+##### Tareas de Auditoría que podrá realizar el Administrador
+1. **Revisar inicios de sesión**: Ver quién, cuándo y desde dónde se accede a la plataforma (docentes, alumnos, admin).
+2. **Auditar cambios en cursos**: Ver cuándo se crean, modifican o eliminan cursos y quién lo hizo.
+3. **Auditar altas y bajas de docentes**: Trazabilidad sobre qué docente fue creado, editado o eliminado, por quién y cuándo.
+4. **Auditar asignaciones de docentes a cursos**:	Ver cuándo se asignó o removió un docente de un curso.
+5. **Auditar configuraciones de sesiones de refuerzo**:	Ver cuándo se programaron, aprobaron o marcaron como realizadas las sesiones de refuerzo.
+6. **Auditar acciones críticas del sistema**: Cambios de contraseña de administrador, ajustes globales del sistema (si existen).
+7. **Auditar registros fallidos de inicio de sesión**:	Intentos fallidos que pueden revelar problemas o accesos no autorizados.
+
+##### Qué se registra en la auditoría
+Cada entrada de auditoría contendrá los siguientes campos:
+
+| Campo             | Descripción                                                       |
+| ----------------- | ----------------------------------------------------------------- |
+| `timestamp`       | Fecha y hora del evento                                           |
+| `usuario`         | ID o nombre del usuario que realizó la acción                     |
+| `rol`             | Rol del usuario (admin, docente, alumno)                          |
+| `acción`          | Tipo de evento (inicio de sesión, creación de curso, etc.)        |
+| `objeto_afectado` | A qué recurso afectó (curso, usuario, sesión de refuerzo, etc.)   |
+| `datos_antes`     | Estado anterior del recurso (si aplica, por ejemplo en ediciones) |
+| `datos_despues`   | Estado posterior del recurso (si aplica)                          |
+| `ip_origen`       | Dirección IP o dispositivo desde el cual se realizó la acción     |
+
+##### Visualización de los datos
+El administrador accederá a una sección de Auditoría (por ejemplo, dentro del módulo de Gestión Académica), donde podría:
+1. Ver un historial de eventos ordenado cronológicamente.
+2. Filtrar por tipo de evento, usuario, fecha o rol.
+3. Buscar eventos específicos (por palabra clave).
+4. Exportar el historial como CSV o PDF (opcional).
+5. Ver detalles expandibles de cada entrada (antes y después del cambio, IP).
+
+##### Seguridad y privacidad
+- Solo el administrador del sistema tendría acceso completo al módulo de auditoría.
+- Los registros no deben poder editarse ni eliminarse por ningún usuario.
+- Los logs se almacenarán en una tabla especial en la base de datos con acceso restringido.
+
+### 3.5 Exclusiones del sistema
+Con el alcance del proyecto definido, se listarán tambien algunas funcionalidades que el sistema NO INCLUIRÁ en la versión final del producto a entregar el 15/11/2025. Que las siguientes funcionalidades listadas aquí no se incluyan en el proyecto no significa que no estén consideradas para implementarse en un futuro.
+
+#### 3.5.1 Gestión de usuarios
+- Administrador
+  - No podrá modificar datos ya creados de instituciones, cursos o docentes (solo eliminar o dar de baja).
+  - No existirá una interfaz avanzada para análisis estadístico de gestión global del sistema.
+- Alumno
+  - No podrá cambiar de curso luego de inscribirse.
+  - No podrá modificar su nombre de usuario o correo tras el registro (solo cambio de contraseña).
+- Docente
+  - No podrá crear ejercicios personalizados ni modificar el banco de ejercicios.
+  - No podrá gestionar múltiples cursos con configuraciones independientes (comparten mismos ejercicios del sistema).
+
+#### 3.5.2 Banco de ejercicios
+- No se incluirán **temas de estructuras de datos avanzadas**: strings, arrays, matrices, registros, arrays de registros y archivos.
+- No se implementará un **editor visual de creación de ejercicios** (por ejemplo, arrastrar y soltar condiciones).
+- No se permitirán **ejercicios grupales colaborativos**.
+- No se podrán **personalizar los ejercicios** ni por docentes ni por administradores.
+- No se incluirá la funcionalidad de evaluaciones o exámenes.
+  
+#### 3.5.3 Gamificación
+- No se incluirán tiendas de ítems o recompensas.
+- No habrá modificación o personalización de avatar (ropa, color de cabello, accesorios).
+- No se implementarán eventos temporales o dinámicas gamificadas adicionales (ej: misiones diarias, recompensas por login).
+- No se incluirá un ranking público de alumnos ni competencia directa entre ellos.
+
+#### 3.5.4 Programación, ejecución y feedback
+- No se incluirán múltiples lenguajes de programación (se trabaja con un único lenguaje gamificado).
+- No se podrá configurar la velocidad de ejecución normal.
+- No se permitirá guardar múltiples soluciones para un mismo ejercicio.
+- No se mostrarán estadísticas detalladas por solución (tiempo de ejecución, memoria, etc.).
+- El feedback se centrará en sugerencias básicas de optimización y errores de sintaxis, no en explicación semántica o pedagógica profunda.
+- No se implementarán tests automatizados personalizados (test cases hechos por docentes o alumnos).
+
+#### 3.5.5 Gestión Académica y Docente
+- No se permitirá crear ejercicios específicos por curso.
+- No se podrán crear distintas configuraciones de ejercicios por materia o institución.
+- No se permitirá la importación/exportación masiva de alumnos o docentes por archivo.
+- No se incluirá funcionalidad para mensajes, anuncios o notificaciones escritas entre docentes y alumnos.
+- No se podrán configurar parámetros finos de gamificación (porcentaje de XP, cantidad de estrellas, etc.)
+
+#### 3.5.6 Seguridad y autenticación
+- No se incorporará autenticación mediante redes sociales externas como Facebook, X, GitHub, etc.
+- No se habilitará la verificación en dos pasos (2FA).
+- No se integrará autenticación OAuth para docentes ni administradores (registro solo manual).
+- No se permitirán inicios de sesión simultáneos en múltiples dispositivos (se mantendrá simple).
+
+#### 3.5.7 Auditoría
+- No habrá visualización avanzada con gráficos o dashboards de auditoría.
+- No se podrán aplicar **filtros múltiples combinados avanzados** en la vista de logs.
+- No se auditarán eventos de lectura (por ejemplo, "ver estadísticas" o "consultar curso").
+- No se incluirán alertas automatizadas por eventos sospechosos o fallos de seguridad.
 
 ---
 
@@ -354,5 +499,4 @@ Para que la sesión sea válida, uno de los docentes a cargo del curso deberá c
 
 ## 5. Supuestos y Restricciones
 - Debe validarse con 20 usuarios antes del 15/11/2025.  
-- Versión local solo para demostración; despliegue en nube queda fuera  
-  de la versión inicial.
+- El proyecto se desarrollará en un entorno local para la demostración. El despliegue de la aplicación quedará para más adelante.
