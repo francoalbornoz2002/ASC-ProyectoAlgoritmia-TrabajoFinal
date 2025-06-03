@@ -1,7 +1,7 @@
 # Plan de Iteración
 
 **Iteración Nº:** `1`  
-**Fase UP:** `<Inception>`  
+**Fase UP:** `<Inicio>`  
 **Fechas:** `17/05/2025 – 30/05/2025`  
 **Duración:** `2 semanas`
 
@@ -40,8 +40,8 @@
 - `diagramas/vista-casos-de-uso.puml`(ligero)
 
 ## 5. Definition of Done (DoD)
-- [ ] Documento de vision completo con la problematica, propuesta, alcance, objetivos y modulos del sistema.
-- [ ] Glosario completo con sus definiciones.
+- [X] Documento de vision completo con la problematica, propuesta, alcance, objetivos y modulos del sistema.
+- [X] Glosario completo con sus definiciones.
 - [ ] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
 - [ ] Requisitos funcionales y no funcionales iniciales y descriptos.
 - [ ] Modelo de casos de uso con los primeros actores identificados y los casos de uso principales.
