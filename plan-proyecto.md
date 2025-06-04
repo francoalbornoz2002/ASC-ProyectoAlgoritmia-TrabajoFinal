@@ -1,6 +1,6 @@
 # Plan del Proyecto
 
-**Versión:** 1.4
+**Versión:** 1.5
 **Fecha de inicio:** 10/05/2025
 **Autor(es):** Franco Andrés Albornoz
 
@@ -11,8 +11,8 @@
 | Fase         | Fecha Inicio | Fecha Fin  | Responsable            |
 | ------------ | ------------ | ---------- | ---------------------- |
 | Inicio       | 10-05-2025   | 06-06-2025 | Franco Andrés Albornoz |
-| Elaboración  | 07-06-2025   | 01-08-2025 | Franco Andrés Albornoz |
-| Construcción | 02-08-2025   | 31-10-2025 | Franco Andrés Albornoz |
+| Elaboración  | 07-06-2025   | 15-08-2025 | Franco Andrés Albornoz |
+| Construcción | 16-08-2025   | 31-10-2025 | Franco Andrés Albornoz |
 | Transición   | 01-11-2025   | 15-11-2025 | Franco Andrés Albornoz |
 
 ---
@@ -24,9 +24,9 @@
 |     0     | 10 May – 16 May | Inicio       | Plan global <br> Repositorio y estructura <br> Visión y alcance preliminares                                                                                                                         | `vision.md`<br>`plan-proyecto.md`<br>`docs/iteraciones/iteracion-0/iteracion-0.md`<br>`docs/iteraciones/iteracion-0/retrospectiva-0.md`                                                                                                                                   |
 |     1     | 17 May – 30 May | Inicio       | Doc. de Visión completo <br> Riesgos y mitigación del proyecto <br> Glosario <br> Requisitos Funcionales y No Funcionales preliminares <br> Estudio de factibilidad (Técnica, Económica y Operativa) | Actualizaciones en `vision.md`<br>`docs/glosario.md`<br>`docs/requisitos/requisitos-funcionales.md`<br>`docs/requisitos/requisitos-no-funcionales.md`<br>`docs/requisitos/estudio-factibilidad.md`                                                                        |
 |     2     | 31 May - 06 Jun | Inicio       | **Reajuste:** Requisitos Funcionales y No Funcionales <br> Estudio de Factibilidad <br> Diagrama de CU ~20% <br> Game Design Document ~20%                                                           | `docs/requisitos/casos-de-uso/modelo-casos-uso.md`<br>`docs/diagramas/diagrama-casos-de-uso.puml` `docs/requisitos/requisitos-funcionales.md`<br>`docs/requisitos/requisitos-no-funcionales.md`<br>`docs/requisitos/estudio-factibilidad.md`<br>`docs/game-design/gdd.md` |
-|     3     | 07 Jun – 20 Jun | Elaboración  | Diagrama CU completo <br> 80% CU Especificados <br> 50% Clases de análisis (Conceptos) <br> Modelo de dominio ligero (~50%)                                                                          | Actualizaciones en `docs/analisis/modelo-casos-uso.md`, `docs/diagramas/diagrama-casos-de-uso.puml`<br>`docs/requisitos/casos-de-uso/CU-XX-####-especificacion.md`(~80% completo)<br> `docs/analisis/modelo-de-dominio/concepto-####.md`                                  |
-|     4     | 21 Jun – 04 Jul | Elaboración  | 100% CU Especififacos <br> 100% Clases de Análisis (Conceptos) <br> Modelo de dominio completo <br> Diagramas de Secuencia de Sistema y Contratos de Operaciones (~50%)                              | `docs/requisitos/casos-de-uso/*`(carpeta 100% completa)<br>`docs/analisis/modelo-de-dominio/*`(carpeta 100% completa)<br>`docs/analisis/secuencia/secuencia-CU-XX.md`(carpeta ~50% completa)                                                                              |
-|     5     | 05 Jul – 18 Jul | Elaboración  | 100% DSS y Contratos <br> Diseño de interfaces web <br> Diseño de interfaces y sprites para el videojuego <br>                                                                                       | `docs/analisis/secuencia/*`(100% completo)<br>`docs/diseño/interfaces-web/*.png`<br>`docs/game-design/interfaces/*.png`<br>`docs/game-design/sprites/*.png`                                                                                                                                               |
+|     3     | 07 Jun – 20 Jun | Elaboración  | Game Design Document completo <br> Diagrama CU completo <br> 80% CU Especificados <br> 50% Clases de análisis (Conceptos) <br> Modelo de dominio ligero (~50%)                                       | Actualizaciones en `docs/game-design/gdd.md`, `docs/analisis/modelo-casos-uso.md`, `docs/diagramas/diagrama-casos-de-uso.puml`<br>`docs/requisitos/casos-de-uso/CU-XX-####-especificacion.md`(~80% completo)<br> `docs/analisis/modelo-de-dominio/concepto-####.md`       |
+|     4     | 21 Jun – 04 Jul | Elaboración  | 100% CU Especificados <br> 100% Clases de Análisis (Conceptos) <br> Modelo de dominio completo <br> Diagramas de Secuencia de Sistema y Contratos de Operaciones (~50%)                              | `docs/requisitos/casos-de-uso/*`(carpeta 100% completa)<br>`docs/analisis/modelo-de-dominio/*`(carpeta 100% completa)<br>`docs/analisis/secuencia/secuencia-CU-XX.md`(carpeta ~50% completa)                                                                              |
+|     5     | 05 Jul – 18 Jul | Elaboración  | 100% DSS y Contratos <br> Diseño de interfaces web <br> Diseño de interfaces y sprites para el videojuego <br>                                                                                       | `docs/analisis/secuencia/*`(100% completo)<br>`docs/diseño/interfaces-web/*.png`<br>`docs/game-design/interfaces/*.png`<br>`docs/game-design/sprites/*.png`                                                                                                               |
 |     6     | 19 Jul – 01 Ago | Elaboración  | Casos de Uso Reales <br> Diagramas de Secuencia de Diseño <br> Diagrama de Clases                                                                                                                    | `docs/diseño/secuencia-diseño/CU-XX/*nombre-operacion.puml`<br>`docs/diagramas/diagrama-clases.puml`<br>`docs/diseño/casos-uso-reales/CUR-XX-####-especificacion.md`                                                                                                      |
 |     7     | 02 Ago – 15 Ago | Elaboración  | Diseño de Base de Datos (Normalizada) <br> Script SQL de la BD <br> Script SQL de: Vistas, Procedimientos Almacenados, Funciones y Triggers                                                          | `docs/diseño/base-de-datos/diseño-bd.png`<br>`docs/diseño/base-de-datos/script-bd.sql`<br>`docs/diseño/base-de-datos/script-vistas-sp-funciones-triggers.sql`                                                                                                             |
 |     8     | 16 Ago – 29 Ago | Construcción | ...                                                                                                                                                                                                  | ...                                                                                                                                                                                                                                                                       |
@@ -96,7 +96,7 @@
 - **Gestión de proyectos:** Notion
 - **Documentación:** Markdown
 - **Control de versiones:** GitHub
-- **Motor de Base de Datos:** PostgreSQL
+- **Motor de Base de Datos:** SQLite para desarrollo, PostgreSQL para demostración y futuro despliegue.
 - **Tecnologías front-end:** HTML, CSS y JavaScript con SvelteKit + Tailwind CSS. Phaser para el entorno de videojuego.
 - **Tecnologías back-end:** Node.js + Express.js
 - **IDE:** Visual Studio Code
