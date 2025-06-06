@@ -21,12 +21,11 @@ A continuación se presenta el análisis completo de factibilidad (técnica, eco
 - **Windows 11 Home**: activado.
 - **Linux Mint 22**: distribución libre y actualizada.
 
-La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code), entornos locales (Node.js, SQLite) y herramientas de diseño (Aseprite). El respaldo está resuelto a través de backups en la nube.
+La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser Launcher), entornos locales (Node.js, SQLite) y herramientas de diseño (Aseprite). El respaldo está resuelto a través de backups en la nube.
 
 ### 1.2 Sistema Operativo y Software de Desarrollo
 #### 1.2.1 Sistemas Operativos de trabajo
-- **Desarrollo principal**: Se utilizará como sistema operativo principal Linux Mint 22 para el entorno de desarrollo del sistema.
-- Alternativamente, se usará **Windows 11**para uso de Aseprite, Frame0, u otras herramientas que tengan compatibilidad unicamente con Windows.
+- **Desarrollo principal**: Se utilizará como sistema operativo principal Windows 11 para el entorno de desarrollo del sistema, debido a la compatibilidad con herramientas clave para el desarrollo del sistema como Phaser Launcher, Aseprite y Frame0.
 
 #### 1.2.2 Software instalado y versiones
 **Git**
@@ -41,22 +40,26 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code), entornos 
 - Versión: 1.0 (instalada en Windows y Linux).
 - Uso: prototipado rápido de interfaces
 
-**Visual Studio Code**
+**Entorno de desarrollo (IDE): Visual Studio Code**
 - Versión: 1.79.0 (instalado en ambos sistemas).
 - Extensiones definidas en el apartado 1.4.2.
+- Configuración de sincronización de settings entre ambos SO usando la función de “Settings Sync” de VS Code.
 
-
-**Node.js / npm / Yarn**
+#### 1.2.3 Software a instalar y versiones
+**Node.js / npm /**
 - **Node.js**: se instalará la versión v22.16.0 LTS recomendada para compatibilidad con NestJS y dependencias.
 - **npm**: v10.x (incluido con Node.js).
 
-**Herramientas de testing**
-- Jest (para back-end en Node.js/NestJS).
-- Vitest (para pruebas de unidades en SvelteKit).
+**Bases de datos: SQLite y PostgreSQL**
+- SQLite en su versión 3.50.0
+- PostgreSQL en su versión 17.5
 
-**Entorno de desarrollo (IDE/Editor)**
-- VS Code con extensiones en Windows y Linux.
-- Configuración de sincronización de settings entre ambos SO usando la función de “Settings Sync” de VS Code.
+**Herramientas de testing**
+- Se instalará Jest (para back-end en Node.js/NestJS).
+- Se instalará Vitest (para pruebas de unidades en SvelteKit).
+
+**Phaser Launcher**
+- Se instalará la versión v3.90.0 en Windows.
 
 ### 1.3 Stack de Desarrollo y Curva de Aprendizaje
 #### 1.3.1 Front-end
@@ -69,13 +72,12 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code), entornos 
 - Sin experiencia previa directa en SvelteKit, Tailwind o Phaser. Conocimiento general de JavaScript y conceptos de front-end.
 
 **Recursos de capacitación**
-
 **HTML, CSS y JavaScript básico**
 - Cursos gratuitos de MiduDev en YouTube.
 - Documentación oficial de MDN (Mozilla).
 
 **SvelteKit y Tailwind CSS**
-- Tutoriales oficiales de SvelteKit y Tailwind, ejemplos y cursos de MiduDev.
+- Tutoriales oficiales de SvelteKit y Tailwind, ejemplos y cursos en YouTube.
 - Documentación en línea:
   - https://kit.svelte.dev/docs
   - https://tailwindcss.com/docs
@@ -105,10 +107,11 @@ Elección inicial:
 - SQLite como base de datos local para desarrollo rápido y pruebas sin requerir servidor adicional.
 
 Migración futura:
-- PostgreSQL para entornos de demostración y despliegue (DB MS completo).
+- PostgreSQL para consultas avanzadas, demostración y defensa y despliegue (DBMS completo).
 
 Nivel de conocimiento actual:
 - Conocimiento en modelos relacionales con normalización (3ra forma).
+- Conocimientos en base de datos activas (vistas, funciones, triggers)
 
 Recursos de capacitación:
 - Tutorial “SQLite tutorial” (Página oficial sqlite.org).
