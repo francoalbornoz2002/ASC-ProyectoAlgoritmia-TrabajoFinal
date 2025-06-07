@@ -4,7 +4,7 @@ A continuación se presenta el análisis completo de factibilidad (técnica, eco
 ## 1. Factibilidad Técnica
 ### 1.1 Hardware disponible
 #### 1.1.1 PC principal de desarrollo
-- **Marca y model**o: HP Laptop 14
+- **Marca y modelo**: HP Laptop 14
 - **Sistema Operativo**: Windows 11 Home (activado de fábrica) / Linux Mint 22
 - **Procesador**: Intel® Core™ i5-1135G7 @ 2.40 GHz (4 núcleos / 8 hilos)
 - **Memoria RAM**: 8 GB DDR4 @ 3200 MHz
