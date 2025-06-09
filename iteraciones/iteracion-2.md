@@ -34,7 +34,7 @@ El objetivo principal de esta iteración de refuerzo es completar los objetivos 
 - `diagramas/vista-casos-de-uso.puml`(ligero)
 
 ## 5. Definition of Done (DoD)
-- [ ] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
+- [X] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
 - [ ] Requisitos funcionales y no funcionales iniciales y descriptos.
 - [ ] Modelo de casos de uso con los primeros actores identificados y los casos de uso principales.
 - [ ] Diagrama de casos de uso esbozado con los actores y los primeros casos de uso.

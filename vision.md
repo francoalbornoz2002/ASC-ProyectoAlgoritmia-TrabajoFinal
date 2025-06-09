@@ -1,7 +1,7 @@
 # Documento de Visión
 
-**Versión:** 1.3
-**Fecha:** 31/05/2025
+**Versión:** 1.4
+**Fecha:** 09/06/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -10,6 +10,13 @@
 
 ### 1.1 Propósito  
 El proposito de este documento es proporcionar la información necesaria del proyecto a desarrollar. En este documento se podrá encontrar el contexto del negocio, los problemas o necesidades a abordar y el impacto que tendrá el desarrollo del software, asi como también la visión del producto explicada en objetivos y alcance del mismo.
+
+### 1.2 Presentación general
+El presente proyecto se trata del desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", que permitirá a los alumnos aprender algoritmos, lógica y estructuras de control incorporando “Gamificación” con mecánicas y componentes propios de los videojuegos para el aprendizaje y luciendo una estética visual de “Pixel Art”. Además, para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos.
+
+### 1.3 Participantes del proyecto
+El equipo de desarrollo esta compuesto por el integrante Franco Andrés Albornoz, que cumple las funciones de gestor de proyecto, diseñador y desarrollador.
+Participan también en el proyecto alumnos y docentes de la materia Algoritmos y Estructuras de Datos I.
 
 ---
 
@@ -152,7 +159,7 @@ El desarrollo e implementación de este sistema encaja perfecamente en la situac
 - **Seguimiento docente**: los docentes carecen de un seguimiendo académico exhaustivo de cada uno de los alumnos. La incorporación del seguimiento académico mediante el sistema hará que los docentes tengan una mejor visión del estado de avance tanto del grupo de alumnos como cada uno individualmente.
 - **Producto propio de la FCEQyN**: el Visual Da Vinci es un proyecto de Tesis de la Universidad Nacional de La Plata (UNLP). Entonces, al desarrollar e implementar un proyecto propio y desarrollado en la misma FCEQyN, engrandecerá el sentido de pertenencia e identidad de los docentes y alumnos.
 
-### 3.2 Objetivos
+### 3.2 Objetivos del sistema
 
 #### 3.2.1 Objetivo General
 Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos y Estructuras de Control (PGA) con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
