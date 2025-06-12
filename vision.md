@@ -220,7 +220,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 - Gamificación
 - Programación, ejecución y feedback
 - Gestión Docente
-- Gestión de Cursos
+- Gestión Académica
 #### 3.3.2 No Funcionales
 - Seguridad y autenticación
 - Auditoría
@@ -346,7 +346,7 @@ La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución 
 | Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                         | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
 |                                               |
 
-#### 3.4.6 Gestion Académica y Docente
+#### 3.4.6 Gestion Docente
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
 **Definición de días y horarios de cursada**
@@ -402,6 +402,21 @@ Para que la sesión sea válida, uno de los docentes a cargo del curso deberá c
 4.  **Si existe una sesión de refuerzo en pie**:
     1.  **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
     2.  **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
+
+#### 3.4.7 Gestión Académica
+Este modulo del sistema estará controlado en su mayor medida por el administrador del sistema, donde tendrá las siguientes funcionalidades:
+
+**ABM Instituciones**
+El administrador podrá dar de alta, modificar y dar de baja las instituciones que soliciten el uso del sistema, indicando: Nombre de la institución, dirección y contacto: teléfono y email.
+
+**ABM Cursos**
+El administrador del sistema será encargado de dar de alta los cursos del sistema indicando: Nombre del curso, institución, modalidad (presencial, virtual o mixta) y una contraseña incial para el ingreso al curso por parte de los alumnos. El administrador tambien se encargará de asignar a los docentes a sus cursos correspondientes o remover un docente de un curso.
+
+**ABM Docentes**
+El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: Nombre completo, Institución a la que pertenece y género (para el avatar demostrativo)
+
+
+
 
 #### 3.4.7 Seguridad y autenticación
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
