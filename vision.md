@@ -213,14 +213,14 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                    |
 | Comentarios | -                                                                                                                       |
 
-
 ### 3.3 Modulos del sistema
 #### 3.3.1 Funcionales
 - Gestión de usuarios
 - Banco de ejercicios
 - Gamificación
 - Programación, ejecución y feedback
-- Gestión Académica y Docente
+- Gestión Docente
+- Gestión de Cursos
 #### 3.3.2 No Funcionales
 - Seguridad y autenticación
 - Auditoría
@@ -346,7 +346,7 @@ La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución 
 | Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                         | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
 |                                               |
 
-#### 3.4.6 Gestion Docente
+#### 3.4.6 Gestion Académica y Docente
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
 **Definición de días y horarios de cursada**
@@ -372,11 +372,9 @@ Todos estos datos se podrán ordenar de manera ascendente o descendente en la vi
 - Por tema
 **(VER MÁS FILTROS)**
 
-
 La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
 - **Alumnos atrasados en color **amarillo** suave**: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
 - **Alumnos en estado crítico en color **rojo** suave**: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el tema está muy por debajo del promedio del curso.
-
 
 **Sesiones de refuerzo de contenidos**: los docentes podrán crear una sesión para reforzar los contenidos a aquellos alumnos que se encuentren atrasados o con una inactividad prolongada. Para la sesión de refuerzo de contenidos el docente deberá:
 - Seleccionar a los alumnos involucrados: se mostrarán los alumnos resaltados en rojo y amarillo.
@@ -404,7 +402,6 @@ Para que la sesión sea válida, uno de los docentes a cargo del curso deberá c
 4.  **Si existe una sesión de refuerzo en pie**:
     1.  **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
     2.  **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
-
 
 #### 3.4.7 Seguridad y autenticación
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
