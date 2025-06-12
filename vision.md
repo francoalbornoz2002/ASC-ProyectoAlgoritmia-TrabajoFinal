@@ -127,7 +127,6 @@ El pixel art es un estilo artístico digital utilizado para crear imágenes con 
 
 
 El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
-
 **Para alumnos**:
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
 - Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones o habilidades manteniendo la participación y motivación en utilizar el sistema.
@@ -165,25 +164,55 @@ El desarrollo e implementación de este sistema encaja perfecamente en la situac
 Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos y Estructuras de Control (PGA) con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
 
 #### 3.2.2 Objetivos Específicos
-1. **Generar motivación en el estudiante con mecánicas y narrativa de videojuegos**
-   - Diseñar e implementar una interfaz Pixel Art atractiva y con una narrativa interesante, de modo que el entorno se perciba como un videojuego.
-   - Integrar mecánicas de misiones, niveles, puntos de experiencia (EXP) y puntuación (en estrellas) para premiar el progreso y mantener el interés del usuario.
 
-2. **Ofrecer ejercicios de dificultad progresiva y desbloqueables.**
-   - Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones.
-   - Implementar un sistema de desbloqueo de nuevos retos conforme el alumno avance, garantizando una curva de aprendizaje controlada.
+| OBJ-01      | Crear un entorno de videojuegos con gamificación                                                                                                                                                              |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Diseñar e implementar mecánicas de misiones, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa interesante para motivar e incentivar la participación del alumno |
+| Estabilidad | Alta                                                                                                                                                                                                          |
+| Comentarios | -                                                                                                                                                                                                             |
 
-3. **Proveer feedback formativo inmediato**
-   - Analizar automáticamente la solución del alumno y generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas redundantes y simplificación de estructuras.
-   - Mostrar métricas de calidad de la solución tras cada envío para reforzar la reflexión sobre buenas prácticas.
-  
-4. **Ofrecer seguimiento académico exhaustivo con tableros de progreso y alertas.**
-   - Desarrollar un tablero de progreso y reportes para docentes que muestre el avance y rendimiento individual y grupal de los alumnos (nivel actual, cantidad de ejercicios completados, estrellas obtenidas, promedio de intentos por ejercicio, porcentaje de avance en temas específicos y avance global, ultima conexión) pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma.
-   - Configurar alertas automáticas periódicas para el docente cuando un alumno o grupo de alumnos supere un umbral de atraso en contenidos o se detecte inactividad prolongada.
-   - Configuración de reportes automáticos semanales para que el docente pueda visualizar el tablero de progreso y rendimiento semanal de los alumnos de forma individual y grupal.
+| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                     |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descripción | Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones. Implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, habilidades y objetos) a medida que el alumno avance para garantizar una curva de aprendizaje controlada |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                     |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                        |
 
-5. **Programar sesiones de refuerzo de contenido automáticas**
-   - Implementar un sistema que detecte a los alumnos con menor progreso y, de forma automática, sugiera al docente conformar un grupo de refuerzo; el docente podrá confirmar la sesión adicional en la siguiente clase presencial y los alumnos indicarán su disponibilidad.
+| OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Diseñar e implementar un entorno de ejecución siguiendo la narrativa y estética Pixel Art para visualizar la ejecución de la solución en tiempo real. |
+| Estabilidad | Alta-Media-Baja                                                                                                                                       |
+| Comentarios | -                                                                                                                                                     |
+
+| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Analizar automáticamente la solución del alumno y generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas o instrucciones redundantes y simplificación de estructuras. |
+| Estabilidad | Alta                                                                                                                                                                                                                |
+| Comentarios | -                                                                                                                                                                                                                   |
+
+| OBJ-05      | Proveer seguimiento académico exhaustivo                                                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Desarrollar un tablero de progreso y reportes para docentes que muestre el avance y rendimiento individual y grupal de los alumnos pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma |
+| Estabilidad | Alta                                                                                                                                                                                                                      |
+| Comentarios | Los docentes podrán consultar: nivel actual, cantidad de ejercicios completados, estrellas obtenidas, promedio de intentos por ejercicio, porcentaje de avance en temas específicos y avance global y ultima conexión.    |
+
+| OBJ-06      | Generar reportes semanales y sesiones de refuerzo automáticos                                                                                                                                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descripción | Configurar reportes automáticos semanales para que el docente pueda visualizar el progreso y rendimiento semanal de los alumnos de forma individual y grupal. En conjunto, implementar detección automática de alumnos con menor progreso y generar de una sesión de refuerzo de contenidos para la siguiente clase presencial |
+| Estabilidad | Media                                                                                                                                                                                                                                                                                                                          |
+| Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                       |
+
+| OBJ-07      | Gestión de cursos                                                                                                                                                                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir la gestión de cursos indicando la institución, nombre del curso, tipo de dictado (presencial, virtual, mixto), la asignación de docentes a los cursos y la definición de una contraseña para que los alumnos puedan unirse al un curso |
+| Estabilidad | Alta                                                                                                                                                                                                                                            |
+| Comentarios | El rol de administrador se encarga de la gestión de cursos y la asignación de docentes a los cursos. El docente define una contraseña para el curso la cual informará a sus alumnos para que puedan unirse                                      |
+
+| OBJ-08      | Gestionar usuarios y roles del sistema                                                                                  |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir la gestión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador) |
+| Estabilidad | Alta                                                                                                                    |
+| Comentarios | -                                                                                                                       |
+
 
 ### 3.3 Modulos del sistema
 #### 3.3.1 Funcionales
@@ -317,15 +346,11 @@ La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución 
 | Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                         | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
 |                                               |
 
-
 #### 3.4.6 Gestion Docente
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
-**Creación de cursos**
-El docente podrá crear un curso para agrupar los dinstintos grupos de alumnos de las distintas instituciones de las cuales da clases. Podrá especificar el nombre del curso, institución, materia y definir una contraseña para permitirle a sus alumnos ingresar al curso.
-
 **Definición de días y horarios de cursada**
-Los docentes podrán configurar los días y horarios de cursada de la materia. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
+Los docentes podrán configurar los días y horarios de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
 
 **Visualización y reportes del estado de avance de los alumnos**
 Los docentes podrán consultar y realizar reportes del estado de avance de los diferentes cursos que tenga a cargo. Dentro de un curso, podrá visualizar el estado de avance del curso en general y de forma individual por alumno. Los datos que podrá visualizar son los siguientes:
