@@ -201,11 +201,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                                                                                                                                                                                                                          |
 | Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                       |
 
-| OBJ-07      | Gestión de cursos                                                                                                                                                                                                                               |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir la gestión de cursos indicando la institución, nombre del curso, tipo de dictado (presencial, virtual, mixto), la asignación de docentes a los cursos y la definición de una contraseña para que los alumnos puedan unirse al un curso |
-| Estabilidad | Alta                                                                                                                                                                                                                                            |
-| Comentarios | El rol de administrador se encarga de la gestión de cursos y la asignación de docentes a los cursos. El docente define una contraseña para el curso la cual informará a sus alumnos para que puedan unirse                                      |
+| OBJ-07      | Gestión Académica                                                                                                                                                                                                                       |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda optar por incorporar y utilizar el sistema.                                                                                             |
+| Estabilidad | Alta                                                                                                                                                                                                                                    |
+| Comentarios | El rol de administrador se encargará de la gestión de instituciones, cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
 | OBJ-08      | Gestionar usuarios y roles del sistema                                                                                  |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -236,7 +236,10 @@ En la gestión de usuarios, se tendrán tres roles diferentes que servirán para
 #### 3.4.2 Banco de ejercicios
 Para el desarrollo del sistema, en una primera versión, NO se tomarán todos los temas de la materia, debido al tiempo de desarrollo disponible para el mismo. Por recomendación y solicitud de los profesores, los conceptos más importantes que si o si se deben afianzar y solidificar:
 - Algoritmos y secuencia de pasos
-- Lógica proposicional (Proposiciones simples y compuestas, operadores lógicos: OR, AND, NOT)
+- Lógica proposicional
+  - Proposiciones simples y compuestas
+  - Operadores lógicos: OR, AND, NOT
+  - Operadores matemáticos: +, -, *, /, <, >, =, <=, >=
 - Estructuras de control (Si-Sino, Mientras y Repetir)
 
 Adicionalmente, también se abordará los conceptos de:
@@ -247,7 +250,6 @@ Adicionalmente, también se abordará los conceptos de:
 #### 3.4.4 Gamificación
 Para crear el entorno basado en gamificación, se tendrán en cuenta los siguientes apartados
 ##### Narrativa
-
 
 "Cuenta la leyenda que en lo profundo del reino de **"Algoritmia"** se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo. No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
 Muchos guerreros han intentado llegar hasta este anhelado tesoro, pero ninguno ha podido aún. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores.
@@ -265,9 +267,6 @@ Y lo más importante, el guerrero deberá tener presente las tres sagradas regla
 
 ¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
 
-Otra cosa que tengo pensada es un cambio argumental motivador para el alumno: Resultará que al final del camino, cuando el heroe encuentre el tesoro y lo abra, encontrará un pergamino viejo y descuidado, pero brillando en luces y emanando poder. Pero finalmente estaría vacío, ya que el heroe para ese momento ya habrá aprendido todo lo necesario para diseñar algoritmos eficientes que resuelvan todo tipo de problemas.
-Lo que quiero transmitir es que no existe un algoritmo mágico, sino que en la travesía fué aprendiendo todo lo necesario para tener la capacidad de diseñar un algoritmo así, que pueda resolver un problema determinado y que pueda adaptarse a diferentes situaciones cumpliendo con el objetivo. Lo que importó fue el camino y lo aprendido, no el final.
-
 Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas habilidades que lo acerquen aún más a su objetivo.
 
 La historia principal se dividirá en episodios temáticos de cada contenido de la materia.
@@ -281,13 +280,16 @@ Se incorporarán varios componentes de videojuegos, explicando primero su signif
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
 - **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
   
-- **Acciones, habilidades y objetos**: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Las acciones representarán las primitivas que puede realizar el jugador, como moverse, las habilidades especiales representarán a las estructuras de control, procedimientos y funciones y los objetos representarán las variables. Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
+- **Acciones, habilidades y objetos**: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
+  - **Acción**: Las acciones representarán las primitivas que puede realizar el jugador, como moverse.
+  - **Habilidades**: las habilidades especiales representarán a las estructuras de control, procedimientos y funciones.
+  - **Objetos**: los objetos representarán las variables.
 
 - **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
   
 - **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
   
-- **Puntuación en estrellas (evaluación)**: la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja.
+- **Puntuación en estrellas (evaluación)**: la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja. Dependiendo de la puntuación obtenida, le harán ganar más o menos experiencia al jugador.
 
 #### 3.4.5 Programación, ejecución y feedback
 El entorno de resolución de ejercicios estará compuesto de manera general con:
@@ -339,11 +341,11 @@ Luego de la ejecución de la solución del alumno, completado el ejercicio y dad
 El alumno decidirá si implementar o no las sugerencias y optimizaciones brindadas por el sistema o dejar la solución como está. Si decide implementar las optimizaciones, esto no aumentará la puntuación ni experiencia obtenida, debido a que esta funcionalidad del sistema es a modo formativo y para evitar aprovechamientos.
 La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución de la solución y el feedback correspondiente.
 
-| Problema                                      | Descripción                                                                                                                                                                   | Feedback                                                                                                                                         |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Secuencia de múltiples instrucciones iguales  | Cuando se utiliza una misma instrucción multiples veces una debajo de otra de manera innecesaria (con un como mínimo de 3 instrucciones)                                      | Reemplazar el conjunto de multiples instrucciones por una estructura repetitiva (mientras o repetir) para reducir el uso del procesador          |
-| Secuencia de múltiples estructuras de control | Cuando se utiliza una misma estructura de control multiples veces una dentro de otra o una debajo de la otra de manera innecesaria (con un mínimo de 3 estructuras de contro) | Identificar aquellas estructuras de control innecesarias, refactorizar y reordenar la estructuras de control para reducir la complejidad cíclica |
-| Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                         | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
+| Problema                                      | Descripción                                                                                                                                                                    | Feedback                                                                                                                                         |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Secuencia de múltiples instrucciones iguales  | Cuando se utiliza una misma instrucción multiples veces una debajo de otra de manera innecesaria (con un como mínimo de 3 instrucciones)                                       | Reemplazar el conjunto de multiples instrucciones por una estructura repetitiva (mientras o repetir) para reducir el uso del procesador          |
+| Secuencia de múltiples estructuras de control | Cuando se utiliza una misma estructura de control multiples veces una dentro de otra o una debajo de la otra de manera innecesaria (con un mínimo de 3 estructuras de control) | Identificar aquellas estructuras de control innecesarias, refactorizar y reordenar la estructuras de control para reducir la complejidad cíclica |
+| Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                          | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
 |                                               |
 
 #### 3.4.6 Gestion Docente
@@ -356,7 +358,7 @@ Los docentes podrán configurar los días y horarios de cursada de la materia po
 Los docentes podrán consultar y realizar reportes del estado de avance de los diferentes cursos que tenga a cargo. Dentro de un curso, podrá visualizar el estado de avance del curso en general y de forma individual por alumno. Los datos que podrá visualizar son los siguientes:
 - Porcentaje promedio de avance del curso en la historia (programa total)
 - Porcentaje promedio de avance del curso en cada tema
-- Estadisticas del alumno
+- Estadisticas del alumno (por fila)
   - Nombre completo
   - Nivel actual
   - Misión actual
@@ -368,9 +370,9 @@ Los docentes podrán consultar y realizar reportes del estado de avance de los d
   - Ultimo ingreso a la plataforma.
 
 Todos estos datos se podrán ordenar de manera ascendente o descendente en la vista. Tambien se podrán aplicar los siguientes filtros de búsqueda:
-- Por fechas (desde - hasta)
-- Por tema
-**(VER MÁS FILTROS)**
+- Nombre de alumno
+- Tema (Episodio)
+- Fechas (desde - hasta)
 
 La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
 - **Alumnos atrasados en color **amarillo** suave**: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
@@ -413,10 +415,7 @@ El administrador podrá dar de alta, modificar y dar de baja las instituciones q
 El administrador del sistema será encargado de dar de alta los cursos del sistema indicando: Nombre del curso, institución, modalidad (presencial, virtual o mixta) y una contraseña incial para el ingreso al curso por parte de los alumnos. El administrador tambien se encargará de asignar a los docentes a sus cursos correspondientes o remover un docente de un curso.
 
 **ABM Docentes**
-El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: Nombre completo, Institución a la que pertenece y género (para el avatar demostrativo)
-
-
-
+El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución a la que pertenece y género (para el avatar demostrativo).
 
 #### 3.4.7 Seguridad y autenticación
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
@@ -442,12 +441,13 @@ Este módulo estará principalmente disponible para el rol **administrador**, qu
 
 ##### Tareas de Auditoría que podrá realizar el Administrador
 1. **Revisar inicios de sesión**: Ver quién, cuándo y desde dónde se accede a la plataforma (docentes, alumnos, admin).
-2. **Auditar cambios en cursos**: Ver cuándo se crean, modifican o eliminan cursos y quién lo hizo.
-3. **Auditar altas y bajas de docentes**: Trazabilidad sobre qué docente fue creado, editado o eliminado, por quién y cuándo.
-4. **Auditar asignaciones de docentes a cursos**:	Ver cuándo se asignó o removió un docente de un curso.
-5. **Auditar configuraciones de sesiones de refuerzo**:	Ver cuándo se programaron, aprobaron o marcaron como realizadas las sesiones de refuerzo.
-6. **Auditar acciones críticas del sistema**: Cambios de contraseña de administrador, ajustes globales del sistema (si existen).
-7. **Auditar registros fallidos de inicio de sesión**:	Intentos fallidos que pueden revelar problemas o accesos no autorizados.
+2. **Auditar cambios en instituciones**: Ver cuándo se crean, modifican o eliminan instituciones y quién lo hizo.
+3. **Auditar cambios en cursos**: Ver cuándo se crean, modifican o eliminan cursos y quién lo hizo.
+4. **Auditar altas y bajas de docentes**: Trazabilidad sobre qué docente fue creado, editado o eliminado, por quién y cuándo.
+5. **Auditar asignaciones de docentes a cursos**:	Ver cuándo se asignó o removió un docente de un curso.
+6. **Auditar configuraciones de sesiones de refuerzo**:	Ver cuándo se programaron, aprobaron o marcaron como realizadas las sesiones de refuerzo.
+7. **Auditar acciones críticas del sistema**: Cambios de contraseña de administrador.
+8. **Auditar registros fallidos de inicio de sesión**:	Intentos fallidos que pueden revelar problemas o accesos no autorizados.
 
 ##### Qué se registra en la auditoría
 Cada entrada de auditoría contendrá los siguientes campos:
