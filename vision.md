@@ -129,7 +129,7 @@ El pixel art es un estilo artístico digital utilizado para crear imágenes con 
 El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
 **Para alumnos**:
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
-- Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones o habilidades manteniendo la participación y motivación en utilizar el sistema.
+- Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones y habilidades manteniendo la participación y motivación en utilizar el sistema.
 - El sistema detectará los errores cometidos, evaluará métricas de código y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
 
 **Para docentes**:
@@ -165,22 +165,22 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 #### 3.2.2 Objetivos Específicos
 
-| OBJ-01      | Crear un entorno de videojuegos con gamificación                                                                                                                                                                                              |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Diseñar e implementar mecánicas de misiones, acciones, habilidades, objetos, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa interesante para motivar e incentivar la participación del alumno |
-| Estabilidad | Alta                                                                                                                                                                                                                                          |
-| Comentarios | -                                                                                                                                                                                                                                             |
+| OBJ-01      | Crear un entorno de videojuegos con gamificación                                                                                                                                                                                                                              |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Diseñar e implementar mecánicas de capítulos, misiones, acciones, tácticas, objetos, habilidades, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa e historia interesante para motivar e incentivar la participación del alumno |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                          |
+| Comentarios | -                                                                                                                                                                                                                                                                             |
 
-| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                     |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Descripción | Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, habilidades y objetos) a medida que el alumno avance para garantizar una curva de aprendizaje controlada |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                     |
-| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                        |
+| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                                |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, tácticas, objetos y habilidades) a medida que el alumno avance para garantizar una curva de aprendizaje controlada |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                   |
 
 | OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                       |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Diseñar e implementar un entorno de ejecución siguiendo la narrativa y estética Pixel Art para visualizar la ejecución de la solución en tiempo real. |
-| Estabilidad | Alta                                                                                                                                       |
+| Estabilidad | Alta                                                                                                                                                  |
 | Comentarios | -                                                                                                                                                     |
 
 | OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                |
@@ -211,6 +211,12 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Permitir la gestión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador) |
 | Estabilidad | Alta                                                                                                                    |
+| Comentarios | -                                                                                                                       |
+
+| OBJ-09      | Gestión de auditoría                                                                                                    |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Proporcionar a los administradores un módulo de auditoría que les permita visualizar los diferentes eventos del sistema |
+| Estabilidad | Media                                                                                                                   |
 | Comentarios | -                                                                                                                       |
 
 ### 3.3 Modulos del sistema
@@ -267,12 +273,7 @@ Y lo más importante, el guerrero deberá tener presente las tres sagradas regla
 
 ¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
 
-Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas habilidades que lo acerquen aún más a su objetivo.
-
-La historia principal se dividirá en episodios temáticos de cada contenido de la materia.
-- Primeros pasos
-- 
-
+Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas tácticas y habilidades que lo acerquen aún más a su objetivo.
 
 ##### Componentes
 Se incorporarán varios componentes de videojuegos, explicando primero su significado propio de los videojuegos y luego lo que representarán, análogamente, del dominio del problema.
@@ -280,12 +281,13 @@ Se incorporarán varios componentes de videojuegos, explicando primero su signif
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
 - **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
   
-- **Acciones, habilidades y objetos**: una acción es algo que el jugador puede hacer, como moverse o girar, una habilidad es una capacidad especial que tiene el jugador y un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Primero se comenzará con un abanico limitado de acciones básicas para resolver los primeros ejercicios, luego al avanzar más en la historia se irán desbloqueando habilidades y objetos.
-  - **Acción**: Las acciones representarán las primitivas que puede realizar el jugador, como moverse.
-  - **Habilidades**: las habilidades especiales representarán a las estructuras de control, procedimientos y funciones.
-  - **Objetos**: los objetos representarán las variables.
+- **Acciones, tácticas, objetos y habilidades** 
+  - **Acción**: Una acción es algo que el jugador puede hacer, como moverse o girar. Las acciones representarán las primitivas que puede realizar el jugador.
+  - **Tácticas**: Una táctica es una estrategia o conjunto de decisiones que el jugador aplica para adaptarse a una situación específica y superar un desafío. Las tácticas representarán las estructuras de control (Si-Sino, Mientras y Repetir).
+  - **Objetos**: Un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Los objetos representarán las variables.
+  - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a los procedimientos y funciones.
 
-- **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
+- **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas tacticas, habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, tácticas, habilidades y objetos.
   
 - **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
   
@@ -295,17 +297,9 @@ Los componentes de gamificación a incorporar en el sistema son los siguientes:
 El entorno de resolución de ejercicios estará compuesto de manera general con:
 - **Enunciado**: se mostrará el enunciado del ejercicio en todo momento durante la resolución de una misión
 - **Editor de código**: es donde el alumno diseñará y escribirá la solución del ejercicio. El editor soportará una opción de autocompletado para ayudar al alumno a seguir de manera correcta la sintaxis del lenguaje gamificado.
-- **Libro de habilidades**: es una pequeña "documentación" de sintaxis y semántica de las posibles acciones, habilidades y objetos que el alumno tiene disponible para resolver el ejercicio.
+- **Libro de habilidades**: es una pequeña "documentación" de sintaxis y semántica de las posibles acciones, tácticas, objetos y habilidades especiales y proposiciones que el alumno tiene disponible para resolver el ejercicio y tomar decisiones.
 - **Botón ejecutar**: para comenzar la ejecución de la solución del alumno en el visor animado. Para que se pueda ejecutar la solución, esta no debe contener errores de sintaxis.
 - **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real la solución del alumno.
-
-**Acciones, habilidades y objetos**
-Se listarán las posibles acciones, habilidades y objetos disponibles para la resolución de ejercicios.
-- mover
-- saltar
-- atacar
-
-**Defincion de primitivas, narrativa de ejecución, componentes (visor, editor, etc.) al resolver ejercicios, libro de habilidades, escenario, limitaciones del escenario.**
 
 #### 3.4.6 Feedback formativo
 El sistema ofrecerá tres tipos de feedback formativo durante la resolución de un ejercicio: previo a la ejecución, al momento de ejecutar y posterior a la ejecución. A continuación, detallaremos los aspectos que el sistema analizará y ofrecerá retroalimentación al alumno.
@@ -366,12 +360,12 @@ Los docentes podrán consultar y realizar reportes del estado de avance de los d
   - Cantidad de estrellas obtenidas hasta el momento
   - Promedio de intentos por misión
   - Porcentaje de avance individual en la historia
-  - Porcentaje de avance individual en un tema
+  - Porcentaje de avance individual en un capítulo
   - Ultimo ingreso a la plataforma.
 
 Todos estos datos se podrán ordenar de manera ascendente o descendente en la vista. Tambien se podrán aplicar los siguientes filtros de búsqueda:
 - Nombre de alumno
-- Tema (Episodio)
+- Capítulo (tema)
 - Fechas (desde - hasta)
 
 La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
@@ -461,7 +455,6 @@ Cada entrada de auditoría contendrá los siguientes campos:
 | `objeto_afectado` | A qué recurso afectó (curso, usuario, sesión de refuerzo, etc.)   |
 | `datos_antes`     | Estado anterior del recurso (si aplica, por ejemplo en ediciones) |
 | `datos_despues`   | Estado posterior del recurso (si aplica)                          |
-| `ip_origen`       | Dirección IP o dispositivo desde el cual se realizó la acción     |
 
 ##### Visualización de los datos
 El administrador accederá a una sección de Auditoría (por ejemplo, dentro del módulo de Gestión Académica), donde podría:
@@ -469,7 +462,7 @@ El administrador accederá a una sección de Auditoría (por ejemplo, dentro del
 2. Filtrar por tipo de evento, usuario, fecha o rol.
 3. Buscar eventos específicos (por palabra clave).
 4. Exportar el historial como CSV o PDF (opcional).
-5. Ver detalles expandibles de cada entrada (antes y después del cambio, IP).
+5. Ver detalles expandibles de cada entrada (antes y después del cambio).
 
 ##### Seguridad y privacidad
 - Solo el administrador del sistema tendría acceso completo al módulo de auditoría.
