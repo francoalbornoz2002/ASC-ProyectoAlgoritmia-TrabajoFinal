@@ -4,9 +4,9 @@
 **Fecha:** 09/06/2025
 **Autor(es):** Franco Andrés Albornoz
 
----
-
 En este documento se detalla la lista de requisitos de almacenamientos y de restricciones de información que se haya identificado.
+
+---
 
 ## IRQ-01 Información de usuarios
 **Objetivos asociados**
@@ -264,6 +264,7 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 - Sintaxis de la habilidad especial
 - Semántica de la habilidad especial
 - Parámetros de la habilidad especial
+- Estructura de la habilidad especial (acciones, tácticas y objetos)
 - Nivel requerido para desbloqueo
 
 ## IRQ-14 Información de condicionales
