@@ -28,6 +28,9 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - Contraseña de usuario
 - Correo electrónico
 - Rol de usuario (alumno, docente o administrador)
+- Fecha de creación de la cuenta
+- Método de registro (activo/inactivo)
+- Estado
 
 ## IRQ-02 Información de instituciones
 **Objetivos asociados**
@@ -70,6 +73,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 - Docente/s a cargo del curso
 - Alumnos asociados al curso
 - Contraseña para el ingreso al curso
+- Estado del curso (activo/finalizado)
 
 ## IRQ-04 Información de docentes
 **Objetivos asociados**
@@ -193,6 +197,7 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 - Nombre de la misión
 - Enunciado de la misión
 - Dificultad de la misión (Fácil, Normal o Difícil)
+- Capítulo al que pertenece la misión
 - Nivel requerido para desbloqueo
 
 ## IRQ-10 Información de acciones
