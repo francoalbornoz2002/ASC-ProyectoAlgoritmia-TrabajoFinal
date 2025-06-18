@@ -195,10 +195,48 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 **Datos específicos**
 - Id de misión
 - Nombre de la misión
-- Enunciado de la misión
-- Dificultad de la misión (Fácil, Normal o Difícil)
 - Capítulo al que pertenece la misión
+- Dificultad de la misión (Fácil, Normal o Difícil)
+- Descripción (Enunciado) de la misión
 - Nivel requerido para desbloqueo
+
+## IRQ-10 Información del escenario
+**Objetivos asociados**
+- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
+
+**Requisitos asociados**
+- UC-XX Resolver misión
+
+**Descripción**
+El sistema deberá almacenar la información correspondiente a la configuración del escenario de cada misión dentro del sistema. En concreto:
+
+**Datos específicos**
+- Id de escenario
+- Mision a la que pertenece el escenario
+- Limite de filas
+- Limite de columnas
+- Cantidad de casilleros (filas * columnas)
+- Obstáculos del escenario
+- Objetos esparcidos en el escenario
+
+## IRQ-11 Información de obstáculos
+**Objetivos asociados**
+- OBJ-01 Crear un entorno de videojuegos con gamificación
+
+**Requisitos asociados**
+- UC-XX Resolver misión
+
+**Descripción**
+El sistema deberá almacenar la información y posición correspondiente a los obstáculos dentro del escenario de cada misión del sistema. En concreto:
+
+**Datos específicos**
+- Id de obstáculo
+- Nombre del obstáculo
+- Descripción del obstáculo
+- Proposición del obstaculo (para evaluar)
+- Sprite (imagen) del obstáculo
+- Posición (casillero) dentro del escenario (coordenada)
 
 ## IRQ-10 Información de acciones
 **Objetivos asociados**
@@ -234,7 +272,7 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 - Semántica de la táctica
 - Nivel requerido para desbloqueo
 
-## IRQ-12 Información de objetos
+## IRQ-12 Información de objeto de inventario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -242,16 +280,31 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 - UC-XX Consultar libro de habilidades
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los objetos dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los objetos que tendrá el jugador en su inventario o bolsa. En concreto:
 
 **Datos específicos**
-- Id de objeto
+- Id del objeto de inventario
+- Nombre del objeto de inventario
+- Descripción breve del objeto de inventario
+- Sprite (ícono/imagen) del objeto de inventario
+- Valor numérico del objeto (numero entero positivo)
+- 
+
+
+
+- Id de objeto de inventario
 - Nombre del objeto
+- Descripción del objeto
 - Sintaxis del objeto
-- Semántica del objeto
-- Tipo de objeto: (del entorno o de inventario)
-- Valor numérico del objeto (número entero)
-- Nivel requerido para desbloqueo
+- Proposición del objeto -> hayMoneda
+- Tipo de objeto: (de inventario o de escenario)
+- Si es de escenario
+  - Proposición del obstaculo (para evaluar)
+  - Sprite (imagen) del obstáculo
+  - Posición (casillero) dentro del escenario (coordenada)
+- Si es de inventario
+  - Valor numérico del objeto (número entero)
+  - Nivel requerido para desbloqueo
 
 ## IRQ-13 Información de habilidades especiales
 **Objetivos asociados**
