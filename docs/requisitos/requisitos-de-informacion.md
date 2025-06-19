@@ -238,7 +238,7 @@ El sistema deberá almacenar la información y posición correspondiente a los o
 - Sprite (imagen) del obstáculo
 - Posición (casillero) dentro del escenario (coordenada)
 
-## IRQ-10 Información de acciones
+## IRQ-12 Información de acciones
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -255,7 +255,7 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 - Semántica de la acción
 - Nivel requerido para desbloqueo
 
-## IRQ-11 Información de tácticas
+## IRQ-13 Información de tácticas
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -272,7 +272,7 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 - Semántica de la táctica
 - Nivel requerido para desbloqueo
 
-## IRQ-12 Información de objeto de inventario
+## IRQ-14 Información de objeto de inventario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -288,25 +288,9 @@ El sistema deberá almacenar la información correspondiente a los objetos que t
 - Descripción breve del objeto de inventario
 - Sprite (ícono/imagen) del objeto de inventario
 - Valor numérico del objeto (numero entero positivo)
-- 
+- Proposición del objeto
 
-
-
-- Id de objeto de inventario
-- Nombre del objeto
-- Descripción del objeto
-- Sintaxis del objeto
-- Proposición del objeto -> hayMoneda
-- Tipo de objeto: (de inventario o de escenario)
-- Si es de escenario
-  - Proposición del obstaculo (para evaluar)
-  - Sprite (imagen) del obstáculo
-  - Posición (casillero) dentro del escenario (coordenada)
-- Si es de inventario
-  - Valor numérico del objeto (número entero)
-  - Nivel requerido para desbloqueo
-
-## IRQ-13 Información de habilidades especiales
+## IRQ-15 Información de habilidades especiales
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -325,7 +309,7 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 - Estructura de la habilidad especial (acciones, tácticas y objetos)
 - Nivel requerido para desbloqueo
 
-## IRQ-14 Información de condicionales
+## IRQ-16 Información de condicionales
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -342,7 +326,7 @@ El sistema deberá almacenar la información correspondiente a los condicionales
 - Semántica del condicional
 - Nivel requerido para desbloqueo
 
-## IRQ-15 Información de proposiciones
+## IRQ-17 Información de proposiciones
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -360,7 +344,7 @@ El sistema deberá almacenar la información correspondiente a las proposiciones
 - Valor predeterminado (verdadeo o falso)
 - Nivel requerido para desbloqueo
 
-## IRQ-16 Información de auditoría
+## IRQ-18 Información de auditoría
 **Objetivos asociados**
 - OBJ-09 Gestión de auditoría
 

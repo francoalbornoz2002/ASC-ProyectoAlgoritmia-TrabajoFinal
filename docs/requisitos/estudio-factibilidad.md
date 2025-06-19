@@ -482,3 +482,31 @@ No se habilita registro de ejercicios ni gestión de banco de ejercicios (solo A
     - Si no hay confirmación, se reprograma automáticamente.
 
 ### 3.5 Capacitación y Documentación Interna
+#### 3.5.1 Manuales y tutoriales para alumnos
+**Manual en PDF**
+1. Creación de cuenta: pasos ilustrados (pantallazos) para registro con formulario y con Google.
+2. Unirse a un curso: pasos de como unirse a un curso colocando la contraseña proporcionada por el docente
+3. Resolución de la primera misión:
+  - Cómo acceder al editor de código en PGA.
+  - Explicación del “Libro de Héroe” (sintaxis de primitivas, estructuras, variables).
+  - Ejecución en el visor animado.
+4. Interpretación del feedback formativo
+  - Explicación de error de sintaxis, advertencias de variables no usadas, sugerencias de optimización.
+  - Sistema de estrellas (1–3) y puntos de experiencia (XP).
+5. Progreso en niveles y desbloqueo de misiones
+  - Mapa de misiones desbloqueables: imágenes de cada etapa temática.
+  - Cómo ver historial de misiones completadas y XP acumulado.
+
+**Video tutorial (YouTube – Unlisted)**
+1. Duración aproximada: 5–7 min.
+2. Contenido:
+  - Registro/login rápido.
+  - Navegación por interfaz: menú lateral, área de misiones, editor y visor.
+  - Ejecución de código paso a paso.
+  - Vista de progreso y niveles.
+3. Acceso:
+  - Enlazado desde el PDF de manual.
+  - Disponible en repositorio GitHub en carpeta /docs/tutoriales/.
+
+#### 3.5.2 Documentación para docentes
+**Manual en PDF**

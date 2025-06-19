@@ -20,11 +20,13 @@ El pixel art es un estilo artístico de videojuegos. Es reconocido por su estét
 Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero belleza a su vez mediante el pixel art en sus escenarios, interfaces, objetos y personajes utilizando colores llamativos, una paleta de colores adecuada a la estética y trama del videojuego y diseños minimalistas. Se busca transmitir esa sensación de estar jugando un videojuego pero aprendiendo a la vez.
 
 ### 3.2 Lenguaje gamificado y ejecución en tiempo real
-
-Algoritma tiene como objetivo que el jugador aprenda y utilice los conceptos sobre algoritmos, lógica y estructuras de control mediante la resolución de problemas.
+Algoritmia tendrá un lenguaje de programación gamificado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones. Además, el jugador podrá visualizar en tiempo real la ejecución de su solución en el escenario de juego.
 
 ### 3.3 Aprendizaje continuo con feedback inmediato
-Algoritma busca brindar aprendizaje continuo mediante feedback inmediato cuando el alumno esté diseñando su solución para un problema. La idea es que Algoritmia pueda analizar y ofrecer sugerencias y optimizaciones de la solución del alumno en base a lo siguiente:
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato cuando el alumno esté diseñando su solución para un problema. La idea es que Algoritmia pueda analizar y ofrecer sugerencias y optimizaciones de la solución del alumno durante y después de su ejecución fomentando el aprendizaje continuo. 
+
+
+en base a lo siguiente:
 - Errores de sintaxis.
 - Redundancia de instrucciones.
 - Redundancia de estructuras de control.
@@ -43,6 +45,18 @@ Para ello, se ofrecerá:
 
 ## 4. Descripción del juego
 Descripción mas detallada del juego y de lo que se podrá hacer. Podría ser una extensión del resumen.
+
+Algoritmia es un videojuego de aventura estilo RPG que está enfocado en el aprendizaje de las bases de la programación: algoritmos, lógica, estructuras de control (condicionales y bucles) y procedimientos mediante la resolución de ejercicios, codificando y visualizando su solución en tiempo real.
+
+El juego contará con un lenguaje de programación gamificado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, pudiendo también visualizar en tiempo real la ejecución de la solución en el escenario de juego.
+En cada misión, el jugador deberá resolver un enunciado específico
+
+
+
+Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos mediante el diseño de tu propio algoritmo para completar la misión a tu manera y aprendiendo en el proceso.
+
+
+
 ### 4.1 Core Loop
 Qué es lo que se estará haciendo todo el tiempo durante el juego.
 
