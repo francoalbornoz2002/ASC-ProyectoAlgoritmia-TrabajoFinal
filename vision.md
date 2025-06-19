@@ -44,9 +44,9 @@ El contenido de la materia se divide en los siguientes temas:
   - Variables globales
   - Variables locales
 - Procedimientos
-  - Con o sin parámetros de E/S
+  - Con o sin parámetros de entrada, salida y entrada/salida
 - Funciones
-  - Con o sin parámetros de E/S
+  - Con o sin parámetros de entrada, salida y entrada/salida
 - Estructuras de datos
   - Cadena de caracteres (String)
   - Vectores y matrices (Arrays)
@@ -61,7 +61,7 @@ Las clases se dividen en teoría y práctica y los días y horarios son los sigu
 Esta materia es la más importante al momento de ingresar a las carreras de informática, ya que su contenido es fundamental e indispensable para el avance de la carrera por su contenido y correlatividad. Por lo tanto, la cátedra busca garantizar que todos los alumnos puedan aprender de manera adecuada y poseer conocimientos sólidos y afianzados de los contenidos tanto teóricos como prácticos.
 
 ### 2.2 Problema o necesidad
-Actualmente en la cátedra, las prácticas de los temas que van desde algoritmos hasta prodecimientos y funciones se llevan a cabo y se enfocan en el programa llamado "Visual DaVinci", el cual tiene como escenario a un robot que recorre una ciudad juntando flores y papeles en las esquinas de la misma. La ciudad está representada como una matriz de 100x100 y la misma tiene calles (filas), avenidas (columnas) y esquinas (intersección de una calle y una avenida).
+Actualmente en la cátedra, las prácticas de los temas que van desde algoritmos hasta prodecimientos se llevan a cabo y se enfocan en el programa llamado "Visual DaVinci", el cual tiene como escenario a un robot que recorre una ciudad juntando flores y papeles en las esquinas de la misma. La ciudad está representada como una matriz de 100x100 y la misma tiene calles (filas), avenidas (columnas) y esquinas (intersección de una calle y una avenida).
 
 Este programa ya se viene implementando hace muchos años en la cátedra, aproximadamente desde 1998, siendo que el programa salió en 1997. Permite realizar edición de codigo con una serie de instrucciones disponibles. El alumno puede diseñar un algoritmo para resolver distintos problemas y al momento de ejecutar se tiene un visor simulado la ciudad con cuadros azules, el robot con un punto rojo y negro, flores con un circulo rojo con centro amarillo y papeles con circulos blancos. Algunas de las instrucciones disponibles son:
 - mover: el robot avanza a la siguiente esquina
@@ -121,11 +121,11 @@ Aumenta la motivación, participación y mejora la experiencia de aprendizaje ha
 
 #### Pixel Art
 El pixel art es un estilo artístico digital utilizado para crear imágenes con píxeles individuales para formar un mosaico visual. Este estilo es reconocido por su estética retro y la conexión que tiene con los videojuegos clásicos, en donde la resolución y recursos eran limitados. Algunas de sus características son:
-- **Creación pixel a pixe**l: se centra en crear imágenes colocando un color en cada píxel individual. Es un estilo muy artesanal con el cual se pueden lograr resultados muy detallados pero con componentes simples.
+- **Creación pixel a pixel**: se centra en crear imágenes colocando un color en cada píxel individual. Es un estilo muy artesanal con el cual se pueden lograr resultados muy detallados pero con componentes simples.
 - **Estilo retro**: el pixel art nos recuerda a los primeros videojuegos y computadoras, con paleta de colores limitada y gráficos de baja resolución.
 - **Influencia en los videojuegos**: es un estilo popular en el diseño de videojuegos, donde se utiliza para crear sprites, personajes, entornos y gráficos de interfaz de usuario.
 
-
+#### Oportunidades
 El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
 **Para alumnos**:
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
@@ -137,6 +137,7 @@ El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a
 - Ver las estadisticas, rendimiento semanal, porcentaje de avance en los temas de cada alumno.
 - Detectar a aquellos alumnos rezagados o con bajo rendimiento en los contenidos para la toma de decisiones.
 
+#### Beneficios
 Con el desarrollo del sistema se esperan los siguientes beneficios a corto plazo:
 1. **Alumnos motivados**: se espera que los alumnos se sientan enganchados y atraídos con el entorno de videojuego con gamificación y estética pixel art.
 2. **Seguimiento global e individual del grupo de alumnos**: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiriese.
@@ -171,11 +172,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                                                                                          |
 | Comentarios | -                                                                                                                                                                                                                                                                             |
 
-| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                                |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables, procedimientos y funciones e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, tácticas, objetos y habilidades) a medida que el alumno avance para garantizar una curva de aprendizaje controlada |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                |
-| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                   |
+| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                     |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descripción | Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables y procedimientos e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, tácticas, objetos y habilidades) a medida que el alumno avance para garantizar una curva de aprendizaje controlada |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                     |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                        |
 
 | OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                       |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -245,13 +246,13 @@ Para el desarrollo del sistema, en una primera versión, NO se tomarán todos lo
 - Lógica proposicional
   - Proposiciones simples y compuestas
   - Operadores lógicos: OR, AND, NOT
-  - Operadores matemáticos: +, -, *, /, <, >, =, <=, >=
+  - Operadores matemáticos: +, -, *, /
+  - Comparadores relacionales: <, >, ==, <=, >=, !=
 - Estructuras de control (Si-Sino, Mientras y Repetir)
 
 Adicionalmente, también se abordará los conceptos de:
 - Variables (globales y locales)
-- Procedimientos con y sin parámetros de E/S
-- Funciones con y sin parámetros de E/S
+- Procedimientos sin parámetros o con parámetros de entrada, salida y entrada/salida.
 
 #### 3.4.4 Gamificación
 Para crear el entorno basado en gamificación, se tendrán en cuenta los siguientes apartados
@@ -285,7 +286,7 @@ Los componentes de gamificación a incorporar en el sistema son los siguientes:
   - **Acción**: Una acción es algo que el jugador puede hacer, como moverse o girar. Las acciones representarán las primitivas que puede realizar el jugador.
   - **Tácticas**: Una táctica es una estrategia o conjunto de decisiones que el jugador aplica para adaptarse a una situación específica y superar un desafío. Las tácticas representarán las estructuras de control (Si-Sino, Mientras y Repetir).
   - **Objetos**: Un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Los objetos representarán las variables.
-  - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a los procedimientos y funciones.
+  - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a los procedimientos.
 
 - **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas tacticas, habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, tácticas, habilidades y objetos.
   
@@ -313,22 +314,22 @@ Detallaremos las sugerencias y optimizaciones específicas que el sistema ofrece
 ##### Previo a la ejecución
 Mientras el alumno diseña su solución para un ejercicio, el sistema estará analizando y controlando en tiempo real la estructura y sintaxis de la misma para poder indicar errores y sugerencias antes de ejecutar la solución. La siguiente tabla muestra los "problemas" a analizar previo a la ejecución de la solución y el feedback correspondiente.
 
-| Problema                                           | Descripción                                                                                  | Feedback                                                                                    |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Errores de sintaxis                                | Instrucciones o estructuras mal escritas                                                     | Resaltado en rojo en la instrucción o estructura mal escrita.                               |
-| Variable no declarada                              | Cuando se quiere utilizar una variable (globales o locales) que no fue declarada previamente | Resaltado en rojo en donde se quiere utilizar la variable con un mensaje de "no declarada"  |
-| Variable declarada pero no utilizada               | Cuando se declara una variable pero nunca se utiliza                                         | Resaltado en amarillo en la variable declarada pero no utilizada                            |
-| Procedimiento o función definida pero no utilizada | Cuando se define un procedimiento o función pero nunca se utiliza                            | Resaltado en amarillo en la cabecera del procedimiento o funcion definida pero no utilizada |
+| Problema                                 | Descripción                                                                                  | Feedback                                                                                   |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Errores de sintaxis                      | Instrucciones o estructuras mal escritas                                                     | Resaltado en rojo en la instrucción o estructura mal escrita.                              |
+| Variable no declarada                    | Cuando se quiere utilizar una variable (globales o locales) que no fue declarada previamente | Resaltado en rojo en donde se quiere utilizar la variable con un mensaje de "no declarada" |
+| Variable declarada pero no utilizada     | Cuando se declara una variable pero nunca se utiliza                                         | Resaltado en amarillo en la variable declarada pero no utilizada                           |
+| Procedimiento definido pero no utilizado | Cuando se define un procedimiento pero nunca se utiliza                                      | Resaltado en amarillo en la cabecera del procedimiento definido pero no utilizado          |
 
 ##### Al momento de ejecutar
 Cuando el alumno terminó de diseñar su solución y decida ejecutar, el sistema verificará que la estructura y sintaxis esté correctamente escrita para ejecutar. La siguiente tabla muestra los "problemas" a analizar al momento de ejecutar la solución y el feedback correspondiente.
 
-| Problema                                           | Descripción                                                                                              | Feedback                                                                                                                        | ¿Es posible ejecutar la solución? |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| Error de sintaxis                                  | Instrucciones o estructuras mal escritas                                                                 | Mensaje de error en la ejecución y resaltado en rojo en la instrucción o estructura mal escrita.                                | No                                |
-| Variable no declarada                              | Cuando se quiere ejecutar la solución pero se quiere utilizar una variable (global o local) no declarada | Mensaje de error en la ejecución y resaltado en rojo en la variable no declarada                                                | No                                |
-| Variable decladara pero no utilizada               | Cuando se declara una variable (global o local) pero nunca se utiliza                                    | Mensaje de advertencia de variables declaradas pero no utilizadas con opción de ejecutar la solución igualmente                 | Si                                |
-| Procedimiento o función definida pero no utilizada | Cuando se define un procedimiento o función pero nunca se utiliza                                        | Mensaje de advertencia de procedimientos o funciones definidas pero no utilizadas con opción de ejecutar la solución igualmente | Si                                |
+| Problema                                 | Descripción                                                                                              | Feedback                                                                                                            | ¿Es posible ejecutar la solución? |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Error de sintaxis                        | Instrucciones o estructuras mal escritas                                                                 | Mensaje de error en la ejecución y resaltado en rojo en la instrucción o estructura mal escrita.                    | No                                |
+| Variable no declarada                    | Cuando se quiere ejecutar la solución pero se quiere utilizar una variable (global o local) no declarada | Mensaje de error en la ejecución y resaltado en rojo en la variable no declarada                                    | No                                |
+| Variable decladara pero no utilizada     | Cuando se declara una variable (global o local) pero nunca se utiliza                                    | Mensaje de advertencia de variables declaradas pero no utilizadas con opción de ejecutar la solución igualmente     | Si                                |
+| Procedimiento definido pero no utilizado | Cuando se define un procedimiento pero nunca se utiliza                                                  | Mensaje de advertencia de procedimientos definidos pero no utilizados con opción de ejecutar la solución igualmente | Si                                |
 
 ##### Posterior a la ejecución
 Luego de la ejecución de la solución del alumno, completado el ejercicio y dada la puntuación obtenida, el sistema analizará la solución proponiendo mejoras y optimizaciones para la solución. El sistema mostrará el antes y después de la solución del alumno y una breve explicación de los cambios realizados y el por qué.

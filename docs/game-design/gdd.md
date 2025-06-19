@@ -7,15 +7,39 @@
 ---
 
 ## 1. Título
-Titulo del juego.
+El título del juego será "Algoritmia".
+
 ## 2. Resumen del juego
-Resumen corto del juego.
+Algoritmia es un juego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propia solución. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos mediante el diseño de tu propio algoritmo para completar la misión a tu manera y aprendiendo en el proceso.
 
 ## 3. Concepto y pilares de diseño
-Cuales son los pilares del diseño del videojuego, la escencia y lo que queremos lograr o transmitir.
+La escencia del videojuego y lo que quiero transmitir se basan en estos 3 pilares:
 ### 3.1 Pixel Art
-### 3.2 Diseño de solución y ejecución en tiempo real
+El pixel art es un estilo artístico de videojuegos. Es reconocido por su estética retro y la conexión que tiene con los videojuegos clásicos, en donde la resolución y recursos eran limitados. Se caracteriza por ser un estilo muy artesanal, donde cada diseño se realiza pixel por pixel logrando un estilo muy simple pero a la vez detallado, el cual resulta agradable a la vista.
+
+Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero belleza a su vez mediante el pixel art en sus escenarios, interfaces, objetos y personajes utilizando colores llamativos, una paleta de colores adecuada a la estética y trama del videojuego y diseños minimalistas. Se busca transmitir esa sensación de estar jugando un videojuego pero aprendiendo a la vez.
+
+### 3.2 Lenguaje gamificado y ejecución en tiempo real
+
+Algoritma tiene como objetivo que el jugador aprenda y utilice los conceptos sobre algoritmos, lógica y estructuras de control mediante la resolución de problemas.
+
 ### 3.3 Aprendizaje continuo con feedback inmediato
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato cuando el alumno esté diseñando su solución para un problema. La idea es que Algoritmia pueda analizar y ofrecer sugerencias y optimizaciones de la solución del alumno en base a lo siguiente:
+- Errores de sintaxis.
+- Redundancia de instrucciones.
+- Redundancia de estructuras de control.
+- Cantidad excesiva e innecesaria de lineas de código.
+- Variables no utilizadas
+
+Para ello, se ofrecerá:
+- Indicador de error de sintaxis
+- Sintaxis y semántica detallada del lenguaje gamificado.
+- Autocompletado de estructuras de control.
+- Reemplazar multiples instrucciones de un mismo tipo con una estructura repetitiva.
+- Reemplazar multiples estructuras condicionales con una estructura condicional con proposición compuesta.
+- Eliminar variables no utilizadas
+- Entre otras.
+
 
 ## 4. Descripción del juego
 Descripción mas detallada del juego y de lo que se podrá hacer. Podría ser una extensión del resumen.
