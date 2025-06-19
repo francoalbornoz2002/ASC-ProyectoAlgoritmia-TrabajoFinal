@@ -1,5 +1,12 @@
 # Estudio de Factibilidad
-A continuación se presenta el análisis completo de factibilidad (técnica, económica y operativa) para el desarrollo de la Plataforma Gamificada “Algoritmia” (PGA). Este documento sintetiza las respuestas aportadas por el equipo (Franco Andrés Albornoz) y completa las secciones faltantes con propuestas concretas.
+
+**Versión:** 1.2
+**Fecha:** 19/06/2025
+**Autor(es):** Franco Andrés Albornoz
+
+A continuación se presenta el análisis completo de factibilidad (técnica, económica y operativa) para el desarrollo de la Plataforma Gamificada “Algoritmia” (PGA).
+
+---
 
 ## 1. Factibilidad Técnica
 ### 1.1 Hardware disponible
@@ -11,15 +18,14 @@ A continuación se presenta el análisis completo de factibilidad (técnica, eco
 - **Almacenamiento**: SSD M.2 NVMe PCIe de 240 GB (libre suficiente para proyectos)
 - **Tarjeta Gráfica**: Intel Iris Xe (integrada)
 - **Periféricos relevantes**:
-  - Tableta gráfica Xp-Pen Deco Mini 7 (para diseño de assets en Pixel Art)
+  - Tableta gráfica Xp-Pen Deco Mini 7 (para pixel art y diseño)
 
 #### 1.1.2 Equipamiento de respaldo
-- Actualmente no se posee otra PC de desarrollo propia.
-- En caso de falla, existe copia de seguridad de todo el código y documentación en Google Drive y GitHub. Se estima conseguir una PC de reemplazo en aproximadamente 1 semana si fuera necesario.
+**No se dispone de PC secundaria**, pero el proyecto se almacena en repositorio GitHub y en Google Drive como respaldo continuo. En caso de falla, se puede conseguir un equipo de reemplazo estimado en aproximadamente 1 semana.
 
 #### 1.1.3 Licencias de Sistemas Operativos
-- **Windows 11 Home**: activado.
-- **Linux Mint 22**: distribución libre y actualizada.
+- **Windows 11 Home**: activado de fábrica.
+- **Linux Mint 22**: instalación de dual‐boot, distribución libre y actualizada.
 
 La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser Launcher), entornos locales (Node.js, SQLite) y herramientas de diseño (Aseprite). El respaldo está resuelto a través de backups en la nube.
 
@@ -82,7 +88,7 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser La
   - https://kit.svelte.dev/docs
   - https://tailwindcss.com/docs
 
-Phaser v3.90.0
+**Phaser v3.90.0**
 - Cursos y listas de reproducción en YouTube.
 - Documentación oficial: https://phaser.io/docs
 - Ejemplos de proyectos en GitHub para referencia.
@@ -226,16 +232,16 @@ Se planea que para los tilesets y assets del videojuego, se utilicen recursos gr
 Igualmente, si surge la necesidad como no encontrar un pack de assets integrado o el pack elegido cambie repentinamente la licencia, se evaluarán packs premium de Itch.io (costo variable) o crear assets propios en Aseprite.
 
 ### 1.6 Restricciones Técnicas
-1. Versión mínima de Node.js: Se empleará Node.js ≥ v18.x, idealmente v22.16.0 LTS. Esto asegura compatibilidad con NestJS v10 y dependencias modernas.
-2. Versión mínima de npm: se usará npm 10 que viene incluido con Node.js v22.16.0 LTS.
-3. Requerimientos de navegador:
+**1. Versión mínima de Node.js**: Se empleará Node.js ≥ v18.x, idealmente v22.16.0 LTS. Esto asegura compatibilidad con NestJS v10 y dependencias modernas.
+**2. Versión mínima de npm**: se usará npm 10 que viene incluido con Node.js v22.16.0 LTS.
+**3. Requerimientos de navegador**:
    - Navegadores recomendados: Chrome, Firefox, Edge, Safari (versiones recientes en soporte).
    - Si bien SvelteKit y Phaser generan un canvas HTML5 compatible con la mayoría, se indicará en documentación que se use una versión modern (Chrome ≥ 100, Firefox ≥ 100).
-4. Resolución / FPS para animaciones Pixel Art
+**4. Resolución / FPS para animaciones Pixel Art**
    - Phaser configurado para 60 FPS, resolución 800×600 (adaptable).
    - Meta de rendimiento: ≥ 30 FPS en hardware modesto (Intel UHD Graphics + 4 GB RAM).
    - Probar en netbooks del estado argentino garantiza fluidez con ajustes de calidad mínima (sin postprocesamiento extra).
-5. Compatibilidad mínima garantizada
+**5. Compatibilidad mínima garantizada**
    - Windows 10+
    - Distribuciones Linux con kernel ≥ 5.4.
 
@@ -363,30 +369,44 @@ Con el desarrollo e implementación del sistema, se esperan los siguientes benef
   - **GitHub Student Developer Pack**: créditos para DigitalOcean o Heroku.
 
 ## 3. Factibilidad Operativa
-### 3.1 Adaptación a la Dinámica de la Cátedra
-1. Integración de PGA en la rutina de la cátedra
 
-- Uso como herramienta principal
-  - La plataforma PGA está pensada y orientada para darle uso como herramienta principal para guiar las prácticas de la materia.
-  - PGA reemplazará a Visual DaVinci en prácticas de Algoritmos y Estructuras de Datos I.
-  - Se actualizará el programa de la materia (previa aprobación de directivos) para incorporar PGA desde el inicio del cuatrimestre.
+### 3.1 Perfil y Volumen de Usuarios inicial
+Durante el primer año, se estiman los siguientes volúmenes:
 
-- Taller inicial de introducción
-  - Donde se realizará una sesión de 1 hora para mostrar y presentar la plataforma PGA a todos los alumnos, mostranto temas como la navegación básica, los primeros pasos y ejercicios y otras funcionalidades.
+- **Alumnos**: 100–150 ingresantes a Algoritmos y Estructuras de Datos I.
+- **Docentes**: 5 integrantes del equipo de cátedra encargados de evaluar avances y revisar el progreso de los alumnos.
+- **Administrador**: 1 perfil centralizado que gestionará los roles, instituciones, cursos y la asignación de docentes.
 
-- Asignación de ejercicios
-  - Docentes podrán asignar misiones específicas como tarea para la siguiente clase, reforzando la práctica fuera de horario presencial.
+A futuro, la arquitectura de PGA contempla la creación de administradores institucionales adicionales por cada 10–15 nuevas facultades que adopten el sistema, garantizando así un esquema de escalabilidad operativa sin recargar a un único responsable.
 
-2. Coexistencia con teoría, práctica y consulta
+### 3.2 Adaptación a la Dinámica de la Cátedra
+**1. Integración de PGA en la rutina de la cátedra**
+
+Se propone que PGA sustituya gradualmente a Visual DaVinci, ya que está pensada y orientada para darle uso como herramienta principal para guiar las prácticas de la materia. Esto involucrará que se tenga que actualizar el programa de la materia (con previa aprobación de directivos) para incorporar PGA desde el inicio del cuatrimestre.
+
+**Incorporación de PGA**
+- Semana 1 de cursado: Taller introductorio obligatorio (1 hora práctica) donde se explique la plataforma a todos los alumnos ingresantes y avanzados.
+- A partir de la Semana 2, cada clase práctica de Algoritmos y Estructuras de Datos I se realice íntegramente dentro de PGA.
+
+**Ejemplos de flujo**:
+  - El docente asigna “Misión 1, 2 y 3” para la siguiente clase de práctica.
+  - Los alumnos deben resolverla en PGA antes de la clase presencial.
+  - Los docentes analizan el avance en el tablero antes de la siguiente clase y adaptan contenidos según conveniencia.
+
+**2. Coexistencia con teoría, práctica y consulta**
+  - PGA estará disponible 24/7
   - Teoría (lunes 10:00–12:00):
     - Se mostrará el concepto teórico en clase mediante presentaciones en diapositivas; PGA se mencionará como complemento para practicar. Dicho tema teórico tendrá que tener la sintaxis y semántica definida por PGA.
   - Práctica (lunes 17:00–19:00, miércoles 10:30–12:30):
     - Los alumnos usarán PGA en clase para resolver ejercicios mientras el docente supervisa y responde consultas, dudas o repasa algunos temas teóricos.
   - Consulta (jueves 19:00–20:00):
     - Los alumnos pueden traer dudas sobre ejercicios de PGA; el docente empleará PGA para replicar y explicar cada caso.
+  - Tareas fuera de horario:
+    - Los docentes podrán asignar ejercicios PGA como tarea para la próxima sesión de práctica o consulta.
+    - Se fomentará que los alumnos entren al menos 1 vez al día para avanzar en niveles y desbloquear misiones.
 
-### 3.2 Aceptación por Parte de Alumnos y Docentes
-1. Alumnos
+### 3.3 Aceptación por Parte de Alumnos y Docentes
+**1. Alumnos**
   - **Encuesta previa**: Se han encuestado en total a 26 alumnos ingresantes y 7 alumnos avanzados (más de un año en la carrera). 
     - 80.7 % de ingresantes opina que gamificación aumentaría “bastante” o “mucho” su compromiso.
     - 84.6 % valora como “Muy importante” recibir sugerencias automáticas de optimización.
@@ -397,7 +417,7 @@ Con el desarrollo e implementación del sistema, se esperan los siguientes benef
     - Tomar al menos 20 usuarios (entre ingresantes, avanzados y 1–2 docentes) para una prueba inicial.
     - Se propone: 15 ingresantes del año 2025 + 3 avanzados + 2 docentes para recibir feedback exhaustivo.
 
-2. Docentes
+**2. Docentes**
 - **Nivel de comodidad con tecnología** 
 Todos los docentes manejan muy bien la tecnología web. Se trata de una factulad que dicta solo carreras de informática y donde se utilizan aulas virtuales para el dictado de las materias, por lo tanto los docentes estan muy bien capacitados en la parte de computación y navegación web.
 
@@ -413,8 +433,8 @@ Los temas específicos serán:
 - Creación y gestión de sesiones de refuerzo.
 Adicionalmente se contará con material de apoyo: un manual en PDF y video tutorial (ver apartado 3.5).
 
-### 3.3 Proceso de Registro y Acceso
-#### 3.3.1 Alumnos
+### 3.4 Proceso de Registro y Acceso
+#### 3.4.1 Alumnos
 **1. Opciones de registro**
 El registro de alumnos estará habilitado desde el sistema (se pueden registrar solos) con dos opciones:
   - **Registro manual**
@@ -425,8 +445,8 @@ El registro de alumnos estará habilitado desde el sistema (se pueden registrar 
     - Tras aceptar permisos (profile, email), se completa perfil con datos faltantes (avatar, usuario y contraseña).
 **2. Flujo de unirse a un curso (PGA)**
   1. Crear cuenta / login (Google o formulario).
-  2. Vista de “Cursos disponibles”:
-    - El alumno verá lista de cursos creados por docentes (p. ej., “Algoritmos y Estruct. de Datos I – 2025”).
+  2. Vista de “Cursos":
+    - El alumno verá inicialmente la lista de cursos vacía y deberá unirse a un curso colocando la contraseña.
   3. Unirse a curso
     - Ingresar contraseña del curso proporcionada por el docente.
     - Al validarla, el alumno se asocia al curso y accede a las misiones disponibles.
@@ -434,7 +454,7 @@ El registro de alumnos estará habilitado desde el sistema (se pueden registrar 
 **3. Validaciones extra**
   - Verificación de correo electrónico (si se registra por formulario).
 
-#### 3.3.2 Docentes
+#### 3.4.2 Docentes
 **1. Registro del docente**
 El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden registrar solos). El registro del docente se llevará a cabo mediante el administrador del sistema.
 - Manual por Administrador
@@ -444,15 +464,15 @@ El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden reg
 - Primer login
   - Al hacer login con usuario/contraseña temporales, se fuerza cambio de contraseña por seguridad.
 
-2. Acceso a funcionalidades de Gestión Docente
+**2. Acceso a funcionalidades de Gestión Docente**
 El sistema detecta rol “docente” tras el login y habilita todas las funcionalidades de la gestión docente. Desde allí, el docente podrá acceder a:
   1. Dashboard de progreso (visualiza estado del curso).
   2. Reportes semanales (ver sección 3.4).
   3. Sesiones de refuerzo (crear, ver estado, aprobar).
 No se habilita registro de ejercicios ni gestión de banco de ejercicios (solo Administrador).
 
-### 3.4 Flujos de Uso Diarios y Semanales
-#### 3.4.1 Alumnos
+### 3.5 Flujos de Uso Diarios y Semanales
+#### 3.5.1 Alumnos
 - **Frecuencia de interacción**
   - **Objetivo mínimo**: 1 ingreso diario para practicar misiones.
   - **Durante días de práctica presencial**: 2 ingresos (una sesión en clase, otra en casa).
@@ -465,14 +485,14 @@ No se habilita registro de ejercicios ni gestión de banco de ejercicios (solo A
   - **Correo electrónico**:
     - Enviar recordatorio diario a las 20:00 h si el alumno no entró a PGA ese día.
 
-#### 3.4.2 Docentes
+#### 3.5.2 Docentes
 - **Revisión del dashboard**
   - **Frecuencia recomendada**: cada día de clase (lunes y miércoles), 30 min antes de la sesión práctica.
   - **Reporte semanal automático**:
     - Se genera todos los domingos a las 20:00 h (cron job).
     - Envía PDF/CSV al correo del docente con:
       - Porcentaje de avance global del curso
-      - Porcentaje de avance por tema
+      - Porcentaje de avance por capítulo (tema)
       - Estadísticas individuales de cada alumno (nivel, misiones completadas, estrellas, promedio intentos, última conexión).
 - **Confirmación de sesiones de refuerzo**
   - **Automatizado**: el sistema sugiere sesión de refuerzo cada domingo a las 22:00 h.
@@ -481,32 +501,136 @@ No se habilita registro de ejercicios ni gestión de banco de ejercicios (solo A
     - Como máximo hasta 2 horas antes del inicio de la sesión, alumnos y docentes deben confirmar asistencia.
     - Si no hay confirmación, se reprograma automáticamente.
 
-### 3.5 Capacitación y Documentación Interna
-#### 3.5.1 Manuales y tutoriales para alumnos
+### 3.6 Capacitación y Documentación Interna
+#### 3.6.1 Manuales y tutoriales para alumnos
 **Manual en PDF**
-1. Creación de cuenta: pasos ilustrados (pantallazos) para registro con formulario y con Google.
-2. Unirse a un curso: pasos de como unirse a un curso colocando la contraseña proporcionada por el docente
-3. Resolución de la primera misión:
+**1. Creación de cuenta**: pasos ilustrados (pantallazos) para registro con formulario y con Google.
+**2. Unirse a un curso**: pasos de como unirse a un curso colocando la contraseña proporcionada por el docente
+**3. Resolución de la primera misión**:
   - Cómo acceder al editor de código en PGA.
   - Explicación del “Libro de Héroe” (sintaxis de primitivas, estructuras, variables).
   - Ejecución en el visor animado.
-4. Interpretación del feedback formativo
+**4. Interpretación del feedback formativo**
   - Explicación de error de sintaxis, advertencias de variables no usadas, sugerencias de optimización.
   - Sistema de estrellas (1–3) y puntos de experiencia (XP).
-5. Progreso en niveles y desbloqueo de misiones
+**5. Progreso en niveles y desbloqueo de misiones**
   - Mapa de misiones desbloqueables: imágenes de cada etapa temática.
   - Cómo ver historial de misiones completadas y XP acumulado.
 
 **Video tutorial (YouTube – Unlisted)**
-1. Duración aproximada: 5–7 min.
-2. Contenido:
-  - Registro/login rápido.
-  - Navegación por interfaz: menú lateral, área de misiones, editor y visor.
-  - Ejecución de código paso a paso.
-  - Vista de progreso y niveles.
-3. Acceso:
+1. “Introducción a PGA: primer login y perfil de alumno” (3 min)
+2. “Resolviendo tu primera misión: editor, visor y feedback” (5 min)
+3. “Cómo interpretar estrellas y EXP” (2 min)
+
+**Acceso**
   - Enlazado desde el PDF de manual.
   - Disponible en repositorio GitHub en carpeta /docs/tutoriales/.
 
-#### 3.5.2 Documentación para docentes
+#### 3.6.2 Documentación para docentes
 **Manual en PDF**
+**1. Cómo revisar el dashboard y estadísticas**
+  - El docente podrá revisar los avances de los distintos cursos que tenga asignado, seleccionará el curso deseado y accederá a las métricas de los alumnos de ese curso.
+
+**2. Cómo programar sesiones de refuerzo**
+  - Pasos para crear una sesión de refuerzo desde cero.
+  - Pasos para confirmar o reagendar sesión sugerida por el sistema.
+  - Plazos para confirmaciones (ver sección 3.4.2).
+
+**3. Cómo interpretar el reporte semanal automático**
+  - Estructura del PDF/CSV:
+    - Tabla con estadística general del curso.
+    - Lista de alumnos en estado crítico (rojo) y atrasados (amarillo).
+    - Instrucciones para ordenar y filtrar.
+
+**4. Configuración de cursos y contraseñas**
+  - Cambiar contraseña de curso existente.
+
+**Video tutorial (YouTube – Unlisted)**
+1. “Dashboard de avance: métricas grupales e individuales, reportes y filtros” (6 min)
+2. “Cómo programar tu primera sesión de refuerzo” (3 min)
+3. “Interpretando correos automáticos y notificaciones” (3 min)
+
+#### 3.6.3 Documentación para el administrador
+**Manual en PDF**
+**1. Gestión académica**: instituciones, cursos y docentes.
+  - Pasos para dar de alta y baja una institución
+  - Pasos para creación de curso y asociación con la institución
+**2. Configuración de roles y permisos**.
+  - Creación de cuenta del docente y asignación a un curso
+  - Gestión de usuarios en general
+**3. Monitoreo de logs y métricas de uso.**
+  - Los diferentes apartados del sistema que se pueden auditar
+  - Filtros y ordenamientos
+
+
+### 3.7 Limitaciones Operativas
+**1. Restricciones en salón de clases / laboratorios de la Facultad**
+- La red institucional suele funcionar con suficiente ancho de banda; ocasionales bajones (lentitud) no impiden uso básico de PGA.
+- Equipos de laboratorio actualizados (navegadores modernos y suficiente RAM).
+
+**2. Dispositivos de alumnos y docentes**
+- La mayoría tiene laptops o desktops con navegadores (Chrome/Firefox) actualizados.
+- Se disponen de equipos con navegadores modernos (Chrome/Firefox) en el laboratorio.
+- Se recomienda Chrome v90+ o Firefox v88+ para mejor rendimiento de Canvas/WebGL (Phaser).
+- Para alumnos con hardware muy antiguo (netbooks con 4 GB y CPU modesto), PGA corre a 30 FPS.
+
+**3. Uso de LAN sin internet**
+- No implementado. PGA requiere conexión para autenticación OAuth y carga de assets en tiempo real (CDN).
+- Posible mejora a futuro: precargar assets en caché y modo offline limitado (service workers), pero no aplica en esta versión.
+
+**4. Políticas de la Facultad**
+- La facultad permite ejecutar aplicaciones web en navegadores.
+- No hay limitaciones estrictas para acceder a un dominio público o web.
+- No se necesita instalar software local (solo un navegador).
+
+**5. Horario de mantenimiento de red**
+- No se conoce un plan oficial de mantenimiento que interrumpa internet de manera programada.
+- En caso de caídas del servicio, se dispondrá de archivos PDF con ejercicios impresos como plan B (si falla la plataforma).
+
+### 3.8 Factores de Riesgo Operativo
+**1. Baja adopción**
+**Escenario**: Menos del 50 % de alumnos registrados usa PGA en primer mes.
+**Plan de mitigación**:
+- Realizar sesiones obligatorias de práctica con PGA en laboratorio (el docente lo incluye como parte de la calificación).
+- Ofrecer recompensas de XP adicionales a los cursos (bonificación en nota de prácticas).- Recoger feedback constante y ajustar UX/UI para facilitar la curva de entrada.
+
+**2. Resistencia al cambio**
+**Escenario**: Un profesor decide no usar reportes ni sesiones de refuerzo.
+**Mitigación**:
+- Reuniones breves con el docente para exponer beneficios de PGA (mejora de retención, ahorro de tiempo).
+- Mostrar estadísticas tempranas (primeras semanas) que demuestran impacto en dedicación y avances de alumnos.
+- Incorporar PGA de forma gradual: obligar uso en prácticas, pero dejar libre uso de reportes; demostrar resultados a mediano plazo.
+
+**3. Falla de notificaciones (SMTP)**
+**Escenario**: Correos de alerta semanal o recordatorios diarios no se envían (problemas con servicio SMTP).
+**Detección y solución rápida**:
+- Logging en servidor: Registrar cada intento de envío de email con estado (éxito/fallo) en una tabla de log de eventos.
+- Alerta interna: Si falla el envío de correo 3 veces consecutivas, generar notificación “en-app” visible para el docente: “Error al enviar correo. Revise configuración SMTP.”
+
+**4. Saturación de carga**
+**Escenario**: Muchos alumnos (p. ej. 100 usuarios) ejecutan misiones simultáneamente antes de un examen.
+**Mitigación**:
+- Optimizar endpoints: Limitar concurrencia de llamadas con colas (p. ej. BullMQ) para suavizar picos.
+- Cache de resultados frecuentes (casos de prueba estándar) para evitar recomputar lógicas idénticas.
+- Escalabilidad horizontal futura: desplegar back-end en plataforma Cloud (Heroku, Render) con escalado automático si se detecta alta demanda.
+- Pruebas de carga previa: usar herramientas como k6 o Artillery para simular concurrencia y ajustar límites.
+
+
+### 3.9 Conclusión de Factibilidad Operativa
+Operativamente, PGA se integra con la dinámica de la cátedra sin mayores fricciones. La existencia de un docente promotor, manuales claros y planes de contingencia garantizan su éxito en uso diario y semanal.
+
+**1. Integración sin interferencias**
+  - PGA encaja en el calendario de la cátedra sin solaparse; se usará en prácticas y fuera de horario sin perturbar teoría o consulta.
+  - No requiere instalaciones en equipo (solo navegador).
+
+**2. Apoyo de docentes promotores**
+  - Lic. Mario Vialey (Profesor Adjunto) actúa como promotor, validando la idea y dispuesto a incorporarla.
+  - Se cuenta con la predisposición de la cátedra para hacer la prueba de concepto con alumnos y docentes.
+
+**3. Procedimientos para incidencias**
+  - Se definirá canal de soporte en Discord (grupo cerrado) y correo de contacto: soporte@pga.fceqyn.edu.ar.
+  - En caso de fallas técnicas, los alumnos podrán documentar errores en GitHub Issues (repositorio PGA) con etiquetas /bug o /issue.
+
+**4. Adopción esperada**
+  - Con manuales sencillos y talleres iniciales, la adopción se prevé rápida (≥ 80 % en primer mes).
+  - Incentivar participación con bonus de XP y prácticas obligatorias en clase.
