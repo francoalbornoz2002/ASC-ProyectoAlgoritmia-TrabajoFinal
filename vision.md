@@ -107,8 +107,13 @@ En resumen, los problemas específicos identificados son:
 
 ### 2.3 Oportunidad e impacto
 
-Teniendo en cuenta la situación actual y la problemática, se realizará una propuesta de solución: el desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", que permitirá a los alumnos aprender algoritmos, lógica y estructuras de control y para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos.
-La plataforma incorporará y se enfocará el concepto de “Gamificación” y lucirá una estética visual de “Pixel Art”.
+Teniendo en cuenta la situación actual y la problemática, se realizará una propuesta de solución: el desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", enfocada en el concepto de “Gamificación” y luciendo una estética visual de “Pixel Art”, permitirá a los alumnos aprender algoritmos, lógica y estructuras de control y para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos.
+
+La solución estará compuesta por dos aplicaciones separadas pero integradas:
+- Un **videojuego independiente**, desarrollado con Godot y GDScript, orientado exclusivamente a los alumnos. Esta aplicación permite la resolución de misiones prediseñadas en un entorno con narrativa y mecánicas lúdicas, funcionando de forma offline y sincronizando el progreso académico a posteriori.
+- Una **plataforma web administrativa**, destinada a docentes y administradores. Esta le permitirá a los docentes hacer seguimiento del progreso de los alumnos, generar reportes y crear sesiones de refuerzo de contenidos. Para el administrador, le permitirá gestionar instituciones, cursos, asignación de docentes a los cursos y auditoría.
+
+Ambas aplicaciones compartirán la misma base de datos, permitiendo que los datos de avance y resultados obtenidos por los estudiantes en el videojuego se reflejen luego en la plataforma web. El videojuego tambien funcionará de manera offline, permitiendo a los alumnos resolver misiones aun sin conexión. Una vez que se disponga de acceso a Internet, la aplicación sincronizará automáticamente el progreso acumulado con el backend, permitiendo que los datos estén disponibles en la parte web.
 
 #### La gamificación
 El concepto de "gamificación" se refiere a la aplicación de narrativa, mecánicas y elementos propios de los videojuegos (como niveles, experiencia, puntos, logros, desafíos, tablas de clasificación y recompensas) en contextos no lúdicos, como la educación y el trabajo.
@@ -130,11 +135,11 @@ El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a
 **Para alumnos**:
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
 - Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones y habilidades manteniendo la participación y motivación en utilizar el sistema.
-- El sistema detectará los errores cometidos, evaluará métricas de código y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
+- El sistema detectará los errores cometidos y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
 
 **Para docentes**:
 - Podrán contar con un seguimiento académico exhaustivo de todos sus alumnos.
-- Ver las estadisticas, rendimiento semanal, porcentaje de avance en los temas de cada alumno.
+- Ver las estadisticas, rendimiento de la semana y porcentaje de avance en los temas de cada alumno.
 - Detectar a aquellos alumnos rezagados o con bajo rendimiento en los contenidos para la toma de decisiones.
 
 #### Beneficios
@@ -145,7 +150,7 @@ Con el desarrollo del sistema se esperan los siguientes beneficios a corto plazo
 
 Los beneficios a largo plazo:
 1. **Menos alumnos atrasados**: con el seguimiento academico y mejora constante, Se espera que se tome menos tiempo de cursada "oficial" para el refuerzo de los contenidos y que haya una menor cantidad de alumnos atrasados al momento de, por ejemplo, la toma de exámenes o al final de la cursada.
-2. **Alumnos con conocimientos solidificado**s: mediante la resolución de ejercicios y feedback formativo constante, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores soluciones a futuro.
+2. **Alumnos con conocimientos solidificados**: mediante la resolución de ejercicios y feedback formativo constante, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores soluciones a futuro.
 3. **Plataforma oficial para el dictado en la cátedra**: se espera que a largo plazo el sistema quede consolidado como herramienta principal en el dictado de la cátedra reemplazando al Visual DaVinci, integrando la resolución de ejercicios y seguimiento académico de los alumnos en un solo lugar.
 
 ---
@@ -298,7 +303,7 @@ Los componentes de gamificación a incorporar en el sistema son los siguientes:
 El entorno de resolución de ejercicios estará compuesto de manera general con:
 - **Enunciado**: se mostrará el enunciado del ejercicio en todo momento durante la resolución de una misión
 - **Editor de código**: es donde el alumno diseñará y escribirá la solución del ejercicio. El editor soportará una opción de autocompletado para ayudar al alumno a seguir de manera correcta la sintaxis del lenguaje gamificado.
-- **Libro de habilidades**: es una pequeña "documentación" de sintaxis y semántica de las posibles acciones, tácticas, objetos y habilidades especiales y proposiciones que el alumno tiene disponible para resolver el ejercicio y tomar decisiones.
+- **Manual del heroe**: es una pequeña "documentación" de sintaxis y semántica de las posibles acciones, tácticas, objetos y habilidades especiales y proposiciones que el alumno tiene disponible para resolver el ejercicio y tomar decisiones.
 - **Botón ejecutar**: para comenzar la ejecución de la solución del alumno en el visor animado. Para que se pueda ejecutar la solución, esta no debe contener errores de sintaxis.
 - **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real la solución del alumno.
 

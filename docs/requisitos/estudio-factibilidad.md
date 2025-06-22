@@ -1,7 +1,7 @@
 # Estudio de Factibilidad
 
-**Versión:** 1.2
-**Fecha:** 19/06/2025
+**Versión:** 1.3
+**Fecha:** 22/06/2025
 **Autor(es):** Franco Andrés Albornoz
 
 A continuación se presenta el análisis completo de factibilidad (técnica, económica y operativa) para el desarrollo de la Plataforma Gamificada “Algoritmia” (PGA).
@@ -30,8 +30,22 @@ A continuación se presenta el análisis completo de factibilidad (técnica, eco
 La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser Launcher), entornos locales (Node.js, SQLite) y herramientas de diseño (Aseprite). El respaldo está resuelto a través de backups en la nube.
 
 ### 1.2 Sistema Operativo y Software de Desarrollo
+
+#### 1.2.1 Componentes y tecnologías principales
+De manera general, estas serán las tecnologías definidas para cada parte del sistema:
+
+| Parte del sistema  | Tecnologías                                                        | Justificación                                                                                                                                                                                |
+| ------------------ | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Videojuego**     | Godot Engine (GDScript)                                            | Motor open-source, liviano, multiplataforma y especializado en videojuegos 2D. Permite empaquetar el juego completo y trabajar offline. GDScript es fácil de aprender y altamente expresivo. |
+| **Plataforma web** | Frontend: SvelteKit + Tailwind                                     | SvelteKit ofrece alta velocidad, reactividad y bajo consumo. Tailwind permite una UI moderna con poco código CSS.                                                                            |
+|                    | Backend: Node.js + NestJS + TypeScript                             | NestJS ofrece modularidad, capas limpias, control de dependencias y estructura clara para escalabilidad. TypeScript reduce errores y provee tipado fuerte.                                   |
+| **Base de datos**  | SQLite (para desarrollo y videojuego) / PostgreSQL (entrega final) | SQLite permite pruebas rápidas y locales. PostgreSQL se usará para producción por su robustez y soporte de concurrencia.                                                                     |
+
+**Infraestructura y conectividad**
+El videojuego utilizará una base de datos local embebida (formato JSON o SQLite) para guardar el progreso del estudiante sin necesidad de conexión inmediata. Cuando haya conectividad, el videojuego se conectará a la API del backend y realizará una sincronización de datos, actualizando el progreso en la base central.
+
 #### 1.2.1 Sistemas Operativos de trabajo
-- **Desarrollo principal**: Se utilizará como sistema operativo principal Windows 11 para el entorno de desarrollo del sistema, debido a la compatibilidad con herramientas clave para el desarrollo del sistema como Phaser Launcher, Aseprite y Frame0.
+- **Desarrollo principal**: Se podrán utilizar tanto Windows como Linux como sistemas operativos de desarrollo del sistema, debido a que los dos poseen compatibilidad con herramientas clave para el desarrollo del sistema como Godot Engine, Aseprite y Frame0.
 
 #### 1.2.2 Software instalado y versiones
 **Git**
@@ -44,7 +58,10 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser La
 
 **Frame0**
 - Versión: 1.0 (instalada en Windows y Linux).
-- Uso: prototipado rápido de interfaces
+- Uso: prototipado rápido de interfaces.
+
+**Godot Engine (Motor de Videojuegos)**
+- Versión: 4.4.1 (instalado en Windows y Linux)
 
 **Entorno de desarrollo (IDE): Visual Studio Code**
 - Versión: 1.79.0 (instalado en ambos sistemas).
@@ -61,18 +78,15 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser La
 - PostgreSQL en su versión 17.5
 
 **Herramientas de testing**
-- Se instalará Jest (para back-end en Node.js/NestJS).
-- Se instalará Vitest (para pruebas de unidades en SvelteKit).
-
-**Phaser Launcher**
-- Se instalará la versión v3.90.0 en Windows.
+- Se instalará Jest para back-end en Node.js/NestJS.
+- Se instalará Vitest para pruebas de unidades en SvelteKit.
+- Se instalará GUT (Godot Unit Testing) para pruebas unitarias en Godot 4.
 
 ### 1.3 Stack de Desarrollo y Curva de Aprendizaje
-#### 1.3.1 Front-end
+#### 1.3.1 Web Front-end
 **Frameworks y librerías**
 - SvelteKit 2
 - Tailwind CSS (v4.0) para estilos utilitarios.
-- Phaser v3.90.0 "Tsugumi" para la parte de motor de juego y animaciones Pixel Art.
 
 **Nivel de experiencia actual**
 - Sin experiencia previa directa en SvelteKit, Tailwind o Phaser. Conocimiento general de JavaScript y conceptos de front-end.
@@ -88,12 +102,7 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser La
   - https://kit.svelte.dev/docs
   - https://tailwindcss.com/docs
 
-**Phaser v3.90.0**
-- Cursos y listas de reproducción en YouTube.
-- Documentación oficial: https://phaser.io/docs
-- Ejemplos de proyectos en GitHub para referencia.
-
-#### 1.3.2 Back End
+#### 1.3.2 Web Back End
 **Framework y entorno de ejecución**
 - Node.js (v22.16.0 LTS) con NestJS (v11.x) en TypeScript.
 
@@ -108,20 +117,29 @@ La PC cumple con los requisitos básicos para ejecutar IDEs (VS Code y Phaser La
 **Lenguaje de servidor**
 - TypeScript (v5.8.3) para mejorar control de tipos y escalabilidad.
 
+#### 1.3.3 Godot Engine
+**Nivel de experiencia actual**
+- Sin experiencia previa en Godot Engine 4.
+
+**Recursos de capacitación**
+- Cursos varios en Youtube, existe gran variedad.
+- Documentación oficial: https://docs.godotengine.org/en/stable/index.html
+- Ejemplos de proyectos varios
+
 #### 1.3.3 Base de Datos
 **Elección inicial**:
-- SQLite como base de datos local para desarrollo rápido y pruebas sin requerir servidor adicional.
+- SQLite como base de datos local para desarrollo rápido y pruebas sin requerir servidor adicional. También elegida para ser la base de datos local embebida para el videojuego.
 
 **Migración futura**:
-- PostgreSQL para consultas avanzadas, demostración y defensa y despliegue (DBMS completo).
+- PostgreSQL para consultas avanzadas, demostración y defensa y despliegue (DBMS completo) para la plataforma web. La base de datos del videojuego se mantendrá actualizada constantemente.
 
 **Nivel de conocimiento actual**:
 - Conocimiento en modelos relacionales con normalización (3ra forma).
 - Conocimientos en base de datos activas (vistas, funciones, triggers)
 
 **Recursos de capacitación**:
-- Tutorial “SQLite tutorial” (Página oficial sqlite.org).
-- Curso “PostgreSQL básico” en YouTube (Academia de DB).
+- Tutorial SQLite (Página oficial sqlite.org).
+- "Curso de Base de Datos PostgreSQL” en YouTube (Vito Dev).
 - Documentación oficial: https://www.postgresql.org/docs
 
 El objetivo es modelar inicialmente con SQLite y, en fase de demostración del sistema, migrar a PostgreSQL para integrar consultas avanzadas (vistas, triggers, funciones).
@@ -140,21 +158,21 @@ El objetivo es modelar inicialmente con SQLite y, en fase de demostración del s
 - Foros (Stack Overflow) y comunidad de Discord/GitHub.
 
 **Cronograma de aprendizaje**
-| Semana          | Tecnología                             |
-| --------------- | -------------------------------------- |
-| 09 Jun - 15 Jun | HTML - CSS - JavaScript                |
-| 16 Jun - 22 Jun | HTML - CSS - JavaScript                |
-| 23 Jun - 29 Jun | HTML - CSS - JavaScript                |
-| 30 Jun - 06 Jul | Svelte - Tailwind - Phaser             |
-| 07 Jul - 13 Jul | Svelte - Tailwind - Phaser             |
-| 14 Jul - 20 Jul | Svelte - Tailwind - Phaser             |
-| 21 Jul - 27 Jul | Node.js - NestJs / SQLite / TypeScript |
-| 28 Jul - 03 Ago | Node.js - NestJs / SQLite / TypeScript |
-| 04 Ago - 10 Ago | Node.js - NestJs / SQLite / TypeScript |
-| 11 Ago - 17 Ago | Node.js - NestJs / SQLite / TypeScript |
-| 18 Ago - 24 Ago | Node.js - NestJs / SQLite / TypeScript |
+| Semana          | Tecnología                                 |
+| --------------- | ------------------------------------------ |
+| 23 Jun - 29 Jun | HTML - CSS - JavaScript                    |
+| 30 Jun - 06 Jul | HTML - CSS - JavaScript                    |
+| 07 Jul - 13 Jul | Svelte - Tailwind                          |
+| 14 Jul - 20 Jul | Svelte - Tailwind                          |
+| 21 Jul - 27 Jul | Godot 4 - GDScript / SQLite                |
+| 28 Jul - 03 Ago | Godot 4 - GDScript / SQLite                |
+| 04 Ago - 10 Ago | Godot 4 - GDScript / SQLite                |
+| 04 Ago - 10 Ago | Godot 4 - GDScript / SQLite                |
+| 18 Ago - 24 Ago | Node.js - NestJs / TypeScript              |
+| 25 Ago - 31 Ago | Node.js - NestJs / TypeScript / PostgreSQL |
+| 01 Sep - 07 Sep | Node.js - NestJs / TypeScript / PostgreSQL |
 
-Con un cronograma de 10 semanas y recursos gratuitos (canal MiduDev, documentación), la curva de aprendizaje es asumible. En caso de mayor dificultad, se tomarán horas extra y se consultará con docentes o compañeros familiarizados con el stack.
+Con un cronograma de 10 semanas y recursos gratuitos, la curva de aprendizaje es asumible. En caso de mayor dificultad, se tomarán horas extra y se consultará con docentes o compañeros familiarizados con el stack.
 
 ### 1.4 Infraestructura para Desarrollo Local
 #### 1.4.1 Máquina de Desarrollo
@@ -163,7 +181,7 @@ No se planea utilizar Docker o Kubernetes inicialmente, debido a falta de experi
 #### 1.4.2 IDE y herramientas
 **IDEs**
 - Visual Studio Code en Linux Mint 22 y Windows 11.
-- Phaser Launcher en Windows 11.
+- Godot Engine 4 en Linux Mint 22 y Windows 11.
 
 **Extensiones de VS Code**
 - Markdown
@@ -211,58 +229,62 @@ Se utilizará la libería Passport.js en su versión 0.7.0 con la estrategia `pa
 **Proyecto en Google Cloud Console**
 Aún no creado. Se generarán credenciales (Client ID & Client Secret) en la sección “APIs & Services → Credentials” de Google Cloud, configurando el URI de redirección a http://localhost:3000/auth/google/callback. La configuración de OAuth2.0 tendrá un alcance de: profile y email.
 
-#### 1.5.2 Librería para animaciones y Pixel Art
-**Phaser**
-Phaser es un framework de desarrollo de juegos 2D para navegadores web (HTML5). Facilita la creación de juegos en 2D, especialmente en navegadores de escritorio y móviles, con funcionalidades como gráficos, física, sonido y animaciones. Se eligió por:
-- Motor de física y animación de sprites integrado.
-- Manejador de recursos (tilesets, spritesheets).
-- Comunidad activa y ejemplos claros.
-- Se integra correctamente con cualquier framework front-end moderno (SvelteKit en este caso) a través de la creación de un “canvas” en la aplicación.
-Tambien resulta compatible con SvelteKit
-- Phaser se carga como módulo ES (import Phaser from 'phaser').
-- Se inicializa dentro de un componente Svelte que incluya `<canvas>` con `bind:this={container}`.
-- Documentación de ejemplo: https://github.com/phaserjs/examples
-
-Otra opción de librería para crear el videojuego era PixiJs, pero se descarto debido a:
-- PixiJS es más liviano para renderizado 2D, pero no incluye motor de física ni tutoriales específicos para juegos de lógica/rompecabezas.
-- Phaser provee sistemas de escena, input management y suport de físicas (Arcade Physics) listo para usar.
-
 #### 1.5.3 Recursos Pixel Art gratuitos
 Se planea que para los tilesets y assets del videojuego, se utilicen recursos gratuitos de libre uso. La mayoría de estos packs de assets se encuentran en Itch.io (sección “Assets”, licencias CC0 o CC-BY).
 Igualmente, si surge la necesidad como no encontrar un pack de assets integrado o el pack elegido cambie repentinamente la licencia, se evaluarán packs premium de Itch.io (costo variable) o crear assets propios en Aseprite.
 
 ### 1.6 Restricciones Técnicas
-**1. Versión mínima de Node.js**: Se empleará Node.js ≥ v18.x, idealmente v22.16.0 LTS. Esto asegura compatibilidad con NestJS v10 y dependencias modernas.
-**2. Versión mínima de npm**: se usará npm 10 que viene incluido con Node.js v22.16.0 LTS.
-**3. Requerimientos de navegador**:
-   - Navegadores recomendados: Chrome, Firefox, Edge, Safari (versiones recientes en soporte).
-   - Si bien SvelteKit y Phaser generan un canvas HTML5 compatible con la mayoría, se indicará en documentación que se use una versión modern (Chrome ≥ 100, Firefox ≥ 100).
-**4. Resolución / FPS para animaciones Pixel Art**
-   - Phaser configurado para 60 FPS, resolución 800×600 (adaptable).
-   - Meta de rendimiento: ≥ 30 FPS en hardware modesto (Intel UHD Graphics + 4 GB RAM).
-   - Probar en netbooks del estado argentino garantiza fluidez con ajustes de calidad mínima (sin postprocesamiento extra).
+
+**1. Versión mínima de Node.js**  
+Se empleará Node.js ≥ v18.x, idealmente v22.16.0 LTS. Esta versión asegura compatibilidad con NestJS v11 y dependencias modernas del backend.
+
+**2. Versión mínima de npm**  
+Se utilizará npm 10.x, incluido con Node.js v22.16.0 LTS, para gestionar paquetes de manera segura y actualizada.
+
+**3. Requerimientos de navegador (plataforma web)**  
+- Navegadores recomendados: Chrome, Firefox, Edge, Safari (últimas versiones).
+- Requiere soporte para JavaScript moderno (ES2022), WebAssembly, y CSS moderno para compatibilidad total con SvelteKit + Tailwind.
+
+**4. Requisitos gráficos y de rendimiento para el videojuego (Godot 4)**  
+- Godot 4 configurado para 60 FPS, resolución base 800×600 (adaptable a pantalla completa o escalado dinámico).
+- El motor utiliza renderizado 2D mediante Vulkan (por defecto) o compatibilidad con OpenGL para hardware más limitado.
+- Meta de rendimiento: ≥ 30 FPS en equipos modestos (Intel UHD Graphics + 4 GB RAM).
+- En pruebas con netbooks del estado argentino (Intel N4000–N5000), se prevé fluidez aceptable ajustando la calidad (desactivando sombras y efectos no críticos).
+
 **5. Compatibilidad mínima garantizada**
-   - Windows 10+
-   - Distribuciones Linux con kernel ≥ 5.4.
+- **Sistemas operativos**:
+  - Windows 10 o superior.
+  - Distribuciones Linux con kernel ≥ 5.4 (probado en Linux Mint 22).
+- **Hardware mínimo para el juego**:
+  - Procesador Dual-Core.
+  - 4 GB RAM.
+  - GPU integrada con soporte para OpenGL 3.3 o superior.
+
+> **Nota:** El juego estará optimizado para funcionar en entornos educativos con recursos limitados, garantizando acceso inclusivo en laboratorios o dispositivos de gama baja.
+
 
 ### 1.7 Conclusión de Factibilidad Técnica
-**Infraestructura actual suficiente**
-La PC (Intel i5, 8 GB, SSD) es suficiente para IDEs, compilación de Node.js, compilación de SvelteKit + Phaser y diseño Pixel Art en Aseprite. Por el momento no se requiere nuevo equipamiento; en caso de fallo, la copia de seguridad en la nube permite retomar el desarrollo rápidamente.
 
-**Herramientas y lenguajes**
-Falta por instalar Node.js v20, NestJS, SvelteKit, Phaser, Jest y Vitest. Por lo demás, Git, VS Code, Aseprite y Frame0 ya funcionan correctamente en los dos sistemas operativos.
+**Infraestructura actual suficiente**  
+La PC disponible (Intel i5, 8 GB RAM, SSD) resulta suficiente para ejecutar entornos de desarrollo modernos como Godot 4, SvelteKit, NestJS y herramientas gráficas como Aseprite. No se requiere equipamiento adicional para completar el proyecto, y en caso de fallas, se dispone de respaldo en la nube (GitHub, Google Drive) que permite continuidad operativa.
 
-**Riesgos técnicos**
-- El riesgo técnico más crítico es la curva de aprendizaje de SvelteKit, Phaser y NestJS, donde cada uno requiere 3–4 semanas de estudio.
-- Posible incompatibilidad de Phaser con SvelteKit si se integra incorrectamente. Si llegase a pasar, se buscarán alternativas viendo ejemplos de la comunidad o la documentación oficial de Phaser en el apartado de plantillas para Svelte.
-- Falta de experiencia en testing unitario. Pero resulta un riesgo mitigable con 1–2 semanas de práctica.
+**Herramientas y lenguajes adecuados al proyecto**  
+Se eligieron tecnologías modernas, escalables y con gran comunidad. Godot 4 permite una experiencia de juego fluida y offline, mientras que el stack SvelteKit + NestJS ofrece modularidad y control total en la parte administrativa. La separación entre el videojuego (alumnos) y la web (docentes/administradores) mejora la organización del código, el mantenimiento y la experiencia de usuario.
 
-**Medidas mitigadoras**
-- Cursos y tutoriales de YouTube (MiduDev) y documentación oficial antes de la fase de construcción.
-- "Pair programming" con compañeros familiarizados con alguna de las tecnologías.
-- Consultoría puntual con docentes o la comunidad en Discord/GitHub Issues si surge un bloqueo.
+**Riesgos técnicos actuales**  
+- La principal dificultad es la curva de aprendizaje de Godot, NestJS y SvelteKit, estimada en ~10 semanas con práctica regular.
+- La sincronización entre el videojuego y la base de datos compartida requiere diseño cuidadoso de API REST y seguridad en la autenticación.
+- La autenticación OAuth con Google debe implementarse de forma consistente entre ambas aplicaciones.
+- No hay experiencia previa en testing automatizado con GUT (Godot) o Jest/Vitest.
 
-Técnicamente, el proyecto es factible con la infraestructura actual. Se prevén riesgos principalmente asociados a la curva de aprendizaje, pero existen planes de mitigación como el cronograma de estudio y recursos en línea.
+**Medidas mitigadoras**  
+- Capacitación intensiva con documentación oficial y tutoriales en YouTube (MiduDev, Fazt Code, documentación de Godot/NestJS/Svelte).
+- Implementación temprana de un prototipo de sincronización para validar la arquitectura de comunicación.
+- Consultas periódicas con docentes o referentes técnicos para corregir desvíos en tiempo real.
+- Uso de extensiones de VS Code y herramientas de testing para adquirir buenas prácticas desde el comienzo.
+
+**Conclusión general**  
+El proyecto es técnica y operativamente viable. La separación de responsabilidades entre las dos aplicaciones garantiza escalabilidad, portabilidad y resiliencia. Se identificaron los principales desafíos, pero se cuenta con un plan realista de formación y mitigación. Las herramientas, el hardware disponible y el diseño técnico del sistema permiten avanzar con confianza en el desarrollo del proyecto.
 
 ## 2. Factibilidad Económica
 ### 2.1 Personal y Recursos Humanos
