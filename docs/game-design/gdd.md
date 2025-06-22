@@ -23,8 +23,7 @@ Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero bellez
 Algoritmia tendrá un lenguaje de programación gamificado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones. Además, el jugador podrá visualizar en tiempo real la ejecución de su solución en el escenario de juego.
 
 ### 3.3 Aprendizaje continuo con feedback inmediato
-Algoritma busca brindar aprendizaje continuo mediante feedback inmediato cuando el alumno esté diseñando su solución para un problema. La idea es que Algoritmia pueda analizar y ofrecer sugerencias y optimizaciones de la solución del alumno durante y después de su ejecución fomentando el aprendizaje continuo. 
-
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato cuando el jugador esté diseñando su solución para un problema. La idea es que Algoritmia pueda analizar y ofrecer sugerencias y optimizaciones de la solución del jugador durante y después de su ejecución fomentando el aprendizaje continuo. 
 
 en base a lo siguiente:
 - Errores de sintaxis.
@@ -42,23 +41,54 @@ Para ello, se ofrecerá:
 - Eliminar variables no utilizadas
 - Entre otras.
 
-
 ## 4. Descripción del juego
-Descripción mas detallada del juego y de lo que se podrá hacer. Podría ser una extensión del resumen.
-
 Algoritmia es un videojuego de aventura estilo RPG que está enfocado en el aprendizaje de las bases de la programación: algoritmos, lógica, estructuras de control (condicionales y bucles) y procedimientos mediante la resolución de ejercicios, codificando y visualizando su solución en tiempo real.
+El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario.
+Una característica importante de Algoritmia es que ofrece feedback formativo inmediato y ayudas al jugador para detectar y corregir errores de manera sencilla y optimizar la solución mediante sugerencias visualizando el antes y después.
 
-El juego contará con un lenguaje de programación gamificado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, pudiendo también visualizar en tiempo real la ejecución de la solución en el escenario de juego.
-En cada misión, el jugador deberá resolver un enunciado específico
+### 4.1 Lenguaje gamificado
+El lenguaje de programación gamificado tiene los siguientes elementos de la programación tradicional:
+- **Acciones -> Primitivas o instrucciones**: las acciones representarán a las instrucciones o primitivas básicas que el jugador podrá realizar.
+- **Tácticas -> Estructuras de control**: las tácticas representan las estructuras de control básicas: Si-Sino, Mientras y Repetir donde se podrán manejar proposiciones simples o compuestas utilizando operadores matemáticos básicos y operadores relacionales.
+- **Objetos -> Variables**: los objetos representarán a las variables del juego. Se tendrán variables de juego (inventario y entorno) y variables globales y locales de tipo entero que el jugador podrá declarar y asignar valores en el diseño de la solución.
+- **Habilidades especiales -> Procedimientos**: las habilidades especiales representarán a los procedimientos. Habrán procedimientos pre-diseñados desbloqueables y el jugador podrá crear los propios incluyendo o no parámetros de entrada, salida y entrada/salida.
 
+### 4.2 Feedback formativo y ayudas
+Las ayudas que se ofrecerán son las siguientes:
+1. **Manual del heroe**: este manual contendrá todas las acciones, tácticas, objetos y habilidades especiales que el jugador puede utilizar para resolver la misión. El manual del heroe especificará la sintaxis, semántica y un ejemplo de la estructura básica de cada instrucción del lenguaje gamificado separada por Acciones, Tácticas, Objetos y habilidades especiales.
+2. **Autocompletado**: Aparecerán como sugerencia las instrucciones y estructuras dependiendo de lo que escriba el jugador, dando la posibilidad de autocompletado seleccionando la opción deseada de las sugerencias. Esto aplicará para: primitivas, estructuras de control y procedimientos.
+3. **Resaltado de sintaxis**: se resaltarán los errores de sintaxis y advertencias en color rojo y amarillo respectivamente.
 
+En cuando al feedback formativo, se dará en tres etapas:
+**1. Durante el diseño de la solución**:
+**Errores**
+Los errores son aquellos que impiden que la ejecución de la solución se lleve a cabo. Los posibles errores a indicar son los siguientes:
+- **Errores de sintaxis**: se indicará la mala escritura de las instrucciones en subrayado rojo. Si se apoya el cursor por encima del error se mostrará "Error de sintaxis".
+- **Uso de variables no declaradas**: si se intenga utilizar una variable que no ha sido declarada se indicará en subrayado rojo. Si se apoya el cursor por encima del error se mostrará "Variable no declarada".
+- **Parámetros indefinidos**: cuando se llama a un procedimiento y no se colocan los parámetros de manera correcta se indicará en subrayado rojo. Si se apoya el cursor por encima del error se mostrará "Parámetros indefinidos".
 
-Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos mediante el diseño de tu propio algoritmo para completar la misión a tu manera y aprendiendo en el proceso.
+**Advertencias**
+Las advertencias son aquellas que no impiden que la solución se ejecute pero son recomendable de atender. Las posibles advertencias son las siguientes:
+- **Variables declaradas pero no utilizadas**: si se declara una variable, mientras el jugador no la utilice se subrayará de color amarillo. Si se apoya el cursor por encima de este aviso se mostrará "Variable no utilizada".
 
+**2. Al intentar ejecutar**
+Si se ignoran todos los **errores** durante el diseño de la solución, no se podrá ejecutar la solución y se mostrará un mensaje indicando la linea donde se encuentra el error, el motivo y la sugerencia para corregirlo.
 
+**3. Después de la ejecución de la solución indicando:**
+- **Redundancia de instrucciones**: si hay al menos 2 lineas de código llamando a la misma instrucción se sugerirá reemplazarlas por una estructura repetitiva como un mientras o un repetir.
+- **Redundancia de condicionales**: si hay al menos 2 estructuras de control "Si" una debajo de la otra se sugerírá reemplazarlas por una estructura condicional con una proposición compuesta por las dos proposiciones originales utilizando un conectivo lógico apropiado.
+- **Redundancia de bucles**: si hay al menos 2 estructuras de control "Mientras" o "Repetir" una debajo de la otra se sugerirá reemplazarlas por una estructura repetitiva con una proposición compuesta por las dos proposiciones originales utilizando un conectivo lógico apropiado.
+- **Variables no utilizadas**: si hay variables declaradas pero no utilizadas se sugerirán eliminarlas de la solución.
 
-### 4.1 Core Loop
-Qué es lo que se estará haciendo todo el tiempo durante el juego.
+### 4.3 Core Loop
+El Core Loop principal del videojuego es:
+1. Ingresar al mapa principal del juego
+2. Seleccionar el capitulo actual
+3. Seleccionar la siguiente misión
+4. Diseñar un algoritmo para resolver la misión
+5. Ejecutar la solución para visualizar la misma en el escenario
+6. Recibir una puntuación si se completa correctamente
+7. Recibir feedback formativo por parte del sistema para refactorizar si se quiere la solución.
 
 ## 5. Historia
 ### 5.1 Narrativa / Trama
@@ -98,3 +128,19 @@ Datos de la misión: enunciado, descripción, objetivo, etc.
 
 ## 9. Música y audio
 REVISAR: https://www.youtube.com/@Gretian -> Para crear música para videojuegos
+
+
+
+
+
+- (+) Suma
+- (-) Resta
+- (*) Multiplicación
+- (/) División
+- (mod) Módulo (resto de una división)
+- (<) Menor qué
+- (>) Mayor qué
+- (<=) Menos o igual qué
+- (>=) Mayor o igual qué
+- (==) Igual qué
+- (!=) Distinto qué
