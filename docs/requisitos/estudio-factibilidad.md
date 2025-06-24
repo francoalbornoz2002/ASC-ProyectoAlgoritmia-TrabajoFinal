@@ -305,9 +305,6 @@ Se utilizará npm 10.x, incluido con Node.js v22.16.0 LTS, para gestionar paquet
   - 4 GB RAM.
   - GPU integrada con soporte para OpenGL 3.3 o superior.
 
-> **Nota:** El juego estará optimizado para funcionar en entornos educativos con recursos limitados, garantizando acceso inclusivo en laboratorios o dispositivos de gama baja.
-
-
 ### 1.7 Conclusión de Factibilidad Técnica
 
 **Infraestructura actual suficiente**  
@@ -329,7 +326,7 @@ Se eligieron tecnologías modernas, escalables y con gran comunidad. Godot 4 per
 - Uso de extensiones de VS Code y herramientas de testing para adquirir buenas prácticas desde el comienzo.
 
 **Conclusión general**
-El proyecto es técnica y operativamente viable. La separación entre el videojuego (para alumnos) y la plataforma web (para docentes y administradores) brinda claridad arquitectónica y especialización de interfaces. La decisión de incluir una base de datos local en cada juego permite garantizar el funcionamiento offline y mejora la resiliencia del sistema. La sincronización se realiza de manera segura y concurrente, ya que cada alumno trabaja con sus propios datos y la API del backend filtra por token.
+El proyecto es técnicamente viable. La separación entre el videojuego (para alumnos) y la plataforma web (para docentes y administradores) brinda claridad arquitectónica y especialización de interfaces. La decisión de incluir una base de datos local en cada juego permite garantizar el funcionamiento offline y mejora la resiliencia del sistema. La sincronización se realiza de manera segura y concurrente, ya que cada alumno trabaja con sus propios datos y la API del backend filtra por token.
 
 Se identificaron los principales desafíos técnicos: curva de aprendizaje de Godot y NestJS, integración segura con JWT y sincronización progresiva. Sin embargo, con el cronograma planteado, el uso de recursos formativos gratuitos, y una planificación basada en pruebas incrementales, los riesgos son gestionables. La infraestructura disponible, las herramientas seleccionadas y la arquitectura técnica adoptada permiten avanzar con seguridad en el desarrollo del sistema.
 
