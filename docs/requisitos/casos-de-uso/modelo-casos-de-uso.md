@@ -9,13 +9,45 @@
 ## Actores del sistema
 
 ### ACT-01 Alumno
-Representa a todos los alumnos que utilizarán el videojuego desarrollado en Godot para aprender los contenidos de la materia. Podrán registrarse en la plataforma web mediante formulario tradicional o con Google y descargar el videojuego para: ingresar a cursos, consultar las misiones, resolver misiones y recibir feedback formativo para mejorar su solución, recibir puntuación, obtener experiencia, subir de nivel consultar sus estadísticas de juego y desbloquear nuevas misiones y habilidades. Podrán confirmar asistencia a sesiones de refuerzo vía mail, o web.
+Representa a los estudiantes que utilizarán el videojuego desarrollado en Godot como herramienta principal para practicar y afianzar los contenidos de la materia "Algoritmos y Estructuras de Datos I". 
+
+Los alumnos podrán registrarse en la plataforma web mediante un formulario tradicional o autenticarse con Google. Una vez registrados, podrán descargar el videojuego, iniciar sesión con su usuario y contraseña, y unirse a un curso ingresando un nombre de curso y contraseña provistos por el docente.
+
+Dentro del videojuego, podrán:
+- Consultar y resolver misiones gamificadas.
+- Recibir feedback formativo automático tras cada intento.
+- Obtener puntuaciones, experiencia y subir de nivel.
+- Desbloquear nuevas habilidades y capítulos de la historia según el progreso.
+- Consultar sus estadísticas personales dentro del juego.
+
+Adicionalmente, podrán acceder a la plataforma web para:
+- Consultar recursos de apoyo (manual del héroe, tutoriales, etc.).
+- Ver estadísticas más detalladas de su rendimiento.
+- Confirmar asistencia a sesiones de refuerzo, ya sea desde la web o a través del enlace recibido por correo electrónico.
+
+---
 
 ### ACT-02 Docente
-Representa a todos los docentes que utilizarán la plataforma para tener seguimiento académico de sus alumnos y brindar apoyo y refuerzo de contenidos.
-Sus principales funciones serán la gestión limitada de sus cursos asignados por el administrador, pudiendo un docente estar a cargo de uno o varios cursos. Éste podrá cambiar la contraseña de acceso de cada curso y se encargará de aceptar a los alumnos que soliciten acceso al curso para mayor seguridad. El docente tendrá disponible seguimiento académico exhaustivo del progreso de los alumnos de cada curso, pudiendo también generar reportes con diferentes filtros y gestionar sesiones de refuerzo para los alumnos atrasados o con inactividad prolongada.
+Representa al personal docente encargado de dictar la materia y brindar seguimiento académico a los alumnos. Los docentes utilizarán exclusivamente la plataforma web, donde tendrán acceso a diversas funcionalidades de gestión académica.
+
+Sus principales responsabilidades incluyen:
+- Gestionar los cursos a su cargo (asignados previamente por el administrador) de manera limitada.
+  - Modificar la contraseña de acceso del curso para nuevos alumnos.
+  - Validar y aceptar solicitudes de ingreso de alumnos a sus cursos.
+- Visualizar en tiempo real el avance y desempeño de sus alumnos (misiones resueltas, errores frecuentes, actividad reciente, etc.).
+- Generar reportes académicos filtrados por curso, capítulo o estudiante.
+- Programar sesiones de refuerzo para alumnos con bajo rendimiento o inactividad prolongada.
+
+---
 
 ### ACT-03 Administrador
-Representa al administrador del sistema. Sus principales funciones serán gestionar usuarios, instituciones, cursos, docentes y la asignación de docentes a los cursos. También podrá realizar tareas de auditoría de los distintos módulos del sistema como usuarios, instituciones, cursos y docentes para visualizar altas, bajas, modificaciones o cambios. 
+Representa al administrador general del sistema. Es responsable de mantener la infraestructura organizativa y funcional del entorno académico.
 
+Entre sus funciones se destacan:
+- Registrar y gestionar instituciones educativas.
+- Crear cursos y asignar docentes a los mismos.
+- Gestionar usuarios del sistema (docentes, alumnos y otros administradores en el futuro).
+- Auditar cambios realizados en las distintas entidades del sistema: altas, bajas, modificaciones de usuarios, cursos e instituciones.
+- Brindar soporte técnico ante incidencias reportadas y mantener el funcionamiento general de la plataforma.
 
+En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
