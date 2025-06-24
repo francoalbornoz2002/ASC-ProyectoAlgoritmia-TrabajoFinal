@@ -43,7 +43,7 @@ Para ello, se ofrecerá:
 
 ## 4. Descripción del juego
 Algoritmia es un videojuego de aventura estilo RPG que está enfocado en el aprendizaje de las bases de la programación: algoritmos, lógica, estructuras de control (condicionales y bucles) y procedimientos mediante la resolución de ejercicios, codificando y visualizando su solución en tiempo real.
-El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario.
+El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario diseñado como un tablero de N filas por N columnas.
 Una característica importante de Algoritmia es que ofrece feedback formativo inmediato y ayudas al jugador para detectar y corregir errores de manera sencilla y optimizar la solución mediante sugerencias visualizando el antes y después.
 
 ### 4.1 Lenguaje gamificado
@@ -87,7 +87,7 @@ El Core Loop principal del videojuego es:
 3. Seleccionar la siguiente misión
 4. Diseñar un algoritmo para resolver la misión
 5. Ejecutar la solución para visualizar la misma en el escenario
-6. Recibir una puntuación si se completa correctamente
+6. Recibir una puntuación y EXP correspondiente si se completa correctamente.
 7. Recibir feedback formativo por parte del sistema para refactorizar si se quiere la solución.
 
 ## 5. Historia
