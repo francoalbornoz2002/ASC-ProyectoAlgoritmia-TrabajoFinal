@@ -18,6 +18,7 @@ En este documento se detalla la lista de requisitos de almacenamientos y de rest
 - UC-XX Baja usuario
 - UC-XX Buscar usuario
 - UC-XX Iniciar sesión
+- UC-XX Registrarse
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los usuarios del sistema. En concreto: 
@@ -29,8 +30,8 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - Correo electrónico
 - Rol de usuario (alumno, docente o administrador)
 - Fecha de creación de la cuenta
-- Método de registro (activo/inactivo)
-- Estado
+- Método de registro
+- Estado (activo/inactivo)
 
 ## IRQ-02 Información de instituciones
 **Objetivos asociados**
@@ -101,7 +102,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 - OBJ-08 Gestionar usuarios y roles del sistema
 
 **Requisitos asociados**
-- UC-XX Registrar alumno
+- UC-XX Registrarse
 - UC-XX Modificar alumno
 - UC-XX Baja alumno
 - UC-XX Buscar alumno
@@ -123,19 +124,20 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 **Requisitos asociados**
 - UC-XX Consultar mis estadísticas
 - UC-XX Consultar progreso de alumnos
+- UC-XX Ver progreso individual de alumno
 - UC-XX Generar reporte de progreso de alumnos
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las estadísticas (progreso) de juego de cada alumno dentro del sistema. En concreto:
 
 **Datos específicos**
-- Puntos de experiencia (EXP) obtenidos
+- Total de puntos de experiencia (EXP) obtenidos
 - Nivel actual
-- Misión actual
+- Capítulo y Misión actual
 - Cantidad de misiones completadas
 - Cantidad de estrellas obtenidas
 - Promedio de intentos por misión
-- Porcentaje de avance en un episodio
+- Porcentaje de avance en un capítulo
 - Porcentaje de avance en la historia
 - Fecha y hora del ultimo ingreso al sistema.
 
@@ -155,13 +157,13 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 
 **Datos específicos**
 - Id sesión de refuerzo
+- Docente a cargo de la sesión de refuerzo
+- Alumnos involucrados
 - Temas a reforzar
+- Fecha y hora de la sesión
 - Duración de la sesión en minutos
 - Modalidad de la sesión (presencial o virtual)
   - Si es virtual: URL adjunta de la reunión/meet/zoom
-- Docente a cargo de la sesión de refuerzo
-- Alumnos involucrados en la sesión de refuerzo
-
 
 ## IRQ-08 Información de capítulos
 **Objetivos asociados**
@@ -170,6 +172,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 
 **Requisitos asociados**
 - UC-XX Habilitar capítulo
+- UC-XX Buscar capítulo
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los capítulos (temas) de la historia dentro del sistema. En concreto:
@@ -177,6 +180,8 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 **Datos específicos**
 - Id de capítulo
 - Nombre del capítulo
+- Descripción del capítulo
+- Tema referenciado del capítulo (Algoritmos, Lógica, Estructuras de Control, Variables o Procedimientos)
 - Cantidad de misiones del capítulo
 - Nivel requerido para desbloqueo
 - Habilitación del docente (habilitado o no habilitado)
@@ -188,6 +193,7 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 
 **Requisitos asociados**
 - UC-XX Resolver misión
+- UC-XX Buscar misión
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las misiones (ejercicios) de cada capítulo de la historia dentro del sistema. En concreto:
@@ -214,13 +220,14 @@ El sistema deberá almacenar la información correspondiente a la configuración
 **Datos específicos**
 - Id de escenario
 - Mision a la que pertenece el escenario
-- Limite de filas
-- Limite de columnas
+- Cantidad de filas
+- Cantidad de columnas
 - Cantidad de casilleros (filas * columnas)
+- Enemigos del escenario
 - Obstáculos del escenario
-- Objetos esparcidos en el escenario
+- Objetos en el escenario
 
-## IRQ-11 Información de obstáculos
+## IRQ-11 Información de Enemigos, obstáculos y objetos del escenario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -228,22 +235,22 @@ El sistema deberá almacenar la información correspondiente a la configuración
 - UC-XX Resolver misión
 
 **Descripción**
-El sistema deberá almacenar la información y posición correspondiente a los obstáculos dentro del escenario de cada misión del sistema. En concreto:
+El sistema deberá almacenar la información y posición correspondiente a los enemigos, obstáculos y objetos dentro del escenario de cada misión del sistema. En concreto:
 
 **Datos específicos**
-- Id de obstáculo
-- Nombre del obstáculo
-- Descripción del obstáculo
-- Proposición del obstaculo (para evaluar)
-- Sprite (imagen) del obstáculo
-- Posición (casillero) dentro del escenario (coordenada)
+- Id de enemigo/obstáculo/objeto
+- Nombre del enemigo/obstáculo/objeto
+- Descripción del enemigo/obstáculo/objeto
+- Proposición del enemigo/obstáculo/objeto (para evaluar)
+- Sprite (imagen) del enemigo/obstáculo/objeto
+- Posición dentro del escenario (casillero)
 
 ## IRQ-12 Información de acciones
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
 **Requisitos asociados**
-- UC-XX Consultar libro de habilidades
+- UC-XX Consultar manual del héroe
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las acciones ("primitivas" en lenguaje gamificado) dentro del sistema. En concreto:
@@ -251,8 +258,8 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 **Datos específicos**
 - Id de la acción
 - Nombre de la acción
+- Descripción de la acción
 - Sintaxis de la acción
-- Semántica de la acción
 - Nivel requerido para desbloqueo
 
 ## IRQ-13 Información de tácticas
@@ -260,7 +267,7 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
 **Requisitos asociados**
-- UC-XX Consultar libro de habilidades
+- UC-XX Consultar manual del héroe
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las tácticas ("estructuras de control" en lenguaje gamificado) dentro del sistema. En concreto:
@@ -268,8 +275,8 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 **Datos específicos**
 - Id de táctica
 - Nombre de la táctica
+- Descripción de la táctica
 - Sintaxis de la táctica
-- Semántica de la táctica
 - Nivel requerido para desbloqueo
 
 ## IRQ-14 Información de objeto de inventario
@@ -277,25 +284,25 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
 **Requisitos asociados**
-- UC-XX Consultar libro de habilidades
+- UC-XX Consultar manual del héroe
+- UC-XX Consultar inventario
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los objetos que tendrá el jugador en su inventario o bolsa. En concreto:
+El sistema deberá almacenar la información correspondiente a los objetos que tendrá el jugador en su inventario. En concreto:
 
 **Datos específicos**
 - Id del objeto de inventario
 - Nombre del objeto de inventario
-- Descripción breve del objeto de inventario
+- Descripción del objeto de inventario
 - Sprite (ícono/imagen) del objeto de inventario
-- Valor numérico del objeto (numero entero positivo)
-- Proposición del objeto
+- Valor acumulable del objeto (numero entero positivo)
 
 ## IRQ-15 Información de habilidades especiales
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
 **Requisitos asociados**
-- UC-XX Consultar libro de habilidades
+- UC-XX Consultar manual del héroe
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las habilidades especiales ("procedimientos y funciones" en lenguaje gamificado) dentro del sistema. En concreto:
@@ -303,48 +310,30 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 **Datos específicos**
 - Id de habilidad especial
 - Nombre de la habilidad especial
+- Descripción de la habilidad especial
 - Sintaxis de la habilidad especial
-- Semántica de la habilidad especial
 - Parámetros de la habilidad especial
 - Estructura de la habilidad especial (acciones, tácticas y objetos)
 - Nivel requerido para desbloqueo
 
-## IRQ-16 Información de condicionales
+## IRQ-16 Información de operadores lógicos y matemáticos
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
 **Requisitos asociados**
-- UC-XX Consultar libro de habilidades
+- UC-XX Consultar manual del héroe
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los condicionales (AND, OR y NOT) dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los operadores lógicos (AND, OR y NOT) y matemáticos (+, -, *, /, <, >, ==, <=, >=, !=) dentro del sistema. En concreto:
 
 **Datos específicos**
-- Id del condicional
-- Nombre del condicional
-- Sintaxis del condicional
-- Semántica del condicional
+- Id del operador
+- Nombre del operador
+- Descripción del operador
+- Sintaxis del operador
 - Nivel requerido para desbloqueo
 
-## IRQ-17 Información de proposiciones
-**Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
-
-**Requisitos asociados**
-- UC-XX Consultar libro de habilidades
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a las proposiciones disponibles para actuar como condiciones en las estructuras de control (Si-Sino, Mientras y Repetir) dentro del sistema. En concreto:
-
-**Datos específicos**
-- Id de la proposición
-- Nombre de la proposición
-- Sintaxis del condicional
-- Semántica del condicional
-- Valor predeterminado (verdadeo o falso)
-- Nivel requerido para desbloqueo
-
-## IRQ-18 Información de auditoría
+## IRQ-17 Información de auditoría
 **Objetivos asociados**
 - OBJ-09 Gestión de auditoría
 
