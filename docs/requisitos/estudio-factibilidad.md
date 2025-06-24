@@ -198,14 +198,14 @@ Inicialmente, se habría considerado la utilización de Phaser (librería de Jav
 **Cronograma de aprendizaje**
 | Semana          | Tecnología                                 |
 | --------------- | ------------------------------------------ |
-| 23 Jun - 29 Jun | HTML - CSS - JavaScript                    |
-| 30 Jun - 06 Jul | HTML - CSS - JavaScript                    |
-| 07 Jul - 13 Jul | Svelte - Tailwind                          |
-| 14 Jul - 20 Jul | Svelte - Tailwind                          |
-| 21 Jul - 27 Jul | Godot 4 - GDScript / SQLite                |
-| 28 Jul - 03 Ago | Godot 4 - GDScript / SQLite                |
-| 04 Ago - 10 Ago | Godot 4 - GDScript / SQLite                |
-| 04 Ago - 10 Ago | Godot 4 - GDScript / SQLite                |
+| 23 Jun - 29 Jun | Godot 4 - GDScript / SQLite                |
+| 30 Jun - 06 Jul | Godot 4 - GDScript / SQLite                |
+| 07 Jul - 13 Jul | Godot 4 - GDScript / SQLite                |
+| 14 Jul - 20 Jul | Godot 4 - GDScript / SQLite                |
+| 21 Jul - 27 Jul | HTML - CSS - JavaScript                    |
+| 28 Jul - 03 Ago | HTML - CSS - JavaScript                    |
+| 04 Ago - 10 Ago | Svelte - Tailwind                          |
+| 04 Ago - 10 Ago | Svelte - Tailwind                          |
 | 18 Ago - 24 Ago | Node.js - NestJs / TypeScript              |
 | 25 Ago - 31 Ago | Node.js - NestJs / TypeScript / PostgreSQL |
 | 01 Sep - 07 Sep | Node.js - NestJs / TypeScript / PostgreSQL |
