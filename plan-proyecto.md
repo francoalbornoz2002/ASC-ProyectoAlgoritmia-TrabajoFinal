@@ -91,15 +91,15 @@
 
 ---
 
-## 6. Herramientas
-
+## 6. Tecnologías y herramientas de desarrollo
 - **Gestión de proyectos:** Notion
 - **Documentación:** Markdown
 - **Control de versiones:** GitHub
-- **Motor de Base de Datos:** SQLite para desarrollo, PostgreSQL para demostración y futuro despliegue.
-- **Tecnologías front-end:** HTML, CSS y JavaScript con SvelteKit + Tailwind CSS. Phaser para el entorno de videojuego.
-- **Tecnologías back-end:** Node.js + NestJs + TypeScript
-- **IDE:** Visual Studio Code
+- **Tecnologías front-end:** SvelteKit + Tailwind CSS.
+- **Tecnologías back-end:** Node.js + NestJs con TypeScript
+- **Motor de videojuegos:** Godot con GDScript
+- **Base de Datos:** SQLite local para desarrollo y videojuego, PostgreSQL como BD global para parte web.
+- **IDEs:** Visual Studio Code, Godot Engine 4
 - **Herramientas de modelado:**
   - Digramas UML: PlantUML
   - Interfaz de usuario: Frame 0, Aseprite (Pixel Art)
