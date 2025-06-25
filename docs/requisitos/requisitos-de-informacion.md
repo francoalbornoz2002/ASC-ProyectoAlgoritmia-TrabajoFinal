@@ -63,6 +63,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - UC-XX Baja de curso
 - UC-XX Buscar curso
 - UC-XX Ingresar a un curso
+- UC-XX Aceptar alumno a curso
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los cursos del sistema. En concreto:
@@ -227,7 +228,7 @@ El sistema deberá almacenar la información correspondiente a la configuración
 - Obstáculos del escenario
 - Objetos en el escenario
 
-## RI-11 Información de Enemigos, obstáculos y objetos del escenario
+## RI-11 Información de enemigos, obstáculos y objetos del escenario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -333,7 +334,30 @@ El sistema deberá almacenar la información correspondiente a los operadores l�
 - Sintaxis del operador
 - Nivel requerido para desbloqueo
 
-## RI-17 Información de auditoría
+## RI-17 Información del feedback generado
+**Objetivos asociados**
+- OBJ-04 Proveer feedback formativo inmediato
+
+**Requisitos asociados**
+- UC-XX Resolver misión
+- UC-XX Generar feedback
+
+**Descripción**
+El sistema deberá almacenar la información correspondiente del feedback formativo generado en la resolución exitosa de una misión. En concreto:
+
+**Datos específicos**
+- Id del feedback
+- Misión en la que se originó el feedback
+- Texto explicativo formativo del feedback
+- Código "antes" del feedback
+- Código "después" con la mejora propuesta
+- Aceptado o no (Booleano) que indica si el alumno aceptó o no la mejora.
+
+**Comentarios**
+- Pueden generarse múltiples feedbacks por una misma ejecución si hay más de una mejora sugerida.  
+- El feedback será accesible desde el historial de la misión (para revisión futura del alumno).  
+
+## RI-18 Información de auditoría
 **Objetivos asociados**
 - OBJ-09 Gestión de auditoría
 
