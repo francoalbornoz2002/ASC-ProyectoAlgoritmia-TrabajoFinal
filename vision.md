@@ -215,7 +215,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 | OBJ-08      | Gestionar usuarios y roles del sistema                                                                                  |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir la gestión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador) |
+| Descripción | Permitir la gestión, registro e inicio de sesión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador) |
 | Estabilidad | Alta                                                                                                                    |
 | Comentarios | -                                                                                                                       |
 
