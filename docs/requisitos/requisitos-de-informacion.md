@@ -8,7 +8,7 @@ En este documento se detalla la lista de requisitos de almacenamientos y de rest
 
 ---
 
-## IRQ-01 Información de usuarios
+## RI-01 Información de usuarios
 **Objetivos asociados**
 - OBJ-08 Gestionar usuarios y roles del sistema
 
@@ -33,7 +33,7 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - Método de registro
 - Estado (activo/inactivo)
 
-## IRQ-02 Información de instituciones
+## RI-02 Información de instituciones
 **Objetivos asociados**
 - OBJ-07 Gestión Académica
 
@@ -53,7 +53,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - Teléfono de contacto
 - Correo electrónico de contacto
 
-## IRQ-03 Información de cursos
+## RI-03 Información de cursos
 **Objetivos asociados**
 - OBJ-07 Gestión Académica
 
@@ -76,7 +76,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 - Contraseña para el ingreso al curso
 - Estado del curso (activo/finalizado)
 
-## IRQ-04 Información de docentes
+## RI-04 Información de docentes
 **Objetivos asociados**
 - OBJ-07 Gestión Académica
 - OBJ-08 Gestionar usuarios y roles del sistema
@@ -97,7 +97,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 - Instituciones a la que pertenece el docente
 - Cursos a cargo del docente
 
-## IRQ-05 Información de alumnos
+## RI-05 Información de alumnos
 **Objetivos asociados**
 - OBJ-08 Gestionar usuarios y roles del sistema
 
@@ -116,7 +116,7 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 - Género (Masculino, Femenino u Otro)
 - Cursos a los que está asociado
 
-## IRQ-06 Información de estadísticas de progreso de los alumnos
+## RI-06 Información de estadísticas de progreso de los alumnos
 **Objetivos asociados**
 - OBJ-05 Proveer seguimiento académico exhaustivo
 - OBJ-06 Generar reportes semanales y sesiones de refuerzo automáticos
@@ -141,7 +141,7 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 - Porcentaje de avance en la historia
 - Fecha y hora del ultimo ingreso al sistema.
 
-## IRQ-07 Información de sesiones de refuerzo
+## RI-07 Información de sesiones de refuerzo
 **Objetivos asociados**
 - OBJ-05 Proveer seguimiento académico exhaustivo
 - OBJ-06 Generar reportes semanales y sesiones de refuerzo automáticos
@@ -165,7 +165,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 - Modalidad de la sesión (presencial o virtual)
   - Si es virtual: URL adjunta de la reunión/meet/zoom
 
-## IRQ-08 Información de capítulos
+## RI-08 Información de capítulos
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
@@ -186,7 +186,7 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 - Nivel requerido para desbloqueo
 - Habilitación del docente (habilitado o no habilitado)
 
-## IRQ-09 Información de misiones
+## RI-09 Información de misiones
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
@@ -206,7 +206,7 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 - Descripción (Enunciado) de la misión
 - Nivel requerido para desbloqueo
 
-## IRQ-10 Información del escenario
+## RI-10 Información del escenario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
@@ -227,7 +227,7 @@ El sistema deberá almacenar la información correspondiente a la configuración
 - Obstáculos del escenario
 - Objetos en el escenario
 
-## IRQ-11 Información de Enemigos, obstáculos y objetos del escenario
+## RI-11 Información de Enemigos, obstáculos y objetos del escenario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -245,7 +245,7 @@ El sistema deberá almacenar la información y posición correspondiente a los e
 - Sprite (imagen) del enemigo/obstáculo/objeto
 - Posición dentro del escenario (casillero)
 
-## IRQ-12 Información de acciones
+## RI-12 Información de acciones
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -262,7 +262,7 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 - Sintaxis de la acción
 - Nivel requerido para desbloqueo
 
-## IRQ-13 Información de tácticas
+## RI-13 Información de tácticas
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -279,7 +279,7 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 - Sintaxis de la táctica
 - Nivel requerido para desbloqueo
 
-## IRQ-14 Información de objeto de inventario
+## RI-14 Información de objeto de inventario
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -297,7 +297,7 @@ El sistema deberá almacenar la información correspondiente a los objetos que t
 - Sprite (ícono/imagen) del objeto de inventario
 - Valor acumulable del objeto (numero entero positivo)
 
-## IRQ-15 Información de habilidades especiales
+## RI-15 Información de habilidades especiales
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -316,7 +316,7 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 - Estructura de la habilidad especial (acciones, tácticas y objetos)
 - Nivel requerido para desbloqueo
 
-## IRQ-16 Información de operadores lógicos y matemáticos
+## RI-16 Información de operadores lógicos y matemáticos
 **Objetivos asociados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 
@@ -333,7 +333,7 @@ El sistema deberá almacenar la información correspondiente a los operadores l�
 - Sintaxis del operador
 - Nivel requerido para desbloqueo
 
-## IRQ-17 Información de auditoría
+## RI-17 Información de auditoría
 **Objetivos asociados**
 - OBJ-09 Gestión de auditoría
 
