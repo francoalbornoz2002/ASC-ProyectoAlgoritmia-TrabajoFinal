@@ -97,6 +97,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 - Género (Masculino, Femenino u Otro)
 - Instituciones a la que pertenece el docente
 - Cursos a cargo del docente
+- Sesiones de refuerzo creadas por el docente
 
 ## RI-05 Información de alumnos
 **Objetivos asociados**
@@ -140,7 +141,8 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 - Promedio de intentos por misión
 - Porcentaje de avance en un capítulo
 - Porcentaje de avance en la historia
-- Fecha y hora del ultimo ingreso al sistema.
+- Fecha y hora del ultimo inicio de sesión en el videojuego.
+- Ultima actividad (Activo hace x día(s))
 
 ## RI-07 Información de sesiones de refuerzo
 **Objetivos asociados**
@@ -185,7 +187,11 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 - Tema referenciado del capítulo (Algoritmos, Lógica, Estructuras de Control, Variables o Procedimientos)
 - Cantidad de misiones del capítulo
 - Nivel requerido para desbloqueo
-- Habilitación del docente (habilitado o no habilitado)
+- Habilitación del docente (habilitado o no)
+- Estado del capítulo (En curso o Finalizado)
+
+**Comentarios**
+Un capítulo estará "En curso" mientras el capitulo siguiente no sea habilitado por el docente. Si el docente habilita un capítulo, el anterior se considerará con estado "Finalizado". El docente solo podrá habilitar los capítulos de manera secuencial y NO desordenada. Los alumnos podrán jugar misiones que no hayan completado de capitulos finalizados igualmente.
 
 ## RI-09 Información de misiones
 **Objetivos asociados**
@@ -206,6 +212,7 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 - Dificultad de la misión (Fácil, Normal o Difícil)
 - Descripción (Enunciado) de la misión
 - Nivel requerido para desbloqueo
+- Estado de la misión (Completada, no completada)
 
 ## RI-10 Información del escenario
 **Objetivos asociados**

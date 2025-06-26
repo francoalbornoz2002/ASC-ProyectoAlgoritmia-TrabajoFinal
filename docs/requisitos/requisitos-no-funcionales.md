@@ -5,3 +5,8 @@
 **Autor(es):** Franco Andrés Albornoz
 
 ---
+
+Estética pixel art
+Narrativa e historia
+Sincronización de progreso (desde la BD local con a la BD global)
+Auditoría

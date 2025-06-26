@@ -209,15 +209,15 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 | OBJ-07      | Gestión Académica                                                                                                                                                                                                                       |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda optar por incorporar y utilizar el sistema.                                                                                             |
+| Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda optar por incorporar y utilizar el sistem y permitir que los alumnos puedan unirse a un curso mediante nombre del curso y contraseña    |
 | Estabilidad | Alta                                                                                                                                                                                                                                    |
 | Comentarios | El rol de administrador se encargará de la gestión de instituciones, cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
-| OBJ-08      | Gestionar usuarios y roles del sistema                                                                                  |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| OBJ-08      | Gestionar usuarios y roles del sistema                                                                                                               |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Permitir la gestión, registro e inicio de sesión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador) |
-| Estabilidad | Alta                                                                                                                    |
-| Comentarios | -                                                                                                                       |
+| Estabilidad | Alta                                                                                                                                                 |
+| Comentarios | -                                                                                                                                                    |
 
 | OBJ-09      | Gestión de auditoría                                                                                                    |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -351,28 +351,71 @@ La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución 
 #### 3.4.6 Gestion Docente
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
-**Definición de días y horarios de cursada**
+##### **Definición de días y horarios de cursada**
 Los docentes podrán configurar los días y horarios de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
 
-**Visualización y reportes del estado de avance de los alumnos**
-Los docentes podrán consultar y realizar reportes del estado de avance de los diferentes cursos que tenga a cargo. Dentro de un curso, podrá visualizar el estado de avance del curso en general y de forma individual por alumno. Los datos que podrá visualizar son los siguientes:
-- Porcentaje promedio de avance del curso en la historia (programa total)
-- Porcentaje promedio de avance del curso en cada tema
-- Estadisticas del alumno (por fila)
-  - Nombre completo
-  - Nivel actual
-  - Misión actual
-  - Cantidad de misiones completadas hasta el momento
-  - Cantidad de estrellas obtenidas hasta el momento
-  - Promedio de intentos por misión
-  - Porcentaje de avance individual en la historia
-  - Porcentaje de avance individual en un capítulo
-  - Ultimo ingreso a la plataforma.
+##### **Habilitación de capítulos**
+Los docentes podrán habilitar los capítulos de la historia a medida que se vayan dando los contenidos en la materia para garantizar la curva de aprendizaje controlada de los alumnos.
 
-Todos estos datos se podrán ordenar de manera ascendente o descendente en la vista. Tambien se podrán aplicar los siguientes filtros de búsqueda:
-- Nombre de alumno
-- Capítulo (tema)
-- Fechas (desde - hasta)
+##### **Visualización y reportes del estado de avance de los alumnos**
+Los docentes podrán consultar y realizar reportes del estado de avance tanto de la historia en general como de los capítulos específicos de los diferentes cursos que tenga a cargo.
+
+**Historia**
+En el apartado de historia general, se podrá visualizar:
+- Porcentaje de avance del curso en la historia
+- Porcentaje de avance del curso en el último capítulo habilitado
+- Estadísticas individuales del alumno
+  - Nombre completo del alumno
+  - Capítulo y Misión actual
+  - Porcentaje de avance en la historia
+  - Porcentaje de avance en su capítulo actual
+  - Nivel actual
+  - Total de puntos de experiencia (EXP)
+  - Cantidad de misiones completadas
+  - Cantidad de estrellas obtenidas
+  - Promedio de intentos por misión
+  - Fecha y hora del ultimo inicio de sesión en el videojuego.
+  - Ultima actividad (Activo hace x día(s))
+- Filtros por:
+  - Búsqueda por nombre y/o apellido del alumno
+  - Porcentaje de avance en la historia
+  - Promedio de intentos por misión
+    - 1 a 3 intentos: alumnos con buen rendimiento
+    - 3 a 6 intentos: alumnos con rendimiento moderado
+    - 6 a 9 intentos: alumnos con dificultades
+    - Más de 10 intentos: alumnos con muchas dificultades
+  - Ultimo ingreso (por días de inactividad)
+    - Activo hasta hace 3 días.
+    - Activo hasta hace 7 días.
+    - Activo hace más de 10 días.
+Todos los datos se podrán ordenar de manera ascendente o descendente.
+
+**Capítulos**
+En el apartado de capítulos primeramente se deberá seleccionar el capítulo, luego se podrá visualizar:
+- Estado del capítulo: "En curso" o "Finalizado"
+- Porcentaje de avance del curso en el capítulo
+  - Si está en curso, se muestra el porcentaje de avance
+  - Si está finalizado, se muestra el porcentaje de avance cuando finalizó y el porcentaje de avance actual, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos finalizados.
+- Estadísticas individuales del alumno
+  - Nombre completo del alumno
+  - Misión actual
+  - Porcentaje de avance en el capítulo
+  - Nivel actual
+  - Total de puntos de experiencia (EXP) obtenidos en el capítulo
+  - Cantidad de misiones completadas en el capitulo
+  - Cantidad de estrellas obtenidas en el capitulo
+  - Promedio de intentos por misión en el capitulo
+  - Fecha y hora del ultimo inicio de sesión en el videojuego.
+  - Ultima actividad (Activo hace x día(s))
+- Filtros por:
+  - Búsqueda por nombre y/o apellido del alumno
+  - Porcentaje de avance en el capitulo
+  - Promedio de intentos por misión en el capítulo
+    - 1 a 3 intentos: alumnos con buen rendimiento
+    - 3 a 6 intentos: alumnos con rendimiento moderado
+    - 6 a 9 intentos: alumnos con dificultades
+    - Más de 10 intentos: alumnos con muchas dificultades
+Todos los datos se podrán ordenar de manera ascendente o descendente.
 
 La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
 - **Alumnos atrasados en color **amarillo** suave**: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
