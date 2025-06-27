@@ -40,11 +40,10 @@ El sistema debe permitir a los alumnos ingresar a cursos colocando el nombre del
 **Descripción**
 El sistema debe permitir a los docentes, a modo de seguridad, aceptar a cada alumno que haya solicitado ingresar al curso verificando su identidad.
 
-## RF-04 Resolver, ejecutar y visualizar misiones
+## RF-04 Resolver misiones
 **Objetivos relacionados**
 - OBJ-01 Crear un entorno de videojuegos con gamificación
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
-- OBJ-03 Ofrecer ejecución y visualización de la solución en tiempo real
 
 **Requisitos asociados**
 - RI-08 Información de capítulos
@@ -56,9 +55,20 @@ El sistema debe permitir a los docentes, a modo de seguridad, aceptar a cada alu
 - RI-16 Información de operadores lógicos y matemáticos
 
 **Descripción**
-El sistema debe permitir a los alumnos resolver las misiones mediante el lenguaje de programación gamificado y ejecutar y visualizar en tiempo real de la solución en el escenario de videojuego.
+El sistema debe permitir a los alumnos resolver las misiones utilizando todas las acciones, tácticas, objetos y habilidades especiales disponibles en el lenguaje de programación gamificado, pudiendo el alumno consultar en todo momento el manual del heroe que contiene la sintaxis y semántica de cada instrucción.
 
-## RF-05 Generar feedback formativo
+## RF-05 Ejecutar y visualizar misiones
+**Objetivos relacionados**
+- OBJ-03 Ofrecer ejecución y visualización de la solución en tiempo real
+
+**Requisitos asociados**
+- RI-10 Información del escenario
+- RI-11 Información de enemigos, obstáculos y objetos del escenario
+
+**Descripción**
+El sistema debe permitir la ejecución de la solución del alumno diseñada con el lenguaje de programación gamificado reaccionando a cada instrucción programada visualizándola en tiempo real en el escenario de videojuego.
+
+## RF-06 Generar feedback formativo
 **Objetivos relacionados**
 - OBJ-04 Proveer feedback formativo inmediato
 

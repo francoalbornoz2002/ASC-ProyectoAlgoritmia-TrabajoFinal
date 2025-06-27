@@ -59,8 +59,8 @@
 | ID  | Riesgo                                                                      | Severidad | Probabilidad |
 | --- | --------------------------------------------------------------------------- | --------- | ------------ |
 | R1  | Incompletitud e inexactitud de requisitos                                   | Alta      | 60%          |
-| R2  | Inexperiencia en tecnologías de desarrollo                                  | Alto      | 80%          |
-| R3  | Subestimación e inclumplimiento de los tiempos del proyecto                 | Alto      | 60%          |
+| R2  | Inexperiencia en tecnologías de desarrollo                                  | Media     | 80%          |
+| R3  | Subestimación e inclumplimiento de los tiempos del proyecto                 | Alta      | 60%          |
 | R4  | Baja participación en las 20 pruebas de usuario necesarias para el proyecto | Alta      | 50%          |
 | R5  | Alta rotación de requisitos o alcance ambiguo                               | Alta      | 70%          |
 | R6  | Pérdida de los archivos y progreso del proyecto                             | Alta      | 50%          |
