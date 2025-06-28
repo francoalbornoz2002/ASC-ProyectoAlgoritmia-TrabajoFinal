@@ -1,6 +1,6 @@
 # Plan del Proyecto
 
-**Versión:** 1.5
+**Versión:** 1.6
 **Fecha de inicio:** 10/05/2025
 **Autor(es):** Franco Andrés Albornoz
 
@@ -41,14 +41,14 @@
 
 ## 3. Roles y Responsabilidades
 
-| Rol                     | Responsable     | Responsabilidades                                     |
-| ----------------------- | --------------- | ----------------------------------------------------- |
-| Analista de Sistemas    | Franco Albornoz | Vision, alcance, captura de requisitos y glosario     |
-| Diseñador               | Franco Albornoz | Arquitectura, Diagramas UML y Diseño de Base de Datos |
-| Desarrollador Front‑end | Franco Albornoz | Implementación de UI y TDD                            |
-| Desarrollador Back‑end  | Franco Albornoz | Lógica de negocio y servicios REST                    |
-| Tester                  | Franco Albornoz | Pruebas unitarias e integración                       |
-| Gestor de Proyecto      | Franco Albornoz | Seguimiento de iteraciones, hitos y riesgos           |
+| Rol                     | Responsable     | Responsabilidades                                                    |
+| ----------------------- | --------------- | -------------------------------------------------------------------- |
+| Analista de Sistemas    | Franco Albornoz | Vision, alcance, captura de requisitos y glosario                    |
+| Diseñador               | Franco Albornoz | Arquitectura, Game Designer, Diagramas UML y Diseño de Base de Datos |
+| Desarrollador Front‑end | Franco Albornoz | Implementación de UI y TDD                                           |
+| Desarrollador Back‑end  | Franco Albornoz | Lógica de negocio y servicios REST                                   |
+| Tester                  | Franco Albornoz | Pruebas unitarias e integración                                      |
+| Gestor de Proyecto      | Franco Albornoz | Seguimiento de iteraciones, hitos y riesgos                          |
 
 ---
 
