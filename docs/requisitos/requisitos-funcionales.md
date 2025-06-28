@@ -1,23 +1,24 @@
 # Requisitos Funcionales del sistema
 
-**Versión:** 1.0
-**Fecha:** 09/06/2025
+**Versión:** 1.3
+**Fecha:** 28/06/2025
 **Autor(es):** Franco Andrés Albornoz
 
 En este documento contiene la lista de los requisitos funcionales, expresado en forma tradicional.
 
 ---
 
-## RF-01 Registro de alumnos
+## RF-01 Gestión de usuarios
 **Objetivos relacionados**
 - OBJ-08 Gestionar usuarios y roles del sistema
 
 **Requisitos asociados**
 - RI-01 Información de usuarios
+- RI-04 Información de docentes
 - RI-05 Información de alumnos
 
 **Descripción**
-El sistema debe permitir el registro de los alumnos via web mediante formulario tradicional o con autenticación con Google (OAuth 2.0).
+El sistema debe permitir la alta, baja y modificación de usuarios asi como también la asignación de los roles de administrador, docente y alumno.
 
 ## RF-02 Ingresar a cursos
 **Objetivos relacionados**
@@ -27,7 +28,7 @@ El sistema debe permitir el registro de los alumnos via web mediante formulario 
 - RI-03 Información de cursos 
 
 **Descripción**
-El sistema debe permitir a los alumnos ingresar a cursos colocando el nombre del curso y la contraseña proporcionada por el docente.
+El sistema debe permitir a los alumnos ingresar a cursos colocando el nombre del curso y contraseña específicos y proporcionados por el docente.
 
 ## RF-03 Aceptar ingreso de alumnos al curso
 **Objetivos relacionados**
@@ -66,7 +67,7 @@ El sistema debe permitir a los alumnos resolver las misiones utilizando todas la
 - RI-11 Información de enemigos, obstáculos y objetos del escenario
 
 **Descripción**
-El sistema debe permitir la ejecución de la solución del alumno diseñada con el lenguaje de programación gamificado reaccionando a cada instrucción programada visualizándola en tiempo real en el escenario de videojuego.
+El sistema debe permitir la ejecución de la solución del alumno diseñada con el lenguaje de programación gamificado ejecutando y visualizando cada instrucción en tiempo real en el escenario de la misión.
 
 ## RF-06 Generar feedback formativo
 **Objetivos relacionados**
@@ -83,14 +84,15 @@ El sistema deberá analizar y realizar automáticamente mejoras y optimizaciones
 - OBJ-06 Generar reportes semanales y sesiones de refuerzo automáticos
 
 **Requisitos asociados**
+- RI-05 Información de docentes
 - RI-05 Información de alumnos
 - RI-06 Información de estadísticas de progreso de los alumnos
 - RI-07 Información de sesiones de refuerzo
 
 **Descripción**
-El sistema debe permitir al docente la creación, modificación y eliminación de sesiones de refuerzo, adicionalmente debe soportar la generación automática de las mismas todos los domingos a las 20:00 PM.
+El sistema debe permitir al docente la creación, modificación y eliminación de sesiones de refuerzo y debe realizar la generación automática de la sesión de refuerzo semanal todos los domingos a las 20:00 PM notificando al docente y alumnos involucrados.
 
-## RF-07 Visualizar progreso de alumnos
+## RF-07 Reportes de progreso de alumnos en la historia
 **Objetivos relacionados**
 - OBJ-05 Proveer seguimiento académico exhaustivo
 
@@ -99,7 +101,28 @@ El sistema debe permitir al docente la creación, modificación y eliminación d
 - RI-06 Información de estadísticas de progreso de los alumnos
 
 **Descripción**
-El sistema debe permitir al docente visualizar las estadísticas de progreso de todos los alumnos de cada curso que esté a cargo pudiendo filtrar por: nombre y/o apellido del alumno, capítulo, porcentaje de avance en la historia, promedio de intentos por misión y ultima actividad (Activo hace x día(s)).
+El sistema debe permitir al docente visualizar y generar reportes de las estadísticas de progreso de todos los alumnos en la historia general de cada curso que esté a cargo, pudiendo aplicar los siguientes filtros:
+- Búsqueda por nombre y/o apellido del alumno
+- Porcentaje de avance en la historia
+- Promedio de intentos por misión
+- Días de inactividad
+
+## RF-07 Reportes de progreso de alumnos en un capítulo
+**Objetivos relacionados**
+- OBJ-05 Proveer seguimiento académico exhaustivo
+
+**Requisitos asociados**
+- RI-05 Información de alumnos
+- RI-06 Información de estadísticas de progreso de los alumnos
+- RI-08 Información de capítulos
+
+**Descripción**
+El sistema debe permitir al docente visualizar y generar reportes de las estadísticas de progreso de todos los alumnos en cada capítulo de la historia de cada curso que esté a cargo, aplicar los siguientes filtros:
+- Capítulo
+- Búsqueda por nombre y/o apellido del alumno
+- Porcentaje de avance en el capítulo
+- Promedio de intentos por misión en el capítulo
+- Días de inactividad
 
 
 ## RF-XX ---

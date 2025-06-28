@@ -10,3 +10,4 @@ Estética pixel art
 Narrativa e historia
 Sincronización de progreso (desde la BD local con a la BD global)
 Auditoría
+Registro mediante google

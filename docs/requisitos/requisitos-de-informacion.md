@@ -1,7 +1,7 @@
 # Requisitos de Información del sistema
 
-**Versión:** 1.0
-**Fecha:** 09/06/2025
+**Versión:** 1.3
+**Fecha:** 28/06/2025
 **Autor(es):** Franco Andrés Albornoz
 
 En este documento se detalla la lista de requisitos de almacenamientos y de restricciones de información que se haya identificado.
