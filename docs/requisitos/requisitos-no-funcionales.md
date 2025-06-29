@@ -34,7 +34,7 @@ El videojuego deberá estar disponible para ejecutarse en sistemas Windows y Lin
 
 ## RNF-03 Progreso offline y sincronización
 **Objetivos relacionados**
-- OBJ-10 Diseñar un videojuego que permita progreso offline
+- OBJ-10 Persistir el progreso de manera local y sincronizarlo luego
 
 **Requisitos asociados**
 - RI-05 Información de alumnos

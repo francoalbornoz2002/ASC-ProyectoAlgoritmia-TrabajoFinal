@@ -196,10 +196,10 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 #### 3.2.2 Objetivos Específicos
 
 | OBJ-01      | Crear y diseñar un videojuego para el aprendizaje gamificado                                                                                                                                                                                                                              |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Diseñar e implementar mecánicas de capítulos, misiones, acciones, tácticas, objetos, habilidades, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa e historia interesante para motivar e incentivar la participación del alumno |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                          |
-| Comentarios | -                                                                                                                                                                                                                                                                             |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Crear y diseñar un videojuego con mecánicas de capítulos, misiones, acciones, tácticas, objetos, habilidades, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa e historia interesante para motivar e incentivar la participación del alumno |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                      |
+| Comentarios | -                                                                                                                                                                                                                                                                                         |
 
 | OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,17 +207,17 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                  |
 | Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                     |
 
-| OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                       |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Diseñar e implementar un entorno de ejecución siguiendo la narrativa y estética Pixel Art para visualizar la ejecución de la solución en tiempo real. |
-| Estabilidad | Alta                                                                                                                                                  |
-| Comentarios | -                                                                                                                                                     |
+| OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descripción | Diseñar e implementar un sistema de ejecución que lea y ejecute en tiempo real cada instrucción de la solución del alumno y la visualice un escenario acorde a la narrativa y estética Pixel Art |
+| Estabilidad | Alta                                                                                                                                                                                             |
+| Comentarios | -                                                                                                                                                                                                |
 
-| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Analizar automáticamente la solución del alumno y generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas o instrucciones redundantes y simplificación de estructuras. |
-| Estabilidad | Alta                                                                                                                                                                                                                |
-| Comentarios | -                                                                                                                                                                                                                   |
+| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Analizar automáticamente la solución del alumno e indicar errores de sintaxis, proveer ayudas para diseñar la solución y posterior a la ejecución generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas o instrucciones redundantes y simplificación de estructuras. |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                   |
 
 | OBJ-05      | Proveer seguimiento académico exhaustivo                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -237,11 +237,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                                                    |
 | Comentarios | El rol de administrador se encargará de la gestión de instituciones, cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
-| OBJ-08      | Gestionar usuarios y roles del sistema                                                                                                               |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir la gestión, registro e inicio de sesión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador) |
-| Estabilidad | Alta                                                                                                                                                 |
-| Comentarios | -                                                                                                                                                    |
+| OBJ-08      | Gestionar usuarios y roles del sistema                                                                                                                                                                         |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir la gestión, registro e inicio de sesión de usuarios asi como también la asignación de roles en el sistema (alumno, docente y administrador)                                                           |
+| Estabilidad | Alta                                                                                                                                                                                                           |
+| Comentarios | Los alumnos podrán registrarse e iniciar sesión en la web mediante autenticación con Google y en el videojuego solo por el usuario y contraseña. Docentes y administradores solamente con usuario y contraseña |
 
 | OBJ-09      | Gestión de auditoría                                                                                                    |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -249,11 +249,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                   |
 | Comentarios | -                                                                                                                       |
 
-| OBJ-10      | Diseñar un videojuego que permita progreso offline                                                                                                                                                                                                           |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir que los alumnos resolver las misiones del videojuego sin necesidad de conexión a internet permanente, almacenando el progreso de forma local para posteriormente sincronizarlo cuando se tenga conexión a internet. |
-| Estabilidad | Media                                                                                                                                                                                                                        |
-| Comentarios | -                                                                                                                                                                                                                            |
+| OBJ-10      | Persistir el progreso de manera local y sincronizarlo luego                                                                                                                                                                                                          |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir que los alumnos resolver las misiones del videojuego sin necesidad de conexión a internet permanente, almacenando el progreso de forma local para posteriormente sincronizarlo a la base de datos principal cuando se tenga conexión a internet. |
+| Estabilidad | Media                                                                                                                                                                                                                                                     |
+| Comentarios | -                                                                                                                                                                                                                                                         |
 
 ### 3.3 Modulos del sistema
 
@@ -628,6 +628,7 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
 - No se podrán configurar parámetros finos de gamificación (porcentaje de XP, cantidad de estrellas, etc.)
 
 #### 3.5.6 Gestión Académica
+
 - No se permitirá la importación/exportación masiva de alumnos o docentes por archivo.
 - No se incluirá funcionalidad para mensajes, anuncios o notificaciones escritas entre docentes y alumnos.
 
