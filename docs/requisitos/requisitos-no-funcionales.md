@@ -8,7 +8,7 @@
 
 ## RNF-01 Narrativa y estética pixel art
 **Objetivos relacionados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - RI-08 a RI-17
@@ -21,7 +21,7 @@ El videojuego deberá incluir una narrativa, historia y ambientación que manten
 
 ## RNF-02 Portabilidad y rendimiento del videojuego
 **Objetivos relacionados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - RI-08 a RI-17

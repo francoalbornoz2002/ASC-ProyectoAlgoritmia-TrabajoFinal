@@ -171,7 +171,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 
 ## RI-08 Información de capítulos
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 
 **Requisitos asociados**
@@ -193,7 +193,7 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 
 ## RI-09 Información de misiones
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 
 **Requisitos asociados**
@@ -214,7 +214,7 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 
 ## RI-10 Información del escenario
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 
 **Requisitos asociados**
@@ -235,7 +235,7 @@ El sistema deberá almacenar la información correspondiente a la configuración
 
 ## RI-11 Información de enemigos, obstáculos y objetos del escenario
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - UC-XX Resolver misión
@@ -253,7 +253,7 @@ El sistema deberá almacenar la información y posición correspondiente a los e
 
 ## RI-12 Información de acciones
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - UC-XX Consultar manual del héroe
@@ -270,7 +270,7 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 
 ## RI-13 Información de tácticas
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - UC-XX Consultar manual del héroe
@@ -287,7 +287,7 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 
 ## RI-14 Información de objeto de inventario
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - UC-XX Consultar manual del héroe
@@ -305,7 +305,7 @@ El sistema deberá almacenar la información correspondiente a los objetos que t
 
 ## RI-15 Información de habilidades especiales
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - UC-XX Consultar manual del héroe
@@ -324,7 +324,7 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 
 ## RI-16 Información de operadores lógicos y matemáticos
 **Objetivos asociados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
 - UC-XX Consultar manual del héroe

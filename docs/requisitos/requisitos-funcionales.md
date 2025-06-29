@@ -22,7 +22,7 @@ El sistema debe permitir la alta, baja y modificación de usuarios, la asignaci�
 
 ## RF-02 Resolver misiones
 **Objetivos relacionados**
-- OBJ-01 Crear un entorno de videojuegos con gamificación
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 
 **Requisitos asociados**
@@ -39,6 +39,8 @@ El sistema debe permitir a los alumnos resolver las misiones utilizando todas la
 
 ## RF-03 Ejecutar, visualizar y evaluar misiones
 **Objetivos relacionados**
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 - OBJ-03 Ofrecer ejecución y visualización de la solución en tiempo real
 
 **Requisitos asociados**

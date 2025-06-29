@@ -69,7 +69,7 @@ Esta materia es la más importante al momento de ingresar a las carreras de info
 
 Actualmente en la cátedra, las prácticas de los temas que van desde algoritmos hasta prodecimientos se llevan a cabo y se enfocan en el programa llamado "Visual DaVinci", el cual tiene como escenario a un robot que recorre una ciudad juntando flores y papeles en las esquinas de la misma. La ciudad está representada como una matriz de 100x100 y la misma tiene calles (filas), avenidas (columnas) y esquinas (intersección de una calle y una avenida).
 
-Este programa ya se viene implementando hace muchos años en la cátedra, aproximadamente desde 1998, siendo que el programa salió en 1997. Permite realizar edición de codigo con una serie de instrucciones disponibles. El alumno puede diseñar un algoritmo para resolver distintos problemas y al momento de ejecutar se tiene un visor simulado la ciudad con cuadros azules, el robot con un punto rojo y negro, flores con un circulo rojo con centro amarillo y papeles con circulos blancos. Algunas de las instrucciones disponibles son:
+Este programa ya se viene implementando hace muchos años en la cátedra, aproximadamente desde 2007. Permite realizar edición de codigo con una serie de instrucciones disponibles. El alumno puede diseñar un algoritmo para resolver distintos problemas y al momento de ejecutar se tiene un visor simulado la ciudad con cuadros azules, el robot con un punto rojo y negro, flores con un circulo rojo con centro amarillo y papeles con circulos blancos. Algunas de las instrucciones disponibles son:
 
 - mover: el robot avanza a la siguiente esquina
 - derecha: el robot gira a la derecha
@@ -116,7 +116,7 @@ En resumen, los problemas específicos identificados son:
 5. Barreras de colaboración.
    - Estudiantes introvertidos o con baja confianza quedan aislados, al no existir mecanismos de colaboración.
 
-### 2.3 Oportunidad e impacto
+### 2.3 Propuesta de solución
 
 Teniendo en cuenta la situación actual y la problemática, se realizará una propuesta de solución: el desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", enfocada en el concepto de “Gamificación” y luciendo una estética visual de “Pixel Art”. La plataforma permitirá a los alumnos aprender algoritmos, lógica y estructuras de control y para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos.
 
@@ -166,8 +166,8 @@ El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a
 Con el desarrollo del sistema se esperan los siguientes beneficios a corto plazo:
 
 1. **Alumnos motivados**: se espera que los alumnos se sientan enganchados y atraídos con el entorno de videojuego con gamificación y estética pixel art.
-2. **Seguimiento global e individual del grupo de alumnos**: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiriese.
-3. **Proceso de aprendizaje dinámico**: con las mejoras y feedback formativo que brindará el sistema, se espera que los alumnos puedan comprender y aprender los contenidos de manera rápida.
+2. **Seguimiento global e individual del grupo de alumnos**: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiere.
+3. **Proceso de aprendizaje dinámico**: con las mejoras y feedback formativo que brindará el sistema, se espera que los alumnos puedan comprender y aprender los contenidos de manera rápida y puedan diseñar mejores soluciones a otros problemas a futuro.
 
 Los beneficios a largo plazo:
 
@@ -195,7 +195,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 #### 3.2.2 Objetivos Específicos
 
-| OBJ-01      | Crear un entorno de videojuegos con gamificación                                                                                                                                                                                                                              |
+| OBJ-01      | Crear y diseñar un videojuego para el aprendizaje gamificado                                                                                                                                                                                                                              |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Diseñar e implementar mecánicas de capítulos, misiones, acciones, tácticas, objetos, habilidades, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa e historia interesante para motivar e incentivar la participación del alumno |
 | Estabilidad | Alta                                                                                                                                                                                                                                                                          |

@@ -50,3 +50,5 @@ Entre sus funciones se destacan:
 - Auditar cambios realizados en las distintas entidades del sistema: altas, bajas, modificaciones de usuarios, cursos e instituciones.
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
+
+## Diagrama de Casos de Uso
