@@ -201,11 +201,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                                                                                          |
 | Comentarios | -                                                                                                                                                                                                                                                                             |
 
-| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                     |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Descripción | Crear un repertorio de ejercicios (misiones) que cubran los temas de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables y procedimientos e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, tácticas, objetos y habilidades) a medida que el alumno avance para garantizar una curva de aprendizaje controlada |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                     |
-| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                        |
+| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Crear un repertorio de misiones (ejercicios) divididas en capítulos temáticos de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables y procedimientos e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, tácticas, objetos y habilidades) a medida que el alumno avance para garantizar una curva de aprendizaje controlada. |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                  |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                     |
 
 | OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                       |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -248,6 +248,12 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Descripción | Proporcionar a los administradores un módulo de auditoría que les permita visualizar los diferentes eventos del sistema |
 | Estabilidad | Media                                                                                                                   |
 | Comentarios | -                                                                                                                       |
+
+| OBJ-10      | Videojuego offline                                                                                                                                                                                                           |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir que los alumnos resolver las misiones del videojuego sin necesidad de conexión a internet permanente, almacenando el progreso de forma local para posteriormente sincronizarlo cuando se tenga conexión a internet. |
+| Estabilidad | Media                                                                                                                                                                                                                        |
+| Comentarios | -                                                                                                                                                                                                                            |
 
 ### 3.3 Modulos del sistema
 
@@ -397,7 +403,7 @@ En este módulo del sistema, los docentes dispondrán de diferentes funcionalida
 
 ##### Definición de días y horarios de cursada
 
-Los docentes podrán configurar los días y horarios de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
+Los docentes podrán configurar los días, horarios y modalidad (presencial, virtual o mixta) de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
 
 ##### Habilitación de capítulos
 
@@ -516,9 +522,11 @@ El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto
 **Alumnos**
 El registro de alumnos estará habilitado desde el sistema (se pueden registrar solos)
 
-- **Opción 1**: Registro mediante formulario.
-- **Opción 2**: Registro con Google (autenticación con Google y luego completar datos adicionales el formulario).
-- Almacenamiento en la base de datos con posibilidad de iniciar sesión por cualquiera de los dos medios (usuario/contraseña o Google).
+- **Opción 1**: Registro en la web mediante formulario tradicional.
+- **Opción 2**: Registro en la web con Google (autenticación con Google y luego completar datos adicionales el formulario).
+- Almacenamiento en la base de datos con posibilidad de iniciar sesión en la plataforma web por cualquiera de los dos medios (usuario/contraseña o Google).
+
+El **incio de sesión** en el videojuego se realizará unicamente con usuario y contraseña definidos en el registro en la parte web, el videojuego validará los datos y sincronizará el progreso del alumno, guardando su progreso posterior localmente.
 
 **Docentes**
 El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden registrar solos).
@@ -527,7 +535,7 @@ El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden reg
 - El administrador se encargará de verificar los datos del docente y deberá darlo de alta manualmente desde un panel interno.
 - El administrador crea el usuario del docente con los datos necesarios
 - Luego, el sistema envía automáticamente el usuario y contraseña inciales del docente al correo declarado.
-- El inicio de sesión del docente solo será por usuario y contraseña (sin Google).
+- El inicio de sesión en la web del docente solo será por usuario y contraseña (sin Google).
 
 #### 3.4.8 Auditoría
 
@@ -562,11 +570,12 @@ Cada entrada de auditoría contendrá los siguientes campos:
 
 El administrador accederá a una sección de Auditoría (por ejemplo, dentro del módulo de Gestión Académica), donde podría:
 
-1. Ver un historial de eventos ordenado cronológicamente.
-2. Filtrar por tipo de evento, usuario, fecha o rol.
-3. Buscar eventos específicos (por palabra clave).
-4. Exportar el historial como CSV o PDF (opcional).
-5. Ver detalles expandibles de cada entrada (antes y después del cambio).
+1. Seleccionar el módulo a auditar
+2. Según lo seleccionado, ver un historial de los eventos ordenados cronológicamente.
+3. Filtrar por tipo de evento, usuario, fecha o rol.
+4. Buscar eventos específicos (por palabra clave).
+5. Exportar el historial como CSV o PDF (opcional).
+6. Ver detalles expandibles de cada entrada (antes y después del cambio).
 
 ##### Seguridad y privacidad
 
@@ -581,14 +590,12 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
 #### 3.5.1 Gestión de usuarios
 
 - Administrador
-  - No podrá modificar datos ya creados de instituciones, cursos o docentes (solo eliminar o dar de baja).
   - No existirá una interfaz avanzada para análisis estadístico de gestión global del sistema.
 - Alumno
   - No podrá cambiar de curso luego de inscribirse.
   - No podrá modificar su nombre de usuario o correo tras el registro (solo cambio de contraseña).
 - Docente
   - No podrá crear ejercicios personalizados ni modificar el banco de ejercicios.
-  - No podrá gestionar múltiples cursos con configuraciones independientes (comparten mismos ejercicios del sistema).
 
 #### 3.5.2 Banco de ejercicios
 
@@ -611,16 +618,18 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
 - No se podrá configurar la velocidad de ejecución normal.
 - No se permitirá guardar múltiples soluciones para un mismo ejercicio.
 - No se mostrarán estadísticas detalladas por solución (tiempo de ejecución, memoria, etc.).
-- El feedback se centrará en sugerencias básicas de optimización y errores de sintaxis, no en explicación semántica o pedagógica profunda.
+- El feedback se centrará en sugerencias básicas de optimización y errores de sintaxis, no en explicación semántica o pedagógica demaciado profunda.
 - No se implementarán tests automatizados personalizados (test cases hechos por docentes o alumnos).
 
-#### 3.5.5 Gestión Académica y Docente
+#### 3.5.5 Gestión Docente
 
 - No se permitirá crear ejercicios específicos por curso.
-- No se podrán crear distintas configuraciones de ejercicios por materia o institución.
+- No se podrán crear distintas configuraciones de misión por curso
+- No se podrán configurar parámetros finos de gamificación (porcentaje de XP, cantidad de estrellas, etc.)
+
+#### 3.5.6 Gestión Académica
 - No se permitirá la importación/exportación masiva de alumnos o docentes por archivo.
 - No se incluirá funcionalidad para mensajes, anuncios o notificaciones escritas entre docentes y alumnos.
-- No se podrán configurar parámetros finos de gamificación (porcentaje de XP, cantidad de estrellas, etc.)
 
 #### 3.5.6 Seguridad y autenticación
 
