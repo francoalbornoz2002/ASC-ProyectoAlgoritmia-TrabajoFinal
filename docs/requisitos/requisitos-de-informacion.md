@@ -63,6 +63,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - UC-XX Baja de curso
 - UC-XX Buscar curso
 - UC-XX Ingresar a un curso
+- UC-XX Asignar docente a curso
 - UC-XX Aceptar alumno a curso
 
 **Descripción**
@@ -189,9 +190,6 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 - Nivel requerido para desbloqueo
 - Habilitación del docente (habilitado o no)
 - Estado del capítulo (En curso o Finalizado)
-
-**Comentarios**
-Un capítulo estará "En curso" mientras el capitulo siguiente no sea habilitado por el docente. Si el docente habilita un capítulo, el anterior se considerará con estado "Finalizado". El docente solo podrá habilitar los capítulos de manera secuencial y NO desordenada. Los alumnos podrán jugar misiones que no hayan completado de capitulos finalizados igualmente.
 
 ## RI-09 Información de misiones
 **Objetivos asociados**
