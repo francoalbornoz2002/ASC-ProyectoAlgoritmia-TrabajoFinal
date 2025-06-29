@@ -277,8 +277,8 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acesso al sistema:
 
-- **Administrador**: Acceso al banco de ejercicios, gestionar las instituciones y cursos, dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
-- **Alumno**: Acceso a la resolución de los ejercicios, revisar su perfil con sus estadísticas, ingresar a los cursos.
+- **Administrador**: Acceso a la gestión de instituciones y cursos, dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
+- **Alumno**: Acceso en la web requerido para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego para resolver las misiones, recibir feedback y progresar en la historia.
 - **Docente**: Acceso principal al módulo de Gestión Docente, donde podrá realizar los reportes, consultar el estado de avance de los alumnos, generar sesiones de refuerzo y administrar sus cursos.
 
 #### 3.4.2 Banco de ejercicios
@@ -297,6 +297,8 @@ Adicionalmente, también se abordará los conceptos de:
 
 - Variables (globales y locales)
 - Procedimientos sin parámetros o con parámetros de entrada, salida y entrada/salida.
+
+Como este módulo se implementará en el videojuego, para obtener información más precisa y completa consultar el Game Design Document ubicado en `docs/game-design/gdd.md`
 
 #### 3.4.4 Gamificación
 
@@ -330,17 +332,21 @@ Se incorporarán varios componentes de videojuegos, explicando primero su signif
 
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
 
-- **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
+- **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un enunciado de un problema con reglas específicas y un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
+  
 - **Acciones, tácticas, objetos y habilidades**
-
-  - **Acción**: Una acción es algo que el jugador puede hacer, como moverse o girar. Las acciones representarán las primitivas que puede realizar el jugador.
+  - **Acción**: Una acción es algo que el jugador puede hacer, como moverse o saltar. Las acciones representarán las primitivas que puede realizar el jugador.
   - **Tácticas**: Una táctica es una estrategia o conjunto de decisiones que el jugador aplica para adaptarse a una situación específica y superar un desafío. Las tácticas representarán las estructuras de control (Si-Sino, Mientras y Repetir).
   - **Objetos**: Un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Los objetos representarán las variables.
   - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a los procedimientos.
 
 - **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas tacticas, habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, tácticas, habilidades y objetos.
-- **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel.
+  
+- **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel y desbloquear nuevas misiones y habilidades.
+  
 - **Puntuación en estrellas (evaluación)**: la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja. Dependiendo de la puntuación obtenida, le harán ganar más o menos experiencia al jugador.
+
+Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección ***X.X***. Consúltelo para obtener más información.
 
 #### 3.4.5 Programación, ejecución y feedback
 
@@ -352,6 +358,8 @@ El entorno de resolución de ejercicios estará compuesto de manera general con:
 - **Botón ejecutar**: para comenzar la ejecución de la solución del alumno en el visor animado. Para que se pueda ejecutar la solución, esta no debe contener errores de sintaxis.
 - **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real la solución del alumno.
 
+Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección ***X.X***. Consúltelo para obtener más información.
+
 #### 3.4.6 Feedback formativo
 
 El sistema ofrecerá tres tipos de feedback formativo durante la resolución de un ejercicio: previo a la ejecución, al momento de ejecutar y posterior a la ejecución. A continuación, detallaremos los aspectos que el sistema analizará y ofrecerá retroalimentación al alumno.
@@ -360,42 +368,7 @@ El sistema ofrecerá tres tipos de feedback formativo durante la resolución de 
 - **Al momento de ejecutar**: si la solución posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si la solución tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
 - **Posterior a la ejecución**: el sistema analizará la solución del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones de la solución.
 
-Detallaremos las sugerencias y optimizaciones específicas que el sistema ofrecerá en cada tipo de feeback
-
-##### Previo a la ejecución
-
-Mientras el alumno diseña su solución para un ejercicio, el sistema estará analizando y controlando en tiempo real la estructura y sintaxis de la misma para poder indicar errores y sugerencias antes de ejecutar la solución. La siguiente tabla muestra los "problemas" a analizar previo a la ejecución de la solución y el feedback correspondiente.
-
-| Problema                                 | Descripción                                                                                  | Feedback                                                                                   |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Errores de sintaxis                      | Instrucciones o estructuras mal escritas                                                     | Resaltado en rojo en la instrucción o estructura mal escrita.                              |
-| Variable no declarada                    | Cuando se quiere utilizar una variable (globales o locales) que no fue declarada previamente | Resaltado en rojo en donde se quiere utilizar la variable con un mensaje de "no declarada" |
-| Variable declarada pero no utilizada     | Cuando se declara una variable pero nunca se utiliza                                         | Resaltado en amarillo en la variable declarada pero no utilizada                           |
-| Procedimiento definido pero no utilizado | Cuando se define un procedimiento pero nunca se utiliza                                      | Resaltado en amarillo en la cabecera del procedimiento definido pero no utilizado          |
-
-##### Al momento de ejecutar
-
-Cuando el alumno terminó de diseñar su solución y decida ejecutar, el sistema verificará que la estructura y sintaxis esté correctamente escrita para ejecutar. La siguiente tabla muestra los "problemas" a analizar al momento de ejecutar la solución y el feedback correspondiente.
-
-| Problema                                 | Descripción                                                                                              | Feedback                                                                                                            | ¿Es posible ejecutar la solución? |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| Error de sintaxis                        | Instrucciones o estructuras mal escritas                                                                 | Mensaje de error en la ejecución y resaltado en rojo en la instrucción o estructura mal escrita.                    | No                                |
-| Variable no declarada                    | Cuando se quiere ejecutar la solución pero se quiere utilizar una variable (global o local) no declarada | Mensaje de error en la ejecución y resaltado en rojo en la variable no declarada                                    | No                                |
-| Variable decladara pero no utilizada     | Cuando se declara una variable (global o local) pero nunca se utiliza                                    | Mensaje de advertencia de variables declaradas pero no utilizadas con opción de ejecutar la solución igualmente     | Si                                |
-| Procedimiento definido pero no utilizado | Cuando se define un procedimiento pero nunca se utiliza                                                  | Mensaje de advertencia de procedimientos definidos pero no utilizados con opción de ejecutar la solución igualmente | Si                                |
-
-##### Posterior a la ejecución
-
-Luego de la ejecución de la solución del alumno, completado el ejercicio y dada la puntuación obtenida, el sistema analizará la solución proponiendo mejoras y optimizaciones para la solución. El sistema mostrará el antes y después de la solución del alumno y una breve explicación de los cambios realizados y el por qué.
-El alumno decidirá si implementar o no las sugerencias y optimizaciones brindadas por el sistema o dejar la solución como está. Si decide implementar las optimizaciones, esto no aumentará la puntuación ni experiencia obtenida, debido a que esta funcionalidad del sistema es a modo formativo y para evitar aprovechamientos.
-La siguiente tabla muestra los "problemas" a analizar posterior a la ejecución de la solución y el feedback correspondiente.
-
-| Problema                                      | Descripción                                                                                                                                                                    | Feedback                                                                                                                                         |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Secuencia de múltiples instrucciones iguales  | Cuando se utiliza una misma instrucción multiples veces una debajo de otra de manera innecesaria (con un como mínimo de 3 instrucciones)                                       | Reemplazar el conjunto de multiples instrucciones por una estructura repetitiva (mientras o repetir) para reducir el uso del procesador          |
-| Secuencia de múltiples estructuras de control | Cuando se utiliza una misma estructura de control multiples veces una dentro de otra o una debajo de la otra de manera innecesaria (con un mínimo de 3 estructuras de control) | Identificar aquellas estructuras de control innecesarias, refactorizar y reordenar la estructuras de control para reducir la complejidad cíclica |
-| Variables declaradas y no utilizadas          | Cuando se declara una variable (global o local) pero nunca se utiliza                                                                                                          | Eliminar la variable no utilizada para ahorrar espacio en memoria                                                                                |
-|                                               |
+Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección ***4.2 Feedback formativo y ayudas***. Consúltelo para obtener más información.
 
 #### 3.4.6 Gestion Docente
 
@@ -468,18 +441,19 @@ En el apartado de capítulos primeramente se deberá seleccionar el capítulo, l
 
 La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
 
-- **Alumnos atrasados en color **amarillo** suave**: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el tema es moderado aunque por debajo del promedio del curso.
-- **Alumnos en estado crítico en color **rojo** suave**: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el tema está muy por debajo del promedio del curso.
+- **Alumnos atrasados en color **amarillo** suave**: Son aquellos alumnos que están un poco atrasados con los contenidos pero tienen actividad reciente y su porcentaje de avance en el capítulo es moderado aunque por debajo del promedio del curso.
+- **Alumnos en estado crítico en color **rojo** suave**: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el capítulo está muy por debajo del promedio del curso.
 
-**Sesiones de refuerzo de contenidos**: los docentes podrán crear una sesión para reforzar los contenidos a aquellos alumnos que se encuentren atrasados o con una inactividad prolongada. Para la sesión de refuerzo de contenidos el docente deberá:
+##### Sesiones de refuerzo de contenidos
+Los docentes podrán crear una sesión para reforzar los contenidos a aquellos alumnos que se encuentren atrasados o con una inactividad prolongada. Para la sesión de refuerzo de contenidos el docente deberá:
 
-- Seleccionar a los alumnos involucrados: se mostrarán los alumnos resaltados en rojo y amarillo.
+- Seleccionar a los alumnos involucrados: se mostrarán los alumnos resaltados en rojo y amarillo idealmente.
 - Seleccionar los temas a reforzar: se mostrarán los temas a reforzar segun los alumnos seleccionados.
 - Definir la duración de la sesión en minutos con un máximo de 30.
-- Definir el día y horario para la sesión
+- Definir la fecha y hora de la sesión.
 - Definir el tipo de sesión: presencial o virtual.
 
-Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible hasta 3 horas antes de la sesión. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia.
+Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible hasta 3 horas antes de la sesión. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia y el docente mantener su asistencia a la misma.
 
 **Automatización del reporte semanal y sesión de refuerzo de contenidos**
 El sistema tendrá como uno de los procesos automatizados la generación de un reporte semanal del estado de avance de un curso junto con la creación de la sesión de refuerzo de contenidos.
