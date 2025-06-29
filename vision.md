@@ -249,7 +249,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                   |
 | Comentarios | -                                                                                                                       |
 
-| OBJ-10      | Videojuego offline                                                                                                                                                                                                           |
+| OBJ-10      | Diseñar un videojuego que permita progreso offline                                                                                                                                                                                                           |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Permitir que los alumnos resolver las misiones del videojuego sin necesidad de conexión a internet permanente, almacenando el progreso de forma local para posteriormente sincronizarlo cuando se tenga conexión a internet. |
 | Estabilidad | Media                                                                                                                                                                                                                        |
