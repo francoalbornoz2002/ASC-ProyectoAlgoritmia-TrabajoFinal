@@ -18,7 +18,7 @@ En este documento contiene la lista de los requisitos funcionales del sistema ex
 - RI-05 Información de alumnos
 
 **Descripción**
-El sistema debe permitir la alta, baja y modificación de usuarios asi como también la asignación de los roles de administrador, docente y alumno.
+El sistema debe permitir la alta, baja y modificación de usuarios, la asignación de los roles de administrador, docente y alumno y el inicio de sesión en el sistema mediante usuario y contraseña.
 
 ## RF-02 Resolver misiones
 **Objetivos relacionados**
@@ -153,4 +153,4 @@ El sistema debe permitir, para el rol de administrador, la alta, baja y modifica
 - RI-05 Información de alumnos
 
 **Descripción**
-El sistema deberá permitir que los alumnos se registren y autentiquen utilizando su cuenta de Google mediante el protocolo OAuth 2.0. Durante el registro, se solicitará acceso a los datos básicos del perfil (nombre, correo electrónico) y, en caso de ser un nuevo usuario, se completarán los datos restantes requeridos por la plataforma. Una vez registrado, el usuario podrá autenticarse posteriormente utilizando el mismo método.
+El sistema debe permitir a los alumnos registrarse y autenticarse utilizando su cuenta de Google mediante el protocolo OAuth 2.0. Durante el registro, se solicitará acceso a los datos básicos del perfil (nombre, correo electrónico) y, en caso de ser un nuevo usuario, se completarán los datos restantes requeridos por la plataforma. Una vez registrado, el alumno podrá iniciar sesión y autenticarse posteriormente utilizando el mismo método.
