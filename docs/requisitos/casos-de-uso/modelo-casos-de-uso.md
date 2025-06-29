@@ -11,7 +11,7 @@
 ### ACT-01 Alumno
 Representa a los estudiantes que utilizarán el videojuego desarrollado en Godot como herramienta principal para practicar y afianzar los contenidos de la materia "Algoritmos y Estructuras de Datos I". 
 
-Los alumnos podrán registrarse en la plataforma web mediante un formulario tradicional o autenticarse con Google. Una vez registrados, podrán descargar el videojuego, iniciar sesión con su usuario y contraseña, y unirse a un curso ingresando un nombre de curso y contraseña provistos por el docente.
+Los alumnos podrán registrarse en la plataforma web mediante un formulario tradicional o autenticarse con Google. Una vez registrados, inciarán sesión y se uniran a un curso ingresando un nombre de curso y contraseña provistos por el docente. Una vez unido a un curso, podrán descargar el videojuego e iniciar sesión con su usuario y contraseña para establecer sus datos y sincronizar el progreso que realicen.
 
 Dentro del videojuego, podrán:
 - Consultar y resolver misiones gamificadas.
@@ -21,6 +21,8 @@ Dentro del videojuego, podrán:
 - Consultar sus estadísticas personales dentro del juego.
 
 Adicionalmente, podrán acceder a la plataforma web para:
+- Unirse a un curso
+- Cambiar la contraseña
 - Consultar recursos de apoyo (manual del héroe, tutoriales, etc.).
 - Ver estadísticas más detalladas de su rendimiento.
 - Confirmar asistencia a sesiones de refuerzo, ya sea desde la web o a través del enlace recibido por correo electrónico.
