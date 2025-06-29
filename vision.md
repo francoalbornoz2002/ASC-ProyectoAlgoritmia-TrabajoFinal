@@ -249,7 +249,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                   |
 | Comentarios | -                                                                                                                       |
 
-| OBJ-10      | Persistir el progreso de manera local y sincronizarlo luego                                                                                                                                                                                                          |
+| OBJ-10      | Persistir el progreso de manera local y sincronizarlo luego                                                                                                                                                                                               |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Permitir que los alumnos resolver las misiones del videojuego sin necesidad de conexión a internet permanente, almacenando el progreso de forma local para posteriormente sincronizarlo a la base de datos principal cuando se tenga conexión a internet. |
 | Estabilidad | Media                                                                                                                                                                                                                                                     |
@@ -275,7 +275,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 #### 3.4.1 Gestión de usuarios
 
-En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acesso al sistema:
+En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acceso al sistema:
 
 - **Administrador**: Acceso a la gestión de instituciones y cursos, dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
 - **Alumno**: Acceso en la web requerido para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego para resolver las misiones, recibir feedback y progresar en la historia.
@@ -333,20 +333,18 @@ Se incorporarán varios componentes de videojuegos, explicando primero su signif
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
 
 - **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un enunciado de un problema con reglas específicas y un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
-  
 - **Acciones, tácticas, objetos y habilidades**
+
   - **Acción**: Una acción es algo que el jugador puede hacer, como moverse o saltar. Las acciones representarán las primitivas que puede realizar el jugador.
   - **Tácticas**: Una táctica es una estrategia o conjunto de decisiones que el jugador aplica para adaptarse a una situación específica y superar un desafío. Las tácticas representarán las estructuras de control (Si-Sino, Mientras y Repetir).
   - **Objetos**: Un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Los objetos representarán las variables.
   - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a los procedimientos.
 
 - **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas tacticas, habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, tácticas, habilidades y objetos.
-  
 - **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel y desbloquear nuevas misiones y habilidades.
-  
 - **Puntuación en estrellas (evaluación)**: la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja. Dependiendo de la puntuación obtenida, le harán ganar más o menos experiencia al jugador.
 
-Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección ***X.X***. Consúltelo para obtener más información.
+Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección **_X.X_**. Consúltelo para obtener más información.
 
 #### 3.4.5 Programación, ejecución y feedback
 
@@ -358,7 +356,7 @@ El entorno de resolución de ejercicios estará compuesto de manera general con:
 - **Botón ejecutar**: para comenzar la ejecución de la solución del alumno en el visor animado. Para que se pueda ejecutar la solución, esta no debe contener errores de sintaxis.
 - **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real la solución del alumno.
 
-Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección ***X.X***. Consúltelo para obtener más información.
+Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección **_X.X_**. Consúltelo para obtener más información.
 
 #### 3.4.6 Feedback formativo
 
@@ -368,7 +366,7 @@ El sistema ofrecerá tres tipos de feedback formativo durante la resolución de 
 - **Al momento de ejecutar**: si la solución posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si la solución tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
 - **Posterior a la ejecución**: el sistema analizará la solución del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones de la solución.
 
-Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección ***4.2 Feedback formativo y ayudas***. Consúltelo para obtener más información.
+Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección **_4.2 Feedback formativo y ayudas_**. Consúltelo para obtener más información.
 
 #### 3.4.6 Gestion Docente
 
@@ -445,21 +443,24 @@ La vista permitirá a los docentes visualizar e identificar a los alumnos rezaga
 - **Alumnos en estado crítico en color **rojo** suave**: Son aquellos alumnos que están muy atrasados en los contenidos, tienen una prolongada inactividad en la plataforma y/o su porcentaje de avance en el capítulo está muy por debajo del promedio del curso.
 
 ##### Sesiones de refuerzo de contenidos
+
 Los docentes podrán crear una sesión para reforzar los contenidos a aquellos alumnos que se encuentren atrasados o con una inactividad prolongada. Para la sesión de refuerzo de contenidos el docente deberá:
 
-- Seleccionar a los alumnos involucrados: se mostrarán los alumnos resaltados en rojo y amarillo idealmente.
-- Seleccionar los temas a reforzar: se mostrarán los temas a reforzar segun los alumnos seleccionados.
-- Definir la duración de la sesión en minutos con un máximo de 30.
-- Definir la fecha y hora de la sesión.
-- Definir el tipo de sesión: presencial o virtual.
+- **Seleccionar a los alumnos involucrados**: se mostrarán los alumnos resaltados en rojo y amarillo idealmente.
+- **Seleccionar los temas a reforzar**: se mostrarán los temas a reforzar segun los alumnos seleccionados.
+- **Definir la duración** de la sesión en minutos con un máximo de 30.
+- **Definir la fecha y hora** de la sesión.
+- **Definir el tipo de sesión**: presencial o virtual.
 
-Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible hasta 3 horas antes de la sesión. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia y el docente mantener su asistencia a la misma.
+Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible hasta 2 horas antes de la sesión. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia y el docente mantener su asistencia a la misma.
 
-**Automatización del reporte semanal y sesión de refuerzo de contenidos**
+##### Reporte semanal y sesión de refuerzo automatizada
+
 El sistema tendrá como uno de los procesos automatizados la generación de un reporte semanal del estado de avance de un curso junto con la creación de la sesión de refuerzo de contenidos.
 
-En este proceso automatizado el sistema generará automaticamente todos los domingos a las 20:00 PM un reporte de estado de avance y rendimiento de todos los alumnos de un curso y lo enviará a los docentes por correo electrónico. Junto con el reporte, el sistema creará una sesión de refuerzo de contenidos planeada para que se realice 20 minutos previa a la próxima clase de la materia, incluyendo de manera como prioridad a todos los alumnos en estado crítico.
-Para que la sesión sea válida, uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para indicar si se realizó la sesión de refuerzo y checkear los temas abordados.
+En este proceso automatizado el sistema generará automaticamente todos los domingos a las 20:00 PM un reporte de estado de avance y rendimiento de todos los alumnos de un curso y lo enviará a los docentes por correo electrónico. Junto con el reporte, el sistema creará una sesión de refuerzo de contenidos con una duración de 20 minutos planeada a realizarse previamente a la próxima clase de la materia, incluyendo como prioridad a todos los alumnos en estado crítico (rojo).
+
+Para que la sesión sea válida, uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para indicar si se realizó la sesión de refuerzo e indicar los temas abordados.
 
 **Flujo de decisión**
 
@@ -486,13 +487,14 @@ El administrador podrá dar de alta, modificar y dar de baja las instituciones q
 El administrador del sistema será encargado de dar de alta los cursos del sistema indicando: Nombre del curso, institución, modalidad (presencial, virtual o mixta) y una contraseña incial para el ingreso al curso por parte de los alumnos. El administrador tambien se encargará de asignar a los docentes a sus cursos correspondientes o remover un docente de un curso.
 
 **ABM Docentes**
-El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución a la que pertenece y género (para el avatar demostrativo).
+El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución/es a la que pertenece y género (para el avatar demostrativo).
 
 #### 3.4.7 Seguridad y autenticación
 
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
 
-**Reglas de registro e inicio de sesión según el tipo de usuario**
+##### Reglas de registro e inicio de sesión según el tipo de usuario
+
 **Alumnos**
 El registro de alumnos estará habilitado desde el sistema (se pueden registrar solos)
 
