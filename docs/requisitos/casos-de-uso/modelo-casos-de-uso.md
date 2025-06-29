@@ -48,6 +48,5 @@ Entre sus funciones se destacan:
 - Crear cursos y asignar docentes a los mismos.
 - Gestionar usuarios del sistema (docentes, alumnos y otros administradores en el futuro).
 - Auditar cambios realizados en las distintas entidades del sistema: altas, bajas, modificaciones de usuarios, cursos e instituciones.
-- Brindar soporte técnico ante incidencias reportadas y mantener el funcionamiento general de la plataforma.
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
