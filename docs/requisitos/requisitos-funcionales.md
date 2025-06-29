@@ -74,7 +74,7 @@ El sistema deberá guardar el feedback generado en el historial de la misión pa
 - RI-07 Información de sesiones de refuerzo
 
 **Descripción**
-El sistema debe permitir al docente la creación, modificación y eliminación de sesiones de refuerzo y debe realizar la generación automática de la sesión de refuerzo semanal todos los domingos a las 20:00 PM notificando al docente y alumnos involucrados.
+El sistema debe permitir al docente la creación, modificación y eliminación de sesiones de refuerzo y debe realizar la generación automática de la sesión de refuerzo semanal todos los domingos a las 20:00 PM notificando por correo electrónico al docente y alumnos involucrados.
 
 ## RF-06 Reportes de progreso de alumnos en la historia
 **Objetivos relacionados**
@@ -90,6 +90,8 @@ El sistema debe permitir al docente visualizar y generar reportes de las estadí
 - Porcentaje de avance en la historia
 - Promedio de intentos por misión
 - Días de inactividad
+
+El sistema tambien deberá realizar la generación automática de un reporte semanal del progreso de los alumnos todos los domingos a las 20:00 PM enviandola por correo electrónico a los docentes.
 
 ## RF-07 Reportes de progreso de alumnos en un capítulo
 **Objetivos relacionados**
