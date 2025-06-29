@@ -1,7 +1,7 @@
 # Documento de Visión
 
-**Versión:** 1.4
-**Fecha:** 09/06/2025
+**Versión:** 1.6
+**Fecha:** 29/06/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
