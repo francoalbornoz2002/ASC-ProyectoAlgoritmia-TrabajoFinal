@@ -148,6 +148,7 @@ En esta versión inicial, se prevé que exista un único administrador central. 
   - INCLUDE: UC-XX Ejecutar misión
   - INCLUDE: UC-XX Evaluar misión
   - INCLUDE: UC-XX Generar feedback
+    - EXTEND: UC-XX Aceptar feedback
 - UC-XX Consultar estadísticas de juego
 - UC-XX Consultar inventario
 

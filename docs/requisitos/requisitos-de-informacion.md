@@ -368,6 +368,7 @@ El sistema deberá almacenar la información correspondiente a los operadores l�
 - UC-XX Ejecutar misión
 - UC-XX Evaluar misión
 - UC-XX Generar feedback
+- UC-XX Aceptar feedback
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente del feedback formativo generado en la resolución exitosa de una misión. En concreto:
