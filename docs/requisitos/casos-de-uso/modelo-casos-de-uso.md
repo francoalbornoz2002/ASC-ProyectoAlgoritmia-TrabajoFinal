@@ -60,13 +60,6 @@ Entre sus funciones se destacan:
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
 
-## Diagrama de Casos de Uso
-
-### Videojuego
-
-### Plataforma web
-
-
 ## Casos de uso del sistema
 
 ### Administrador
@@ -91,7 +84,7 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 
 - UC-XX Alta de curso
 - UC-XX Modificar curso
-  - INLCUDE: UC-XX Buscar curso
+  - INCLUDE: UC-XX Buscar curso
 - UC-XX Baja de curso
   - INCLUDE: UC-XX Buscar curso
 - UC-XX Asignar docente a curso
@@ -117,17 +110,17 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 #### Gestionar cursos (docente)
 - UC-XX Definir días y horarios del curso
 - UC-XX Cambiar contraseña de acceso a curso
-- UC-XX Aceptar alumno a curso
+- UC-XX Aprobar solicitud de ingreso al curso
 - UC-XX Habilitar capítulo
   - INCLUDE: UC-XX Buscar capítulo
 
-#### Usuario
-- UC-XX Iniciar sesión
+#### Gestión de cuenta
+- UC-XX Iniciar sesión en la plataforma web
 - UC-XX Actualizar datos personales
 
 ### Alumnos
 
-#### Usuario
+#### Gestión de cuenta
 - UC-XX Registrarse en la plataforma
   - EXTEND: UC-XX Registro normal
   - EXTEND: UC-XX Registro con Google
@@ -138,12 +131,12 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 - UC-XX Ver progreso en la web
 
 #### Cursos
-- UC-XX Ingresar a un curso
+- UC-XX Solicitar ingreso a curso
 - UC-XX Confirmar asistencia a sesión de refuerzo
 
 #### Videojuego
 - UC-XX Iniciar sesión en el videojuego
-- UC-XX Jugar misión
+- UC-XX Resolver misión
   - INCLUDE: UC-XX Buscar misión
   - INCLUDE: UC-XX Diseñar solución con lenguaje gamificado
     - INCLUDE: UC-XX Agregar acción
@@ -159,6 +152,16 @@ En esta versión inicial, se prevé que exista un único administrador central. 
     - EXTEND: UC-XX Aceptar feedback
 - UC-XX Ver progreso en el juego
 - UC-XX Consultar inventario
+
+
+## Diagrama de Casos de Uso
+
+### Videojuego
+
+### Plataforma web
+
+
+
 
 
 

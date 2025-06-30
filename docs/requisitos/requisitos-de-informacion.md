@@ -61,9 +61,9 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - UC-XX Modificar curso
 - UC-XX Baja de curso
 - UC-XX Buscar curso
-- UC-XX Ingresar a un curso
+- UC-XX Solicitar ingreso a curso
 - UC-XX Asignar docente a curso
-- UC-XX Aceptar alumno a curso
+- UC-XX Aprobar solicitud de ingreso al curso
 - UC-XX Cambiar contraseña de curso
 - UC-XX Definir días y horarios del curso
 
