@@ -65,6 +65,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - UC-XX Asignar docente a curso
 - UC-XX Aceptar alumno a curso
 - UC-XX Cambiar contraseña de curso
+- UC-XX Definir días y horarios del curso
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los cursos del sistema. En concreto:
@@ -73,6 +74,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 - Id de curso
 - Nombre del curso
 - Institución a la que pertenece el curso
+- Días y horarios de cursada
 - Docente/s a cargo del curso
 - Alumnos asociados al curso
 - Contraseña para el ingreso al curso
@@ -123,6 +125,7 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 - OBJ-06 Generar reportes semanales y sesiones de refuerzo automáticos
 
 **Requisitos asociados**
+- UC-XX Ver progreso en la web
 - UC-XX Ver progreso en el juego
 - UC-XX Consultar progreso de alumnos
 - UC-XX Generar reporte de progreso de alumnos

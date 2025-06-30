@@ -104,7 +104,7 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 
 #### Gestionar seguimiento académico
 - UC-XX Consultar progreso de alumnos
-  - EXTEND: Ver progreso general
+  - EXTEND: Ver progreso general (historia)
   - EXTEND: Ver progreso por capítulo
 - UC-XX Generar reporte de progreso de alumnos
 
@@ -114,7 +114,8 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 - UC-XX Cancelar sesión de refuerzo
 - UC-XX Aceptar sesión de refuerzo automática
 
-#### Cursos
+#### Gestionar cursos (docente)
+- UC-XX Definir días y horarios del curso
 - UC-XX Cambiar contraseña de acceso a curso
 - UC-XX Aceptar alumno a curso
 - UC-XX Habilitar capítulo
@@ -134,7 +135,7 @@ En esta versión inicial, se prevé que exista un único administrador central. 
   - EXTEND: UC-XX Iniciar sesión normal
   - EXTEND: UC-XX Inicar sesión con Google
 - UC-XX Actualizar datos personales
-- UC-XX Consultar mis estadísticas
+- UC-XX Ver progreso en la web
 
 #### Cursos
 - UC-XX Ingresar a un curso
