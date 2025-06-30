@@ -30,7 +30,6 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - Correo electrónico
 - Rol de usuario (alumno, docente o administrador)
 - Fecha de creación de la cuenta
-- Método de registro
 - Estado (activo/inactivo)
 
 ## RI-02 Información de instituciones
@@ -85,7 +84,6 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 - OBJ-08 Gestionar usuarios y roles del sistema
 
 **Requisitos asociados**
-- UC-XX Alta de docente
 - UC-XX Actualizar datos personales
 - UC-XX Buscar docente
 
@@ -117,6 +115,7 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 - Nombre/s y Apellido/s del alumno
 - Género (Masculino, Femenino u Otro)
 - Cursos a los que está asociado
+- Método de registro
 
 ## RI-06 Información de estadísticas de progreso de los alumnos
 **Objetivos asociados**
@@ -124,7 +123,7 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 - OBJ-06 Generar reportes semanales y sesiones de refuerzo automáticos
 
 **Requisitos asociados**
-- UC-XX Consultar estadísticas de juego
+- UC-XX Ver progreso en el juego
 - UC-XX Consultar progreso de alumnos
 - UC-XX Generar reporte de progreso de alumnos
 

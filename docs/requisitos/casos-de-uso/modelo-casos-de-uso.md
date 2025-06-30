@@ -74,8 +74,6 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 #### Gestión de usuarios
 
 - UC-XX Alta usuario
-  - EXTEND: UC-XX Alta de docente
-  - EXTEND: UC-XX Alta de alumno
 - UC-XX Modificar usuario
   - INCLUDE: UC-XX Buscar usuario
 - UC-XX Baja usuario
@@ -104,12 +102,16 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 
 ### Docentes
 
-#### Seguimiento y sesiones de refuerzo
+#### Gestionar seguimiento académico
 - UC-XX Consultar progreso de alumnos
-  - EXTEND: Ver progreso en la historia
-  - EXTEND: Ver progreso en un capítulo
+  - EXTEND: Ver progreso general
+  - EXTEND: Ver progreso por capítulo
 - UC-XX Generar reporte de progreso de alumnos
+
+#### Gestionar sesiones de refuerzo
 - UC-XX Crear sesión de refuerzo
+- UC-XX Modificar sesión de refuerzo
+- UC-XX Cancelar sesión de refuerzo
 - UC-XX Aceptar sesión de refuerzo automática
 
 #### Cursos
@@ -125,8 +127,12 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 ### Alumnos
 
 #### Usuario
-- UC-XX Registrarse
-- UC-XX Iniciar sesión
+- UC-XX Registrarse en la plataforma
+  - EXTEND: UC-XX Registro normal
+  - EXTEND: UC-XX Registro con Google
+- UC-XX Iniciar sesión en la plataforma web
+  - EXTEND: UC-XX Iniciar sesión normal
+  - EXTEND: UC-XX Inicar sesión con Google
 - UC-XX Actualizar datos personales
 - UC-XX Consultar mis estadísticas
 
@@ -135,7 +141,8 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 - UC-XX Confirmar asistencia a sesión de refuerzo
 
 #### Videojuego
-- UC-XX Resolver misión
+- UC-XX Iniciar sesión en el videojuego
+- UC-XX Jugar misión
   - INCLUDE: UC-XX Buscar misión
   - INCLUDE: UC-XX Diseñar solución con lenguaje gamificado
     - INCLUDE: UC-XX Agregar acción
@@ -149,9 +156,8 @@ En esta versión inicial, se prevé que exista un único administrador central. 
   - INCLUDE: UC-XX Evaluar misión
   - INCLUDE: UC-XX Generar feedback
     - EXTEND: UC-XX Aceptar feedback
-- UC-XX Consultar estadísticas de juego
+- UC-XX Ver progreso en el juego
 - UC-XX Consultar inventario
-
 
 
 
