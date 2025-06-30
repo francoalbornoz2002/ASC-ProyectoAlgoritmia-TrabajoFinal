@@ -1,0 +1,51 @@
+@startuml Videojuego_CU
+left to right direction
+
+skinparam usecasePadding 15
+skinparam actorPadding 15
+skinparam wrapWidth 200
+
+actor Alumno
+
+package "Videojuego" {
+  usecase "UC-43 Iniciar sesión en el videojuego" as UC43
+  usecase "UC-44 Resolver misión" as UC44
+  usecase "UC-45 Buscar misión" as UC45
+  usecase "UC-46 Diseñar solución con lenguaje gamificado" as UC46
+  usecase "UC-47 Agregar acción" as UC47
+  usecase "UC-48 Declarar variable" as UC48
+  usecase "UC-49 Asignar valor a variable" as UC49
+  usecase "UC-50 Agregar estructura condicional" as UC50
+  usecase "UC-51 Agregar estructura repetitiva" as UC51
+  usecase "UC-52 Agregar procedimiento" as UC52
+  usecase "UC-53 Consultar manual del héroe" as UC53
+  usecase "UC-54 Ejecutar misión" as UC54
+  usecase "UC-55 Evaluar misión" as UC55
+  usecase "UC-56 Generar feedback" as UC56
+  usecase "UC-57 Aceptar feedback" as UC57
+  usecase "UC-58 Ver progreso en el juego" as UC58
+  usecase "UC-59 Consultar inventario" as UC59
+
+  Alumno --> UC43
+  Alumno --> UC44
+  Alumno --> UC58
+  Alumno --> UC59
+
+  UC44 --> UC45 : <<include>>
+  UC44 --> UC46 : <<include>>
+  UC44 --> UC54 : <<include>>
+  UC44 --> UC55 : <<include>>
+  UC44 --> UC56 : <<include>>
+
+  UC46 --> UC47 : <<include>>
+  UC46 --> UC48 : <<extend>>
+  UC46 --> UC49 : <<extend>>
+  UC46 --> UC50 : <<extend>>
+  UC46 --> UC51 : <<extend>>
+  UC46 --> UC52 : <<extend>>
+  UC46 --> UC53 : <<extend>>
+
+  UC56 --> UC57 : <<extend>>
+}
+
+@enduml
