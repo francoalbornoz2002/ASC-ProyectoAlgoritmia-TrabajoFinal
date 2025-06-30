@@ -65,6 +65,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - UC-XX Ingresar a un curso
 - UC-XX Asignar docente a curso
 - UC-XX Aceptar alumno a curso
+- UC-XX Cambiar contraseña de curso
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los cursos del sistema. En concreto:
@@ -85,8 +86,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 
 **Requisitos asociados**
 - UC-XX Alta de docente
-- UC-XX Modificar docente
-- UC-XX Baja de docente
+- UC-XX Actualizar datos personales
 - UC-XX Buscar docente
 
 **Descripción**
@@ -96,7 +96,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 - Id de docente
 - Nombre/s y Apellido/s del docente
 - Género (Masculino, Femenino u Otro)
-- Instituciones a la que pertenece el docente
+- Institucion/es a la que pertenece el docente
 - Cursos a cargo del docente
 - Sesiones de refuerzo creadas por el docente
 
@@ -106,8 +106,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 
 **Requisitos asociados**
 - UC-XX Registrarse
-- UC-XX Modificar alumno
-- UC-XX Baja alumno
+- UC-XX Actualizar datos personales
 - UC-XX Buscar alumno
 
 **Descripción**
@@ -125,9 +124,8 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 - OBJ-06 Generar reportes semanales y sesiones de refuerzo automáticos
 
 **Requisitos asociados**
-- UC-XX Consultar mis estadísticas
+- UC-XX Consultar estadísticas de juego
 - UC-XX Consultar progreso de alumnos
-- UC-XX Ver progreso individual de alumno
 - UC-XX Generar reporte de progreso de alumnos
 
 **Descripción**
@@ -152,9 +150,9 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 
 **Requisitos asociados**
 - UC-XX Consultar progreso de alumnos
-- UC-XX Generar sesión de refuerzo
+- UC-XX Crear sesión de refuerzo
 - UC-XX Confirmar asistencia a sesión de refuerzo
-- UC-XX Confirmar realización de sesión de refuerzo
+- UC-XX Aceptar sesión de refuerzo automática
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las sesiones de refuerzo de contenidos dentro del sistema. En concreto:
@@ -197,8 +195,10 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 
 **Requisitos asociados**
-- UC-XX Resolver misión
 - UC-XX Buscar misión
+- UC-XX Resolver misión
+- UC-XX Ejecutar misión
+- UC-XX Evaluar misión
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las misiones (ejercicios) de cada capítulo de la historia dentro del sistema. En concreto:
@@ -219,6 +219,8 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 
 **Requisitos asociados**
 - UC-XX Resolver misión
+- UC-XX Ejecutar misión
+
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a la configuración del escenario de cada misión dentro del sistema. En concreto:
@@ -239,6 +241,7 @@ El sistema deberá almacenar la información correspondiente a la configuración
 
 **Requisitos asociados**
 - UC-XX Resolver misión
+- UC-XX Ejecutar misión
 
 **Descripción**
 El sistema deberá almacenar la información y posición correspondiente a los enemigos, obstáculos y objetos dentro del escenario de cada misión del sistema. En concreto:
@@ -256,6 +259,10 @@ El sistema deberá almacenar la información y posición correspondiente a los e
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
+Resolver
+- UC-XX Resolver misión
+- UC-XX Ejecutar misión
+- UC-XX Agregar acción
 - UC-XX Consultar manual del héroe
 
 **Descripción**
@@ -273,6 +280,10 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
+- UC-XX Resolver misión
+- UC-XX Ejecutar misión
+- UC-XX Agregar estructura condicional
+- UC-XX Agregar estructura repetitiva
 - UC-XX Consultar manual del héroe
 
 **Descripción**
@@ -290,6 +301,8 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
+- UC-XX Resolver misión
+- UC-XX Ejecutar misión
 - UC-XX Consultar manual del héroe
 - UC-XX Consultar inventario
 
@@ -308,6 +321,9 @@ El sistema deberá almacenar la información correspondiente a los objetos que t
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
+- UC-XX Resolver misión
+- UC-XX Ejecutar misión
+- UC-XX Agregar procedimiento
 - UC-XX Consultar manual del héroe
 
 **Descripción**
@@ -327,10 +343,14 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 
 **Requisitos asociados**
+- UC-XX Agregar estructura condicional
+- UC-XX Agregar estructura repetitiva
+- UC-XX Declarar variable
+- UC-XX Asignar valor a variable
 - UC-XX Consultar manual del héroe
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los operadores lógicos (AND, OR y NOT) y matemáticos (+, -, *, /, <, >, ==, <=, >=, !=) dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los operadores lógicos (AND, OR y NOT) y matemáticos (+, -, *, /, <, >, ==, <=, >=, !=, :=) dentro del sistema. En concreto:
 
 **Datos específicos**
 - Id del operador
@@ -345,6 +365,8 @@ El sistema deberá almacenar la información correspondiente a los operadores l�
 
 **Requisitos asociados**
 - UC-XX Resolver misión
+- UC-XX Ejecutar misión
+- UC-XX Evaluar misión
 - UC-XX Generar feedback
 
 **Descripción**
