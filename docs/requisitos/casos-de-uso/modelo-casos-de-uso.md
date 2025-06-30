@@ -66,92 +66,97 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 
 #### Gestión de usuarios
 
-- UC-XX Alta usuario
-- UC-XX Modificar usuario
-  - INCLUDE: UC-XX Buscar usuario
-- UC-XX Baja usuario
-  - INCLUDE: UC-XX Buscar usuario
-- UC-XX Iniciar sesión
+- **UC-01** Alta usuario  
+- **UC-02** Modificar usuario  
+  - INCLUDE: **UC-03** Buscar usuario  
+- **UC-04** Baja usuario  
+  - INCLUDE: **UC-03** Buscar usuario  
+- **UC-05** Iniciar sesión
 
 #### Gestión de instituciones
-- UC-XX Alta de institución
-- UC-XX Modificar institución
-  - INCLUDE: UC-XX Buscar institución
-- UC-XX Baja de institución
-  - INCLUDE: UC-XX Buscar institución
+
+- **UC-06** Alta de institución  
+- **UC-07** Modificar institución  
+  - INCLUDE: **UC-08** Buscar institución  
+- **UC-09** Baja de institución  
+  - INCLUDE: **UC-08** Buscar institución  
 
 #### Gestión de cursos
 
-- UC-XX Alta de curso
-- UC-XX Modificar curso
-  - INCLUDE: UC-XX Buscar curso
-- UC-XX Baja de curso
-  - INCLUDE: UC-XX Buscar curso
-- UC-XX Asignar docente a curso
-  - INCLUDE: UC-XX Buscar docente
+- **UC-10** Alta de curso  
+- **UC-11** Modificar curso  
+  - INCLUDE: **UC-12** Buscar curso  
+- **UC-13** Baja de curso  
+  - INCLUDE: **UC-12** Buscar curso  
+- **UC-14** Asignar docente a curso  
+  - INCLUDE: **UC-15** Buscar docente  
 
 #### Auditoría
-- UC-XX Auditoría
+
+- **UC-16** Auditoría
+
+---
 
 ### Docentes
 
 #### Gestionar seguimiento académico
-- UC-XX Consultar progreso de alumnos
-  - EXTEND: Ver progreso general (historia)
-  - EXTEND: Ver progreso por capítulo
-- UC-XX Generar reporte de progreso de alumnos
+
+- **UC-17** Consultar progreso de alumnos
+  - EXTEND: **UC-18** Ver progreso general (historia)
+  - EXTEND: **UC-19** Ver progreso por capítulo
+- **UC-20** Generar reporte de progreso de alumnos
 
 #### Gestionar sesiones de refuerzo
-- UC-XX Crear sesión de refuerzo
-- UC-XX Modificar sesión de refuerzo
-- UC-XX Cancelar sesión de refuerzo
-- UC-XX Aceptar sesión de refuerzo automática
+- **UC-21** Crear sesión de refuerzo
+- **UC-22** Modificar sesión de refuerzo
+- **UC-23** Cancelar sesión de refuerzo
+- **UC-24** Aceptar sesión de refuerzo automática
 
 #### Gestionar cursos (docente)
-- UC-XX Definir días y horarios del curso
-- UC-XX Cambiar contraseña de acceso a curso
-- UC-XX Aprobar solicitud de ingreso al curso
-- UC-XX Habilitar capítulo
-  - INCLUDE: UC-XX Buscar capítulo
+- **UC-25** Definir días y horarios del curso
+- **UC-26** Cambiar contraseña de acceso a curso
+- **UC-27** Aprobar solicitud de ingreso al curso
+- **UC-28** Habilitar capítulo
+  - INCLUDE: **UC-29** Buscar capítulo
 
 #### Gestión de cuenta
-- UC-XX Iniciar sesión en la plataforma web
-- UC-XX Actualizar datos personales
+- **UC-30** Iniciar sesión en la plataforma web
+- **UC-31** Actualizar datos personales
 
 ### Alumnos
 
 #### Gestión de cuenta
-- UC-XX Registrarse en la plataforma
-  - EXTEND: UC-XX Registro normal
-  - EXTEND: UC-XX Registro con Google
-- UC-XX Iniciar sesión en la plataforma web
-  - EXTEND: UC-XX Iniciar sesión normal
-  - EXTEND: UC-XX Inicar sesión con Google
-- UC-XX Actualizar datos personales
-- UC-XX Ver progreso en la web
+- **UC-32** Registrarse en la plataforma
+  - EXTEND: **UC-33** Registro normal
+  - EXTEND: **UC-34** Registro con Google
+- **UC-35** Iniciar sesión en la plataforma web
+  - EXTEND: **UC-36** Iniciar sesión normal
+  - EXTEND: **UC-37** Inicar sesión con Google
+- **UC-31** Actualizar datos personales
+- **UC-38** Ver progreso en la web
 
 #### Cursos
-- UC-XX Solicitar ingreso a curso
-- UC-XX Confirmar asistencia a sesión de refuerzo
+- **UC-39** Solicitar ingreso a curso
+- **UC-40** Confirmar asistencia a sesión de refuerzo
 
 #### Videojuego
-- UC-XX Iniciar sesión en el videojuego
-- UC-XX Resolver misión
-  - INCLUDE: UC-XX Buscar misión
-  - INCLUDE: UC-XX Diseñar solución con lenguaje gamificado
-    - INCLUDE: UC-XX Agregar acción
-    - EXTEND: UC-XX Declarar variable
-    - EXTEND: UC-XX Asignar valor a variable
-    - EXTEND: UC-XX Agregar estructura condicional
-    - EXTEND: UC-XX Agregar estructura repetitiva
-    - EXTEND: UC-XX Agregar procedimiento
-    - EXTEND: UC-XX Consultar manual del heroe
-  - INCLUDE: UC-XX Ejecutar misión
-  - INCLUDE: UC-XX Evaluar misión
-  - INCLUDE: UC-XX Generar feedback
-    - EXTEND: UC-XX Aceptar feedback
-- UC-XX Ver progreso en el juego
-- UC-XX Consultar inventario
+- **UC-41** Iniciar sesión en el videojuego
+- **UC-42** Resolver misión
+  - INCLUDE: **UC-43** Buscar misión
+  - INCLUDE: **UC-44** Diseñar solución con lenguaje gamificado
+    - INCLUDE: **UC-45** Agregar acción
+    - EXTEND: **UC-46** Declarar variable
+    - EXTEND: **UC-47** Asignar valor a variable
+    - EXTEND: **UC-48** Agregar estructura condicional
+    - EXTEND: **UC-49** Agregar estructura repetitiva
+    - EXTEND: **UC-50** Agregar procedimiento
+    - EXTEND: **UC-51** Consultar manual del heroe
+  - INCLUDE: **UC-52** Ejecutar misión
+  - INCLUDE: **UC-53** Evaluar misión
+  - INCLUDE: **UC-54** Generar feedback
+    - EXTEND: **UC-55** Aceptar feedback
+- **UC-56** Ver progreso en el juego
+- **UC-57** Consultar inventario
 
 
 ## Diagrama de Casos de Uso
