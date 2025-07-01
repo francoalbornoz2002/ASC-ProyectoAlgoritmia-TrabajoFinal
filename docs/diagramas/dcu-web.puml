@@ -1,9 +1,11 @@
 @startuml Web_CU
 left to right direction
 
-skinparam usecasePadding 15
-skinparam actorPadding 15
-skinparam wrapWidth 200
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 20
+skinparam wrapWidth 300
+skinparam maxMessageSize 120
 
 actor Alumno
 actor Docente

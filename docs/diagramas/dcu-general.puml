@@ -2,19 +2,14 @@
 left to right direction
 
 skinparam dpi 150
-
-' Espaciado y distribución
-skinparam usecasePadding 25
+skinparam usecasePadding 10
 skinparam actorPadding 80
 skinparam packagePadding 20
-skinparam wrapWidth 300
-skinparam maxMessageSize 120
+skinparam wrapWidth 200
 
-' Separación entre nodos y niveles
 skinparam nodesep 10
-skinparam ranksep 100
+skinparam ranksep 200
 
-' Tipo de líneas y diseño más claro
 skinparam linetype ortho
 skinparam ArrowThickness 0.5
 skinparam ArrowColor Black
@@ -45,10 +40,8 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
             usecase "UC-34 Iniciar sesión en la plataforma web" as UC34
             usecase "UC-35 Iniciar sesión normal" as UC35
             usecase "UC-36 Iniciar sesión con Google" as UC36
-            usecase "UC-30 Actualizar datos personales" as UC30_A
-            usecase "UC-30 Actualizar datos personales" as UC30_D
+            usecase "UC-30 Actualizar datos personales" as UC30
         }
-
 
         package "Gestión Académica"{
             usecase "UC-06 Alta institución" as UC06
@@ -61,8 +54,11 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
             usecase "UC-13 Baja curso" as UC13
             usecase "UC-14 Asignar docente a curso" as UC14
             usecase "UC-15 Buscar docente" as UC15
+            usecase "UC-25 Definir días y horarios del curso" as UC25
+            usecase "UC-26 Cambiar contraseña de acceso a curso" as UC26
+            usecase "UC-27 Aprobar solicitud de ingreso al curso" as UC27
+            usecase "UC-38 Solicitar ingreso a curso" as UC38
         }
-
 
         package "Gestión Docente"{
             usecase "UC-17 Consultar progreso de alumnos" as UC17
@@ -73,16 +69,11 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
             usecase "UC-22 Modificar sesión de refuerzo" as UC22
             usecase "UC-23 Cancelar sesión de refuerzo" as UC23
             usecase "UC-24 Aceptar sesión de refuerzo automática" as UC24
-            usecase "UC-25 Definir días y horarios del curso" as UC25
-            usecase "UC-26 Cambiar contraseña de acceso a curso" as UC26
-            usecase "UC-27 Aprobar solicitud de ingreso al curso" as UC27
             usecase "UC-28 Habilitar capítulo" as UC28
             usecase "UC-29 Buscar capítulo" as UC29
             usecase "UC-37 Ver progreso en la web" as UC37
-            usecase "UC-38 Solicitar ingreso a curso" as UC38
             usecase "UC-39 Confirmar asistencia a sesión de refuerzo" as UC39
         }
-
 
         package "Auditoría"{
             usecase "UC-16 Auditoría" as UC16
@@ -138,13 +129,13 @@ UC14 --> UC12 : <<include>>
 Administrador --> UC16
 
 ' Conexiones de Alumno
+Alumno --> UC30
 Alumno --> UC31
 UC31 --> UC32 : <<extend>>
 UC31 --> UC33 : <<extend>>
 Alumno --> UC34
 UC34 --> UC35 : <<extend>>
 UC34 --> UC36 : <<extend>>
-Alumno --> UC30_A
 Alumno --> UC37
 Alumno --> UC38
 Alumno --> UC39
@@ -184,6 +175,6 @@ Docente --> UC26
 Docente --> UC27
 Docente --> UC28
 UC28 --> UC29 : <<include>>
-Docente --> UC30_D
+Docente --> UC30
 Docente --> UC05
 
