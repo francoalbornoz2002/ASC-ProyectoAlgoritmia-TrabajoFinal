@@ -121,51 +121,53 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 
 #### Gestión de cuenta
 - **UC-05** Iniciar sesión
-- **UC-31** Actualizar datos personales
+- **UC-30** Actualizar datos personales
 
 ### Alumnos
 
 #### Gestión de cuenta
-- **UC-32** Registrarse en la plataforma
-  - EXTEND: **UC-33** Registro normal
-  - EXTEND: **UC-34** Registro con Google
-- **UC-35** Iniciar sesión en la plataforma web
-  - EXTEND: **UC-36** Iniciar sesión normal
-  - EXTEND: **UC-37** Inicar sesión con Google
-- **UC-31** Actualizar datos personales
-- **UC-38** Ver progreso en la web
+- **UC-31** Registrarse en la plataforma
+  - EXTEND: **UC-32** Registro normal
+  - EXTEND: **UC-33** Registro con Google
+- **UC-34** Iniciar sesión en la plataforma web
+  - EXTEND: **UC-35** Iniciar sesión normal
+  - EXTEND: **UC-36** Inicar sesión con Google
+- **UC-30** Actualizar datos personales
+- **UC-37** Ver progreso en la web
 
 #### Cursos
-- **UC-39** Solicitar ingreso a curso
-- **UC-40** Confirmar asistencia a sesión de refuerzo
+- **UC-38** Solicitar ingreso a curso
+- **UC-39** Confirmar asistencia a sesión de refuerzo
 
 #### Videojuego
-- **UC-41** Iniciar sesión en el videojuego
-- **UC-42** Resolver misión
-  - INCLUDE: **UC-43** Buscar misión
-  - INCLUDE: **UC-44** Diseñar solución con lenguaje gamificado
-    - INCLUDE: **UC-45** Agregar acción
-    - EXTEND: **UC-46** Declarar variable
-    - EXTEND: **UC-47** Asignar valor a variable
-    - EXTEND: **UC-48** Agregar estructura condicional
-    - EXTEND: **UC-49** Agregar estructura repetitiva
-    - EXTEND: **UC-50** Agregar procedimiento
-    - EXTEND: **UC-51** Consultar manual del heroe
-  - INCLUDE: **UC-52** Ejecutar misión
-  - INCLUDE: **UC-53** Evaluar misión
-  - INCLUDE: **UC-54** Generar feedback
-    - EXTEND: **UC-55** Aceptar feedback
-- **UC-56** Ver progreso en el juego
-- **UC-57** Consultar inventario
+- **UC-40** Iniciar sesión en el videojuego
+- **UC-41** Resolver misión
+  - INCLUDE: **UC-42** Buscar misión
+  - INCLUDE: **UC-43** Diseñar solución con lenguaje gamificado
+    - INCLUDE: **UC-44** Agregar acción
+    - EXTEND: **UC-45** Declarar variable
+    - EXTEND: **UC-46** Asignar valor a variable
+    - EXTEND: **UC-47** Agregar estructura condicional
+    - EXTEND: **UC-48** Agregar estructura repetitiva
+    - EXTEND: **UC-49** Agregar procedimiento
+    - EXTEND: **UC-50** Consultar manual del heroe
+  - INCLUDE: **UC-51** Ejecutar misión
+  - INCLUDE: **UC-52** Evaluar misión
+  - INCLUDE: **UC-53** Generar feedback
+    - EXTEND: **UC-54** Aceptar feedback
+- **UC-55** Ver progreso en el juego
+- **UC-56** Consultar inventario
 
 
 ### Diagrama de Casos de Uso – Videojuego
 
-![Casos de uso videojuego](out\docs\diagramas\dcu-videojuego\Videojuego_CU.png)
+![Casos de uso videojuego](Videojuego_DCU.png)
 
 ### Diagrama de Casos de Uso – Plataforma Web
 
-![Casos de uso plataforma web](out\docs\diagramas\dcu-web\Web_CU.png)
+![Casos de uso plataforma web](Web_DCU.png)
+
+
 
 
 

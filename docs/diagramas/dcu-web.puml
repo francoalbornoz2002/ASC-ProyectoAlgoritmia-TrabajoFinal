@@ -11,16 +11,16 @@ actor Administrador
 
 package "Plataforma Web" {
   'Casos de uso del Alumno
-  usecase "UC-32 Registrarse en la plataforma" as UC32
-  usecase "UC-33 Registro normal" as UC33
-  usecase "UC-34 Registro con Google" as UC34
-  usecase "UC-35 Iniciar sesión en la plataforma web" as UC35
-  usecase "UC-36 Iniciar sesión normal" as UC36
-  usecase "UC-37 Iniciar sesión con Google" as UC37
-  usecase "UC-31 Actualizar datos personales" as UC31_A
-  usecase "UC-38 Ver progreso en la web" as UC38
-  usecase "UC-39 Solicitar ingreso a curso" as UC39
-  usecase "UC-40 Confirmar asistencia a sesión de refuerzo" as UC40
+  usecase "UC-31 Registrarse en la plataforma" as UC31
+  usecase "UC-32 Registro normal" as UC32
+  usecase "UC-33 Registro con Google" as UC33
+  usecase "UC-34 Iniciar sesión en la plataforma web" as UC34
+  usecase "UC-35 Iniciar sesión normal" as UC35
+  usecase "UC-36 Iniciar sesión con Google" as UC36
+  usecase "UC-30 Actualizar datos personales" as UC30_A
+  usecase "UC-37 Ver progreso en la web" as UC37
+  usecase "UC-38 Solicitar ingreso a curso" as UC38
+  usecase "UC-39 Confirmar asistencia a sesión de refuerzo" as UC39
 
   'Casos de uso del Docente
   usecase "UC-17 Consultar progreso de alumnos" as UC17
@@ -36,8 +36,7 @@ package "Plataforma Web" {
   usecase "UC-27 Aprobar solicitud de ingreso al curso" as UC27
   usecase "UC-28 Habilitar capítulo" as UC28
   usecase "UC-29 Buscar capítulo" as UC29
-  usecase "UC-30 Iniciar sesión en la plataforma web" as UC30
-  usecase "UC-31 Actualizar datos personales" as UC31_D
+  usecase "UC-30 Actualizar datos personales" as UC30_D
   usecase "UC-05 Iniciar sesión" as UC05
 
   'Casos de uso del Administrador
@@ -81,16 +80,16 @@ UC14 --> UC12 : <<include>>
 Administrador --> UC16
 
 ' Conexiones de Alumno
-Alumno --> UC32
-UC32 --> UC33 : <<extend>>
-UC32 --> UC34 : <<extend>>
-Alumno --> UC35
-UC35 --> UC36 : <<extend>>
-UC35 --> UC37 : <<extend>>
-Alumno --> UC31_A
+Alumno --> UC31
+UC31 --> UC32 : <<extend>>
+UC31 --> UC33 : <<extend>>
+Alumno --> UC34
+UC34 --> UC35 : <<extend>>
+UC34 --> UC36 : <<extend>>
+Alumno --> UC30_A
+Alumno --> UC37
 Alumno --> UC38
 Alumno --> UC39
-Alumno --> UC40
 
 ' Conexiones de Docente
 Docente --> UC17
@@ -106,8 +105,7 @@ Docente --> UC26
 Docente --> UC27
 Docente --> UC28
 UC28 --> UC29 : <<include>>
-Docente --> UC30
-Docente --> UC31_D
+Docente --> UC30_D
 Docente --> UC05
 
 
