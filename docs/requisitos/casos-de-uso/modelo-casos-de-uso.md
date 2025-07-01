@@ -159,11 +159,13 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 - **UC-57** Consultar inventario
 
 
-## Diagrama de Casos de Uso
+### Diagrama de Casos de Uso – Videojuego
 
-### Videojuego
+![Casos de uso videojuego](out\docs\diagramas\dcu-videojuego\Videojuego_CU.png)
 
-### Plataforma web
+### Diagrama de Casos de Uso – Plataforma Web
+
+![Casos de uso plataforma web](out\docs\diagramas\dcu-web\Web_CU.png)
 
 
 
