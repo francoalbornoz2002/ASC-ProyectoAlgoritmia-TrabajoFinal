@@ -1,0 +1,189 @@
+@startuml General_CU
+left to right direction
+
+skinparam dpi 150
+
+' Espaciado y distribución
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 20
+skinparam wrapWidth 300
+skinparam maxMessageSize 120
+
+' Separación entre nodos y niveles
+skinparam nodesep 10
+skinparam ranksep 100
+
+' Tipo de líneas y diseño más claro
+skinparam linetype ortho
+skinparam ArrowThickness 0.5
+skinparam ArrowColor Black
+skinparam ArrowFontSize 12
+skinparam ArrowFontColor Gray
+
+' Estética
+skinparam defaultTextAlignment center
+skinparam backgroundColor #FFFFFF
+
+
+actor Alumno
+actor Administrador
+actor Docente
+
+
+package "Plataforma Gamificada Algoritmia (PGA)"{
+    package "Plataforma Web" {
+        package "Gestión de usuarios"{
+            usecase "UC-01 Alta usuario" as UC01
+            usecase "UC-02 Modificar usuario" as UC02
+            usecase "UC-03 Buscar usuario" as UC03
+            usecase "UC-04 Baja usuario" as UC04
+            usecase "UC-05 Iniciar sesión" as UC05
+            usecase "UC-31 Registrarse en la plataforma" as UC31
+            usecase "UC-32 Registro normal" as UC32
+            usecase "UC-33 Registro con Google" as UC33
+            usecase "UC-34 Iniciar sesión en la plataforma web" as UC34
+            usecase "UC-35 Iniciar sesión normal" as UC35
+            usecase "UC-36 Iniciar sesión con Google" as UC36
+            usecase "UC-30 Actualizar datos personales" as UC30_A
+            usecase "UC-30 Actualizar datos personales" as UC30_D
+        }
+
+
+        package "Gestión Académica"{
+            usecase "UC-06 Alta institución" as UC06
+            usecase "UC-07 Modificar institución" as UC07
+            usecase "UC-08 Buscar institución" as UC08
+            usecase "UC-09 Baja institución" as UC09
+            usecase "UC-10 Alta curso" as UC10
+            usecase "UC-11 Modificar curso" as UC11
+            usecase "UC-12 Buscar curso" as UC12
+            usecase "UC-13 Baja curso" as UC13
+            usecase "UC-14 Asignar docente a curso" as UC14
+            usecase "UC-15 Buscar docente" as UC15
+        }
+
+
+        package "Gestión Docente"{
+            usecase "UC-17 Consultar progreso de alumnos" as UC17
+            usecase "UC-18 Ver progreso general (historia)" as UC18
+            usecase "UC-19 Ver progreso por capítulo" as UC19
+            usecase "UC-20 Generar reporte de progreso" as UC20
+            usecase "UC-21 Crear sesión de refuerzo" as UC21
+            usecase "UC-22 Modificar sesión de refuerzo" as UC22
+            usecase "UC-23 Cancelar sesión de refuerzo" as UC23
+            usecase "UC-24 Aceptar sesión de refuerzo automática" as UC24
+            usecase "UC-25 Definir días y horarios del curso" as UC25
+            usecase "UC-26 Cambiar contraseña de acceso a curso" as UC26
+            usecase "UC-27 Aprobar solicitud de ingreso al curso" as UC27
+            usecase "UC-28 Habilitar capítulo" as UC28
+            usecase "UC-29 Buscar capítulo" as UC29
+            usecase "UC-37 Ver progreso en la web" as UC37
+            usecase "UC-38 Solicitar ingreso a curso" as UC38
+            usecase "UC-39 Confirmar asistencia a sesión de refuerzo" as UC39
+        }
+
+
+        package "Auditoría"{
+            usecase "UC-16 Auditoría" as UC16
+        }
+    }
+
+    package "Videojuego"{
+        package "Gestión de cuenta"{
+            usecase "UC-40 Iniciar sesión en el videojuego" as UC40
+            usecase "UC-55 Ver progreso en el juego" as UC55
+            usecase "UC-56 Consultar inventario" as UC56
+        }
+        package "Programación"{
+            usecase "UC-41 Resolver misión" as UC41
+            usecase "UC-42 Buscar misión" as UC42
+            usecase "UC-43 Diseñar solución con lenguaje gamificado" as UC43
+            usecase "UC-44 Agregar acción" as UC44
+            usecase "UC-45 Declarar variable" as UC45
+            usecase "UC-46 Asignar valor a variable" as UC46
+            usecase "UC-47 Agregar estructura condicional" as UC47
+            usecase "UC-48 Agregar estructura repetitiva" as UC48
+            usecase "UC-49 Agregar procedimiento" as UC49
+            usecase "UC-50 Consultar manual del héroe" as UC50
+        }
+        package "Ejecución y feedback"{
+            usecase "UC-51 Ejecutar misión" as UC51
+            usecase "UC-52 Evaluar misión" as UC52
+            usecase "UC-53 Generar feedback" as UC53
+            usecase "UC-54 Aceptar feedback" as UC54
+        }   
+    }
+}
+
+Administrador --> UC01
+Administrador --> UC02
+UC02 --> UC03 : <<include>>
+Administrador --> UC04
+UC04 --> UC03 : <<include>>
+Administrador --> UC05
+Administrador --> UC06
+Administrador --> UC07
+UC07 --> UC08 : <<include>>
+Administrador --> UC09
+UC09 --> UC08 : <<include>>
+Administrador --> UC10
+Administrador --> UC11
+UC11 --> UC12 : <<include>>
+Administrador --> UC13
+UC13 --> UC12 : <<include>>
+Administrador --> UC14
+UC14 --> UC15 : <<include>>
+UC14 --> UC12 : <<include>>
+Administrador --> UC16
+
+' Conexiones de Alumno
+Alumno --> UC31
+UC31 --> UC32 : <<extend>>
+UC31 --> UC33 : <<extend>>
+Alumno --> UC34
+UC34 --> UC35 : <<extend>>
+UC34 --> UC36 : <<extend>>
+Alumno --> UC30_A
+Alumno --> UC37
+Alumno --> UC38
+Alumno --> UC39
+
+Alumno --> UC40
+Alumno --> UC41
+Alumno --> UC55
+Alumno --> UC56
+
+UC41 --> UC42 : <<include>>
+UC41 --> UC43 : <<include>>
+UC41 --> UC51 : <<include>>
+UC41 --> UC52 : <<include>>
+UC41 --> UC53 : <<include>>
+
+UC43 --> UC44 : <<include>>
+UC43 --> UC45 : <<extend>>
+UC43 --> UC46 : <<extend>>
+UC43 --> UC47 : <<extend>>
+UC43 --> UC48 : <<extend>>
+UC43 --> UC49 : <<extend>>
+UC43 --> UC50 : <<extend>>
+
+UC53 --> UC54 : <<extend>>
+
+' Conexiones de Docente
+Docente --> UC17
+UC17 --> UC18 : <<extend>>
+UC17 --> UC19 : <<extend>>
+Docente --> UC20
+Docente --> UC21
+Docente --> UC22
+Docente --> UC23
+Docente --> UC24
+Docente --> UC25
+Docente --> UC26
+Docente --> UC27
+Docente --> UC28
+UC28 --> UC29 : <<include>>
+Docente --> UC30_D
+Docente --> UC05
+
