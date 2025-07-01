@@ -8,44 +8,44 @@ skinparam wrapWidth 200
 actor Alumno
 
 package "Videojuego" {
-  usecase "UC-43 Iniciar sesión en el videojuego" as UC43
-  usecase "UC-44 Resolver misión" as UC44
-  usecase "UC-45 Buscar misión" as UC45
-  usecase "UC-46 Diseñar solución con lenguaje gamificado" as UC46
-  usecase "UC-47 Agregar acción" as UC47
-  usecase "UC-48 Declarar variable" as UC48
-  usecase "UC-49 Asignar valor a variable" as UC49
-  usecase "UC-50 Agregar estructura condicional" as UC50
-  usecase "UC-51 Agregar estructura repetitiva" as UC51
-  usecase "UC-52 Agregar procedimiento" as UC52
-  usecase "UC-53 Consultar manual del héroe" as UC53
-  usecase "UC-54 Ejecutar misión" as UC54
-  usecase "UC-55 Evaluar misión" as UC55
-  usecase "UC-56 Generar feedback" as UC56
-  usecase "UC-57 Aceptar feedback" as UC57
-  usecase "UC-58 Ver progreso en el juego" as UC58
-  usecase "UC-59 Consultar inventario" as UC59
+  usecase "UC-41 Iniciar sesión en el videojuego" as UC41
+  usecase "UC-42 Resolver misión" as UC42
+  usecase "UC-43 Buscar misión" as UC43
+  usecase "UC-44 Diseñar solución con lenguaje gamificado" as UC44
+  usecase "UC-45 Agregar acción" as UC45
+  usecase "UC-46 Declarar variable" as UC46
+  usecase "UC-47 Asignar valor a variable" as UC47
+  usecase "UC-48 Agregar estructura condicional" as UC48
+  usecase "UC-49 Agregar estructura repetitiva" as UC49
+  usecase "UC-50 Agregar procedimiento" as UC50
+  usecase "UC-51 Consultar manual del héroe" as UC51
+  usecase "UC-52 Ejecutar misión" as UC52
+  usecase "UC-53 Evaluar misión" as UC53
+  usecase "UC-54 Generar feedback" as UC54
+  usecase "UC-55 Aceptar feedback" as UC55
+  usecase "UC-56 Ver progreso en el juego" as UC56
+  usecase "UC-57 Consultar inventario" as UC57
 
-  Alumno --> UC43
-  Alumno --> UC44
-  Alumno --> UC58
-  Alumno --> UC59
+  Alumno --> UC41
+  Alumno --> UC42
+  Alumno --> UC56
+  Alumno --> UC57
+
+  UC42 --> UC43 : <<include>>
+  UC42 --> UC44 : <<include>>
+  UC42 --> UC52 : <<include>>
+  UC42 --> UC53 : <<include>>
+  UC42 --> UC54 : <<include>>
 
   UC44 --> UC45 : <<include>>
-  UC44 --> UC46 : <<include>>
-  UC44 --> UC54 : <<include>>
-  UC44 --> UC55 : <<include>>
-  UC44 --> UC56 : <<include>>
+  UC44 --> UC46 : <<extend>>
+  UC44 --> UC47 : <<extend>>
+  UC44 --> UC48 : <<extend>>
+  UC44 --> UC49 : <<extend>>
+  UC44 --> UC50 : <<extend>>
+  UC44 --> UC51 : <<extend>>
 
-  UC46 --> UC47 : <<include>>
-  UC46 --> UC48 : <<extend>>
-  UC46 --> UC49 : <<extend>>
-  UC46 --> UC50 : <<extend>>
-  UC46 --> UC51 : <<extend>>
-  UC46 --> UC52 : <<extend>>
-  UC46 --> UC53 : <<extend>>
-
-  UC56 --> UC57 : <<extend>>
+  UC54 --> UC55 : <<extend>>
 }
 
 @enduml

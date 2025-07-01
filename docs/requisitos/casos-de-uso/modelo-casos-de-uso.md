@@ -120,7 +120,7 @@ En esta versión inicial, se prevé que exista un único administrador central. 
   - INCLUDE: **UC-29** Buscar capítulo
 
 #### Gestión de cuenta
-- **UC-30** Iniciar sesión en la plataforma web
+- **UC-05** Iniciar sesión
 - **UC-31** Actualizar datos personales
 
 ### Alumnos
