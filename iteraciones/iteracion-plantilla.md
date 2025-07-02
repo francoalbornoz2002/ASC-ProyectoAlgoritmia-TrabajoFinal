@@ -2,7 +2,7 @@
 
 **Iteración Nº:** `<número>`  
 **Fase UP:** `<Inicio | Elaboración | Construcción | Transición>`  
-**Fechas:** `YYYY‑MM‑DD – YYYY‑MM‑DD`  
+**Fechas:** `DD-MM-AAAA - DD-MM-AAAA`  
 **Duración:** `1–2 semanas`
 
 ---

@@ -42,10 +42,10 @@
 ## 5. Definition of Done (DoD)
 - [X] Documento de vision completo con la problematica, propuesta, alcance, objetivos y modulos del sistema.
 - [X] Glosario completo con sus definiciones.
-- [ ] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
-- [ ] Requisitos funcionales y no funcionales iniciales y descriptos.
-- [ ] Modelo de casos de uso con los primeros actores identificados y los casos de uso principales.
-- [ ] Diagrama de casos de uso esbozado con los actores y los primeros casos de uso.
+- [X] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
+- [X] Requisitos funcionales y no funcionales iniciales y descriptos.
+- [X] Modelo de casos de uso con los primeros actores identificados y los casos de uso principales.
+- [X] Diagrama de casos de uso esbozado con los actores y los primeros casos de uso.
 
 ## 6. Riesgos y Mitigaciones
 

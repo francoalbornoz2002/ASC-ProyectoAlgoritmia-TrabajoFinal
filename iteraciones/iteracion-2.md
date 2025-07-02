@@ -22,9 +22,9 @@ El objetivo principal de esta iteración de refuerzo es completar los objetivos 
 | Factibilidad Técnica                                | De los aspectos técnicos identificados, desarrollar cada uno en base al proyecto y justificar                            | Sección "Factibilidad Técnica" en `docs/analisis/estudio-de-factibilidad.md`   |
 | Factibilidad Operativa                              | De los aspectos operativos identificados, desarrollar cada uno en base al proyecto y justificar                          | Sección "Factibilidad Operativa" en `docs/analisis/estudio-de-factibilidad.md` |
 | Factibilidad Económica                              | De los aspectos económicos identificados, desarrollar cada uno en base al proyecto y justificar                          | Sección "Factibilidad Económica" en `docs/analisis/estudio-de-factibilidad.md` |
-| Identificar actores del sistema                     | Identificar los actores principales del sistema y una breve descripción de las acciones que realizará dentro del sistema | Sección "Actores del sistema" en `docs/analisis/modelo-casos-de-uso.md`        |
-| Modelo de casos de uso                              | Listar los principales casos de uso del sistema y una breve descripción de los mismos                                    | `docs/analisis/modelo-casos-de-uso.md`                                         |
-| Diagrama de Casos de Uso                            | Realizar un diagrama de casos de uso preliminar con los actores y casos de uso identificados anteriormente               | `diagramas/diagrama-casos-de-uso.puml`                                         |
+| Identificar actores del sistema                     | Identificar los actores principales del sistema y una breve descripción de las acciones que realizará dentro del sistema | Sección "Actores del sistema" en `docs/requisitos/casos-de-uso/modelo-casos-de-uso.md`        |
+| Modelo de casos de uso                              | Listar los principales casos de uso del sistema y una breve descripción de los mismos                                    | `docs/requisitos/casos-de-uso/modelo-casos-de-uso.md`                                         |
+| Diagrama de Casos de Uso                            | Realizar un diagrama de casos de uso preliminar con los actores y casos de uso identificados anteriormente               | `docs/diagramas/diagrama-casos-de-uso.puml`                                         |
 
 ## 4. Entregables
 - `docs/requisitos/requisitos-funcionales.md`
@@ -35,9 +35,9 @@ El objetivo principal de esta iteración de refuerzo es completar los objetivos 
 
 ## 5. Definition of Done (DoD)
 - [X] Estudio de factibilidad completo con la conclusión de cada tipo de factibilidad.
-- [ ] Requisitos funcionales y no funcionales iniciales y descriptos.
-- [ ] Modelo de casos de uso con los primeros actores identificados y los casos de uso principales.
-- [ ] Diagrama de casos de uso esbozado con los actores y los primeros casos de uso.
+- [X] Requisitos funcionales y no funcionales iniciales y descriptos.
+- [X] Modelo de casos de uso con los primeros actores identificados y los casos de uso principales.
+- [X] Diagrama de casos de uso esbozado con los actores y los primeros casos de uso.
 
 ## 6. Riesgos y Mitigaciones
 

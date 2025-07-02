@@ -1,7 +1,7 @@
 # Plan de Iteración
 
 **Iteración Nº:** `3`  
-**Fase UP:** `<Inicio | Elaboración | Construcción | Transición>`  
+**Fase UP:** `Elaboración`  
 **Fechas:** `07/06/2025 – 20/06/2025`  
 **Duración:** `2 semanas`
 
@@ -27,8 +27,8 @@
 - `docs/game-design/gdd.md`
 
 ## 5. Definition of Done (DoD)
-- [ ] Modelo de casos de uso con los actores del sistema identificados, descriptos y los casos de uso de alto nivel.
-- [ ] Diagrama de casos de uso realizado con los actores conectados a sus correspondientes casos de uso y las relaciones entre casos de uso (include, extend).
+- [X] Modelo de casos de uso con los actores del sistema identificados, descriptos y los casos de uso de alto nivel.
+- [X] Diagrama de casos de uso realizado con los actores conectados a sus correspondientes casos de uso y las relaciones entre casos de uso (include, extend).
 - [ ] Casos de uso del sistema especificados con flujo típico yalternativo y pre y pos condiciones.
 - [ ] Diagrama de subsistema (paquetes de casos de uso) definidos y descriptos.
 - [ ] Game Design Document completo
