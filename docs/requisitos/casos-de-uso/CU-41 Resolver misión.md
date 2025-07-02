@@ -1,10 +1,10 @@
-## UC-XX Nombre del caso de uso
+## UC-41 Resolver misión
 
 ### 1. Identificación
-**Código**: UC-XX
-**Nombre**: [Nombre descriptivo del caso de uso]
-**Actor principal**: [Actor que inicia el caso de uso]
-**Frecuencia de uso**: [Alta / Media / Baja]
+**Código**: UC-41
+**Nombre**: Resolver misión
+**Actor principal**: Alumno
+**Frecuencia de uso**: Alta
 **Precondiciones**: [Condiciones que deben cumplirse antes de iniciar]
 **Postcondiciones**: [Estado del sistema luego de ejecutarse]
 
