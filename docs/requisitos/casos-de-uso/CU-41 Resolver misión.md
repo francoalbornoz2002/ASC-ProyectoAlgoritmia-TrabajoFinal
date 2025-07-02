@@ -5,16 +5,15 @@
 **Nombre**: Resolver misión
 **Actor principal**: Alumno
 **Frecuencia de uso**: Alta
-**Precondiciones**: [Condiciones que deben cumplirse antes de iniciar]
-**Postcondiciones**: [Estado del sistema luego de ejecutarse]
+**Precondiciones**: El alumno debe haber iniciado sesión correctamente en el videojuego y tener al menos una misión disponible.
+**Postcondiciones**: Se registra el resultado y puntuación de la misión. Se actualiza y se guarda el progreso del alumno (EXP y Nivel). Se almacena el feedback.
 
 ### 2. Descripción general
-Breve resumen del propósito del caso de uso, qué permite lograr, y cómo encaja en el flujo general del sistema.
+El alumno selecciona una misión y diseña una solución utilizando el lenguaje de programación gamificado para intentar resolverla. El sistema ejecuta y evalua la misión, asigna los puntos de experiencia, actualiza el progreso y genera el feedback para mejorar la solución.
 
 ### 3. Flujo principal
-1. [Paso 1: El actor hace…]
-2. [Paso 2: El sistema responde…]
-3. [Etcétera...]
+1. Este caso de uso comienza cuando el alumno quiere resolver una misión del videojuego.
+2. Se ejecuta el caso de uso UC-42 Buscar Misión
 
 ### 4. Escenarios alternativos
 **Alternativa A1 – [Nombre opcional]**

@@ -212,6 +212,7 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 - Dificultad de la misión (Fácil, Normal o Difícil)
 - Descripción (Enunciado) de la misión
 - Nivel requerido para desbloqueo
+- Disponibilidad
 - Estado de la misión (Completada, no completada)
 
 ## RI-10 Información del escenario
