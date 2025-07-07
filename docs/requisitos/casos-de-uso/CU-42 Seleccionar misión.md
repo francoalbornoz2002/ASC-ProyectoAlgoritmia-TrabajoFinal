@@ -1,15 +1,15 @@
-## UC-42 Buscar misión
+## UC-42 Seleccionar misión
 
 ### 1. Identificación
 **Código**: UC-42
-**Nombre**: Buscar misión
+**Nombre**: Seleccionar misión
 **Actor principal**: Alumno
 **Frecuencia de uso**: Alta
-**Precondiciones**: [Condiciones que deben cumplirse antes de iniciar]
-**Postcondiciones**: [Estado del sistema luego de ejecutarse]
+**Precondiciones**: El alumno debe haber iniciado sesión correctamente en el videojuego y tener al menos una misión disponible.
+**Postcondiciones**: -
 
 ### 2. Descripción general
-Breve resumen del propósito del caso de uso, qué permite lograr, y cómo encaja en el flujo general del sistema.
+El alumno selecciona una misión de las misiones disponibles para posteriormente intentar resolverla.
 
 ### 3. Flujo principal
 1. [Paso 1: El actor hace…]

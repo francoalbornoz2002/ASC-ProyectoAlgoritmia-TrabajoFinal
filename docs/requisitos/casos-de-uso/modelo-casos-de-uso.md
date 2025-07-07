@@ -142,7 +142,7 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 #### Videojuego
 - **UC-40** Iniciar sesión en el videojuego
 - **UC-41** Resolver misión
-  - INCLUDE: **UC-42** Buscar misión
+  - INCLUDE: **UC-42** Seleccionar misión
   - INCLUDE: **UC-43** Diseñar solución con lenguaje gamificado
     - INCLUDE: **UC-44** Agregar acción
     - EXTEND: **UC-45** Declarar variable

@@ -13,7 +13,8 @@ El alumno selecciona una misión y diseña una solución utilizando el lenguaje 
 
 ### 3. Flujo principal
 1. Este caso de uso comienza cuando el alumno quiere resolver una misión del videojuego.
-2. Se ejecuta el caso de uso UC-42 Buscar Misión
+2. Se ejecuta el caso de uso UC-42 Seleccionar Misión
+
 
 ### 4. Escenarios alternativos
 **Alternativa A1 – [Nombre opcional]**

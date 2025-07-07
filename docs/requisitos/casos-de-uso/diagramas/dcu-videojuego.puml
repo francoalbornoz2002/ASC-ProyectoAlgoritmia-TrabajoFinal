@@ -10,7 +10,7 @@ actor Alumno
 package "Videojuego" {
   usecase "UC-40 Iniciar sesión en el videojuego" as UC40
   usecase "UC-41 Resolver misión" as UC41
-  usecase "UC-42 Buscar misión" as UC42
+  usecase "UC-42 Seleccionar misión" as UC42
   usecase "UC-43 Diseñar solución con lenguaje gamificado" as UC43
   usecase "UC-44 Agregar acción" as UC44
   usecase "UC-45 Declarar variable" as UC45
