@@ -1,0 +1,50 @@
+@startuml SUBSISTEMA_Gestión de usuarios
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Alumno
+actor Docente
+actor Administrador
+
+package "Plataforma Web"{
+    package "Gestión de usuarios"{
+        usecase "UC-01 Alta usuario" as UC01
+        usecase "UC-02 Modificar usuario" as UC02
+        usecase "UC-03 Buscar usuario" as UC03
+        usecase "UC-04 Baja usuario" as UC04
+        usecase "UC-05 Iniciar sesión" as UC05
+        usecase "UC-31 Registrarse en la plataforma" as UC31
+        usecase "UC-32 Registro normal" as UC32
+        usecase "UC-33 Registro con Google" as UC33
+        usecase "UC-34 Iniciar sesión en la plataforma web" as UC34
+        usecase "UC-35 Iniciar sesión normal" as UC35
+        usecase "UC-36 Iniciar sesión con Google" as UC36
+        usecase "UC-30 Actualizar datos personales" as UC30
+    }
+
+}
+Administrador --> UC01
+Administrador --> UC02
+UC02 --> UC03 : <<include>>
+Administrador --> UC04
+UC04 --> UC03 : <<include>>
+Administrador --> UC05
+
+Alumno --> UC30
+Alumno --> UC31
+UC31 --> UC32 : <<extend>>
+UC31 --> UC33 : <<extend>>
+Alumno --> UC34
+UC34 --> UC35 : <<extend>>
+UC34 --> UC36 : <<extend>>
+
+Docente --> UC30
+Docente --> UC05
