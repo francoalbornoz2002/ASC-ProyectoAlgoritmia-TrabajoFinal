@@ -1,0 +1,52 @@
+@startuml DCU_General Alto Nivel
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Alumno
+actor Docente
+actor Administrador
+
+
+package "Plataforma Gamificada Algoritmia (PGA)"{
+    package "Plataforma web"{
+        usecase "Gestión de usuarios" as GestionUsuarios
+        usecase "Gestión de instituciones" as GestionInstituciones
+        usecase "Gestión de cursos" as GestionCursos
+        usecase "Seguimiento académico" as SeguimientoAcademico
+        usecase "Gestión de auditoría" as GestionAuditoria
+    }
+
+    package "Videojuego"{
+        usecase "Gestión de cuenta" as GestionUsuariosV
+        usecase "Programación" as Programacion
+        usecase "Ejecución y evaluación" as EjecucionEvaluacion
+        usecase "Gestión de feedback" as GestionFeedback
+    }
+
+    Alumno --> GestionUsuariosV
+    Alumno --> Programacion
+    Alumno --> EjecucionEvaluacion
+    Alumno --> GestionFeedback
+    Alumno --> GestionUsuarios
+    Alumno --> GestionCursos
+    Alumno --> SeguimientoAcademico
+    
+    Administrador --> GestionUsuarios
+    Administrador --> GestionInstituciones
+    Administrador --> GestionCursos
+    Administrador --> GestionAuditoria
+
+    Docente --> GestionUsuarios
+    Docente --> GestionCursos
+    Docente --> SeguimientoAcademico
+}
+
+@enduml
