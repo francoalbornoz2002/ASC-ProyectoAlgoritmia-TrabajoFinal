@@ -16,6 +16,7 @@ skinparam ArrowColor Black
 actor Alumno
 actor Administrador
 actor Docente
+actor "Google OAuth 2.0" as GoogleOAuth2
 
 package "Plataforma Web"{
   package "Gestión de instituciones"{
@@ -108,6 +109,9 @@ UC35 --> UC37 : <<extend>>
 Alumno --> UC38
 Alumno --> UC39
 Alumno --> UC40
+GoogleOAuth2 -up-> UC34
+GoogleOAuth2 -up-> UC37
+
 
 Docente --> UC05
 Docente --> UC17

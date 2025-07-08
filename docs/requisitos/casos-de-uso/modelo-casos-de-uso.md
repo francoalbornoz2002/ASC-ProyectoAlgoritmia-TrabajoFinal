@@ -60,6 +60,10 @@ Entre sus funciones se destacan:
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
 
+### ACT-04 Google OAuth 2.0
+Representa al servicio externo de autenticación de Google utilizado por la plataforma web para permitir el inicio de sesión o registro de alumnos mediante sus cuentas de Google. Es un actor externo que colabora en los procesos de autenticación sin intervención directa del usuario sobre sus mecanismos internos.
+
+
 <!--
 ## Casos de uso del sistema
 
