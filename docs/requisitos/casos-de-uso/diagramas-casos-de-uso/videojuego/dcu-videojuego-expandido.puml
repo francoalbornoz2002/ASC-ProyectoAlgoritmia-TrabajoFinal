@@ -1,4 +1,4 @@
-@startuml Videojuego_CU
+@startuml DCU_VideojuegoExpandido
 left to right direction
 
 skinparam usecasePadding 15

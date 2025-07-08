@@ -60,6 +60,7 @@ Entre sus funciones se destacan:
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
 
+<!--
 ## Casos de uso del sistema
 
 ### Administrador
@@ -109,8 +110,9 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 #### Gestionar sesiones de refuerzo
 - **UC-21** Crear sesión de refuerzo
 - **UC-22** Modificar sesión de refuerzo
-- **UC-23** Buscar sesión de refuerzo
+  - INCLUDE: **UC-23** Buscar sesión de refuerzo
 - **UC-24** Cancelar sesión de refuerzo
+  - INCLUDE: **UC-23** Buscar sesión de refuerzo 
 - **UC-25** Aceptar sesión de refuerzo automática
 
 #### Gestionar cursos (docente)
@@ -157,17 +159,29 @@ En esta versión inicial, se prevé que exista un único administrador central. 
   - INCLUDE: **UC-54** Generar feedback
     - EXTEND: **UC-55** Aceptar feedback
 - **UC-56** Consultar feedback
+  - INCLUDE: **UC-43** Seleccionar misión
 - **UC-57** Ver progreso en el juego
 - **UC-58** Consultar inventario
+-->
 
 
-### Diagrama de Casos de Uso – Videojuego
+## Diagrama de Casos de Uso - Videojuego
+### Alto nivel - Subsistemas
+![DCU de alto nivel del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoAltoNivel.png)
 
-![Casos de uso videojuego](Videojuego_DCU.png)
+#### Subsistema Gestión de cuenta
+![Subsistema Gestión de cuenta](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_GestionCuenta.png)
 
-### Diagrama de Casos de Uso – Plataforma Web
+#### Subsistema Programación
+![Subsistema Programación](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_ProgramacionEjecucionEvaluacionFeedback.png)
 
-![Casos de uso plataforma web](Web_DCU.png)
+### Expandido - DCU Completo
+![DCU Completo del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoExpandido.png)
+
+
+## Diagrama de Casos de Uso – Plataforma Web
+
+![Casos de uso plataforma web](.7)
 
 
 
