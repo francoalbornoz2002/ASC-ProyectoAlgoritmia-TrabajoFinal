@@ -105,7 +105,8 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
             usecase "UC-54 Generar feedback" as UC54
             usecase "UC-55 Aceptar feedback" as UC55
             usecase "UC-56 Consultar feedback" as UC56
-        }   
+        }
+
     }
 }
 

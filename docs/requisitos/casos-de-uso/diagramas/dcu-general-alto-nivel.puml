@@ -8,7 +8,7 @@ skinparam packagePadding 50
 skinparam wrapWidth 200
 
 skinparam nodesep 20
-skinparam ranksep 100
+skinparam ranksep 150
 
 actor Alumno
 actor Docente
@@ -25,20 +25,21 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
     }
 
     package "Videojuego"{
-        usecase "Gestión de cuenta" as GestionUsuariosV
+        usecase "Gestión de cuenta" as GestionCuenta
         usecase "Programación" as Programacion
         usecase "Ejecución y evaluación" as EjecucionEvaluacion
         usecase "Gestión de feedback" as GestionFeedback
     }
 
-    Alumno --> GestionUsuariosV
-    Alumno --> Programacion
-    Alumno --> EjecucionEvaluacion
+    Alumno --> GestionCuenta
     Alumno --> GestionFeedback
+    Alumno --> Programacion
+    Programacion --> EjecucionEvaluacion
+    Programacion --> GestionFeedback
     Alumno --> GestionUsuarios
     Alumno --> GestionCursos
     Alumno --> SeguimientoAcademico
-    
+
     Administrador --> GestionUsuarios
     Administrador --> GestionInstituciones
     Administrador --> GestionCursos

@@ -1,0 +1,60 @@
+@startuml SUBSISTEMA_ProgramacionEjecucionEvaluacionFeedback
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 50
+
+actor Alumno
+
+package "Videojuego"{
+    package "Ejecución y evaluación"{
+        usecase "UC-52 Ejecutar misión" as UC52
+        usecase "UC-53 Evaluar misión" as UC53
+    }
+    package "Gestión de feedback"{
+        usecase "UC-54 Generar feedback" as UC54
+        usecase "UC-55 Aceptar feedback" as UC55
+        usecase "UC-56 Consultar feedback" as UC56
+    }
+    package "Programación"{
+        usecase "UC-42 Resolver misión" as UC42
+        usecase "UC-43 Seleccionar misión" as UC43
+        usecase "UC-44 Diseñar solución con lenguaje gamificado" as UC44
+        usecase "UC-45 Agregar acción" as UC45
+        usecase "UC-46 Declarar variable" as UC46
+        usecase "UC-47 Asignar valor a variable" as UC47
+        usecase "UC-48 Agregar estructura condicional" as UC48
+        usecase "UC-49 Agregar estructura repetitiva" as UC49
+        usecase "UC-50 Agregar procedimiento" as UC50
+        usecase "UC-51 Consultar manual del héroe" as UC51
+    }
+    
+}
+
+Alumno --> UC42
+
+UC44 --> UC45 : <<include>>
+UC44 --> UC46 : <<extend>>
+UC44 --> UC47 : <<extend>>
+UC44 --> UC48 : <<extend>>
+UC44 --> UC49 : <<extend>>
+UC44 --> UC50 : <<extend>>
+UC44 --> UC51 : <<extend>>
+
+UC42 --> UC43 : <<include>>
+UC42 --> UC44 : <<include>>
+UC42 --> UC52 : <<include>>
+UC42 --> UC53 : <<include>>
+UC42 --> UC54 : <<include>>
+
+UC54 --> UC55 : <<extend>>
+Alumno --> UC56
+UC56 --> UC43 : <<include>>
+
+@enduml

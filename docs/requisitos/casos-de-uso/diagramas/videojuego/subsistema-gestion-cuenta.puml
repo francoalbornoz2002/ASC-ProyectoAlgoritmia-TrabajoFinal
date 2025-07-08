@@ -1,0 +1,28 @@
+@startuml SUBSISTEMA_GestionCuenta
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Alumno
+
+package "Videojuego"{
+    package "Gestión de cuenta"{
+        usecase "UC-41 Iniciar sesión en el videojuego" as UC41
+        usecase "UC-57 Ver progreso en el juego" as UC57
+        usecase "UC-58 Consultar inventario" as UC58
+    }
+}
+
+Alumno --> UC41
+Alumno --> UC57
+Alumno --> UC58
+
+
+@enduml
