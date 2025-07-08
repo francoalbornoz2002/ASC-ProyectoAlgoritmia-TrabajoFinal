@@ -109,54 +109,56 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 #### Gestionar sesiones de refuerzo
 - **UC-21** Crear sesión de refuerzo
 - **UC-22** Modificar sesión de refuerzo
-- **UC-23** Cancelar sesión de refuerzo
-- **UC-24** Aceptar sesión de refuerzo automática
+- **UC-23** Buscar sesión de refuerzo
+- **UC-24** Cancelar sesión de refuerzo
+- **UC-25** Aceptar sesión de refuerzo automática
 
 #### Gestionar cursos (docente)
-- **UC-25** Definir días y horarios del curso
-- **UC-26** Cambiar contraseña de acceso a curso
-- **UC-27** Aprobar solicitud de ingreso al curso
-- **UC-28** Habilitar capítulo
-  - INCLUDE: **UC-29** Buscar capítulo
+- **UC-26** Definir días y horarios del curso
+- **UC-27** Cambiar contraseña de acceso a curso
+- **UC-28** Aprobar solicitud de ingreso al curso
+- **UC-29** Habilitar capítulo
+  - INCLUDE: **UC-30** Buscar capítulo
 
 #### Gestión de cuenta
 - **UC-05** Iniciar sesión
-- **UC-30** Actualizar datos personales
+- **UC-31** Modificar datos personales
 
 ### Alumnos
 
 #### Gestión de cuenta
-- **UC-31** Registrarse en la plataforma
-  - EXTEND: **UC-32** Registro normal
-  - EXTEND: **UC-33** Registro con Google
-- **UC-34** Iniciar sesión en la plataforma web
-  - EXTEND: **UC-35** Iniciar sesión normal
-  - EXTEND: **UC-36** Inicar sesión con Google
-- **UC-30** Actualizar datos personales
-- **UC-37** Ver progreso en la web
+- **UC-32** Registrarse en la plataforma
+  - EXTEND: **UC-33** Registro normal
+  - EXTEND: **UC-34** Registro con Google
+- **UC-35** Iniciar sesión en la plataforma web
+  - EXTEND: **UC-36** Iniciar sesión normal
+  - EXTEND: **UC-37** Inicar sesión con Google
+- **UC-31** Modificar datos personales
+- **UC-38** Ver progreso en la web
 
 #### Cursos
-- **UC-38** Solicitar ingreso a curso
-- **UC-39** Confirmar asistencia a sesión de refuerzo
+- **UC-39** Solicitar ingreso a curso
+- **UC-40** Confirmar asistencia a sesión de refuerzo
 
 #### Videojuego
-- **UC-40** Iniciar sesión en el videojuego
-- **UC-41** Resolver misión
-  - INCLUDE: **UC-42** Seleccionar misión
-  - INCLUDE: **UC-43** Diseñar solución con lenguaje gamificado
-    - INCLUDE: **UC-44** Agregar acción
-    - EXTEND: **UC-45** Declarar variable
-    - EXTEND: **UC-46** Asignar valor a variable
-    - EXTEND: **UC-47** Agregar estructura condicional
-    - EXTEND: **UC-48** Agregar estructura repetitiva
-    - EXTEND: **UC-49** Agregar procedimiento
-    - EXTEND: **UC-50** Consultar manual del heroe
-  - INCLUDE: **UC-51** Ejecutar misión
-  - INCLUDE: **UC-52** Evaluar misión
-  - INCLUDE: **UC-53** Generar feedback
-    - EXTEND: **UC-54** Aceptar feedback
-- **UC-55** Ver progreso en el juego
-- **UC-56** Consultar inventario
+- **UC-41** Iniciar sesión en el videojuego
+- **UC-42** Resolver misión
+  - INCLUDE: **UC-43** Seleccionar misión
+  - INCLUDE: **UC-44** Diseñar solución con lenguaje gamificado
+    - INCLUDE: **UC-45** Agregar acción
+    - EXTEND: **UC-46** Declarar variable
+    - EXTEND: **UC-47** Asignar valor a variable
+    - EXTEND: **UC-48** Agregar estructura condicional
+    - EXTEND: **UC-49** Agregar estructura repetitiva
+    - EXTEND: **UC-50** Agregar procedimiento
+    - EXTEND: **UC-51** Consultar manual del heroe
+  - INCLUDE: **UC-52** Ejecutar misión
+  - INCLUDE: **UC-53** Evaluar misión
+  - INCLUDE: **UC-54** Generar feedback
+    - EXTEND: **UC-55** Aceptar feedback
+- **UC-56** Consultar feedback
+- **UC-57** Ver progreso en el juego
+- **UC-58** Consultar inventario
 
 
 ### Diagrama de Casos de Uso – Videojuego

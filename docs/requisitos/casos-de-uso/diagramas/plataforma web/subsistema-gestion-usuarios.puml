@@ -1,4 +1,4 @@
-@startuml SUBSISTEMA_Gestión de usuarios
+@startuml SUBSISTEMA_GestionUsuarios
 left to right direction
 
 skinparam dpi 150
@@ -21,13 +21,13 @@ package "Plataforma Web"{
         usecase "UC-03 Buscar usuario" as UC03
         usecase "UC-04 Baja usuario" as UC04
         usecase "UC-05 Iniciar sesión" as UC05
-        usecase "UC-31 Registrarse en la plataforma" as UC31
-        usecase "UC-32 Registro normal" as UC32
-        usecase "UC-33 Registro con Google" as UC33
-        usecase "UC-34 Iniciar sesión en la plataforma web" as UC34
-        usecase "UC-35 Iniciar sesión normal" as UC35
-        usecase "UC-36 Iniciar sesión con Google" as UC36
-        usecase "UC-30 Actualizar datos personales" as UC30
+        usecase "UC-32 Registrarse en la plataforma" as UC32
+        usecase "UC-33 Registro normal" as UC33
+        usecase "UC-34 Registro con Google" as UC34
+        usecase "UC-35 Iniciar sesión en la plataforma web" as UC35
+        usecase "UC-36 Iniciar sesión normal" as UC36
+        usecase "UC-37 Iniciar sesión con Google" as UC37
+        usecase "UC-31 Modificar datos personales" as UC31
     }
 
 }
@@ -38,13 +38,13 @@ Administrador --> UC04
 UC04 --> UC03 : <<include>>
 Administrador --> UC05
 
-Alumno --> UC30
 Alumno --> UC31
-UC31 --> UC32 : <<extend>>
-UC31 --> UC33 : <<extend>>
-Alumno --> UC34
-UC34 --> UC35 : <<extend>>
-UC34 --> UC36 : <<extend>>
+Alumno --> UC32
+UC32 --> UC33 : <<extend>>
+UC32 --> UC34 : <<extend>>
+Alumno --> UC35
+UC35 --> UC36 : <<extend>>
+UC35 --> UC37 : <<extend>>
 
-Docente --> UC30
+Docente --> UC31
 Docente --> UC05
