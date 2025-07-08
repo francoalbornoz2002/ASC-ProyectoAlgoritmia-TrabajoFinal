@@ -183,3 +183,5 @@ UC29 --> UC30 : <<include>>
 Docente --> UC31
 Docente --> UC05
 
+GoogleOAuth2 -up-> UC34
+GoogleOAuth2 -up-> UC37
