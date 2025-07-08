@@ -13,7 +13,7 @@ skinparam ranksep 150
 actor Alumno
 actor Docente
 actor Administrador
-
+actor "Google OAuth 2.0" as GoogleOAuth2
 
 package "Plataforma Gamificada Algoritmia (PGA)"{
     package "Plataforma web"{
@@ -48,6 +48,8 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
     Docente --> GestionUsuarios
     Docente --> GestionCursos
     Docente --> SeguimientoAcademico
+
+    GoogleOAuth2 -up-> GestionUsuarios
 }
 
 @enduml
