@@ -255,6 +255,12 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                                                                                                                                                     |
 | Comentarios | -                                                                                                                                                                                                                                                         |
 
+| OBJ-11      | Diseñar un lenguaje de programación gamificado para la resolución de misiones                                                                                                                                                                                   |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Diseñar un lenguaje de programación gamificado que permita manejar: primitivas, estructuras de control (condicionales y bucles), variables y procedimientos con parámetros que permitan al alumno diseñar soluciones efectivas para las misiones del videojuego |
+| Estabilidad | Alta                                                                                                                                                                                                                                                            |
+| Comentarios | -                                                                                                                                                                                                                                                               |
+
 ### 3.3 Modulos del sistema
 
 #### 3.3.1 Funcionales

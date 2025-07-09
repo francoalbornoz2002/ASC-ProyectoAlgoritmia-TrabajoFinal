@@ -6,6 +6,7 @@
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 - OBJ-03 Ofrecer ejecución y visualización de la solución en tiempo real
 - OBJ-04 Proveer feedback formativo inmediato
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 #### Requisitos funcionales y no funcionales asociados
 
@@ -46,7 +47,10 @@ Se registra el resultado y puntuación de la misión. Se actualiza y se guarda e
 #### Flujo principal
 
 1. Este caso de uso comienza cuando el alumno quiere resolver una misión del videojuego.
-2. Se ejecuta el caso de uso UC-42 Seleccionar Misión
+2. Se ejecuta el caso de uso *UC-42 Seleccionar Misión*.
+3. Luego de seleccionar la misión, el alumno comienza la resolución de la misma.
+4. El sistema solicita que el alumno comience a diseñar la solución para la misión.
+5. Se ejecuta el caso de uso *UC-42 Diseñar solución con lenguaje gamificado*.
 
 #### Excepciones
 
@@ -58,7 +62,7 @@ Se registra el resultado y puntuación de la misión. Se actualiza y se guarda e
 
 #### Frecuencia
 
-Al menos 1 vez por día
+Al menos 1 vez/día
 
 #### Estabilidad: Alta/Media/Baja
 

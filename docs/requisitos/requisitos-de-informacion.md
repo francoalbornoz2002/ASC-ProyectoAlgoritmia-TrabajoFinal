@@ -260,6 +260,7 @@ El sistema deberá almacenar la información y posición correspondiente a los e
 ## RI-12 Información de acciones
 **Objetivos asociados**
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 Resolver
@@ -281,6 +282,7 @@ El sistema deberá almacenar la información correspondiente a las acciones ("pr
 ## RI-13 Información de tácticas
 **Objetivos asociados**
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 - UC-XX Resolver misión
@@ -302,6 +304,7 @@ El sistema deberá almacenar la información correspondiente a las tácticas ("e
 ## RI-14 Información de objeto de inventario
 **Objetivos asociados**
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 - UC-XX Resolver misión
@@ -322,6 +325,7 @@ El sistema deberá almacenar la información correspondiente a los objetos que t
 ## RI-15 Información de habilidades especiales
 **Objetivos asociados**
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 - UC-XX Resolver misión
@@ -344,6 +348,7 @@ El sistema deberá almacenar la información correspondiente a las habilidades e
 ## RI-16 Información de operadores lógicos y matemáticos
 **Objetivos asociados**
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 - UC-XX Agregar estructura condicional

@@ -24,6 +24,7 @@ El sistema debe permitir la alta, baja y modificación de usuarios, la asignaci�
 **Objetivos relacionados**
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 - RI-08 Información de capítulos
@@ -42,6 +43,7 @@ El sistema debe permitir a los alumnos resolver las misiones utilizando todas la
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
 - OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
 - OBJ-03 Ofrecer ejecución y visualización de la solución en tiempo real
+- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
 
 **Requisitos asociados**
 - RI-10 Información del escenario
