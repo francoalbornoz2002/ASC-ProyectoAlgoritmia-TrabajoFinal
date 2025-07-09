@@ -1,7 +1,7 @@
 # Modelo de Casos de Uso
 
-**Versión:** 1.0
-**Fecha:** 21/06/2025
+**Versión:** 2.0
+**Fecha:** 08/07/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -172,21 +172,21 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
 
 
 ## Diagrama de Casos de Uso - Videojuego
-### DCU de alto nivel
+### DCU de alto nivel / Diagrama de subsistemas
 ![DCU de alto nivel del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoAltoNivel.png)
 
 #### DCU del subsistema Gestión de cuenta
 ![Subsistema Gestión de cuenta](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_GestionCuenta.png)
 
-#### DCU del subsistema Programación
+#### DCU del subsistema Programación / Ejecución y Evaluación / Gestión de feedback
 ![Subsistema Programación](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_ProgramacionEjecucionEvaluacionFeedback.png)
 
 ### DCU Expandido
-![DCU Completo del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoExpandido.png)
+![DCU expandido del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoExpandido.png)
 
 
 ## Diagrama de Casos de Uso – Plataforma Web
-### DCU de alto nivel
+### DCU de alto nivel / Diagrama de subsistemas
 ![DCU de alto nivel de la plataforma web](./diagramas-casos-de-uso/plataforma-web/DCU_PlataformaWebAltoNivel.png)
 
 #### DCU del subsistema Gestión de usuarios
@@ -196,16 +196,16 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
 ![Subsistema Gestión de instituciones](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionInstituciones.png)
 
 #### DCU del subsistema Gestión de cursos
-![Subsistema Gestión de cursos]()
+![Subsistema Gestión de cursos](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionCursos.png)
 
 #### DCU del subsistema Seguimiento académico
-![Subsistema Seguimiento académico]()
+![Subsistema Seguimiento académico](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_SeguimientoAcademico.png)
 
 #### DCU del subsistema Gestión de auditoría
-![Subsistema Gestión de auditoría]()
+![Subsistema Gestión de auditoría](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionAuditoria.png)
 
-
-![Casos de uso plataforma web](.7)
+### DCU expandido
+![DCU expandido de la plataforma web](./diagramas-casos-de-uso/plataforma-web/DCU_PlataformaWebExpandido.png)
 
 
 
