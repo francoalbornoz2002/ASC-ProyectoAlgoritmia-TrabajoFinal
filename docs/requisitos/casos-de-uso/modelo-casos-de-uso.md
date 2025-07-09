@@ -170,16 +170,16 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
 
 
 ## Diagrama de Casos de Uso - Videojuego
-### Alto nivel - Subsistemas
+### DCU de alto nivel
 ![DCU de alto nivel del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoAltoNivel.png)
 
-#### Subsistema Gestión de cuenta
+#### DCU del subsistema Gestión de cuenta
 ![Subsistema Gestión de cuenta](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_GestionCuenta.png)
 
-#### Subsistema Programación
+#### DCU del subsistema Programación
 ![Subsistema Programación](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_ProgramacionEjecucionEvaluacionFeedback.png)
 
-### Expandido - DCU Completo
+### DCU Expandido
 ![DCU Completo del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoExpandido.png)
 
 

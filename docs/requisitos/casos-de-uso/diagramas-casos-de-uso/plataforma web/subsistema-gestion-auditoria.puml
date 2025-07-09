@@ -14,10 +14,12 @@ actor Administrador
 
 package "Plataforma Web"{
     package "Gestión de auditoría"{
-        usecase "UC-16 Auditoría" as UC16
+        usecase "UC-16 Consultar registros de auditoría" as UC16
+        usecase "UC-59 Exportar registros de auditoría" as UC59
     }
 }
 
 Administrador --> UC16
+UC16 --> UC59 : <<extend>>
 
 @enduml

@@ -13,6 +13,7 @@ skinparam ranksep 100
 actor Alumno
 actor Docente
 actor Administrador
+actor "Google OAuth 2.0" as GoogleOAuth2
 
 package "Plataforma Web"{
     package "Gestión de usuarios"{
@@ -48,3 +49,6 @@ UC35 --> UC37 : <<extend>>
 
 Docente --> UC31
 Docente --> UC05
+
+GoogleOAuth2 -up-> UC34
+GoogleOAuth2 -up-> UC37

@@ -76,8 +76,9 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
             usecase "UC-40 Confirmar asistencia a sesión de refuerzo" as UC40
         }
 
-        package "Auditoría"{
-            usecase "UC-16 Auditoría" as UC16
+        package "Gestión de auditoría"{
+            usecase "UC-16 Consultar registros de auditoría" as UC16
+            usecase "UC-59 Exportar registros de auditoría" as UC59 
         }
     }
 
@@ -130,6 +131,7 @@ Administrador --> UC14
 UC14 --> UC15 : <<include>>
 UC14 --> UC12 : <<include>>
 Administrador --> UC16
+UC16 --> UC59 : <<extend>>
 
 ' Conexiones de Alumno
 Alumno --> UC31
