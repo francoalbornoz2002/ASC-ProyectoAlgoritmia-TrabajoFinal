@@ -4,9 +4,13 @@
 
 - OBJ-X
 
-#### Requisitos asociados
+#### Requisitos funcionales y no funcionales asociados
 
 - RF-X
+
+#### Requisitos de información utilizados
+
+- RI-X
 
 #### Actor principal
 

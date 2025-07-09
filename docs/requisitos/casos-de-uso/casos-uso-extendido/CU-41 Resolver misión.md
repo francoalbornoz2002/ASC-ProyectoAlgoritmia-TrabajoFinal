@@ -2,11 +2,30 @@
 
 #### Objetivos asociados
 
-- OBJ-X
+- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
+- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
+- OBJ-03 Ofrecer ejecución y visualización de la solución en tiempo real
+- OBJ-04 Proveer feedback formativo inmediato
 
-#### Requisitos asociados
+#### Requisitos funcionales y no funcionales asociados
 
-- RF-X
+- RF-02 Resolver misiones
+- RF-03 Ejecutar, visualizar y evaluar misiones
+- RF-04 Generar feedback formativo
+- RNF-02 Portabilidad y rendimiento del videojuego
+- RNF-03 Progreso offline y sincronización
+
+#### Requisitos de información utilizados
+- RI-08 Información de capítulos
+- RI-09 Información de misiones
+- RI-10 Información del escenario
+- RI-11 Información de enemigos, obstáculos y objetos del escenario
+- RI-12 Información de acciones
+- RI-13 Información de tácticas
+- RI-14 Información de objeto de inventario
+- RI-15 Información de habilidades especiales
+- RI-16 Información de operadores lógicos y matemáticos
+- RI-17 Información del feedback generado
 
 #### Actor principal
 
