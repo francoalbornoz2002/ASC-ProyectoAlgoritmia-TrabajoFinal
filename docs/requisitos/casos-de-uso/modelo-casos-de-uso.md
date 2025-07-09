@@ -98,7 +98,8 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
 
 #### Auditoría
 
-- **UC-16** Auditoría
+- **UC-16** Consultar registros de auditoría
+  - EXTEND: **UC-59** Exportar registros de auditoría
 
 ---
 
@@ -166,6 +167,7 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
   - INCLUDE: **UC-43** Seleccionar misión
 - **UC-57** Ver progreso en el juego
 - **UC-58** Consultar inventario
+
 -->
 
 
@@ -184,6 +186,24 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
 
 
 ## Diagrama de Casos de Uso – Plataforma Web
+### DCU de alto nivel
+![DCU de alto nivel de la plataforma web](./diagramas-casos-de-uso/plataforma-web/DCU_PlataformaWebAltoNivel.png)
+
+#### DCU del subsistema Gestión de usuarios
+![Subsistema Gestión de usuarios](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionUsuarios.png)
+
+#### DCU del subsistema Gestión de instituciones
+![Subsistema Gestión de instituciones](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionInstituciones.png)
+
+#### DCU del subsistema Gestión de cursos
+![Subsistema Gestión de cursos]()
+
+#### DCU del subsistema Seguimiento académico
+![Subsistema Seguimiento académico]()
+
+#### DCU del subsistema Gestión de auditoría
+![Subsistema Gestión de auditoría]()
+
 
 ![Casos de uso plataforma web](.7)
 
