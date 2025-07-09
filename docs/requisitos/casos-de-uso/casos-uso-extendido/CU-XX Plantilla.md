@@ -1,39 +1,48 @@
-## UC-XX Nombre del caso de uso
+### UC-XX Nombre del caso de uso
 
-### 1. Identificación
-**Código**: UC-XX
-**Nombre**: [Nombre descriptivo del caso de uso]
-**Actor principal**: [Actor que inicia el caso de uso]
-**Frecuencia de uso**: [Alta / Media / Baja]
-**Precondiciones**: [Condiciones que deben cumplirse antes de iniciar]
-**Postcondiciones**: [Estado del sistema luego de ejecutarse]
+#### Objetivos asociados
 
-### 2. Descripción general
-Breve resumen del propósito del caso de uso, qué permite lograr, y cómo encaja en el flujo general del sistema.
+- OBJ-X
 
-### 3. Flujo principal
-1. [Paso 1: El actor hace…]
-2. [Paso 2: El sistema responde…]
-3. [Etcétera...]
+#### Requisitos asociados
 
-### 4. Escenarios alternativos
-**Alternativa A1 – [Nombre opcional]**
-1. [Condición que activa este camino]
-2. [Pasos alternativos si corresponde]
+- RF-X
 
-**Alternativa A2 – [Nombre opcional]**
-1. [Condición que activa este camino]
-2. [Pasos alternativos si corresponde]
+#### Actor principal
 
-### 5. Excepciones
-**Excepción E1**: [Error o problema que impide continuar]
-1. [Qué causa la excepción]
-2. [Cómo responde el sistema]
+- Actor/es
 
-**Excepción E2**: …
+#### Descripción
 
-### 6. Reglas de negocio
-- [Si aplica, detallar reglas específicas que condicionan este caso]
+Descripción breve
 
-### 7. Observaciones
-- [Notas adicionales, decisiones pendientes, aspectos UI/UX, etc.]
+#### Precondición
+
+Estado en el que el sistema debe encontrarse para ejecutar el caso de uso.
+
+#### Postcondición
+
+Estado en el que queda el sistema luego del caso de uso.
+
+#### Flujo principal
+
+1. Paso 1
+2. 2...
+3. 3...
+
+#### Excepciones
+
+1. Paso de la excepción
+
+#### Rendimiento
+
+1. Paso - tiempo (seg, min, h)
+
+#### Frecuencia
+
+N veces por día/mes
+
+#### Estabilidad: Alta/Media/Baja
+
+#### Comentarios
+Comentarios o reglas de negocio específicas que condicionan este caso de uso.

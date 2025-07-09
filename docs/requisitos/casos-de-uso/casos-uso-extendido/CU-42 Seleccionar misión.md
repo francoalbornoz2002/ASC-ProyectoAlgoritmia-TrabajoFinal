@@ -1,39 +1,51 @@
-## UC-42 Seleccionar misión
+### UC-42 Seleccionar misión
 
-### 1. Identificación
-**Código**: UC-42
-**Nombre**: Seleccionar misión
-**Actor principal**: Alumno
-**Frecuencia de uso**: Alta
-**Precondiciones**: El alumno debe haber iniciado sesión correctamente en el videojuego y tener al menos una misión disponible.
-**Postcondiciones**: -
+#### Objetivos asociados
 
-### 2. Descripción general
-El alumno selecciona una misión de las misiones disponibles para posteriormente intentar resolverla.
+- OBJ-X
 
-### 3. Flujo principal
-1. [Paso 1: El actor hace…]
-2. [Paso 2: El sistema responde…]
-3. [Etcétera...]
+#### Requisitos asociados
 
-### 4. Escenarios alternativos
-**Alternativa A1 – [Nombre opcional]**
-1. [Condición que activa este camino]
-2. [Pasos alternativos si corresponde]
+- RF-X
 
-**Alternativa A2 – [Nombre opcional]**
-1. [Condición que activa este camino]
-2. [Pasos alternativos si corresponde]
+#### Actor principal
 
-### 5. Excepciones
-**Excepción E1**: [Error o problema que impide continuar]
-1. [Qué causa la excepción]
-2. [Cómo responde el sistema]
+- Actor/es
 
-**Excepción E2**: …
+#### Descripción
 
-### 6. Reglas de negocio
-- [Si aplica, detallar reglas específicas que condicionan este caso]
+El alumno selecciona una misión de las misiones disponibles del capítulo en donde se encuentra en la historia para posteriormente intentar resolverla.
 
-### 7. Observaciones
-- [Notas adicionales, decisiones pendientes, aspectos UI/UX, etc.]
+#### Precondición
+
+El alumno debe haber iniciado sesión correctamente en el videojuego y tener al menos una misión disponible.
+
+#### Postcondición
+_
+
+#### Flujo principal
+
+1. Este caso de uso comienza cuando el alumno quiere seleccionar una misión para intentar resolverla
+2. El alumno selecciona el capítulo del cual desea seleccionar una misión.
+3. El sistema muestra las misiones disponibles del capítulo seleccionado.
+4. El sistema le pide al alumno que seleccione la misión que desea resolver.
+5. El alumno selecciona la misión que desea resolver.
+6. El sistema muestra la información de la misión: número, nombre, enunciado y dificultad
+7. El alumno confirma la selección de la misión y termina el caso de uso.
+
+#### Excepciones
+
+1. Paso de la excepción
+
+#### Rendimiento
+
+1. Paso - tiempo (seg, min, h)
+
+#### Frecuencia
+
+N veces por día/mes
+
+#### Estabilidad: Alta
+
+#### Comentarios
+Comentarios o reglas de negocio específicas que condicionan este caso de uso.
