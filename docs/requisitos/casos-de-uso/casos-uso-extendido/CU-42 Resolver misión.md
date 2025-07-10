@@ -1,4 +1,4 @@
-### UC-41 Resolver misión
+### UC-42 Resolver misión
 
 #### Objetivos asociados
 
@@ -47,10 +47,10 @@ Se registra el resultado y puntuación de la misión. Se actualiza y se guarda e
 #### Flujo principal
 
 1. Este caso de uso comienza cuando el alumno quiere resolver una misión del videojuego.
-2. Se ejecuta el caso de uso *UC-42 Seleccionar Misión*.
+2. Se ejecuta el caso de uso ***UC-43** Seleccionar Misión*.
 3. Luego de seleccionar la misión, el alumno comienza la resolución de la misma.
 4. El sistema solicita que el alumno comience a diseñar la solución para la misión.
-5. Se ejecuta el caso de uso *UC-42 Diseñar solución con lenguaje gamificado*.
+5. Se ejecuta el caso de uso *UC-44 Diseñar solución con lenguaje gamificado*.
 
 #### Excepciones
 

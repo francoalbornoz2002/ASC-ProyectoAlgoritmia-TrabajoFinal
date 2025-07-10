@@ -75,6 +75,7 @@ package "Plataforma Web"{
     usecase "UC-30 Buscar capítulo" as UC30
     usecase "UC-38 Ver progreso en la web" as UC38
     usecase "UC-40 Confirmar asistencia a sesión de refuerzo" as UC40
+    usecase "UC-60 Generar reporte de progreso y sesión de refuerzo (automatización)" as UC60
   }
 
 }
