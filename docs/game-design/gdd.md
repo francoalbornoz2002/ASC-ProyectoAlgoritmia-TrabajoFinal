@@ -1,7 +1,7 @@
 # Game Design Document
 
-**Versión:** 1.0
-**Fecha:** 18/06/2025
+**Versión:** 2.0
+**Fecha:** 10/07/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -12,7 +12,7 @@ El título del juego será "Algoritmia".
 
 ## 2. Resumen del juego
 
-Algoritmia es un juego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propia solución. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos mediante el diseño de tu propio algoritmo para completar la misión a tu manera y aprendiendo en el proceso.
+Algoritmia es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propia solución. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos mediante el diseño de tu propio algoritmo para completar la misión a tu manera y aprendiendo en el proceso.
 
 ## 3. Concepto y pilares de diseño
 
@@ -22,7 +22,7 @@ La escencia del videojuego y lo que quiero transmitir se basan en estos 3 pilare
 
 El pixel art es un estilo artístico de videojuegos. Es reconocido por su estética retro y la conexión que tiene con los videojuegos clásicos, en donde la resolución y recursos eran limitados. Se caracteriza por ser un estilo muy artesanal, donde cada diseño se realiza pixel por pixel logrando un estilo muy simple pero a la vez detallado, el cual resulta agradable a la vista.
 
-Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero belleza a su vez mediante el pixel art en sus escenarios, interfaces, objetos y personajes utilizando colores llamativos, una paleta de colores adecuada a la estética y trama del videojuego y diseños minimalistas. Se busca transmitir esa sensación de estar jugando un videojuego pero aprendiendo a la vez.
+Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero belleza a su vez mediante el pixel art en sus escenarios isométricos / top down estilo RPG, interfaces, objetos y personajes utilizando colores llamativos, una paleta de colores adecuada a la estética y trama del videojuego y diseños minimalistas. Se busca transmitir esa sensación de estar jugando un videojuego pero aprendiendo a la vez.
 
 ### 3.2 Lenguaje gamificado y ejecución en tiempo real
 
@@ -53,7 +53,9 @@ Para ello, se ofrecerá:
 ## 4. Descripción del juego
 
 Algoritmia es un videojuego de aventura estilo RPG que está enfocado en el aprendizaje de las bases de la programación: algoritmos, lógica, estructuras de control (condicionales y bucles) y procedimientos mediante la resolución de ejercicios, codificando y visualizando su solución en tiempo real.
-El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario diseñado como un tablero de N filas por N columnas.
+
+El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario isométrico / top down.
+
 Una característica importante de Algoritmia es que ofrece feedback formativo inmediato y ayudas al jugador para detectar y corregir errores de manera sencilla y optimizar la solución mediante sugerencias visualizando el antes y después.
 
 ### 4.1 Lenguaje gamificado
@@ -120,7 +122,27 @@ El Core Loop principal del videojuego es:
 
 ## 5. Historia
 
-### 5.1 Narrativa / Trama
+### 5.1 Narrativa
+
+"Cuenta la leyenda que en lo profundo del reino de **"Algoritmia"** se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo. No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
+Muchos guerreros han intentado llegar hasta este anhelado tesoro, pero ninguno ha podido aún. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores.
+La leyenda indica que solo aquel guerrero que cumpla con una serie de características y habilidades muy especiales será digno de encontrar el algoritmo sagrado
+
+- Gran capacidad de razonamiento lógico.
+- Planificación ordenada sus acciones.
+- Toma de decisiones precisas evaluando los posibles caminos y qué hacer en cada uno.
+- Tenacidad para repertir una acción las veces que sean necesarias conociendo o no su fin.
+- Administración de los suministros y objetos en el viaje.
+- Definición de planes de acción para diferentes situaciones.
+  Y lo más importante, el guerrero deberá tener presente las tres sagradas reglas de la Algoritmia:
+
+1. **Finitud** de acciones a realizar
+2. **Precisión** en cada acción sin ambiguedad y con exactitud.
+3. **Definición** de comportamiento para producir los mismos resultados en diferentes situaciones.
+
+¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
+
+Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas tácticas y habilidades que lo acerquen aún más a su objetivo.
 
 ### 5.2 Personajes
 
@@ -130,7 +152,38 @@ El Core Loop principal del videojuego es:
 
 ## 6. Gameplay y elementos del juego
 
-### 6.1 Objetivos
+### 6.1 Lenguaje de programación gamificado
+
+El lenguaje de programación del videojuego está diseñado para enseñar pensamiento algorítmico de manera progresiva y accesible. Su sintaxis simple y visual permite al jugador resolver misiones mediante estructuras básicas, comandos y procedimientos que se desbloquean a medida que avanzan en la historia.
+
+#### 6.1.1 Propósito educativo
+
+Este lenguaje está pensado para:
+
+- Introducir a los alumnos en la lógica algorítmica y estructuras de control básicas.
+- Fomentar el diseño de soluciones generales (no específicas).
+- Reforzar conceptos como secuenciación, repetición, condicionales, procedimientos, parámetros y reutilización.
+
+#### 6.1.2 Sintaxis general
+
+- Se escribe en formato pseudocódigo adaptado.
+- Cada línea representa una instrucción o bloque lógico.
+- El lenguaje es sensible a la estructura (usa indentación).
+- La primer linea del código es "Inicio" y la última línea "Fin" para indicar el inicio y el fin del código.
+
+#### 6.1.3 Primitivas
+
+Estas son las instrucciones básicas (primitivas) del jugador disponibles en el lenguaje:
+
+| Comando         | Descripción                                                         |
+| --------------- | ------------------------------------------------------------------- |
+| `avanzar`       | El jugador avanza a la siguiente celda en la dirección actual       |
+| `saltar`        | El jugador salta hacia 2 celdas adelante en la dirección actual     |
+| `atacar`        | El jugador ataca al enemigo en la celda frente a la posición actual |
+| `derecha`       | El jugador hace un giro de 90° a la derecha                         |
+| `recogerMoneda` | El jugador recoge la moneda de la celda si existe                   |
+
+| `
 
 ### 6.2 Misiones o niveles
 

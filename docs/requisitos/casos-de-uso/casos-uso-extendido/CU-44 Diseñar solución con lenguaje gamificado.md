@@ -6,37 +6,50 @@
 
 #### Requisitos funcionales y no funcionales asociados
 
-- RF-X
+- RF-02 Resolver misiones
 
 #### Requisitos de información utilizados
 
-- RI-X
+- RI-06 Información de estadísticas de progreso de los alumnos
+- RI-12 Información de acciones
+- RI-13 Información de tácticas
+- RI-14 Información de objeto de inventario
+- RI-15 Información de habilidades especiales
+- RI-16 Información de operadores lógicos y matemáticos
 
 #### Actor principal
 
-- Actor/es
+- Alumno
 
 #### Descripción
 
-Descripción breve
+El alumno utiliza el lenguaje de programación gamificado para diseñar una solución para posteriormente ejecutarla para intentar resolver la misión.
 
 #### Precondición
 
-Estado en el que el sistema debe encontrarse para ejecutar el caso de uso.
+El alumno debe tener al menos una acción (primitiva) disponible para utilizar.
 
 #### Postcondición
 
-Estado en el que queda el sistema luego del caso de uso.
+Se registra la solución diseñada y queda lista para ejecutarse
 
 #### Flujo principal
 
-1. Paso 1
-2. 2...
-3. 3...
+1. Este caso de uso comienza cuando el alumno debe diseñar la solución para resolver una misión
+2. El alumno indica el comienzo de la solución con la palabra "Inicio"
+3. El alumno comienza el diseño de la solución para la misión. Como mínimo debe agregar una acción, se ejecuta el ***CU-45** Agregar acción*.
+4. El alumno indica el final de la solución con la palabra "Fin" y termina el caso de uso.
 
 #### Excepciones
 
 1. Paso de la excepción
+
+#### Secciones
+
+##### UC-51 Consultar manual del héroe
+**Flujo principal**
+1. El alumno consulta el manual del heroe
+2. El sistema devuelve el nombre, sintáxis y semántica de cada acción, táctica, objeto y habilidad especial que el alumno tenga desbloqueada actualmente.
 
 #### Rendimiento
 
@@ -44,9 +57,9 @@ Estado en el que queda el sistema luego del caso de uso.
 
 #### Frecuencia
 
-N veces por día/mes
+Al menos 1 vez por día
 
-#### Estabilidad: Alta/Media/Baja
+#### Estabilidad: Alta
 
 #### Comentarios
 Comentarios o reglas de negocio específicas que condicionan este caso de uso.

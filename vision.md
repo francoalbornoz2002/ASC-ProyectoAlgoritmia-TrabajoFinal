@@ -312,25 +312,7 @@ Para crear el entorno basado en gamificación, se tendrán en cuenta los siguien
 
 ##### Narrativa
 
-"Cuenta la leyenda que en lo profundo del reino de **"Algoritmia"** se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo. No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
-Muchos guerreros han intentado llegar hasta este anhelado tesoro, pero ninguno ha podido aún. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores.
-La leyenda indica que solo aquel guerrero que cumpla con una serie de características y habilidades muy especiales será digno de encontrar el algoritmo sagrado
-
-- Gran capacidad de razonamiento lógico.
-- Planificación ordenada sus acciones.
-- Toma de decisiones precisas evaluando los posibles caminos y qué hacer en cada uno.
-- Tenacidad para repertir una acción las veces que sean necesarias conociendo o no su fin.
-- Administración de los suministros y objetos en el viaje.
-- Definición de planes de acción para diferentes situaciones.
-  Y lo más importante, el guerrero deberá tener presente las tres sagradas reglas de la Algoritmia:
-
-1. **Finitud** de acciones a realizar
-2. **Precisión** en cada acción sin ambiguedad y con exactitud.
-3. **Definición** de comportamiento para producir los mismos resultados en diferentes situaciones.
-
-¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
-
-Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas tácticas y habilidades que lo acerquen aún más a su objetivo.
+La narrativa y trama del videojuego se desarrollará en el documento de diseño de juegi (Game Design Document) ubicado en `docs/game-design/gdd.md` sección _5.1 Narrativa_. Consúltelo para obtener más información.
 
 ##### Componentes
 

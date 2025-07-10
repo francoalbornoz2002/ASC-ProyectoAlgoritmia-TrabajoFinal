@@ -45,7 +45,7 @@ package "Videojuego" {
     usecase "UC-42 Resolver misión" as UC42
     usecase "UC-43 Seleccionar misión" as UC43
     usecase "UC-44 Diseñar solución con lenguaje gamificado" as UC44
-    usecase "UC-45 Agregar acción" as UC45
+    usecase "UC-45 Agregar primitiva" as UC45
     usecase "UC-46 Declarar variable" as UC46
     usecase "UC-47 Asignar valor a variable" as UC47
     usecase "UC-48 Agregar estructura condicional" as UC48
@@ -62,22 +62,33 @@ Alumno --> UC58
 
 'Programación
 Alumno --> UC42
-UC42 --> UC43 : <<include>>
-UC42 --> UC44 : <<include>>
-UC42 --> UC52 : <<include>>
+UC42 ..> UC43 : <<include>>
+UC42 ..> UC44 : <<include>>
+UC42 ..> UC52 : <<include>>
   'Ejecución y evaluación
-  UC42 --> UC53 : <<include>>
-  UC42 --> UC54 : <<include>>
-UC44 --> UC45 : <<include>>
-UC44 --> UC46 : <<extend>>
-UC44 --> UC47 : <<extend>>
-UC44 --> UC48 : <<extend>>
-UC44 --> UC49 : <<extend>>
-UC44 --> UC50 : <<extend>>
-UC44 --> UC51 : <<extend>>
+  UC42 ..> UC53 : <<include>>
+  UC42 ..> UC54 : <<include>>
+UC44 ..> UC45 : <<include>>
+UC44 <.. UC46 : <<extend>>
+UC44 <.. UC47 : <<extend>>
+UC44 <.. UC48 : <<extend>>
+UC44 <.. UC49 : <<extend>>
+UC44 <.. UC50 : <<extend>>
+
+UC45 <.. UC51 : <<extend>>
+UC46 <.. UC51 : <<extend>>
+UC47 <.. UC51 : <<extend>>
+UC48 <.. UC51 : <<extend>>
+UC49 <.. UC51 : <<extend>>
+UC50 <.. UC51 : <<extend>>
+
+
+
+
+
   'Gestión de feedback
   Alumno --> UC56
-  UC54 --> UC55 : <<extend>>
-  UC56 --> UC43 : <<include>>
+  UC54 <.. UC55 : <<extend>>
+  UC56 ..> UC43 : <<include>>
 
 @enduml
