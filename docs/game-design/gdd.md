@@ -1,7 +1,7 @@
 # Game Design Document
 
-**Versión:** 2.0
-**Fecha:** 10/07/2025
+**Versión:** 2.1
+**Fecha:** 11/07/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -12,7 +12,7 @@ El título del juego será "Algoritmia".
 
 ## 2. Resumen del juego
 
-Algoritmia es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propia solución. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos mediante el diseño de tu propio algoritmo para completar la misión a tu manera y aprendiendo en el proceso.
+Algoritmia es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propia solución. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos con tu propio algoritmo diseñado a tu manera para completar la misión y aprendiendo en el proceso.
 
 ## 3. Concepto y pilares de diseño
 
@@ -24,15 +24,13 @@ El pixel art es un estilo artístico de videojuegos. Es reconocido por su estét
 
 Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero belleza a su vez mediante el pixel art en sus escenarios isométricos / top down estilo RPG, interfaces, objetos y personajes utilizando colores llamativos, una paleta de colores adecuada a la estética y trama del videojuego y diseños minimalistas. Se busca transmitir esa sensación de estar jugando un videojuego pero aprendiendo a la vez.
 
-### 3.2 Lenguaje gamificado y ejecución en tiempo real
+### 3.2 Lenguaje de programación gamificado y ejecución en tiempo real
 
-Algoritmia tendrá un lenguaje de programación gamificado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones. Además, el jugador podrá visualizar en tiempo real la ejecución de su solución en el escenario de juego.
+Algoritmia tendrá un lenguaje de programación gamificado compuesto con primitivas, estructuras de control y manejo de variables y de procedimientos que permitirán al jugador diseñar sus soluciones para las misiones del juego, visualizando en tiempo real la ejecución de la solución en el escenario de juego.
 
 ### 3.3 Aprendizaje continuo con feedback inmediato
 
-Algoritma busca brindar aprendizaje continuo mediante feedback inmediato cuando el jugador esté diseñando su solución para un problema. La idea es que Algoritmia pueda analizar y ofrecer sugerencias y optimizaciones de la solución del jugador durante y después de su ejecución fomentando el aprendizaje continuo.
-
-en base a lo siguiente:
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño de la solución de la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar la solución propuesta en base a lo siguiente:
 
 - Errores de sintaxis.
 - Redundancia de instrucciones.
@@ -54,24 +52,28 @@ Para ello, se ofrecerá:
 
 Algoritmia es un videojuego de aventura estilo RPG que está enfocado en el aprendizaje de las bases de la programación: algoritmos, lógica, estructuras de control (condicionales y bucles) y procedimientos mediante la resolución de ejercicios, codificando y visualizando su solución en tiempo real.
 
-El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, tácticas, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario isométrico / top down.
+El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, estrategias, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario isométrico / top down.
 
 Una característica importante de Algoritmia es que ofrece feedback formativo inmediato y ayudas al jugador para detectar y corregir errores de manera sencilla y optimizar la solución mediante sugerencias visualizando el antes y después.
 
-### 4.1 Lenguaje gamificado
+### 4.1 Lenguaje de programación gamificado
 
-El lenguaje de programación gamificado tiene los siguientes elementos de la programación tradicional:
+Como mencioanmos, el lenguaje de programación gamificado estará compuesto por primitivas, estructuras de control y manejo de variables y procedimientos. Pero, para darle un tono de videojuegos, cada uno de estos elementos de la programación tradicional se representarán con componentes de videojuegos estilo RPG:
 
-- **Acciones -> Primitivas o instrucciones**: las acciones representarán a las instrucciones o primitivas básicas que el jugador podrá realizar.
-- **Tácticas -> Estructuras de control**: las tácticas representan las estructuras de control básicas: Si-Sino, Mientras y Repetir donde se podrán manejar proposiciones simples o compuestas utilizando operadores matemáticos básicos y operadores relacionales.
-- **Objetos -> Variables**: los objetos representarán a las variables del juego. Se tendrán variables de juego (inventario y entorno) y variables globales y locales de tipo entero que el jugador podrá declarar y asignar valores en el diseño de la solución.
-- **Habilidades especiales -> Procedimientos**: las habilidades especiales representarán a los procedimientos. Habrán procedimientos pre-diseñados desbloqueables y el jugador podrá crear los propios incluyendo o no parámetros de entrada, salida y entrada/salida.
+- **Primitivas -> "Acciones"**: las acciones representarán a las primitivas básicas (atómicas) que el jugador podrá realizar.
+- **Estructuras de control -> Estrategias**: las estrategias representan las estructuras de control básicas: Si-Sino, Mientras y Repetir donde se podrán manejar proposiciones simples o compuestas utilizando operadores matemáticos básicos y operadores relacionales.
+- **Variables -> Objetos**: los objetos representarán a las variables del juego. Se tendrán dos tipos de variables:
+  -  Variables de juego relacionadas al escenario y a los objetos de inventario del jugador.
+  -  Variables globales y locales de tipo entero y tipo booleano que el jugador podrá declarar y asignar valores.
+- **Procedimientos -> Habilidades especiales**: las habilidades especiales representarán a los procedimientos. Se tendrán dos tipos de procedimientos:
+  - Procedimientos pre-diseñados desbloqueables que el jugador podrá utilizar como "Habilidad especial"
+  - Procedimientos que el jugador podrá definir en el diseño de la solución incluyendo o no parámetros de entrada, salida y entrada/salida.
 
 ### 4.2 Feedback formativo y ayudas
 
 Las ayudas que se ofrecerán son las siguientes:
 
-1. **Manual del heroe**: este manual contendrá todas las acciones, tácticas, objetos y habilidades especiales que el jugador puede utilizar para resolver la misión. El manual del heroe especificará la sintaxis, semántica y un ejemplo de la estructura básica de cada instrucción del lenguaje gamificado separada por Acciones, Tácticas, Objetos y habilidades especiales.
+1. **Manual del heroe**: este manual contendrá todas las acciones, estrategias, objetos y habilidades especiales que el jugador puede utilizar para resolver la misión. El manual del heroe especificará la sintaxis, semántica y un ejemplo de la estructura básica de cada instrucción del lenguaje gamificado separada por Acciones, Estrategias, Objetos y habilidades especiales.
 2. **Autocompletado**: Aparecerán como sugerencia las instrucciones y estructuras dependiendo de lo que escriba el jugador, dando la posibilidad de autocompletado seleccionando la opción deseada de las sugerencias. Esto aplicará para: primitivas, estructuras de control y procedimientos.
 3. **Resaltado de sintaxis**: se resaltarán los errores de sintaxis y advertencias en color rojo y amarillo respectivamente.
 
@@ -142,7 +144,7 @@ La leyenda indica que solo aquel guerrero que cumpla con una serie de caracterí
 
 ¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
 
-Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas tácticas y habilidades que lo acerquen aún más a su objetivo.
+Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas estrategias y habilidades que lo acerquen aún más a su objetivo.
 
 ### 5.2 Personajes
 

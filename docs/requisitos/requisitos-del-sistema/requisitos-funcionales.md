@@ -29,14 +29,14 @@ El sistema debe permitir la alta, baja y modificación de usuarios, la asignaci�
 **Requisitos asociados**
 - RI-08 Información de capítulos
 - RI-09 Información de misiones
-- RI-12 Información de acciones
-- RI-13 Información de tácticas
+- RI-12 Información de primitivas
+- RI-13 Información de estructuras de control
 - RI-14 Información de objeto de inventario
-- RI-15 Información de habilidades especiales
+- RI-15 Información de procedimientos
 - RI-16 Información de operadores lógicos y matemáticos
 
 **Descripción**
-El sistema debe permitir a los alumnos resolver las misiones utilizando todas las acciones, tácticas, objetos y habilidades especiales disponibles en el lenguaje de programación gamificado, pudiendo el alumno consultar en todo momento el manual del heroe que contiene la sintaxis y semántica de cada instrucción.
+El sistema debe permitir a los alumnos resolver las misiones utilizando todas las acciones, estrategias, objetos y habilidades especiales disponibles en el lenguaje de programación gamificado, pudiendo el alumno consultar en todo momento el manual del heroe que contiene la sintaxis y semántica de cada instrucción.
 
 ## RF-03 Ejecutar, visualizar y evaluar misiones
 **Objetivos relacionados**

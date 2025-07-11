@@ -345,7 +345,7 @@ Llamaremos "Primitiva" a toda instrucción atómica que el alumno puede utilizar
 - UC-XX Consultar manual del héroe
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a las estructuras de control (condicional y repetitivas) dentro del sistema, las cuales son representadas como "Tácticas" en lenguaje gamificado. En concreto:
+El sistema deberá almacenar la información correspondiente a las estructuras de control (condicional y repetitivas) dentro del sistema, las cuales son representadas como "Estrategias" en lenguaje gamificado. En concreto:
 
 **Datos específicos**
 
