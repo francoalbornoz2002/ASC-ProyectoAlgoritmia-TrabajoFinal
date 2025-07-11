@@ -1,4 +1,4 @@
-### UC-44 Diseñar solución con lenguaje gamificado
+### UC-44 Diseñar algoritmo con PGAScript
 
 #### Objetivos asociados
 
@@ -23,7 +23,7 @@
 
 #### Descripción
 
-El alumno utiliza el lenguaje de programación gamificado para diseñar una solución para posteriormente ejecutarla para intentar resolver la misión.
+El alumno utiliza el pseudocódigo gamificado *PGAScript* para diseñar un algoritmo agregando primitivas, estructuras de control, variables y/o procedimientos para posteriormente ejecutarlo.
 
 #### Precondición
 

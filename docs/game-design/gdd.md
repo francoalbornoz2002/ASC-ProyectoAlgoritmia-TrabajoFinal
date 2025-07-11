@@ -58,7 +58,7 @@ Como mencioanmos, el pseudocodigo gamificado _PGAScript_ estará compuesto por p
   - Variables globales y locales de tipo entero y tipo booleano que el jugador podrá declarar y asignar valores.
 - **Procedimientos -> Habilidades especiales**: las habilidades especiales representarán a los procedimientos. Se tendrán dos tipos de procedimientos:
   - **Procedimientos pre-diseñados** desbloqueables que el jugador podrá utilizar como "Habilidad especial"
-  - Procedimientos que el jugador podrá definir e invocar incluyendo o no parámetros de entrada, salida y entrada/salida en el diseño de la solución.
+  - Procedimientos que el jugador podrá definir e invocar incluyendo o no parámetros de entrada, salida y entrada/salida en el diseño del algoritmo.
 
 Se especificará a mas detalle el diseño de _PGAScript_ en la sección _6.1 PGAScript_
 
@@ -71,11 +71,11 @@ Las ayudas que se ofrecerán son las siguientes:
 3. **Resaltado de sintaxis**: se resaltarán los errores de sintaxis y advertencias en color rojo y amarillo respectivamente.
 
 En cuando al feedback formativo, se dará en tres etapas:
-**1. Durante el diseño de la solución**:
-Mientras el alumno diseña su solución para la misión, se estará analizando y controlando en tiempo real la estructura y sintaxis de la misma para poder indicar errores y sugerencias antes de pasar a la ejecución.
+**1. Durante el diseño de la algoritmo**:
+Mientras el alumno diseña su algoritmo para la misión, se estará analizando y controlando en tiempo real la estructura y sintaxis de la misma para poder indicar errores y sugerencias antes de pasar a la ejecución.
 
 **Errores**
-Los errores son aquellos que impiden que la ejecución de la solución se lleve a cabo. Los posibles errores a indicar son los siguientes:
+Los errores son aquellos que impiden que la ejecución del algoritmo se lleve a cabo. Los posibles errores a indicar son los siguientes:
 
 | Error                  | Descripción                                                                               | Feedback                                                                                                                                                                                                     |
 | ---------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -84,7 +84,7 @@ Los errores son aquellos que impiden que la ejecución de la solución se lleve 
 | Parámetros indefinidos | Cuando se llama a un procedimiento y no se colocan los parámetros de manera correcta      | Indicador rojo en la linea del error y subrayado en rojo en el procedimiendo llamado. Si se apoya el cursor por encima del error se mostrará "Parámetros erróneos o indefinidos".                            |
 
 **Advertencias**
-Las advertencias son aquellas que no impiden que la solución se ejecute pero son recomendable de atender. Las posibles advertencias son las siguientes:
+Las advertencias son aquellas que no impiden que el algoritmo se ejecute pero son recomendable de atender. Las posibles advertencias son las siguientes:
 
 | Advertencia                              | Descripción                                             | Feedback                                                                                                                                                                                                                                                             |
 | ---------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -92,11 +92,11 @@ Las advertencias son aquellas que no impiden que la solución se ejecute pero so
 | Procedimiento definido pero no utilizado | Cuando se define un procedimiento pero nunca se utiliza | Mientras el jugador no lo utilice, indicador en amarillo en la línea de la advertencia y subrayado en amarillo en la cabecera del procedimiento definido pero no utilizado. Si se apoya el cursor por encima de este aviso se mostrará "Procedimiento no utilizado". |
 
 **2. Al intentar ejecutar**
-Cuando el alumno terminó de diseñar su solución y decida ejecutar, el sistema verificará que la estructura y sintaxis esté correctamente escrita para ejecutar.
-Si se ignoran todos los **errores** durante el diseño de la solución, no se podrá ejecutar la solución y se mostrará un mensaje indicando en rojo la linea donde se encuentra el error, el motivo y la sugerencia para corregirlo.
+Cuando el alumno terminó de diseñar el algoritmo y decida ejecutar, el sistema verificará que la estructura y sintaxis esté correctamente escrita para ejecutar.
+Si se ignoran todos los **errores** durante el diseño del algoritmo, este no se podrá ejecutar y se mostrará un mensaje indicando en rojo la linea donde se encuentra el error, el motivo y la sugerencia para corregirlo.
 
-**3. Después de la ejecución de la solución indicando:**
-Luego de la ejecución de la solución del alumno, completado el ejercicio y dada la puntuación obtenida, el sistema analizará la solución proponiendo mejoras y optimizaciones para la solución. El sistema mostrará el antes y después de la solución del alumno y una breve explicación de los cambios realizados y el por qué.
+**3. Después de la ejecución del algoritmo indicando:**
+Luego de la ejecución del algoritmo del alumno, completado el ejercicio y dada la puntuación obtenida, el sistema analizará el algoritmo proponiendo mejoras y optimizaciones. El sistema mostrará el antes y después de aplicar los cambios al algoritmo del jugador, una breve explicación de los cambios realizados, el por qué y la posibilidad de aplicarlos si asi lo desea.
 
 - **Redundancia de instrucciones**: si hay al menos 2 lineas de código llamando a la misma instrucción se sugerirá reemplazarlas por una estructura repetitiva como un mientras o un repetir.
 - **Redundancia de condicionales**: si hay al menos 2 estructuras de control "Si" una debajo de la otra se sugerírá reemplazarlas por una estructura condicional con una proposición compuesta por las dos proposiciones originales utilizando un conectivo lógico apropiado.
@@ -108,20 +108,23 @@ Luego de la ejecución de la solución del alumno, completado el ejercicio y dad
 El Core Loop principal del videojuego es:
 
 1. Ingresar al mapa principal del juego
-2. Seleccionar el capitulo actual
-3. Seleccionar la siguiente misión
+2. Seleccionar un capitulo
+3. Seleccionar la misión deseada
 4. Diseñar un algoritmo para resolver la misión
-5. Ejecutar la solución para visualizar la misma en el escenario
-6. Recibir una puntuación y EXP correspondiente si se completa correctamente.
-7. Recibir feedback formativo por parte del sistema para refactorizar si se quiere la solución.
+5. Ejecutar el algoritmo visualizando el efecto de cada instrucción en el escenario
+6. Si se completa la misión exitosamente, recibir una puntuación de hasta 3 estrellas y EXP.
+7. Recibir feedback formativo por parte del sistema para refactorizar y optimizar el algoritmo si se quiere.
 
 ## 5. Historia
 
 ### 5.1 Narrativa
 
-"Cuenta la leyenda que en lo profundo del reino de **"Algoritmia"** se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo. No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
-Muchos guerreros han intentado llegar hasta este anhelado tesoro, pero ninguno ha podido aún. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores.
-La leyenda indica que solo aquel guerrero que cumpla con una serie de características y habilidades muy especiales será digno de encontrar el algoritmo sagrado
+"Cuenta la leyenda que en el reino de **"Algoritmia"**, en lo más profundo del _Santuario Algorismi_ se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo, llamado _Algorismus Resolutor_.
+No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
+
+Muchos guerreros algoritmicos han intentado llegar hasta este anhelado tesoro, pero nadie ha logrado aún pasar todas las pruebas y desafíos del _Santuario Algorismi_. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores del entorno.
+
+La leyenda indica que solo aquel guerrero algoritmico que cumpla con una serie de características y habilidades muy especiales será digno de encontrar el _Algorismus Resolutor_:
 
 - Gran capacidad de razonamiento lógico.
 - Planificación ordenada sus acciones.
@@ -129,7 +132,8 @@ La leyenda indica que solo aquel guerrero que cumpla con una serie de caracterí
 - Tenacidad para repertir una acción las veces que sean necesarias conociendo o no su fin.
 - Administración de los suministros y objetos en el viaje.
 - Definición de planes de acción para diferentes situaciones.
-  Y lo más importante, el guerrero deberá tener presente las tres sagradas reglas de la Algoritmia:
+
+Y lo más importante, el guerrero deberá tener presente las tres sagradas reglas de la Algoritmia:
 
 1. **Finitud** de acciones a realizar
 2. **Precisión** en cada acción sin ambiguedad y con exactitud.
@@ -137,7 +141,8 @@ La leyenda indica que solo aquel guerrero que cumpla con una serie de caracterí
 
 ¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
 
-Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de resolver todos sus problemas. Para ello, deberá emprender un largo viaje donde se pondrán a prueba todas sus habilidades y conocimientos en el arte de la algoritmia. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas estrategias y habilidades que lo acerquen aún más a su objetivo.
+Nuestro héroe, un guerrero algoritmico novato, queda cautivado con esta leyenda y decide lanzarse en busca del _Algorismus Resolutor_ emprendiendo un largo viaje hacia el _Santuario Algorismi_, donde le esperan las pruebas más dificiles.
+Durante el camino, nuestro guerrero deberá adquirir nuevos conocimientos y habilidades en el arte de la algoritmia, los cuales se pondrán a prueba durante todo el viaje. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas estrategias y habilidades que lo acerquen aún más a su objetivo.
 
 ### 5.2 Personajes
 
@@ -147,11 +152,21 @@ Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de res
 
 ## 6. Gameplay y elementos del juego
 
-### 6.1 PGAScript
+### 6.2 Misiones o niveles
+
+### 6.3 Objetos a encontrar/recolectar/etc.
+
+### 6.4 Enemigos y obstáculos
+
+### 6.5 Mecánicas del personaje
+
+Definir las mecánicas y habilidades del personaje, comportamiento durante el gameplay, como y cuando se desbloquean, su uso, etc. Primitivas, etc.
+
+### 6.X PGAScript
 
 El pseudocódigo gamificado _PGAScript_ está diseñado para enseñar pensamiento algorítmico de manera progresiva y accesible. Su sintaxis simple y visual con colores e íconos representativos permite al jugador resolver misiones mediante primitivas, estructuras de control básicas, manejo de variables y procedimientos que se irán desbloqueando a medida que se avanza en la historia.
 
-#### 6.1.1 Propósito educativo
+#### 6.X.1 Propósito educativo
 
 PGAScript está pensado para:
 
@@ -159,14 +174,14 @@ PGAScript está pensado para:
 - Fomentar el diseño de soluciones generales (no específicas).
 - Reforzar conceptos como secuenciación, repetición, condicionales, procedimientos, parámetros y reutilización.
 
-#### 6.1.2 Sintaxis general
+#### 6.X.2 Sintaxis general
 
 - Se escribe en formato pseudocódigo adaptado.
 - Cada línea representa una instrucción o bloque lógico.
 - El pseudocodigo es sensible a la estructura (usa indentación).
 - La primer linea del código es "Inicio" y la última línea "Fin" para indicar el inicio y el fin del código.
 
-#### 6.1.3 Primitivas
+#### 6.X.3 Primitivas
 
 Estas son las instrucciones básicas (primitivas) del jugador disponibles en el lenguaje:
 
@@ -180,7 +195,7 @@ Estas son las instrucciones básicas (primitivas) del jugador disponibles en el 
 
 |
 
-#### 6.1.4 Variables de juego y objetos de inventario
+#### 6.X.4 Variables de juego y objetos de inventario
 
 Las variables de juego son las variables relacionadas a los distintos elementos presentes en el escenario de juego que podrán ser evaluados solamente. Los objetos de inventario, de igual manera, podrán estar en el escenario y ser evaluados, utilizadas son los objetos que se pueden acumular en el inventario del jugador.
 
@@ -192,16 +207,6 @@ Las variables de juego son las variables relacionadas a los distintos elementos 
 | hayPozo    | Evalúa si hay un obstáculo en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso |
 | dimX       | Devuelve el valor de la posición actual en el eje X del escenario                                                |
 | dimY       | Devuelve el valor de la posición actual en el eje Y del escenario                                                |
-
-### 6.2 Misiones o niveles
-
-### 6.3 Objetos a encontrar/recolectar/etc.
-
-### 6.4 Enemigos y obstáculos
-
-### 6.5 Mecánicas del personaje
-
-Definir las mecánicas y habilidades del personaje, comportamiento durante el gameplay, como y cuando se desbloquean, su uso, etc. Primitivas, etc.
 
 ## 7. Estilo visual y arte
 

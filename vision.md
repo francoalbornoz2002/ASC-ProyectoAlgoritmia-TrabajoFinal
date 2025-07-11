@@ -153,7 +153,7 @@ El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a
 
 - Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
 - Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones y habilidades manteniendo la participación y motivación en utilizar el sistema.
-- El sistema detectará los errores cometidos y propondrá mejoras a la solución, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
+- El sistema detectará los errores cometidos y propondrá mejoras al algoritmo, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
 
 **Para docentes**:
 
@@ -191,33 +191,33 @@ El desarrollo e implementación de este sistema encaja perfecamente en la situac
 
 #### 3.2.1 Objetivo General
 
-Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos y Estructuras de Control (PGA) con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
+Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de Lógica, Algoritmos, Estructuras de Control y manejo de Variables y Procedimientos con enfoque en la gamificación y estética visual en Pixel Art, que incremente la motivación, facilite la resolución de ejercicios y permita un seguimiento académico exhaustivo de los alumnos.
 
 #### 3.2.2 Objetivos Específicos
 
-| OBJ-01      | Crear y diseñar un videojuego para el aprendizaje gamificado                                                                                                                                                                                                                              |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OBJ-01      | Crear y diseñar un videojuego para el aprendizaje gamificado                                                                                                                                                                                                                                 |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Crear y diseñar un videojuego con mecánicas de capítulos, misiones, acciones, estrategias, objetos, habilidades, niveles, puntos de experiencia y puntuaciones acompañado de una interfaz Pixel Art y narrativa e historia interesante para motivar e incentivar la participación del alumno |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                      |
-| Comentarios | -                                                                                                                                                                                                                                                                                         |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                         |
+| Comentarios | -                                                                                                                                                                                                                                                                                            |
 
-| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OBJ-02      | Ofrecer misiones con dificultad progresiva y contenido desbloqueable                                                                                                                                                                                                                                                                                                                     |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Crear un repertorio de misiones (ejercicios) divididas en capítulos temáticos de: algoritmos, lógica, estructuras de control (condicionales y bucles), variables y procedimientos e implementar un sistema de contenido desbloqueable (nuevas misiones, acciones, estrategias, objetos y habilidades) a medida que el alumno avance para garantizar una curva de aprendizaje controlada. |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                  |
-| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                     |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                     |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                        |
 
-| OBJ-03      | Ofrecer ejecución y visualización de la solución en tiempo real                                                                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Descripción | Diseñar e implementar un sistema de ejecución que lea y ejecute en tiempo real cada instrucción de la solución del alumno y la visualice un escenario acorde a la narrativa y estética Pixel Art |
-| Estabilidad | Alta                                                                                                                                                                                             |
-| Comentarios | -                                                                                                                                                                                                |
+| OBJ-03      | Ofrecer ejecución y visualización del algoritmo en tiempo real                                                                                                                                  |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Diseñar e implementar un sistema de ejecución que lea y ejecute en tiempo real cada instrucción del algoritmo del alumno y la visualice un escenario acorde a la narrativa y estética Pixel Art |
+| Estabilidad | Alta                                                                                                                                                                                            |
+| Comentarios | -                                                                                                                                                                                               |
 
-| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                                                                                                                |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Analizar automáticamente la solución del alumno e indicar errores de sintaxis, proveer ayudas para diseñar la solución y posterior a la ejecución generar sugerencias de optimización, tales como correcciones de indentación, reducción de primitivas o instrucciones redundantes y simplificación de estructuras. |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                |
-| Comentarios | -                                                                                                                                                                                                                                                                                                                   |
+| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                                                                                     |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Analizar automáticamente el algoritmo del alumno e indicar errores de sintaxis, proveer ayudas para diseñar el algoritmo y posterior a la ejecución generar sugerencias de optimización, tales como reducción de primitivas o instrucciones redundantes y simplificación de estructuras. |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                     |
+| Comentarios | -                                                                                                                                                                                                                                                                                        |
 
 | OBJ-05      | Proveer seguimiento académico exhaustivo                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -255,11 +255,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                                                                                                                                                     |
 | Comentarios | -                                                                                                                                                                                                                                                         |
 
-| OBJ-11      | Diseñar un lenguaje de programación gamificado para la resolución de misiones                                                                                                                                                                                   |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Diseñar un lenguaje de programación gamificado que permita manejar: primitivas, estructuras de control (condicionales y bucles), variables y procedimientos con parámetros que permitan al alumno diseñar soluciones efectivas para las misiones del videojuego |
-| Estabilidad | Alta                                                                                                                                                                                                                                                            |
-| Comentarios | -                                                                                                                                                                                                                                                               |
+| OBJ-11      | Diseñar un lenguaje de programación gamificado para la resolución de misiones                                                                                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descripción | Diseñar un pseudocódigo gamificado que permita manejar: primitivas, estructuras de control (condicionales y bucles), variables y procedimientos con parámetros que permitan al alumno diseñar algoritmos efectivos para resolver las misiones del videojuego |
+| Estabilidad | Alta                                                                                                                                                                                                                                                         |
+| Comentarios | -                                                                                                                                                                                                                                                            |
 
 ### 3.3 Modulos del sistema
 
@@ -339,10 +339,10 @@ Como este módulo se implementará en el videojuego, se definió de manera más 
 El entorno de resolución de ejercicios estará compuesto de manera general con:
 
 - **Enunciado**: se mostrará el enunciado del ejercicio en todo momento durante la resolución de una misión
-- **Editor de código**: es donde el alumno diseñará y escribirá la solución del ejercicio. El editor soportará una opción de autocompletado para ayudar al alumno a seguir de manera correcta la sintaxis del lenguaje gamificado.
+- **Editor de código**: es donde el alumno diseñará y escribirá el algoritmo para resolver la misión. El editor resaltado con colores e íconos representativos de cada tipo de instrucción para ayudar al alumno a seguir de manera correcta la sintaxis del lenguaje gamificado.
 - **Manual del heroe**: es una pequeña "documentación" de sintaxis y semántica de las posibles acciones, estrategias, objetos y habilidades especiales y proposiciones que el alumno tiene disponible para resolver el ejercicio y tomar decisiones.
-- **Botón ejecutar**: para comenzar la ejecución de la solución del alumno en el visor animado. Para que se pueda ejecutar la solución, esta no debe contener errores de sintaxis.
-- **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real la solución del alumno.
+- **Botón ejecutar**: para comenzar la ejecución del algoritmo del alumno en el visor animado. Para que se pueda ejecutar el algoritmo, éste no debe contener errores de sintaxis.
+- **Visor animado**: escenario 2D pixel art en donde se ejecuta en tiempo real el algoritmo del alumno.
 
 Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección **_X.X_**. Consúltelo para obtener más información.
 
@@ -350,9 +350,9 @@ Como este módulo se implementará en el videojuego, se definió de manera más 
 
 El sistema ofrecerá tres tipos de feedback formativo durante la resolución de un ejercicio: previo a la ejecución, al momento de ejecutar y posterior a la ejecución. A continuación, detallaremos los aspectos que el sistema analizará y ofrecerá retroalimentación al alumno.
 
-- **Previo a la ejecución**: el sistema estará analizando en tiempo real la estructura y forma de escribir de la solución del alumno para poder indicar errores y sugerencias.
-- **Al momento de ejecutar**: si la solución posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si la solución tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
-- **Posterior a la ejecución**: el sistema analizará la solución del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones de la solución.
+- **Previo a la ejecución**: el sistema estará analizando en tiempo real la estructura y forma de escribir del algoritmo del alumno para poder indicar errores y sugerencias.
+- **Al momento de ejecutar**: si el algoritmo posee errores (de sintaxis u otro tipo) el sistema no permitirá la ejecución de la misma e indicará donde se encuentra el error para que el alumno pueda corregirla. Si el algoritmo tiene sugerencias (como variables declaradas pero no utilizadas) el sistema permitirá la ejecución de la misma igualmente.
+- **Posterior a la ejecución**: el sistema analizará el algoritmo del alumno y ofrecerá retroalimentación a modo de sugerencias y optimizaciones para mejorar el algoritmo.
 
 Como este módulo se implementará en el videojuego, se definió de manera más precisa y completa en el Game Design Document ubicado en `docs/game-design/gdd.md`, sección **_4.2 Feedback formativo y ayudas_**. Consúltelo para obtener más información.
 
@@ -581,7 +581,7 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
 - No se incluirán múltiples lenguajes de programación (se trabaja con un único lenguaje gamificado).
 - No se podrá configurar la velocidad de ejecución normal.
 - No se permitirá guardar múltiples soluciones para un mismo ejercicio.
-- No se mostrarán estadísticas detalladas por solución (tiempo de ejecución, memoria, etc.).
+- No se mostrarán estadísticas detalladas por algoritmo (tiempo de ejecución, memoria, etc.).
 - El feedback se centrará en sugerencias básicas de optimización y errores de sintaxis, no en explicación semántica o pedagógica demaciado profunda.
 - No se implementarán tests automatizados personalizados (test cases hechos por docentes o alumnos).
 

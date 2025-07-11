@@ -44,7 +44,7 @@ package "Videojuego" {
   package "Programación"{
     usecase "UC-42 Resolver misión" as UC42
     usecase "UC-43 Seleccionar misión" as UC43
-    usecase "UC-44 Diseñar solución con lenguaje gamificado" as UC44
+    usecase "UC-44 Diseñar algoritmo con PGAScript" as UC44
     usecase "UC-45 Agregar primitiva" as UC45
     usecase "UC-46 Declarar variable" as UC46
     usecase "UC-47 Asignar valor a variable" as UC47
