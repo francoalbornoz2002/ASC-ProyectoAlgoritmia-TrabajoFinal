@@ -12,7 +12,7 @@ El título del juego será "Algoritmia".
 
 ## 2. Resumen del juego
 
-Algoritmia es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propia solución. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos con tu propio algoritmo diseñado a tu manera para completar la misión y aprendiendo en el proceso.
+Algoritmia es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propio algoritmo. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos con tu propio algoritmo diseñado a tu manera para completar la misión y aprendiendo en el proceso.
 
 ## 3. Concepto y pilares de diseño
 
@@ -24,57 +24,50 @@ El pixel art es un estilo artístico de videojuegos. Es reconocido por su estét
 
 Lo que Algoritmia quiere transmitir con su estilo visual es simpleza pero belleza a su vez mediante el pixel art en sus escenarios isométricos / top down estilo RPG, interfaces, objetos y personajes utilizando colores llamativos, una paleta de colores adecuada a la estética y trama del videojuego y diseños minimalistas. Se busca transmitir esa sensación de estar jugando un videojuego pero aprendiendo a la vez.
 
-### 3.2 Lenguaje de programación gamificado y ejecución en tiempo real
+### 3.2 Pseudocodigo gamificado y ejecución en tiempo real
 
-Algoritmia tendrá un lenguaje de programación gamificado compuesto con primitivas, estructuras de control y manejo de variables y de procedimientos que permitirán al jugador diseñar sus soluciones para las misiones del juego, visualizando en tiempo real la ejecución de la solución en el escenario de juego.
+Algoritmia tendrá un pseudocodigo gamificado llamado _PGAScript_ compuesto con primitivas, estructuras de control y manejo de variables y de procedimientos que permitirán al jugador diseñar sus soluciones para las misiones del juego, visualizando en tiempo real la ejecución del algoritmo en el escenario de juego.
 
 ### 3.3 Aprendizaje continuo con feedback inmediato
 
-Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño de la solución de la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar la solución propuesta en base a lo siguiente:
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño del algoritmo para resolver la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar el algoritmo propuesto en base a lo siguiente:
 
 - Errores de sintaxis.
 - Redundancia de instrucciones.
 - Redundancia de estructuras de control.
-- Cantidad excesiva e innecesaria de lineas de código.
-- Variables no utilizadas
-
-Para ello, se ofrecerá:
-
-- Indicador de error de sintaxis
-- Sintaxis y semántica detallada del lenguaje gamificado.
-- Autocompletado de estructuras de control.
-- Reemplazar multiples instrucciones de un mismo tipo con una estructura repetitiva.
-- Reemplazar multiples estructuras condicionales con una estructura condicional con proposición compuesta.
-- Eliminar variables no utilizadas
-- Entre otras.
+- Intento de utilizar una variables no declarada.
+- Variables declaradas pero no utilizadas.
+- Procedimientos mal definidos o mal invocados.
 
 ## 4. Descripción del juego
 
-Algoritmia es un videojuego de aventura estilo RPG que está enfocado en el aprendizaje de las bases de la programación: algoritmos, lógica, estructuras de control (condicionales y bucles) y procedimientos mediante la resolución de ejercicios, codificando y visualizando su solución en tiempo real.
+Algoritmia es un videojuego de aventura estilo RPG con vista isométrica en donde el jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos.
 
-El jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos. En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando un lenguaje de programación gamificado diseñado con acciones, estrategias, objetos y habilidades especiales que permitirán al jugador diseñar sus propias soluciones para poder completar las misiones, visualizando en tiempo real la ejecución de la solución en el escenario isométrico / top down.
+En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando pseudocodigo gamificado _PGAScript_ compuesto con primitivas, estructuras de control, manejo de variables y procedimientos pero tomando un enfoque estilo RPG con acciones, estrategias, objetos y habilidades especiales que permitirán al jugador diseñar sus propios algoritmos para poder completar las misiones, visualizando en tiempo real la ejecución del algoritmo en el escenario de la misión.
 
-Una característica importante de Algoritmia es que ofrece feedback formativo inmediato y ayudas al jugador para detectar y corregir errores de manera sencilla y optimizar la solución mediante sugerencias visualizando el antes y después.
+El objetivo de Algoritmia es que el jugador pueda lograr el aprendizaje continuo de las bases de la programación. Para ello, el videojuego ofrecerá la documentación de _PGAScript_ en todo momento, ayudas al jugador para detectar y corregir errores de manera sencilla y lo más importante: feedback inmediato en forma de sugerencias y optimizaciones formativas y explicativas para mejorar el algoritmo propuesto.
 
-### 4.1 Lenguaje de programación gamificado
+### 4.1 Pseudocodigo gamificado
 
-Como mencioanmos, el lenguaje de programación gamificado estará compuesto por primitivas, estructuras de control y manejo de variables y procedimientos. Pero, para darle un tono de videojuegos, cada uno de estos elementos de la programación tradicional se representarán con componentes de videojuegos estilo RPG:
+Como mencioanmos, el pseudocodigo gamificado _PGAScript_ estará compuesto por primitivas, estructuras de control y manejo de variables y procedimientos. Pero, para darle un tono de videojuegos, cada uno de estos elementos de la programación tradicional se representarán con componentes de videojuegos estilo RPG:
 
 - **Primitivas -> "Acciones"**: las acciones representarán a las primitivas básicas (atómicas) que el jugador podrá realizar.
 - **Estructuras de control -> Estrategias**: las estrategias representan las estructuras de control básicas: Si-Sino, Mientras y Repetir donde se podrán manejar proposiciones simples o compuestas utilizando operadores matemáticos básicos y operadores relacionales.
 - **Variables -> Objetos**: los objetos representarán a las variables del juego. Se tendrán dos tipos de variables:
-  -  Variables de juego relacionadas al escenario y a los objetos de inventario del jugador.
-  -  Variables globales y locales de tipo entero y tipo booleano que el jugador podrá declarar y asignar valores.
+  - Variables de juego relacionadas al escenario y a los objetos de inventario del jugador.
+  - Variables globales y locales de tipo entero y tipo booleano que el jugador podrá declarar y asignar valores.
 - **Procedimientos -> Habilidades especiales**: las habilidades especiales representarán a los procedimientos. Se tendrán dos tipos de procedimientos:
-  - Procedimientos pre-diseñados desbloqueables que el jugador podrá utilizar como "Habilidad especial"
-  - Procedimientos que el jugador podrá definir en el diseño de la solución incluyendo o no parámetros de entrada, salida y entrada/salida.
+  - **Procedimientos pre-diseñados** desbloqueables que el jugador podrá utilizar como "Habilidad especial"
+  - Procedimientos que el jugador podrá definir e invocar incluyendo o no parámetros de entrada, salida y entrada/salida en el diseño de la solución.
+
+Se especificará a mas detalle el diseño de _PGAScript_ en la sección _6.1 PGAScript_
 
 ### 4.2 Feedback formativo y ayudas
 
 Las ayudas que se ofrecerán son las siguientes:
 
-1. **Manual del heroe**: este manual contendrá todas las acciones, estrategias, objetos y habilidades especiales que el jugador puede utilizar para resolver la misión. El manual del heroe especificará la sintaxis, semántica y un ejemplo de la estructura básica de cada instrucción del lenguaje gamificado separada por Acciones, Estrategias, Objetos y habilidades especiales.
-2. **Autocompletado**: Aparecerán como sugerencia las instrucciones y estructuras dependiendo de lo que escriba el jugador, dando la posibilidad de autocompletado seleccionando la opción deseada de las sugerencias. Esto aplicará para: primitivas, estructuras de control y procedimientos.
+1. **Manual del heroe**: El "_Manual del Heroe_" es un manual que representará la documentación de PGAScript y estará disponible para consulta del jugador en todo momento durante el diseño del algoritmo. Especificará la sintaxis y semántica de cada primitiva, estructura de control, variable de juego, el manejo de variables y procedimientos que el jugador puede utilizar para resolver la misión.
+2. **Ayuda visual con colores e íconos**: cada primitiva, estructura, variable o procedimiento estará resaltado con un color e ícono representativo para denotar que está bien definida la instrucción para así tambien detectar errores de sintaxis. Un texto plano sin ícono o color indicará que la instrucción está mal escrita o no existe.
 3. **Resaltado de sintaxis**: se resaltarán los errores de sintaxis y advertencias en color rojo y amarillo respectivamente.
 
 En cuando al feedback formativo, se dará en tres etapas:
@@ -86,7 +79,7 @@ Los errores son aquellos que impiden que la ejecución de la solución se lleve 
 
 | Error                  | Descripción                                                                               | Feedback                                                                                                                                                                                                     |
 | ---------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Errores de sintaxis    | Se dan cuando hay instrucciones o estructuras mal escritas                                | Indicador rojo en el número de la linea del error y subrayado en rojo en la instrucción o estructura mal escrita. Si se apoya el cursor por encima del error se mostrará "Error de sintaxis".                |
+| Error de sintaxis      | Se da cuando hay instrucciones o estructuras mal escritas                                 | Indicador rojo en el número de la linea del error y subrayado en rojo en la instrucción o estructura mal escrita. Si se apoya el cursor por encima del error se mostrará "Error de sintaxis".                |
 | Variable no declarada  | Cuando se intenta utilizar una variable (global o local) que no fue declarada previamente | Indicador rojo en el número de la linea del error y subrayado en rojo en donde se quiere utilizar la variable. Si se apoya el cursor por encima del error se mostrará el mensaje de "Variable no declarada". |
 | Parámetros indefinidos | Cuando se llama a un procedimiento y no se colocan los parámetros de manera correcta      | Indicador rojo en la linea del error y subrayado en rojo en el procedimiendo llamado. Si se apoya el cursor por encima del error se mostrará "Parámetros erróneos o indefinidos".                            |
 
@@ -108,7 +101,7 @@ Luego de la ejecución de la solución del alumno, completado el ejercicio y dad
 - **Redundancia de instrucciones**: si hay al menos 2 lineas de código llamando a la misma instrucción se sugerirá reemplazarlas por una estructura repetitiva como un mientras o un repetir.
 - **Redundancia de condicionales**: si hay al menos 2 estructuras de control "Si" una debajo de la otra se sugerírá reemplazarlas por una estructura condicional con una proposición compuesta por las dos proposiciones originales utilizando un conectivo lógico apropiado.
 - **Redundancia de bucles**: si hay al menos 2 estructuras de control "Mientras" o "Repetir" una debajo de la otra se sugerirá reemplazarlas por una estructura repetitiva con una proposición compuesta por las dos proposiciones originales utilizando un conectivo lógico apropiado.
-- **Variables no utilizadas**: si hay variables declaradas pero no utilizadas se sugerirán eliminarlas de la solución.
+- **Variables no utilizadas**: si hay variables declaradas pero no utilizadas se sugerirán eliminarlas del código.
 
 ### 4.3 Core Loop
 
@@ -154,13 +147,13 @@ Nuestro héroe/heroína se lanza en busca de este algoritmo mágico capaz de res
 
 ## 6. Gameplay y elementos del juego
 
-### 6.1 Lenguaje de programación gamificado
+### 6.1 PGAScript
 
-El lenguaje de programación del videojuego está diseñado para enseñar pensamiento algorítmico de manera progresiva y accesible. Su sintaxis simple y visual permite al jugador resolver misiones mediante estructuras básicas, comandos y procedimientos que se desbloquean a medida que avanzan en la historia.
+El pseudocódigo gamificado _PGAScript_ está diseñado para enseñar pensamiento algorítmico de manera progresiva y accesible. Su sintaxis simple y visual con colores e íconos representativos permite al jugador resolver misiones mediante primitivas, estructuras de control básicas, manejo de variables y procedimientos que se irán desbloqueando a medida que se avanza en la historia.
 
 #### 6.1.1 Propósito educativo
 
-Este lenguaje está pensado para:
+PGAScript está pensado para:
 
 - Introducir a los alumnos en la lógica algorítmica y estructuras de control básicas.
 - Fomentar el diseño de soluciones generales (no específicas).
@@ -170,22 +163,35 @@ Este lenguaje está pensado para:
 
 - Se escribe en formato pseudocódigo adaptado.
 - Cada línea representa una instrucción o bloque lógico.
-- El lenguaje es sensible a la estructura (usa indentación).
+- El pseudocodigo es sensible a la estructura (usa indentación).
 - La primer linea del código es "Inicio" y la última línea "Fin" para indicar el inicio y el fin del código.
 
 #### 6.1.3 Primitivas
 
 Estas son las instrucciones básicas (primitivas) del jugador disponibles en el lenguaje:
 
-| Comando         | Descripción                                                         |
-| --------------- | ------------------------------------------------------------------- |
-| `avanzar`       | El jugador avanza a la siguiente celda en la dirección actual       |
-| `saltar`        | El jugador salta hacia 2 celdas adelante en la dirección actual     |
-| `atacar`        | El jugador ataca al enemigo en la celda frente a la posición actual |
-| `derecha`       | El jugador hace un giro de 90° a la derecha                         |
-| `recogerMoneda` | El jugador recoge la moneda de la celda si existe                   |
+| Primitiva       | Descripción                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| `avanzar`       | El jugador avanza a la siguiente celda en la dirección actual                                     |
+| `saltar`        | El jugador salta hacia 2 celdas adelante en la dirección actual                                   |
+| `atacar`        | El jugador ataca al enemigo en la celda frente a la posición actual                               |
+| `derecha`       | El jugador hace un giro de 90° a la derecha                                                       |
+| `recogerMoneda` | El jugador recoge, si existe, la moneda en la celda actual y suma +1 a las monedas de inventario. |
 
-| `
+|
+
+#### 6.1.4 Variables de juego y objetos de inventario
+
+Las variables de juego son las variables relacionadas a los distintos elementos presentes en el escenario de juego que podrán ser evaluados solamente. Los objetos de inventario, de igual manera, podrán estar en el escenario y ser evaluados, utilizadas son los objetos que se pueden acumular en el inventario del jugador.
+
+| Variable   | Descripción                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- |
+| hayMoneda  | Evalúa si existe una moneda en la celda actual, retorna verdadero o falso                                        |
+| hayLlave   | Evalúa si existe una llave en la celda actual, retorna verdadero o falso                                         |
+| hayEnemigo | Evalúa si hay un enemigo en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso   |
+| hayPozo    | Evalúa si hay un obstáculo en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso |
+| dimX       | Devuelve el valor de la posición actual en el eje X del escenario                                                |
+| dimY       | Devuelve el valor de la posición actual en el eje Y del escenario                                                |
 
 ### 6.2 Misiones o niveles
 
