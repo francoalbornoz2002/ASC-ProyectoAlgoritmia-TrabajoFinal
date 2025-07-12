@@ -120,29 +120,121 @@ El Core Loop principal del videojuego es:
 ### 5.1 Narrativa
 
 "Cuenta la leyenda que en el reino de **"Algoritmia"**, en lo más profundo del _Santuario Algorismi_ se encuentra escondido un tesoro muy especial: un algoritmo que tiene el poder de resolverlo todo, llamado _Algorismus Resolutor_.
-No importa el problema, no importa el contexto, no importa los involucrados, dicen que este algoritmo es capaz de adaptarse a cualquier situación que se le presente y logra resolverlo de manera eficiente y eficaz.
+No importa el problema, el contexto ni los involucrados: se dice que este algoritmo es capaz de adaptarse a cualquier situación y resolverla de manera eficiente y eficaz.
 
-Muchos guerreros algoritmicos han intentado llegar hasta este anhelado tesoro, pero nadie ha logrado aún pasar todas las pruebas y desafíos del _Santuario Algorismi_. Algunos dicen que es porque no razonan ni analizan el problema en frente, que se lanzan de manera desmedida sin planificar sus pasos o toman malas decisiones sin tener en cuenta otros factores del entorno.
+Muchos guerreros algorítmicos han intentado alcanzar este anhelado tesoro, pero ninguno ha logrado superar todas las pruebas del Santuario Algorismi. Algunos dicen que fallan porque no razonan ni analizan el problema frente a ellos, que se lanzan sin planificación o toman decisiones apresuradas sin considerar las condiciones del entorno.
 
-La leyenda indica que solo aquel guerrero algoritmico que cumpla con una serie de características y habilidades muy especiales será digno de encontrar el _Algorismus Resolutor_:
+La leyenda indica que solo aquel guerrero que desarrolle ciertas habilidades muy especiales será digno de hallar el _Algorismus Resolutor_:
 
-- Gran capacidad de razonamiento lógico.
-- Planificación ordenada sus acciones.
-- Toma de decisiones precisas evaluando los posibles caminos y qué hacer en cada uno.
-- Tenacidad para repertir una acción las veces que sean necesarias conociendo o no su fin.
-- Administración de los suministros y objetos en el viaje.
-- Definición de planes de acción para diferentes situaciones.
+I. Gran capacidad de razonamiento lógico.
+II. Planificación ordenada de sus acciones".
+III. Toma de decisiones precisas, evaluando los posibles caminos..
+IV. Tenacidad para repetir acciones las veces que sea necesario, conociendo o no su fin.
+V. Administración y uso de los suministros y objetos del viaje.
+VI. Definición de planes de acción para distintas situaciones.
 
 Y lo más importante, el guerrero deberá tener presente las tres sagradas reglas de la Algoritmia:
 
-1. **Finitud** de acciones a realizar
-2. **Precisión** en cada acción sin ambiguedad y con exactitud.
-3. **Definición** de comportamiento para producir los mismos resultados en diferentes situaciones.
+I. **Finitud** de acciones a realizar
+II. **Precisión** en cada acción sin ambiguedad y con exactitud.
+III. **Definición** de comportamiento para producir los mismos resultados en diferentes situaciones.
 
-¿Crees ser digno de encontrar el algoritmo sagrado y adquirir el poder supremo de resolución de problemas?"
+Movido por esta leyenda, un/una joven guerrero/a algorítmico/a novato/a —pero con una gran determinación- decide emprender su viaje hacia el _Santuario Algorismi_, con la esperanza de alcanzar el _Algorismus Resolutor_.
+A lo largo del camino, deberá superar pruebas difíciles, adquirir conocimientos y habilidades en el arte de la algoritmia, enfrentar obstáculos, combatir enemigos, recolectar objetos clave y perfeccionar estrategias que lo acerquen, paso a paso, a su objetivo."
 
-Nuestro héroe, un guerrero algoritmico novato, queda cautivado con esta leyenda y decide lanzarse en busca del _Algorismus Resolutor_ emprendiendo un largo viaje hacia el _Santuario Algorismi_, donde le esperan las pruebas más dificiles.
-Durante el camino, nuestro guerrero deberá adquirir nuevos conocimientos y habilidades en el arte de la algoritmia, los cuales se pondrán a prueba durante todo el viaje. Deberá superar obstáculos, combatir enemigos, recolectar objetos y aprender nuevas estrategias y habilidades que lo acerquen aún más a su objetivo.
+### 5.2 Mundo
+
+El mundo ficticio de Algoritmia se dividirá en 8 Regiones temáticas que el jugador deberá atravesar para llegar al _Santuario Algorismi_.
+
+#### Región 1
+
+**Nombre**
+**Descripción**
+En esta region se desarrolla el inicio de la historia. Se presentarán de manera introductoria las primitivas disponibles inicialmente junto con la lógica proposicional y estructuras de control (condicionales y bucles).
+
+**Temas referenciados**
+
+- Secuencia de pasos
+- Lógica proposicional
+- Estructuras de control:
+  - Decisiva: Si-Sino
+  - Repetitiva: Repetir
+  - Iterativa: Mientras
+
+**Cantidad de misiones**
+
+- Misiones tutorial: 5
+- Misiones normales: 10
+
+#### Región 2
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Región 3
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Región 4
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Región 5
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Región 6
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Región 7
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Región 8
+
+**Nombre**
+**Descripción**
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
 
 ### 5.2 Personajes
 
