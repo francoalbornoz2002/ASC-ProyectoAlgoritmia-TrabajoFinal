@@ -144,13 +144,11 @@ A lo largo del camino, deberá superar pruebas difíciles, adquirir conocimiento
 
 ### 5.2 Mundo
 
-El mundo ficticio de Algoritmia se dividirá en 8 Regiones temáticas que el jugador deberá atravesar para llegar al _Santuario Algorismi_.
+El mundo ficticio de Algoritmia se dividirá en 8 capítulos temáticos que el jugador deberá atravesar para llegar al _Santuario Algorismi_.
 
-#### Región 1
-
-**Nombre**
+#### Capítulo 1: Primeros pasos: el llamado de Algorismus Resolutor
 **Descripción**
-En esta region se desarrolla el inicio de la historia. Se presentarán de manera introductoria las primitivas disponibles inicialmente junto con la lógica proposicional y estructuras de control (condicionales y bucles).
+En este capítulo se desarrolla el inicio de la historia. Se presentarán de manera introductoria las primeras primitivas junto con la lógica proposicional y estructuras de control (condicionales y bucles).
 
 **Temas referenciados**
 
@@ -161,12 +159,35 @@ En esta region se desarrolla el inicio de la historia. Se presentarán de manera
   - Repetitiva: Repetir
   - Iterativa: Mientras
 
+**Desbloqueables**
+**Primitivas**
+- mover: disponible desde el inicio, es el movimiento básico del jugador.
+- recogerMoneda: le permite al jugador recoger monedas en la posición actual.
+- 
+
+**Estructuras de control**
+- **Emblema del Juicio**: le da el poder al jugador de tomar decisiones evaluando las características y elementos del entorno.
+- **Ritual de la Perseverancia**: le da el poder al jugador de repertir una serie de acciones un número finito de veces.
+- **Orbe del Ciclo Infinito**: le da el poder al jugador de ejecutar una serie de acciones basadas en una condición. Es una herramienta poderosa pero tambien se debe tener cuidado en la elección de la condición para evitar una secuencia infinita!
+
 **Cantidad de misiones**
 
 - Misiones tutorial: 5
 - Misiones normales: 10
 
-#### Región 2
+#### Capítulo 2: 
+
+**Nombre**
+**Descripción**
+En este capítulo
+
+**Temas referenciados**
+**Cantidad de misiones**
+
+- Misiones tutorial:
+- Misiones normales:
+
+#### Capítulo 3
 
 **Nombre**
 **Descripción**
@@ -176,7 +197,7 @@ En esta region se desarrolla el inicio de la historia. Se presentarán de manera
 - Misiones tutorial:
 - Misiones normales:
 
-#### Región 3
+#### Capítulo 4
 
 **Nombre**
 **Descripción**
@@ -186,7 +207,7 @@ En esta region se desarrolla el inicio de la historia. Se presentarán de manera
 - Misiones tutorial:
 - Misiones normales:
 
-#### Región 4
+#### Capítulo 5
 
 **Nombre**
 **Descripción**
@@ -196,7 +217,7 @@ En esta region se desarrolla el inicio de la historia. Se presentarán de manera
 - Misiones tutorial:
 - Misiones normales:
 
-#### Región 5
+#### Capítulo 6
 
 **Nombre**
 **Descripción**
@@ -206,7 +227,7 @@ En esta region se desarrolla el inicio de la historia. Se presentarán de manera
 - Misiones tutorial:
 - Misiones normales:
 
-#### Región 6
+#### Capítulo 7
 
 **Nombre**
 **Descripción**
@@ -216,17 +237,7 @@ En esta region se desarrolla el inicio de la historia. Se presentarán de manera
 - Misiones tutorial:
 - Misiones normales:
 
-#### Región 7
-
-**Nombre**
-**Descripción**
-**Temas referenciados**
-**Cantidad de misiones**
-
-- Misiones tutorial:
-- Misiones normales:
-
-#### Región 8
+#### Capítulo Final - El Santuario Algorismi
 
 **Nombre**
 **Descripción**
@@ -323,10 +334,6 @@ Describir los assets necesarios (avatares, personajes, etc.) junto a una breve d
 #### 7.2.3 Objetos
 
 ## 8. Diseño de misiones
-
-### 8.1 Capítulos
-
-Describir los capitulos de la historia. Tema referenciado. Incluir: nombre, breve descripción del capitulo, objetivo, cantidad de misiones, desbloqueo de habilidades/objetos/etc.
 
 ### 8.2 Misiones
 
