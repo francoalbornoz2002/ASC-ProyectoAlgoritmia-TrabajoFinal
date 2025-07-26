@@ -144,9 +144,10 @@ A lo largo del camino, deberá superar pruebas difíciles, adquirir conocimiento
 
 ### 5.2 Mundo
 
-El mundo ficticio de Algoritmia se dividirá en 8 capítulos temáticos que el jugador deberá atravesar para llegar al _Santuario Algorismi_.
+El mundo ficticio de Algoritmia se dividirá en 8 capítulos temáticos que el jugador deberá atravesar para llegar al _Santuario Algorismi_. Cada capítulo tendrá una serie de misiones tutorial, donde se presentarán las primitivas básicas o desbloqueadas y misiones normales que el jugador deberá completar. En las misiones tutorial no se aplicará feedback formativo, ya que son misiones de tutorial, en las misiones normales si se aplicará feedback.
 
-#### Capítulo 1: Primeros pasos: el llamado de Algorismus Resolutor
+#### Capítulo 1: El llamado de Algorismus Resolutor
+
 **Descripción**
 En este capítulo se desarrolla el inicio de la historia. Se presentarán de manera introductoria las primeras primitivas junto con la lógica proposicional y estructuras de control (condicionales y bucles).
 
@@ -161,87 +162,102 @@ En este capítulo se desarrolla el inicio de la historia. Se presentarán de man
 
 **Desbloqueables**
 **Primitivas**
+
 - mover: disponible desde el inicio, es el movimiento básico del jugador.
 - recogerMoneda: le permite al jugador recoger monedas en la posición actual.
-- 
+- saltar: le permite al jugador realizar un salto que "omite" una celda.
 
 **Estructuras de control**
-- **Emblema del Juicio**: le da el poder al jugador de tomar decisiones evaluando las características y elementos del entorno.
-- **Ritual de la Perseverancia**: le da el poder al jugador de repertir una serie de acciones un número finito de veces.
+
+- **Emblema del Juicio**: le da el poder al jugador de tomar decisiones evaluando sus objetos y elementos del entorno.
+- **Ritual de la Perseverancia**: le da el poder al jugador de repertir una serie de acciones un número (definido por el jugador) finito de veces.
 - **Orbe del Ciclo Infinito**: le da el poder al jugador de ejecutar una serie de acciones basadas en una condición. Es una herramienta poderosa pero tambien se debe tener cuidado en la elección de la condición para evitar una secuencia infinita!
 
-**Cantidad de misiones**
+**Lista de misiones**
 
-- Misiones tutorial: 5
-- Misiones normales: 10
+- M1: Introducción a la primitiva `mover`
+- M2: Introducción a la primitiva `recogerMoneda`
+- M3: Introducción a los `obstáculos`
+  - Se desbloquea la primitiva `saltar`.
+  - Al finalizar se desbloquea el `Emblema del Juicio`
+- M4: Introducción a las proposiciones y toma de decisiones
+  - Se desbloquean las proposiciones `hayFosa` y `hayMoneda`
+  - Se desbloquea la estructura de control `Si` y se presenta su uso con proposiciones simples.
+- M5: Introducción a la estructura de control `Si-Sino`
+- M6: Introducción a los conectivos lógicos y proposiciones compuestas
+  - Se desbloquean los conectivos lógicos: `AND` `OR` y `NOT`
+  - Se presenta el uso de estructura de control `Si-Sino` con proposiciones compuestas.
+- M7 a M9: Misiones normales solo con lo desbloqueado hasta el momento.
+  - En la M9 desbloqueo del `Ritual de la Perseverancia`.
+- M10: Introducción a la estructura `Repetir N`.
+- M11 a M13: Misiones normales solo con lo desbloqueado hasta el momento.
+  - En la M13 desbloqueo del `Orbe del Ciclo Infinito`.
+- M14: Introducción a la estructura `Mientras` con proposiciones simples.
+- M15: Se presenta el uso del `Mientras` con proposiciones compuestas.
+- M16: Tip y estructura para evaluar por cual condición se "corta" el `Mientras`.
+- M17 a la M20: Misiones normales con todo lo aprendido hasta ahora.
 
-#### Capítulo 2: 
+#### Capítulo 2: El Valle de las Decisiones
 
-**Nombre**
 **Descripción**
-En este capítulo
+En este capítulo se pondran a prueba todo lo aprendido hasta el momento, con nuevas misiones con más dificultad y nuevas primitivas y objetos desbloqueables.
 
 **Temas referenciados**
-**Cantidad de misiones**
+Todos los del capítulo 1.
 
-- Misiones tutorial:
-- Misiones normales:
+**Lista de misiones**
 
-#### Capítulo 3
+- M21 a la M25: misiones normales
+- M26: Introducción a los `enemigos`.
+  - Se desbloquea la proposición `hayEnemigo`.
+  - Se desbloquea la primitiva `atacar`.
+- M27 a M32: misiones normales
+- M33 a M35: misiones de mayor dificultad
 
-**Nombre**
+#### Capítulo 3: Laberinto del Flujo
+
+**Descripción**
+En este capítulo tambien se tendrán nuevas misiones con más dificultad. No se desbloqueará ninguna primitiva u objeto.
+
+**Temas referenciados**
+Los mismos del capitulo 1.
+
+**Lista de misiones**
+- M36 a M49 misiones normales alternando dificultad.
+
+#### Capítulo 4: El Origen del Almacenamiento
+
 **Descripción**
 **Temas referenciados**
-**Cantidad de misiones**
 
-- Misiones tutorial:
-- Misiones normales:
+**Lista de misiones**
 
-#### Capítulo 4
+#### Capítulo 5: Las Ruinas del Recuerdo
 
-**Nombre**
 **Descripción**
 **Temas referenciados**
-**Cantidad de misiones**
 
-- Misiones tutorial:
-- Misiones normales:
+**Lista de misiones**
 
-#### Capítulo 5
+#### Capítulo 6: El Legado de Modularius
 
-**Nombre**
 **Descripción**
 **Temas referenciados**
-**Cantidad de misiones**
 
-- Misiones tutorial:
-- Misiones normales:
+**Lista de misiones**
 
-#### Capítulo 6
+#### Capítulo 7: La Prueba del Guardián de Algorismi
 
-**Nombre**
 **Descripción**
 **Temas referenciados**
-**Cantidad de misiones**
 
-- Misiones tutorial:
-- Misiones normales:
-
-#### Capítulo 7
-
-**Nombre**
-**Descripción**
-**Temas referenciados**
-**Cantidad de misiones**
-
-- Misiones tutorial:
-- Misiones normales:
+**Lista de misiones**
 
 #### Capítulo Final - El Santuario Algorismi
 
 **Nombre**
 **Descripción**
-**Temas referenciados**
+
 **Cantidad de misiones**
 
 - Misiones tutorial:
@@ -291,7 +307,7 @@ Estas son las instrucciones básicas (primitivas) del jugador disponibles en el 
 | Primitiva       | Descripción                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------------------- |
 | `avanzar`       | El jugador avanza a la siguiente celda en la dirección actual                                     |
-| `saltar`        | El jugador salta hacia 2 celdas adelante en la dirección actual                                   |
+| `saltar`        | El jugador salta hacia adelante (en la dirección actual) omitiendo una celda                      |
 | `atacar`        | El jugador ataca al enemigo en la celda frente a la posición actual                               |
 | `derecha`       | El jugador hace un giro de 90° a la derecha                                                       |
 | `recogerMoneda` | El jugador recoge, si existe, la moneda en la celda actual y suma +1 a las monedas de inventario. |
@@ -302,14 +318,14 @@ Estas son las instrucciones básicas (primitivas) del jugador disponibles en el 
 
 Las variables de juego son las variables relacionadas a los distintos elementos presentes en el escenario de juego que podrán ser evaluados solamente. Los objetos de inventario, de igual manera, podrán estar en el escenario y ser evaluados, utilizadas son los objetos que se pueden acumular en el inventario del jugador.
 
-| Variable   | Descripción                                                                                                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| hayMoneda  | Evalúa si existe una moneda en la celda actual, retorna verdadero o falso                                        |
-| hayLlave   | Evalúa si existe una llave en la celda actual, retorna verdadero o falso                                         |
-| hayEnemigo | Evalúa si hay un enemigo en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso   |
-| hayPozo    | Evalúa si hay un obstáculo en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso |
-| dimX       | Devuelve el valor de la posición actual en el eje X del escenario                                                |
-| dimY       | Devuelve el valor de la posición actual en el eje Y del escenario                                                |
+| Variable     | Descripción                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `hayMoneda`  | Evalúa si existe una moneda en la celda actual, retorna verdadero o falso                                                 |
+| `hayLlave`   | Evalúa si existe una llave en la celda actual, retorna verdadero o falso                                                  |
+| `hayEnemigo` | Evalúa si hay un enemigo en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso            |
+| `hayFosa`    | Evalúa si hay una fosa (pozo, hoyo) en la siguiente celda desde la posición y dirección actual, retorna verdadero o falso |
+| `dimX`       | Devuelve el valor de la posición actual en el eje X del escenario                                                         |
+| `dimY`       | Devuelve el valor de la posición actual en el eje Y del escenario                                                         |
 
 ## 7. Estilo visual y arte
 
