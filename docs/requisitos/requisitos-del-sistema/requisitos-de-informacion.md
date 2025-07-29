@@ -109,7 +109,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 
 **Datos específicos**
 
-- Id de docente (que sería el Id de usuario)
+- Id de docente (Id de usuario)
 - Nombre/s y Apellido/s del docente
 - Género (Masculino, Femenino u Otro)
 - Institucion/es a la que pertenece el docente

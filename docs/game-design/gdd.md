@@ -1,7 +1,7 @@
 # Game Design Document
 
-**Versión:** 2.1
-**Fecha:** 11/07/2025
+**Versión:** 2.2
+**Fecha:** 29/07/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -12,7 +12,7 @@ El título del juego será "Algoritmia".
 
 ## 2. Resumen del juego
 
-Algoritmia es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas codificando y visualizando tu propio algoritmo. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos con tu propio algoritmo diseñado a tu manera para completar la misión y aprendiendo en el proceso.
+Algoritmia es un videojuego que forma parte de la Plataforma Gamificada Algoritmia (PGA). Es un videojuego en donde aprenderás algoritmos, lógica y estructuras de control resolviendo problemas diseñando y visualizando la ejecución tu propio algoritmo. Deberás enfrentarte a desafíos, recolectar y usar objetos, luchar contra enemigos y evitar obstáculos con tu propio algoritmo diseñado a tu manera para completar la misión y aprendiendo en el proceso.
 
 ## 3. Concepto y pilares de diseño
 
@@ -30,20 +30,23 @@ Algoritmia tendrá un pseudocodigo gamificado llamado _PGAScript_ compuesto con 
 
 ### 3.3 Aprendizaje continuo con feedback inmediato
 
-Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño del algoritmo para resolver la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar el algoritmo propuesto en base a lo siguiente:
-
-- Errores de sintaxis.
-- Redundancia de instrucciones.
-- Redundancia de estructuras de control.
-- Intento de utilizar una variables no declarada.
-- Variables declaradas pero no utilizadas.
-- Procedimientos mal definidos o mal invocados.
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño del algoritmo para resolver la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar el algoritmo propuesto, asi como tambien la recopilación de datos de los errores frecuentes para la toma de decisiones o refuerzo de contenidos a posteriori por parte de los docentes.
 
 ## 4. Descripción del juego
 
-Algoritmia es un videojuego de aventura estilo RPG con vista isométrica en donde el jugador tendrá que completar misiones divididas en capítulos temáticos donde en cada capitulo se enfocará en un concepto de las bases de la programación: algoritmos, lógica, estructuras de control, variables y procedimientos.
+Algoritmia es un videojuego de aventura con estética RPG con vista isométrica en donde el jugador tendrá que completar misiones divididas en capítulos temáticos diseñados y enfocados los conceptos base de la programación. El alcanse del videojuego abarcará los conceptos de:
 
-En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando pseudocodigo gamificado _PGAScript_ compuesto con primitivas, estructuras de control, manejo de variables y procedimientos pero tomando un enfoque estilo RPG con acciones, estrategias, objetos y habilidades especiales que permitirán al jugador diseñar sus propios algoritmos para poder completar las misiones, visualizando en tiempo real la ejecución del algoritmo en el escenario de la misión.
+- Algoritmos y secuencia de pasos
+- Lógica proposicional
+  - Proposiciones simples y compuestas
+  - Operadores lógicos: OR, AND, NOT
+  - Operadores matemáticos: suma (+), resta (-), multiplicación (*), división (/) y módulo (mod).
+  - Comparadores relacionales: <, >, ==, <=, >=, !=
+- Estructuras de control (Si-Sino, Mientras y Repetir)
+- Declaración y asignación de variables (globales y locales)
+- Procedimientos sin parámetros o con parámetros de: entrada, salida y entrada/salida.
+
+En cada misión, el jugador deberá resolver un problema con reglas y condiciones específicas utilizando pseudocodigo gamificado _PGAScript_ compuesto con primitivas, estructuras de control, manejo de variables y procedimientos pero tomando un enfoque estilo RPG con acciones, habilidades especiales y objetos que permitirán al jugador diseñar sus propios algoritmos para poder completar las misiones, visualizando en tiempo real la ejecución del algoritmo en el escenario de la misión.
 
 El objetivo de Algoritmia es que el jugador pueda lograr el aprendizaje continuo de las bases de la programación. Para ello, el videojuego ofrecerá la documentación de _PGAScript_ en todo momento, ayudas al jugador para detectar y corregir errores de manera sencilla y lo más importante: feedback inmediato en forma de sugerencias y optimizaciones formativas y explicativas para mejorar el algoritmo propuesto.
 
@@ -223,6 +226,7 @@ En este capítulo tambien se tendrán nuevas misiones con más dificultad. No se
 Los mismos del capitulo 1.
 
 **Lista de misiones**
+
 - M36 a M49 misiones normales alternando dificultad.
 
 #### Capítulo 4: El Origen del Almacenamiento

@@ -1,7 +1,7 @@
 # Documento de Visión
 
-**Versión:** 1.6
-**Fecha:** 29/06/2025
+**Versión:** 2.0
+**Fecha:** 29/07/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -14,7 +14,7 @@ El proposito de este documento es proporcionar la información necesaria del pro
 
 ### 1.2 Presentación general
 
-El presente proyecto se trata del desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", que permitirá a los alumnos aprender algoritmos, lógica y estructuras de control incorporando “Gamificación” con mecánicas y componentes propios de los videojuegos para el aprendizaje y luciendo una estética visual de “Pixel Art”. Además, para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos.
+El presente proyecto se trata del desarrollo de una plataforma de aprendizaje denominada "Plataforma Gamificada 'Algoritmia' (PGA)", que permitirá a los alumnos aprender algoritmos, lógica y estructuras de control incorporando “Gamificación” con mecánicas y componentes propios de los videojuegos para el aprendizaje y luciendo una estética visual de “Pixel Art”. Además, para los docentes permitirá el seguimiento académico exhaustivo de cada uno de los alumnos y el sistema podrá ser adaptado e incluido a cualquier institución educativa.
 
 ### 1.3 Participantes del proyecto
 
@@ -122,10 +122,10 @@ Teniendo en cuenta la situación actual y la problemática, se realizará una pr
 
 La solución estará compuesta por dos aplicaciones separadas pero integradas:
 
-- Un **videojuego independiente**, desarrollado con Godot y GDScript, orientado exclusivamente a los alumnos. Esta aplicación permite la resolución de misiones prediseñadas en un entorno con narrativa y mecánicas lúdicas, funcionando de forma offline y sincronizando el progreso académico a posteriori.
-- Una **plataforma web administrativa**, destinada a docentes y administradores. Esta le permitirá a los docentes hacer seguimiento del progreso de los alumnos, generar reportes y crear sesiones de refuerzo de contenidos. Para el administrador, le permitirá gestionar instituciones, cursos, asignación de docentes a los cursos y auditoría.
+- Un **videojuego independiente**, desarrollado con Godot y GDScript, orientado exclusivamente a los alumnos. Este videojuego estará diseñado con una historia y narrativa dividida en capítulos temáticos y permitirá la resolución de misiones prediseñadas en un entorno con narrativa y mecánicas lúdicas, funcionando de forma offline y sincronizando el progreso académico a posteriori.
+- Una **plataforma web**, destinada a docentes, administradores y en parte a los alumnos también. Esta le permitirá a los docentes hacer seguimiento del progreso de los alumnos, generar reportes y crear sesiones de refuerzo de contenidos. Para el administrador, le permitirá gestionar instituciones, cursos, asignación de docentes a los cursos y auditoría. Para los alumnos, permitirá el registro e inicio de sesión mediante Google, consulta de estadísticas y descarga del videojuego.
 
-Ambas aplicaciones compartirán la misma base de datos, permitiendo que los datos de avance y resultados obtenidos por los estudiantes en el videojuego se reflejen luego en la plataforma web. El videojuego tambien funcionará de manera offline, permitiendo a los alumnos resolver misiones aun sin conexión. Una vez que se disponga de acceso a Internet, la aplicación sincronizará automáticamente el progreso acumulado con el backend, permitiendo que los datos estén disponibles en la parte web.
+Ambas aplicaciones estarán conectadas a la misma base de datos, permitiendo que los datos de avance y resultados obtenidos por los estudiantes en el videojuego se reflejen luego en la plataforma web. El videojuego tambien funcionará de manera offline, permitiendo a los alumnos resolver misiones aun sin conexión. Una vez que se disponga de acceso a Internet, la aplicación sincronizará automáticamente el progreso acumulado con el backend, permitiendo que los datos estén disponibles en la parte web.
 
 #### La gamificación
 
@@ -151,9 +151,9 @@ El pixel art es un estilo artístico digital utilizado para crear imágenes con 
 El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
 **Para alumnos**:
 
-- Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de ejercicios y ejecución del mismo mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
-- Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear más misiones y habilidades manteniendo la participación y motivación en utilizar el sistema.
-- El sistema detectará los errores cometidos y propondrá mejoras al algoritmo, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras.
+- Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de misiones y ejecución en tiempo real de sus algoritmos mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
+- Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear nuevas misiones y habilidades manteniendo la participación y motivación en utilizar el sistema.
+- El sistema detectará los errores cometidos y propondrá mejoras al algoritmo, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras, además de recopilar estos mismos datos para informar a los docentes acerca de las dificultades de los alumnos.
 
 **Para docentes**:
 
@@ -213,27 +213,27 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                            |
 | Comentarios | -                                                                                                                                                                                               |
 
-| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                                                                                     |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Analizar automáticamente el algoritmo del alumno e indicar errores de sintaxis, proveer ayudas para diseñar el algoritmo y posterior a la ejecución generar sugerencias de optimización, tales como reducción de primitivas o instrucciones redundantes y simplificación de estructuras. |
-| Estabilidad | Alta                                                                                                                                                                                                                                                                                     |
-| Comentarios | -                                                                                                                                                                                                                                                                                        |
+| OBJ-04      | Proveer feedback formativo inmediato                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Analizar automáticamente el algoritmo del alumno e indicar errores de sintaxis, proveer ayudas para diseñar el algoritmo y posterior a la ejecución generar sugerencias de optimización, tales como reducción de primitivas o instrucciones redundantes y simplificación de estructuras, asi como tambien permitir la recopilación de dichos errores para que el docente pueda estar al tanto de las dificultades individuales de cada alumno |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Comentarios | -                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-| OBJ-05      | Proveer seguimiento académico exhaustivo                                                                                                                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Desarrollar un tablero de progreso y reportes con filtros para docentes que muestre el progreso individual y grupal de los alumnos pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma |
-| Estabilidad | Alta                                                                                                                                                                                                                      |
-| Comentarios | Los docentes podrán consultar el progeso tanto en la historia en general como en cada capítulo de la historia                                                                                                             |
+| OBJ-05      | Proveer seguimiento académico exhaustivo                                                                                                                                                                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descripción | Desarrollar un tablero de progreso y reportes con filtros para docentes que muestre el progreso individual y grupal de los alumnos pudiendo así identificar a los alumnos atrasados y con poca actividad en la plataforma, asi como tambien las dificultades de cada uno |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                     |
+| Comentarios | Los docentes podrán consultar el progeso tanto en la historia en general como en cada capítulo de la historia                                                                                                                                                            |
 
-| OBJ-06      | Generar reportes semanales y sesiones de refuerzo automáticos                                                                                                                                                                                                                                                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Descripción | Configurar reportes automáticos semanales para que el docente pueda visualizar el progreso y rendimiento semanal de los alumnos de forma individual y grupal. En conjunto, implementar detección automática de alumnos con menor progreso y generar de una sesión de refuerzo de contenidos para la siguiente clase presencial |
-| Estabilidad | Media                                                                                                                                                                                                                                                                                                                          |
-| Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                       |
+| OBJ-06      | Generar reportes semanales y sesiones de refuerzo automáticos                                                                                                                                                                                                                                                                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Configurar reportes automáticos semanales para que el docente pueda visualizar el progreso y rendimiento semanal de los alumnos de forma individual y grupal. En conjunto, implementar detección automática de alumnos con menor progreso, inactividad y dificultades y generar de una sesión de refuerzo de contenidos para la siguiente clase |
+| Estabilidad | Media                                                                                                                                                                                                                                                                                                                                           |
+| Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                                        |
 
 | OBJ-07      | Gestión Académica                                                                                                                                                                                                                       |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda optar por incorporar y utilizar el sistem y permitir que los alumnos puedan unirse a un curso mediante nombre del curso y contraseña    |
+| Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda incorporar y utilizar el sistema en su metodología de enseñanza                                                                         |
 | Estabilidad | Alta                                                                                                                                                                                                                                    |
 | Comentarios | El rol de administrador se encargará de la gestión de instituciones, cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
@@ -263,19 +263,24 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 ### 3.3 Modulos del sistema
 
-#### 3.3.1 Funcionales
+#### 3.3.1 Plataforma web
+
+**Funcionales**
 
 - Gestión de usuarios
-- Banco de ejercicios
-- Gamificación
-- Programación, ejecución y feedback
-- Gestión Docente
-- Gestión Académica
+- Gestión de instituciones
+- Gestión de cursos
+- Gestión de docentes
+- Seguimiento académico
 
-#### 3.3.2 No Funcionales
+**No funcionales**
 
 - Seguridad y autenticación
 - Auditoría
+
+#### 3.3.2 Videojuego
+
+No se divide en módulos como un sistema tradicional. Consulte el Game Design Document ubicado en `docs/game-design/gdd.md` para obtener la información necesaria de todas las funcionalidades y componentes de diseño del videojuego.
 
 ### 3.4 Alcance y Limitaciones
 
@@ -283,28 +288,9 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acceso al sistema:
 
-- **Administrador**: Acceso a la gestión de instituciones y cursos, dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
+- **Administrador**: Acceso a los módulos de gestión de instituciones, cursos, y docentes para dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
 - **Alumno**: Acceso en la web requerido para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego para resolver las misiones, recibir feedback y progresar en la historia.
-- **Docente**: Acceso principal al módulo de Gestión Docente, donde podrá realizar los reportes, consultar el estado de avance de los alumnos, generar sesiones de refuerzo y administrar sus cursos.
-
-#### 3.4.2 Banco de ejercicios
-
-Para el desarrollo del sistema, en una primera versión, NO se tomarán todos los temas de la materia, debido al tiempo de desarrollo disponible para el mismo. Por recomendación y solicitud de los profesores, los conceptos más importantes que si o si se deben afianzar y solidificar:
-
-- Algoritmos y secuencia de pasos
-- Lógica proposicional
-  - Proposiciones simples y compuestas
-  - Operadores lógicos: OR, AND, NOT
-  - Operadores matemáticos: +, -, \*, /
-  - Comparadores relacionales: <, >, ==, <=, >=, !=
-- Estructuras de control (Si-Sino, Mientras y Repetir)
-
-Adicionalmente, también se abordará los conceptos de:
-
-- Variables (globales y locales)
-- Procedimientos sin parámetros o con parámetros de entrada, salida y entrada/salida.
-
-Como este módulo se implementará en el videojuego, para obtener información más precisa y completa consultar el Game Design Document ubicado en `docs/game-design/gdd.md`
+- **Docente**: Acceso principal y completo al módulo de Seguimiento académico donde podrá realizar los reportes, consultar el estadísticas de progreso de los alumnos, administrar sesiones de refuerzo y acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de alumnos.
 
 #### 3.4.4 Gamificación
 
