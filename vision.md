@@ -292,14 +292,33 @@ En la gestión de usuarios, se tendrán tres roles diferentes que servirán para
 - **Alumno**: Acceso en la web requerido para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego para resolver las misiones, recibir feedback y progresar en la historia.
 - **Docente**: Acceso principal y completo al módulo de Seguimiento académico donde podrá realizar los reportes, consultar el estadísticas de progreso de los alumnos, administrar sesiones de refuerzo y acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de alumnos.
 
+#### 3.4.2 Gestión de instituciones
 
-#### 3.4.6 Gestion Docente
+Este módulo del sistema estará controlado unicamente por el administrador del sistema.
+El administrador podrá dar de alta, modificar y dar de baja las instituciones que soliciten el uso del sistema, indicando: Nombre de la institución, dirección y contacto: teléfono y email.
+
+#### 3.4.3 Gestión de cursos
+
+Este modulo del sistema estará controlado en su mayor medida por el administrador del sistema
+
+El administrador del sistema será encargado de dar de alta los cursos del sistema indicando: Nombre del curso, institución, modalidad (presencial, virtual o mixta) y una contraseña incial para el ingreso al curso por parte de los alumnos. El administrador tambien se encargará de asignar a los docentes a sus cursos correspondientes o remover un docente de un curso.
+
+El docente también tendra acceso parcial al módulo de cursos con las siguientes funcionalidades:
+
+**Definición de días y horarios de cursada**
+Los docentes podrán configurar los días, horarios y modalidad (presencial, virtual o mixta) de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
+
+****
+
+#### 3.4.4 Gestión de docentes
+
+
+El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución/es a la que pertenece y género (para el avatar demostrativo).
+
+#### 3.4.5 Seguimiento académico
 
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
-##### Definición de días y horarios de cursada
-
-Los docentes podrán configurar los días, horarios y modalidad (presencial, virtual o mixta) de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
 
 ##### Habilitación de capítulos
 
@@ -401,20 +420,7 @@ Para que la sesión sea válida, uno de los docentes a cargo del curso deberá c
    1. **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
    2. **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
 
-#### 3.4.7 Gestión Académica
-
-Este modulo del sistema estará controlado en su mayor medida por el administrador del sistema, donde tendrá las siguientes funcionalidades:
-
-**ABM Instituciones**
-El administrador podrá dar de alta, modificar y dar de baja las instituciones que soliciten el uso del sistema, indicando: Nombre de la institución, dirección y contacto: teléfono y email.
-
-**ABM Cursos**
-El administrador del sistema será encargado de dar de alta los cursos del sistema indicando: Nombre del curso, institución, modalidad (presencial, virtual o mixta) y una contraseña incial para el ingreso al curso por parte de los alumnos. El administrador tambien se encargará de asignar a los docentes a sus cursos correspondientes o remover un docente de un curso.
-
-**ABM Docentes**
-El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución/es a la que pertenece y género (para el avatar demostrativo).
-
-#### 3.4.7 Seguridad y autenticación
+#### 3.4.6 Seguridad y autenticación
 
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
 
@@ -438,7 +444,7 @@ El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden reg
 - Luego, el sistema envía automáticamente el usuario y contraseña inciales del docente al correo declarado.
 - El inicio de sesión en la web del docente solo será por usuario y contraseña (sin Google).
 
-#### 3.4.8 Auditoría
+#### 3.4.7 Auditoría
 
 Este módulo estará principalmente disponible para el rol **administrador**, que es quien supervisa el uso y funcionamiento general de la plataforma.
 
@@ -484,7 +490,7 @@ El administrador accederá a una sección de Auditoría (por ejemplo, dentro del
 - Los registros no deben poder editarse ni eliminarse por ningún usuario.
 - Los logs se almacenarán en una tabla especial en la base de datos con acceso restringido.
 
-### 3.5 Exclusiones del sistema
+### 3.5 Exclusiones de la plataforma web
 
 Con el alcance del proyecto definido, se listarán tambien algunas funcionalidades que el sistema NO INCLUIRÁ en la versión final del producto a entregar el 15/11/2025. Que las siguientes funcionalidades listadas aquí no se incluyan en el proyecto no significa que no estén consideradas para implementarse en un futuro.
 
@@ -493,40 +499,20 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
 - Administrador
   - No existirá una interfaz avanzada para análisis estadístico de gestión global del sistema.
 - Alumno
-  - No podrá cambiar de curso luego de inscribirse.
+  - No podrá cambiar de curso. El alumno puede estar inscripto a un solo curso.
   - No podrá modificar su nombre de usuario o correo tras el registro (solo cambio de contraseña).
 - Docente
   - No podrá crear ejercicios personalizados ni modificar el banco de ejercicios.
 
-#### 3.5.2 Banco de ejercicios
+#### 3.5.2 Gestión de instituciones
 
-- No se incluirán **temas de estructuras de datos avanzadas**: strings, arrays, matrices, registros, arrays de registros y archivos.
-- No se implementará un **editor visual de creación de ejercicios** (por ejemplo, arrastrar y soltar condiciones).
-- No se permitirán **ejercicios grupales colaborativos**.
-- No se podrán **personalizar los ejercicios** ni por docentes ni por administradores.
-- No se incluirá la funcionalidad de evaluaciones o exámenes.
-
-#### 3.5.3 Gamificación
-
-- No se incluirán tiendas de ítems o recompensas.
-- No habrá modificación o personalización de avatar (ropa, color de cabello, accesorios).
-- No se implementarán eventos temporales o dinámicas gamificadas adicionales (ej: misiones diarias, recompensas por login).
-- No se incluirá un ranking público de alumnos ni competencia directa entre ellos.
-
-#### 3.5.4 Programación, ejecución y feedback
-
-- No se incluirán múltiples lenguajes de programación (se trabaja con un único lenguaje gamificado).
-- No se podrá configurar la velocidad de ejecución normal.
-- No se permitirá guardar múltiples soluciones para un mismo ejercicio.
-- No se mostrarán estadísticas detalladas por algoritmo (tiempo de ejecución, memoria, etc.).
-- El feedback se centrará en sugerencias básicas de optimización y errores de sintaxis, no en explicación semántica o pedagógica demaciado profunda.
-- No se implementarán tests automatizados personalizados (test cases hechos por docentes o alumnos).
-
-#### 3.5.5 Gestión Docente
+#### 3.5.2 Gestión de cursos
 
 - No se permitirá crear ejercicios específicos por curso.
-- No se podrán crear distintas configuraciones de misión por curso
+- No se podrán crear distintas configuraciones de misión por curso.
 - No se podrán configurar parámetros finos de gamificación (porcentaje de XP, cantidad de estrellas, etc.)
+
+#### 3.5.2 Gestión de docentes
 
 #### 3.5.6 Gestión Académica
 
@@ -543,9 +529,33 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
 #### 3.5.7 Auditoría
 
 - No habrá visualización avanzada con gráficos o dashboards de auditoría.
-- No se podrán aplicar **filtros múltiples combinados avanzados** en la vista de logs.
-- No se auditarán eventos de lectura (por ejemplo, "ver estadísticas" o "consultar curso").
 - No se incluirán alertas automatizadas por eventos sospechosos o fallos de seguridad.
+
+#### 3.6 Exclusiones del videojuego
+
+##### Misiones
+
+- No se incluirán **temas de estructuras de datos avanzadas**: strings, arrays, matrices, registros, arrays de registros y archivos.
+- No se implementará un **editor visual de creación de ejercicios** (por ejemplo, arrastrar y soltar condiciones).
+- No se permitirán **ejercicios grupales colaborativos**.
+- No se podrán **personalizar los ejercicios** ni por docentes ni por administradores.
+- No se incluirá la funcionalidad de evaluaciones o exámenes.
+
+#### Componentes
+
+- No se incluirán tiendas de ítems o recompensas.
+- No habrá modificación o personalización de avatar (ropa, color de cabello, accesorios).
+- No se implementarán eventos temporales o dinámicas gamificadas adicionales (ej: misiones diarias, recompensas por login).
+- No se incluirá un ranking público de alumnos ni competencia directa entre ellos.
+
+#### Diseño de algoritmos y ejecución
+
+- No se incluirán múltiples lenguajes de programación (se trabaja con un único lenguaje gamificado).
+- No se podrá configurar la velocidad de ejecución normal.
+- No se permitirá guardar múltiples soluciones para un mismo ejercicio.
+- No se mostrarán estadísticas detalladas por algoritmo (tiempo de ejecución, memoria, etc.).
+- El feedback se centrará en sugerencias básicas de optimización y errores de sintaxis, no en explicación semántica o pedagógica demaciado profunda.
+- No se implementarán tests automatizados personalizados (test cases hechos por docentes o alumnos).
 
 ---
 
