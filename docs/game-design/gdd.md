@@ -16,7 +16,7 @@ Algoritmia es un videojuego que forma parte de la Plataforma Gamificada Algoritm
 
 ## 3. Concepto y pilares de diseño
 
-La escencia del videojuego y lo que quiero transmitir se basan en estos 3 pilares:
+La escencia del videojuego y lo que se quiere transmitir se basan en estos 3 pilares:
 
 ### 3.1 Pixel Art
 
@@ -30,17 +30,17 @@ Algoritmia tendrá un pseudocodigo gamificado llamado _PGAScript_ compuesto con 
 
 ### 3.3 Aprendizaje continuo con feedback inmediato
 
-Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño del algoritmo para resolver la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar el algoritmo propuesto, asi como tambien la recopilación de datos de los errores frecuentes para la toma de decisiones o refuerzo de contenidos a posteriori por parte de los docentes.
+Algoritma busca brindar aprendizaje continuo mediante feedback inmediato durante y post diseño del algoritmo para resolver la misión. Algoritmia analizará automáticamente el código del jugador y ofrecerá sugerencias y optimizaciones para mejorar el algoritmo propuesto, asi como tambien la recopilación de datos de los errores frecuentes individuales para la toma de decisiones o refuerzo de contenidos a posteriori por parte de los docentes.
 
 ## 4. Descripción del juego
 
-Algoritmia es un videojuego de aventura con estética RPG con vista isométrica en donde el jugador tendrá que completar misiones divididas en capítulos temáticos diseñados y enfocados los conceptos base de la programación. El alcanse del videojuego abarcará los conceptos de:
+Algoritmia es un videojuego de aventura con estética RPG con vista isométrica en donde el jugador tendrá que completar misiones divididas en capítulos temáticos diseñados y enfocados los conceptos base de la programación. El alcance del videojuego abarcará los conceptos de:
 
 - Algoritmos y secuencia de pasos
 - Lógica proposicional
   - Proposiciones simples y compuestas
   - Operadores lógicos: OR, AND, NOT
-  - Operadores matemáticos: suma (+), resta (-), multiplicación (*), división (/) y módulo (mod).
+  - Operadores matemáticos: suma (+), resta (-), multiplicación (\*), división (/) y módulo (mod).
   - Comparadores relacionales: <, >, ==, <=, >=, !=
 - Estructuras de control (Si-Sino, Mientras y Repetir)
 - Declaración y asignación de variables (globales y locales)
@@ -54,14 +54,16 @@ El objetivo de Algoritmia es que el jugador pueda lograr el aprendizaje continuo
 
 Como mencioanmos, el pseudocodigo gamificado _PGAScript_ estará compuesto por primitivas, estructuras de control y manejo de variables y procedimientos. Pero, para darle un tono de videojuegos, cada uno de estos elementos de la programación tradicional se representarán con componentes de videojuegos estilo RPG:
 
-- **Primitivas -> "Acciones"**: las acciones representarán a las primitivas básicas (atómicas) que el jugador podrá realizar.
-- **Estructuras de control -> Estrategias**: las estrategias representan las estructuras de control básicas: Si-Sino, Mientras y Repetir donde se podrán manejar proposiciones simples o compuestas utilizando operadores matemáticos básicos y operadores relacionales.
-- **Variables -> Objetos**: los objetos representarán a las variables del juego. Se tendrán dos tipos de variables:
-  - Variables de juego relacionadas al escenario y a los objetos de inventario del jugador.
-  - Variables globales y locales de tipo entero y tipo booleano que el jugador podrá declarar y asignar valores.
-- **Procedimientos -> Habilidades especiales**: las habilidades especiales representarán a los procedimientos. Se tendrán dos tipos de procedimientos:
+- **Primitivas -> "Acciones"**: las primitivas básicas serán representadas por diferentes "Acciones" que el personaje podrá realizar.
+- **Estructuras de control -> Habilidades especiales**: las estructuras de control básicas: Si-Sino, Mientras y Repetir serán representadas mediante "Habilidades especiales". Se podrán manejar proposiciones simples o compuestas utilizando operadores lógicos, matemáticos y/o comparadores relacionales.
+- **Variables**: Se tendrán dos tipos de variables:
+  - **Variables de juego**
+    - **Parámetros**: evalúa condiciones relacionadas a la configuración del escenario, como obstáculos, enemigos y objetos esparcidos.
+    - **Objetos de inventario**: evalúa las condiciones relacionadas a los objetos que tiene disponible el jugador en el inventario.
+  - **Variables globales y locales**: variables de tipo entero que el jugador podrá declarar, asignar valores y utilizar en el diseño del algoritmo.
+- **Procedimientos -> Habilidades especiales**: los procedimientos serán representados, también, mediante habilidades especiales. Se tendrán dos tipos de procedimientos:
   - **Procedimientos pre-diseñados** desbloqueables que el jugador podrá utilizar como "Habilidad especial"
-  - Procedimientos que el jugador podrá definir e invocar incluyendo o no parámetros de entrada, salida y entrada/salida en el diseño del algoritmo.
+  - **Procedimientos diseñados in game** que el jugador podrá definir e invocar durante el diseño del algoritmo incluyendo o no parámetros de entrada, salida y entrada/salida.
 
 Se especificará a mas detalle el diseño de _PGAScript_ en la sección _6.1 PGAScript_
 
@@ -115,8 +117,8 @@ El Core Loop principal del videojuego es:
 3. Seleccionar la misión deseada
 4. Diseñar un algoritmo para resolver la misión
 5. Ejecutar el algoritmo visualizando el efecto de cada instrucción en el escenario
-6. Si se completa la misión exitosamente, recibir una puntuación de hasta 3 estrellas y EXP.
-7. Recibir feedback formativo por parte del sistema para refactorizar y optimizar el algoritmo si se quiere.
+6. Si se completa la misión exitosamente, recibir una puntuación de hasta 3 estrellas y EXP correspondiente.
+7. Recibir feedback formativo por parte del sistema para refactorizar y optimizar el algoritmo si se quiere y recopilar los datos de errores para identificar dificultades.
 
 ## 5. Historia
 

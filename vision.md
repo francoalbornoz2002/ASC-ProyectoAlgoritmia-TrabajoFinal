@@ -298,7 +298,7 @@ Para crear el entorno basado en gamificación, se tendrán en cuenta los siguien
 
 ##### Narrativa
 
-La narrativa y trama del videojuego se desarrollará en el documento de diseño de juegi (Game Design Document) ubicado en `docs/game-design/gdd.md` sección _5.1 Narrativa_. Consúltelo para obtener más información.
+La narrativa y trama del videojuego se desarrollará en el documento de diseño de juego (Game Design Document) ubicado en `docs/game-design/gdd.md` sección _5.1 Narrativa_. Consúltelo para obtener más información.
 
 ##### Componentes
 
@@ -307,14 +307,13 @@ Se incorporarán varios componentes de videojuegos, explicando primero su signif
 Los componentes de gamificación a incorporar en el sistema son los siguientes:
 
 - **Misiones (ejercicios)**: una misión es una tarea la cual tiene que ser resuelta por un personaje jugador, o un grupo de estos, para conseguir una determinada recompensa. Estas misiones representarán los ejercicios a resolver de los contenidos dados, las cuales tendrán un enunciado de un problema con reglas específicas y un nivel de dificultad determinado entre: Fácil, Medio o Difícil.
-- **Acciones, estrategias, objetos y habilidades**
+- **Acciones, habilidades especiales y objetos**
 
   - **Acción**: Una acción es algo que el jugador puede hacer, como moverse o saltar. Las acciones representarán las primitivas que puede realizar el jugador.
-  - **Estrategia**: Una estrategia es una estrategia o conjunto de decisiones que el jugador aplica para adaptarse a una situación específica y superar un desafío. Las estrategias representarán las estructuras de control (Si-Sino, Mientras y Repetir).
-  - **Objetos**: Un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Los objetos representarán las variables.
-  - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a los procedimientos.
+  - **Habilidades especiales**: Una habilidad es una capacidad especial que tiene el jugador. Las habilidades especiales representarán a las estructuras de control (Si-Sino, Mientras y Repetir) y a los procedimientos.
+  - **Objetos**: Un objeto es un elemento que puede ser recolectado, utilizado, equipado o interactuado por el jugador. Los objetos representarán las variables de inventario del jugador.
 
-- **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas estrategias, habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, estrategias, habilidades y objetos.
+- **Niveles (progreso)**: en los videojuegos, los niveles sirven para representar el progreso y la experiencia de un personaje, así como para desbloquear nuevas estrategias, habilidades y mejoras. Subir de nivel significa que el personaje se vuelve más poderoso y capaz de enfrentar desafíos más grandes. Para el desarrollo del sistema, se utilizarán los niveles para desbloquear nuevas misiones, acciones, habilidades y objetos.
 - **Puntos de experiencia (XP)**: los puntos de experiencia (XP o EXP) son una medida de progreso y nivel de habilidad. Los puntos de experiencia se obtendrán y se acumulan al realizar ejercicios y permitirán al jugador subir de nivel y desbloquear nuevas misiones y habilidades.
 - **Puntuación en estrellas (evaluación)**: la puntuación en estrellas es un sistema de evaluación que utiliza estrellas para indicar el nivel de desempeño de un jugador al resolver una tarea o desafío, en este caso, una misión (ejercicio), siendo 3 estrellas la puntuación más alta, 2 estrellas puntuación media y 1 estrella la puntuación más baja. Dependiendo de la puntuación obtenida, le harán ganar más o menos experiencia al jugador.
 
