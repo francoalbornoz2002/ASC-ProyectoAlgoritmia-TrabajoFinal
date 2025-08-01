@@ -288,8 +288,8 @@ No se divide en módulos como un sistema tradicional. Consulte el Game Design Do
 
 En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acceso al sistema:
 
-- **Administrador**: Acceso a los módulos de gestión de instituciones, cursos, y docentes para dar de alta a los docentes, asignar docentes a los cursos correspondientes y consultas de auditoría.
-- **Alumno**: Acceso en la web requerido para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego para resolver las misiones, recibir feedback y progresar en la historia.
+- **Administrador**: Acceso a los módulos de gestión de instituciones, gestión de cursos, ABM de docentes, asignar o remover docentes a cursos correspondientes y consultas de auditoría.
+- **Alumno**: Acceso en la web para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego.
 - **Docente**: Acceso principal y completo al módulo de Seguimiento académico donde podrá realizar los reportes, consultar el estadísticas de progreso de los alumnos, administrar sesiones de refuerzo y acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de alumnos.
 
 #### 3.4.2 Gestión de instituciones
@@ -308,10 +308,10 @@ El docente también tendra acceso parcial al módulo de cursos con las siguiente
 **Definición de días y horarios de cursada**
 Los docentes podrán configurar los días, horarios y modalidad (presencial, virtual o mixta) de cursada de la materia por cada curso a su cargo. Esto le servirá al sistema para luego realizar las sesiones de refuerzo automáticas.
 
-****
+**Habilitación de capítulos**
+Los docentes podrán habilitar los capítulos de la historia a medida que se vayan dando los contenidos en la materia para garantizar una curva de aprendizaje controlada y seguimiento académico ordenado de los alumnos.
 
 #### 3.4.4 Gestión de docentes
-
 
 El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución/es a la que pertenece y género (para el avatar demostrativo).
 
@@ -319,14 +319,9 @@ El administrador del sistema podrá dar de alta, baja y modificar los datos los 
 
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
+**Visualización y reportes del progreso de alumnos**
 
-##### Habilitación de capítulos
-
-Los docentes podrán habilitar los capítulos de la historia a medida que se vayan dando los contenidos en la materia para garantizar una curva de aprendizaje controlada y seguimiento académico ordenado de los alumnos.
-
-##### Visualización y reportes del estado de avance de los alumnos
-
-Los docentes podrán consultar y realizar reportes del estado de avance tanto de la historia en general como de los capítulos específicos de los diferentes cursos que tenga a cargo.
+Los docentes podrán consultar y realizar reportes del progreso de los alumnos tanto de la historia en general como de los capítulos específicos de los diferentes cursos que tenga a cargo.
 
 **Avance en la historia**
 En el apartado de historia general, se podrá visualizar:

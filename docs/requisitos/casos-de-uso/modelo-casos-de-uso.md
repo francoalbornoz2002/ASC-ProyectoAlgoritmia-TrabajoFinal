@@ -54,8 +54,12 @@ Entre sus funciones se destacan:
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
 
+---
+
 ### ACT-04 Google OAuth 2.0
 Representa al servicio externo de autenticación de Google utilizado por la plataforma web para permitir el inicio de sesión o registro de alumnos mediante sus cuentas de Google. Es un actor externo que colabora en los procesos de autenticación sin intervención directa del usuario sobre sus mecanismos internos.
+
+---
 
 ### ACT-05 Videojuego
 Representa al videojuego desarrollado en Godot que enviará los datos de progreso de cada alumno a la plataforma web para que sea visualizado por los docentes. Recibirá los datos de la web en caso de que se tenga que sincronizar el progreso de un alumno en el videojuego.
@@ -91,80 +95,60 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 - **UC-13** Baja de curso  
   - INCLUDE: **UC-12** Buscar curso  
 - **UC-14** Asignar docente a curso  
-  - INCLUDE: **UC-15** Buscar docente  
+  - INCLUDE: **UC-15** Buscar docente
+- **UC-16** Remover docente de curso
+  - INCLUDE: **UC-15** Buscar docente
 
 #### Auditoría
 
-- **UC-16** Consultar registros de auditoría
-  - EXTEND: **UC-59** Exportar registros de auditoría
+- **UC-17** Consultar registros de auditoría
+  - EXTEND: **UC-18** Exportar registros de auditoría
 
 ---
 
 ### Docentes
 
-#### Gestionar seguimiento académico
+#### Seguimiento académico
 
-- **UC-17** Consultar progreso de alumnos
-  - EXTEND: **UC-18** Ver progreso general (historia)
-  - EXTEND: **UC-19** Ver progreso por capítulo
-- **UC-20** Generar reporte de progreso de alumnos
+- **UC-19** Consultar progreso de alumnos
+  - EXTEND: **UC-20** Ver progreso general (historia)
+  - EXTEND: **UC-21** Ver progreso por capítulo
+- **UC-22** Generar reporte de progreso de alumnos
 
 #### Gestionar sesiones de refuerzo
-- **UC-21** Crear sesión de refuerzo
-- **UC-22** Modificar sesión de refuerzo
-  - INCLUDE: **UC-23** Buscar sesión de refuerzo
-- **UC-24** Cancelar sesión de refuerzo
-  - INCLUDE: **UC-23** Buscar sesión de refuerzo 
-- **UC-25** Aceptar sesión de refuerzo automática
+- **UC-23** Crear sesión de refuerzo
+- **UC-24** Modificar sesión de refuerzo
+  - INCLUDE: **UC-25** Buscar sesión de refuerzo
+- **UC-26** Cancelar sesión de refuerzo
+  - INCLUDE: **UC-25** Buscar sesión de refuerzo 
+- **UC-27** Aceptar sesión de refuerzo automática
 
 #### Gestionar cursos (docente)
-- **UC-26** Definir días y horarios del curso
-- **UC-27** Cambiar contraseña de acceso a curso
-- **UC-28** Aprobar solicitud de ingreso al curso
-- **UC-29** Habilitar capítulo
-  - INCLUDE: **UC-30** Buscar capítulo
+- **UC-28** Definir días y horarios del curso
+- **UC-29** Cambiar contraseña de acceso a curso
+- **UC-30** Aprobar solicitud de ingreso al curso
+- **UC-31** Habilitar capítulo
+  - INCLUDE: **UC-32** Buscar capítulo
 
 #### Gestión de cuenta
 - **UC-05** Iniciar sesión
-- **UC-31** Modificar datos personales
+- **UC-33** Modificar datos personales
 
 ### Alumnos
 
 #### Gestión de cuenta
-- **UC-32** Registrarse en la plataforma
-  - EXTEND: **UC-33** Registro normal
-  - EXTEND: **UC-34** Registro con Google
-- **UC-35** Iniciar sesión en la plataforma web
-  - EXTEND: **UC-36** Iniciar sesión normal
-  - EXTEND: **UC-37** Inicar sesión con Google
-- **UC-31** Modificar datos personales
-- **UC-38** Ver progreso en la web
+- **UC-34** Registrarse en la plataforma
+  - EXTEND: **UC-35** Registro normal
+  - EXTEND: **UC-36** Registro con Google
+- **UC-37** Iniciar sesión en la plataforma web
+  - EXTEND: **UC-38** Iniciar sesión normal
+  - EXTEND: **UC-39** Inicar sesión con Google
+- **UC-33** Modificar datos personales
+- **UC-40** Ver progreso
 
 #### Cursos
-- **UC-39** Solicitar ingreso a curso
-- **UC-40** Confirmar asistencia a sesión de refuerzo
-
-#### Videojuego
-- **UC-41** Iniciar sesión en el videojuego
-- **UC-42** Resolver misión
-  - INCLUDE: **UC-43** Seleccionar misión
-  - INCLUDE: **UC-44** Diseñar solución con lenguaje gamificado
-    - INCLUDE: **UC-45** Agregar acción
-    - EXTEND: **UC-46** Declarar variable
-    - EXTEND: **UC-47** Asignar valor a variable
-    - EXTEND: **UC-48** Agregar estructura condicional
-    - EXTEND: **UC-49** Agregar estructura repetitiva
-    - EXTEND: **UC-50** Agregar procedimiento
-    - EXTEND: **UC-51** Consultar manual del heroe
-  - INCLUDE: **UC-52** Ejecutar misión
-  - INCLUDE: **UC-53** Evaluar misión
-  - INCLUDE: **UC-54** Generar feedback
-    - EXTEND: **UC-55** Aceptar feedback
-- **UC-56** Consultar feedback
-  - INCLUDE: **UC-43** Seleccionar misión
-- **UC-57** Ver progreso en el juego
-- **UC-58** Consultar inventario
-
+- **UC-41** Solicitar ingreso a curso
+- **UC-42** Confirmar asistencia a sesión de refuerzo
 -->
 
 
