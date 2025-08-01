@@ -270,7 +270,6 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 - Gestión de usuarios
 - Gestión de instituciones
 - Gestión de cursos
-- Gestión de docentes
 - Seguimiento académico
 
 **No funcionales**
@@ -311,11 +310,7 @@ Los docentes podrán configurar los días, horarios y modalidad (presencial, vir
 **Habilitación de capítulos**
 Los docentes podrán habilitar los capítulos de la historia a medida que se vayan dando los contenidos en la materia para garantizar una curva de aprendizaje controlada y seguimiento académico ordenado de los alumnos.
 
-#### 3.4.4 Gestión de docentes
-
-El administrador del sistema podrá dar de alta, baja y modificar los datos los docentes del sistema con los datos correspondientes: nombre completo, institución/es a la que pertenece y género (para el avatar demostrativo).
-
-#### 3.4.5 Seguimiento académico
+#### 3.4.4 Seguimiento académico
 
 En este módulo del sistema, los docentes dispondrán de diferentes funcionalidades para realizar el seguimiento a sus alumnos.
 
@@ -415,7 +410,7 @@ Para que la sesión sea válida, uno de los docentes a cargo del curso deberá c
    1. **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
    2. **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
 
-#### 3.4.6 Seguridad y autenticación
+#### 3.4.5 Seguridad y autenticación
 
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
 
@@ -439,7 +434,7 @@ El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden reg
 - Luego, el sistema envía automáticamente el usuario y contraseña inciales del docente al correo declarado.
 - El inicio de sesión en la web del docente solo será por usuario y contraseña (sin Google).
 
-#### 3.4.7 Auditoría
+#### 3.4.6 Auditoría
 
 Este módulo estará principalmente disponible para el rol **administrador**, que es quien supervisa el uso y funcionamiento general de la plataforma.
 
@@ -500,24 +495,22 @@ Con el alcance del proyecto definido, se listarán tambien algunas funcionalidad
   - No podrá crear ejercicios personalizados ni modificar el banco de ejercicios.
 
 #### 3.5.2 Gestión de instituciones
-
-#### 3.5.2 Gestión de cursos
-
-- No se permitirá crear ejercicios específicos por curso.
-- No se podrán crear distintas configuraciones de misión por curso.
-- No se podrán configurar parámetros finos de gamificación (porcentaje de XP, cantidad de estrellas, etc.)
-
-#### 3.5.2 Gestión de docentes
-
-#### 3.5.6 Gestión Académica
-
 - No se permitirá la importación/exportación masiva de alumnos o docentes por archivo.
-- No se incluirá funcionalidad para mensajes, anuncios o notificaciones escritas entre docentes y alumnos.
+
+#### 3.5.3 Gestión de cursos
+
+- No se permitirá crear misiones específicos por curso.
+- No se podrán crear distintas configuraciones de misiones por curso.
+- No se podrán configurar parámetros como el porcentaje de XP o cantidad de estrellas de puntuación por curso.
+
+#### 3.5.4 Seguimiento académico
+
+- No se incluirá funcionalidad para mensajes o anuncios escritos por docentes y alumnos dentro de la plataforma.
 
 #### 3.5.6 Seguridad y autenticación
 
 - No se incorporará autenticación mediante redes sociales externas como Facebook, X, GitHub, etc.
-- No se habilitará la verificación en dos pasos (2FA).
+- No se incorporará verificación en dos pasos (2FA).
 - No se integrará autenticación OAuth para docentes ni administradores (registro solo manual).
 - No se permitirán inicios de sesión simultáneos en múltiples dispositivos (se mantendrá simple).
 
