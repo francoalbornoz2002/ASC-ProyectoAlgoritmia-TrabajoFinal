@@ -279,7 +279,8 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 #### 3.3.2 Videojuego
 
-No se divide en módulos como un sistema tradicional. Consulte el Game Design Document ubicado en `docs/game-design/gdd.md` para obtener la información necesaria de todas las funcionalidades y componentes de diseño del videojuego.
+No se divide en módulos como un sistema tradicional. No se desarrollará ni diseñará como un sistema software tradicional y no se utilizarán metodologías de desarrollo de software tradicionales.
+Consulte el Game Design Document ubicado en `docs/game-design/gdd.md` para obtener la información necesaria de todas las funcionalidades y componentes de diseño del videojuego.
 
 ### 3.4 Alcance y Limitaciones
 
