@@ -1,7 +1,7 @@
 # Modelo de Casos de Uso
 
-**Versión:** 2.0
-**Fecha:** 08/07/2025
+**Versión:** 2.1
+**Fecha:** 01/08/2025
 **Autor(es):** Franco Andrés Albornoz
 
 ---
@@ -10,40 +10,34 @@
 
 ### ACT-01 Alumno
 
-Representa a los estudiantes que utilizarán el videojuego desarrollado en Godot como herramienta principal para practicar y afianzar los contenidos de la materia "Algoritmos y Estructuras de Datos I".
+Representa a los estudiantes que utilizarán el videojuego desarrollado en Godot como herramienta principal para practicar y afianzar los contenidos de la materia "Algoritmos y Estructuras de Datos I". En este caso, se realizará la descripcion de Alumno respecto a sus funcionalidades en la plataforma web.
 
 Los alumnos podrán registrarse en la plataforma web mediante un formulario tradicional o autenticarse con Google. Una vez registrados, inciarán sesión y se uniran a un curso ingresando un nombre de curso y contraseña provistos por el docente. Una vez unido a un curso, podrán descargar el videojuego e iniciar sesión con su usuario y contraseña para establecer sus datos y sincronizar el progreso que realicen.
 
-Dentro del videojuego, podrán:
+Dentro de la plataforma web, podrán realizar las siguientes acciones:
 
-- Consultar y resolver misiones gamificadas.
-- Recibir feedback formativo automático tras cada intento.
-- Obtener puntuaciones, experiencia y subir de nivel.
-- Desbloquear nuevas habilidades y capítulos de la historia según el progreso.
-- Consultar sus estadísticas personales dentro del juego.
-
-Adicionalmente, podrán acceder a la plataforma web para:
-
+- Registrarse e iniciar sesión con Google
 - Unirse a un curso
-- Cambiar la contraseña
-- Consultar recursos de apoyo (manual del héroe, tutoriales, etc.).
+- Cambiar la contraseña de usuario.
+- Consultar recursos de apoyo.
 - Ver estadísticas más detalladas de su rendimiento.
+- Descargar el videojuego para ejecutarlo en su PC.
 - Confirmar asistencia a sesiones de refuerzo, ya sea desde la web o a través del enlace recibido por correo electrónico.
 
 ---
 
 ### ACT-02 Docente
 
-Representa al personal docente encargado de dictar la materia y brindar seguimiento académico a los alumnos. Los docentes utilizarán exclusivamente la plataforma web, donde tendrán acceso a diversas funcionalidades de gestión académica.
+Representa al personal docente encargado de dictar la materia y brindar seguimiento académico a los alumnos. Los docentes utilizarán exclusivamente la plataforma web, donde tendrán acceso a diversas funcionalidades de seguimiento.
 
 Sus principales responsabilidades incluyen:
 
 - Gestionar los cursos a su cargo (asignados previamente por el administrador) de manera limitada.
   - Modificar la contraseña de acceso del curso para nuevos alumnos.
   - Validar y aceptar solicitudes de ingreso de alumnos a sus cursos.
-- Visualizar en tiempo real el avance y desempeño de sus alumnos (misiones resueltas, errores frecuentes, actividad reciente, etc.).
-- Generar reportes académicos filtrados por curso, capítulo o estudiante.
-- Programar sesiones de refuerzo para alumnos con bajo rendimiento o inactividad prolongada.
+- Visualizar en tiempo real el avance y desempeño de sus alumnos (misiones resueltas, dificultades específicas, actividad reciente, entre otros).
+- Generar reportes de progreso con diferentes filtros.
+- Programar sesiones de refuerzo para alumnos con bajo rendimiento, dificultades o inactividad prolongada.
 
 ---
 
@@ -62,6 +56,9 @@ En esta versión inicial, se prevé que exista un único administrador central. 
 
 ### ACT-04 Google OAuth 2.0
 Representa al servicio externo de autenticación de Google utilizado por la plataforma web para permitir el inicio de sesión o registro de alumnos mediante sus cuentas de Google. Es un actor externo que colabora en los procesos de autenticación sin intervención directa del usuario sobre sus mecanismos internos.
+
+### ACT-05 Videojuego
+Representa al videojuego desarrollado en Godot que enviará los datos de progreso de cada alumno a la plataforma web para que sea visualizado por los docentes. Recibirá los datos de la web en caso de que se tenga que sincronizar el progreso de un alumno en el videojuego.
 
 
 <!--
@@ -171,18 +168,9 @@ Representa al servicio externo de autenticación de Google utilizado por la plat
 -->
 
 
-## Diagrama de Casos de Uso - Videojuego
+## Diagrama de Casos de Uso
+
 ### DCU de alto nivel / Diagrama de subsistemas
-![DCU de alto nivel del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoAltoNivel.png)
-
-#### DCU del subsistema Gestión de cuenta
-![Subsistema Gestión de cuenta](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_GestionCuenta.png)
-
-#### DCU del subsistema Programación / Ejecución y Evaluación / Gestión de feedback
-![Subsistema Programación](./diagramas-casos-de-uso/videojuego/SUBSISTEMA_ProgramacionEjecucionEvaluacionFeedback.png)
-
-### DCU Expandido
-![DCU expandido del Videojuego](./diagramas-casos-de-uso/videojuego/DCU_VideojuegoExpandido.png)
 
 
 ## Diagrama de Casos de Uso – Plataforma Web
