@@ -129,28 +129,28 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 - **UC-30** Aprobar solicitud de ingreso al curso
 - **UC-31** Habilitar capítulo
   - INCLUDE: **UC-32** Buscar capítulo
-- UC-33 Finalizar capítulo
-  - INCLUDE: **UC-32** Buscar capítulo
+- **UC-33** Consultar dificultades de alumno
+  - INCLUDE: **UC-34** Buscar alumno
 
 #### Gestión de cuenta
 - **UC-05** Iniciar sesión
-- **UC-34** Modificar datos personales
+- **UC-35** Modificar datos personales
 
 ### Alumnos
 
 #### Gestión de cuenta
-- **UC-35** Registrarse
-  - EXTEND: **UC-36** Registro normal
-  - EXTEND: **UC-37** Registro con Google
-- **UC-38** Iniciar sesión
-  - EXTEND: **UC-39** Iniciar sesión normal
-  - EXTEND: **UC-40** Inicar sesión con Google
-- **UC-34** Modificar datos personales
-- **UC-41** Consultar mi progreso
+- **UC-36** Registrarse
+  - EXTEND: **UC-37** Registro normal
+  - EXTEND: **UC-38** Registro con Google
+- **UC-39** Iniciar sesión
+  - EXTEND: **UC-40** Iniciar sesión normal
+  - EXTEND: **UC-41** Inicar sesión con Google
+- **UC-35** Modificar datos personales
+- **UC-42** Consultar mi progreso
 
 #### Cursos
-- **UC-42** Solicitar ingreso a curso
-- **UC-43** Confirmar asistencia a sesión de refuerzo
+- **UC-43** Solicitar ingreso a curso
+- **UC-44** Confirmar asistencia a sesión de refuerzo
 -->
 
 

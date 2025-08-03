@@ -189,13 +189,13 @@ El sistema deberá almacenar la información de las dificultades específicas de
 
 **Datos específicos**
 - Id de dificultad
-- Tema en concreto
+- Tipo de dificultad
 - Descripción específica de la dificultad
 - Cantidad de errores relacionados a esa dificultad
 - Gravedad de la dificultad
 
 **Comentarios**
-Los temas en concreto de las dificultades serían los siguientes: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. La descripción implica detallar especificamente en qué tiene dificultad el alumno, por ejemplo: Si tiene dificultades en "Lógica" -> Podría hacer un mal uso de los conectivos lógicos, variables mal evaluadas, condiciones siempre falsas, etc.
+Los tipos de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. La descripción implica detallar especificamente en qué tiene dificultad el alumno, por ejemplo: Si tiene dificultades en "Lógica" -> Podría hacer un mal uso de los conectivos lógicos, variables mal evaluadas, condiciones siempre falsas, etc.
 
 ## RI-08 Información de sesiones de refuerzo
 
@@ -238,7 +238,6 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 **Requisitos asociados**
 
 - UC-XX Habilitar capítulo
-- UC-XX Finalizar capítulo
 - UC-XX Buscar capítulo
 
 **Descripción**
