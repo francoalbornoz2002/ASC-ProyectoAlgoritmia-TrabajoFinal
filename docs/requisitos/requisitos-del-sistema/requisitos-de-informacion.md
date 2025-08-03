@@ -75,7 +75,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 - UC-XX Solicitar ingreso a curso
 - UC-XX Asignar docente a curso
 - UC-XX Aprobar solicitud de ingreso al curso
-- UC-XX Cambiar contraseña de curso
+- UC-XX Cambiar contraseña de acceso a curso
 - UC-XX Definir días y horarios del curso
 
 **Descripción**
@@ -101,7 +101,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 
 **Requisitos asociados**
 
-- UC-XX Actualizar datos personales
+- UC-XX Modificar datos personales
 - UC-XX Buscar docente
 
 **Descripción**
@@ -114,7 +114,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 - Género (Masculino, Femenino u Otro)
 - Institucion/es a la que pertenece el docente
 - Cursos a cargo del docente
-- Sesiones de refuerzo creadas por el docente
+- Sesiones de refuerzo creadas y dictadas por el docente
 
 ## RI-05 Información de alumnos
 
@@ -125,7 +125,7 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 **Requisitos asociados**
 
 - UC-XX Registrarse
-- UC-XX Actualizar datos personales
+- UC-XX Modificar datos personales
 - UC-XX Buscar alumno
 
 **Descripción**
@@ -133,11 +133,15 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 
 **Datos específicos**
 
-- Id de alumno (que sería el Id de usuario)
+- Id de alumno (Id de usuario)
 - Nombre/s y Apellido/s del alumno
 - Género (Masculino, Femenino u Otro)
 - Cursos a los que está asociado
+- Dificultades que posee
 - Método de registro
+
+**Comentarios**
+Las dificultades de un alumno son aquellos temas puntuales en los cuales se le dificulta al diseñar los algoritmos para resolver las misiones. Por ejemplo, una dificultad podría ser "Manejo de variables", "Condicionales", etc.
 
 ## RI-06 Información de estadísticas de progreso de los alumnos
 
@@ -148,29 +152,52 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 
 **Requisitos asociados**
 
-- UC-XX Ver progreso en la web
-- UC-XX Ver progreso en el juego
+- UC-XX Consultar mi progreso
 - UC-XX Consultar progreso de alumnos
 - UC-XX Generar reporte de progreso de alumnos
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a las estadísticas (progreso) de juego de cada alumno dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a las estadísticas de progreso de cada alumno en el videojuego. En concreto:
 
 **Datos específicos**
 
-- Id de alumno (que sería el Id de usuario)
-- Total de puntos de experiencia (EXP) obtenidos
+- Id de alumno (Id de usuario)
+- Nombre/s y Apellido/s del alumno
 - Nivel actual
-- Capítulo y Misión actual
+- Total de puntos de experiencia (EXP) obtenidos
+- Capítulo y misión actual
 - Cantidad de misiones completadas
 - Cantidad de estrellas obtenidas
 - Promedio de intentos por misión
 - Porcentaje de avance en un capítulo
 - Porcentaje de avance en la historia
 - Fecha y hora del ultimo inicio de sesión en el videojuego.
-- Ultima actividad (Activo hace x día(s))
+- Cantidad de días de inactividad
 
-## RI-07 Información de sesiones de refuerzo
+## RI-07 Información de dificultades de los alumnos
+
+**Objetivos asociados**
+
+- OBJ-05 Proveer seguimiento académico exhaustivo
+
+**Requisitos asociados**
+
+- UC-XX Consultar dificultades de alumno
+
+**Descripción**
+El sistema deberá almacenar la información de las dificultades específicas de cada alumno dentro del sistema. Estas dificultades se determinarán a partir del registro de errores comunes de un alumno que el videojuego envíe a la plataforma web. En concreto:
+
+**Datos específicos**
+- Id de dificultad
+- Tema en concreto
+- Descripción específica de la dificultad
+- Cantidad de errores relacionados a esa dificultad
+- Gravedad de la dificultad
+
+**Comentarios**
+Los temas en concreto de las dificultades serían los siguientes: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. La descripción implica detallar especificamente en qué tiene dificultad el alumno, por ejemplo: Si tiene dificultades en "Lógica" -> Podría hacer un mal uso de los conectivos lógicos, variables mal evaluadas, condiciones siempre falsas, etc.
+
+## RI-08 Información de sesiones de refuerzo
 
 **Objetivos asociados**
 
@@ -181,6 +208,9 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 
 - UC-XX Consultar progreso de alumnos
 - UC-XX Crear sesión de refuerzo
+- UC-24 Modificar sesión de refuerzo
+- UC-XX Cancelar sesión de refuerzo
+- UC-XX Buscar sesión de refuerzo
 - UC-XX Confirmar asistencia a sesión de refuerzo
 - UC-XX Aceptar sesión de refuerzo automática
 
@@ -191,14 +221,14 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 
 - Id sesión de refuerzo
 - Docente a cargo de la sesión de refuerzo
-- Alumnos involucrados
-- Temas a reforzar
-- Fecha y hora de la sesión
-- Duración de la sesión en minutos
+- Alumnos involucrados y sus dificultades específicas
+- Descripción de la sesión
+- Fecha, hora y duración en minutos de la sesión
 - Modalidad de la sesión (presencial o virtual)
-  - Si es virtual: URL adjunta de la reunión/meet/zoom
+  - Si es virtual: URL de la reunión en Google Meet o Zoom
+  - Si es presencial: Momento de realización (antes o después de la clase)
 
-## RI-08 Información de capítulos
+## RI-09 Información de capítulos
 
 **Objetivos asociados**
 
@@ -208,6 +238,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 **Requisitos asociados**
 
 - UC-XX Habilitar capítulo
+- UC-XX Finalizar capítulo
 - UC-XX Buscar capítulo
 
 **Descripción**
@@ -218,13 +249,12 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 - Id de capítulo
 - Nombre del capítulo
 - Descripción del capítulo
-- Tema referenciado del capítulo (Algoritmos, Lógica, Estructuras de Control, Variables o Procedimientos)
+- Tema/s clave del capítulo (Secuencia, Lógica, Estructuras de Control, Variables o Procedimientos)
 - Cantidad de misiones del capítulo
-- Nivel requerido para desbloqueo
 - Habilitación del docente (habilitado o no)
 - Estado del capítulo (En curso o Finalizado)
 
-## RI-09 Información de misiones
+## RI-10 Información de misiones
 
 **Objetivos asociados**
 
@@ -234,9 +264,6 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 **Requisitos asociados**
 
 - UC-XX Buscar misión
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-- UC-XX Evaluar misión
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las misiones (ejercicios) de cada capítulo de la historia dentro del sistema. En concreto:
@@ -248,227 +275,10 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 - Capítulo al que pertenece la misión
 - Dificultad de la misión (Fácil, Normal o Difícil)
 - Descripción (Enunciado) de la misión
-- Nivel requerido para desbloqueo
-- Estado de desbloqueo
-- Estado de la misión (Completada, no completada)
+- Cantidad y porcentaje de alumnos que completaron la misión
+- Promedio de la puntuación obtenida por los alumnos
 
-## RI-10 Información del escenario
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a la configuración del escenario de cada misión dentro del sistema. En concreto:
-
-**Datos específicos**
-
-- Id de escenario
-- Misión a la que pertenece el escenario
-- Ancho del escenario
-- Largo del escenario
-- Cantidad de celdas del escenario (ancho \* largo)
-- Elementos esparcidos por el escenario
-
-## RI-11 Información de elemento de escenario
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-
-**Descripción**
-El sistema deberá almacenar la información y posición correspondiente a los elementos dentro de un escenario de cada misión del sistema (enemigos, obstáculos y objetos). En concreto:
-
-**Datos específicos**
-
-- Id del elemento de escenario
-- Nombre del elemento de escenario
-- Tipo de elemento de escenario (enemigo, obstáculo u objeto)
-- Descripción del elemento de escenario
-- Proposición del elemento de escenario (para evaluar)
-- Sprite (imagen) del elemento de escenario.
-
-## RI-12 Información de primitivas
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-- UC-XX Agregar acción
-- UC-XX Consultar manual del héroe
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a las primitivas dentro del sistema, las cuales son representadas como "Acciones" en lenguaje gamificado. En concreto:
-
-**Datos específicos**
-
-- Id de la primitiva
-- Nombre de la primitiva
-- Descripción de la primitiva
-- Sintaxis de la primitiva
-- Nivel requerido para desbloqueo
-- Sprite (imagen/ícono) de la primitiva
-- Estado de desbloqueo
-
-**Comentarios**
-Llamaremos "Primitiva" a toda instrucción atómica que el alumno puede utilizar en las misiones dentro del videojuego (Por ejemplo: mover, saltar, etc.).
-
-## RI-13 Información de estructuras de control
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-- UC-XX Agregar estructura condicional
-- UC-XX Agregar estructura repetitiva
-- UC-XX Consultar manual del héroe
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a las estructuras de control (condicional y repetitivas) dentro del sistema, las cuales son representadas como "Estrategias" en lenguaje gamificado. En concreto:
-
-**Datos específicos**
-
-- Id de estructura de control
-- Nombre de la estructura de control
-- Descripción de la estructura de control
-- Tipo de estructura de control (condicional o repetitiva)
-- Sintaxis de la estructura de control
-- Nivel requerido para desbloqueo
-- Sprite (imagen/ícono) de la estructura
-- Estado de desbloqueo
-
-## RI-14 Información de objeto de inventario
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-- UC-XX Consultar manual del héroe
-- UC-XX Consultar inventario
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a los objetos que tendrá el alumno (jugador) en su inventario. En concreto:
-
-**Datos específicos**
-
-- Id del objeto de inventario
-- Nombre del objeto de inventario
-- Descripción del objeto de inventario
-- Sprite (imagen/ícono) del objeto de inventario
-- Valor acumulable del objeto (numero entero positivo)
-
-## RI-15 Información de procedimientos
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-- UC-XX Agregar procedimiento
-- UC-XX Consultar manual del héroe
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a los procedimientos genéricos que el alumno (jugador) tendrá disponible para utilizar dentro del videojuego, representadas como "Habilidades especiales" en lenguaje gamificado. En concreto:
-
-**Datos específicos**
-
-- Id del procedimiento
-- Nombre del procedimiento
-- Descripción del procedimiento
-- Sintaxis del procedimiento
-- Cuerpo del procedimiento
-- Nivel requerido para desbloqueo
-
-**Comentarios**
-El cuerpo del procedimiento sería todas las instrucciones que realizará el procedimiento. Para evitar complejidades en la versión final del videojuego, se limitó a que los procedimientos genéricos no posean parámetros.
-
-## RI-16 Información de operadores lógicos y matemáticos
-
-**Objetivos asociados**
-
-- OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-11 Diseñar un lenguaje de programación gamificado para la resolución de misiones
-
-**Requisitos asociados**
-
-- UC-XX Agregar estructura condicional
-- UC-XX Agregar estructura repetitiva
-- UC-XX Declarar variable
-- UC-XX Asignar valor a variable
-- UC-XX Consultar manual del héroe
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente a los operadores lógicos (AND, OR y NOT) y matemáticos (+, -, \*, /, <, >, ==, <=, >=, !=, :=) dentro del sistema. En concreto:
-
-**Datos específicos**
-
-- Id del operador
-- Nombre del operador
-- Descripción del operador
-- Sintaxis del operador
-
-## RI-17 Información del feedback generado
-
-**Objetivos asociados**
-
-- OBJ-04 Proveer feedback formativo inmediato
-
-**Requisitos asociados**
-
-- UC-XX Resolver misión
-- UC-XX Ejecutar misión
-- UC-XX Evaluar misión
-- UC-XX Generar feedback
-- UC-XX Aceptar feedback
-
-**Descripción**
-El sistema deberá almacenar la información correspondiente del feedback formativo generado en la resolución exitosa de una misión. En concreto:
-
-**Datos específicos**
-
-- Id del feedback
-- Misión en la que se originó el feedback
-- Texto explicativo formativo del feedback
-- Código "antes" del feedback
-- Código "después" con la mejora propuesta
-- Aceptado o no (Booleano) que indica si el alumno aceptó o no la mejora.
-
-**Comentarios**
-
-- Pueden generarse múltiples feedbacks por una misma ejecución si hay más de una mejora sugerida.
-- El feedback será accesible desde el historial de la misión (para revisión futura del alumno).
-
-## RI-18 Información de auditoría
+## RI-11 Información de auditoría
 
 **Objetivos asociados**
 
@@ -476,7 +286,8 @@ El sistema deberá almacenar la información correspondiente del feedback format
 
 **Requisitos asociados**
 
-- UC-XX Auditoría
+- UC-XX Consultar registros de auditoría
+- UC-18 Exportar registros de auditoría
 
 **Descripción**
 EL sistema deberá almacenar la información a auditar correspondiente a los diferentes eventos dentro del sistema. En concreto:

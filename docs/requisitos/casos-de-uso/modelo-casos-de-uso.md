@@ -129,26 +129,28 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 - **UC-30** Aprobar solicitud de ingreso al curso
 - **UC-31** Habilitar capítulo
   - INCLUDE: **UC-32** Buscar capítulo
+- UC-33 Finalizar capítulo
+  - INCLUDE: **UC-32** Buscar capítulo
 
 #### Gestión de cuenta
 - **UC-05** Iniciar sesión
-- **UC-33** Modificar datos personales
+- **UC-34** Modificar datos personales
 
 ### Alumnos
 
 #### Gestión de cuenta
-- **UC-34** Registrarse en la plataforma
-  - EXTEND: **UC-35** Registro normal
-  - EXTEND: **UC-36** Registro con Google
-- **UC-37** Iniciar sesión en la plataforma web
-  - EXTEND: **UC-38** Iniciar sesión normal
-  - EXTEND: **UC-39** Inicar sesión con Google
-- **UC-33** Modificar datos personales
-- **UC-40** Ver progreso
+- **UC-35** Registrarse
+  - EXTEND: **UC-36** Registro normal
+  - EXTEND: **UC-37** Registro con Google
+- **UC-38** Iniciar sesión
+  - EXTEND: **UC-39** Iniciar sesión normal
+  - EXTEND: **UC-40** Inicar sesión con Google
+- **UC-34** Modificar datos personales
+- **UC-41** Consultar mi progreso
 
 #### Cursos
-- **UC-41** Solicitar ingreso a curso
-- **UC-42** Confirmar asistencia a sesión de refuerzo
+- **UC-42** Solicitar ingreso a curso
+- **UC-43** Confirmar asistencia a sesión de refuerzo
 -->
 
 
@@ -159,25 +161,6 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 
 ## Diagrama de Casos de Uso – Plataforma Web
 ### DCU de alto nivel / Diagrama de subsistemas
-![DCU de alto nivel de la plataforma web](./diagramas-casos-de-uso/plataforma-web/DCU_PlataformaWebAltoNivel.png)
-
-#### DCU del subsistema Gestión de usuarios
-![Subsistema Gestión de usuarios](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionUsuarios.png)
-
-#### DCU del subsistema Gestión de instituciones
-![Subsistema Gestión de instituciones](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionInstituciones.png)
-
-#### DCU del subsistema Gestión de cursos
-![Subsistema Gestión de cursos](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionCursos.png)
-
-#### DCU del subsistema Seguimiento académico
-![Subsistema Seguimiento académico](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_SeguimientoAcademico.png)
-
-#### DCU del subsistema Gestión de auditoría
-![Subsistema Gestión de auditoría](./diagramas-casos-de-uso/plataforma-web/SUBSISTEMA_GestionAuditoria.png)
-
-### DCU expandido
-![DCU expandido de la plataforma web](./diagramas-casos-de-uso/plataforma-web/DCU_PlataformaWebExpandido.png)
 
 
 
