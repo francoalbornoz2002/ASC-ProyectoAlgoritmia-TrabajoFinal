@@ -88,7 +88,14 @@ El sistema debe permitir al docente visualizar y generar reportes de las estadí
 - Capítulo específico
 - Porcentaje de avance
 - Promedio de intentos por misión
+- Estado de un capítulo (En curso o Finalizado)
 - Días de inactividad
+
+Si se filtra por capítulo, todas las estadísticas individuales de cada alumno serán de ese capítulo en específico. Además, se añadirán los siguientes filtros adicionales:
+- Estado del capítulo: "En curso" o "Finalizado"
+- Porcentaje de avance del curso en el capítulo
+  - Si está en curso, se muestra el porcentaje de avance
+  - Si está finalizado, se muestra el porcentaje de avance cuando finalizó y el porcentaje de avance actual, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos finalizados.
 
 **Comentarios**
 El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.

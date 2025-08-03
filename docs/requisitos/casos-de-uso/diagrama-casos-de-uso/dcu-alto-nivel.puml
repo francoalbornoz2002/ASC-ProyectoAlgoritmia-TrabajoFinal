@@ -20,13 +20,14 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
         usecase "Gestión de usuarios" as GestionUsuarios
         usecase "Gestión de instituciones" as GestionInstituciones
         usecase "Gestión de cursos" as GestionCursos
-        usecase "Seguimiento académico" as SeguimientoAcademico
+        usecase "Gestión de sesiones de refuerzo" as GestionSesionesRefuerzo
+        usecase "Progreso y estadísticas" as ProgresoEstadisticas
         usecase "Gestión de auditoría" as GestionAuditoria
     }
 
     Alumno --> GestionUsuarios
     Alumno --> GestionCursos
-    Alumno --> SeguimientoAcademico
+    Alumno --> ProgresoEstadisticas
     
     Administrador -up-> GestionUsuarios
     Administrador -up-> GestionInstituciones
@@ -35,7 +36,8 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
 
     Docente --> GestionUsuarios
     Docente --> GestionCursos
-    Docente --> SeguimientoAcademico
+    Docente --> GestionSesionesRefuerzo
+    Docente --> ProgresoEstadisticas
 
     GoogleOAuth2 -up-> GestionUsuarios
 }
