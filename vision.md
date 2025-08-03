@@ -255,7 +255,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                                                                                                                                                     |
 | Comentarios | -                                                                                                                                                                                                                                                         |
 
-| OBJ-11      | Diseñar un pseudo-lenguaje gamificado para la resolución de misiones                                                                                                                                                                                |
+| OBJ-11      | Diseñar un pseudo-lenguaje gamificado para la resolución de misiones                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Descripción | Diseñar un pseudocódigo gamificado que permita manejar: primitivas, estructuras de control (condicionales y bucles), variables y procedimientos con parámetros que permitan al alumno diseñar algoritmos efectivos para resolver las misiones del videojuego |
 | Estabilidad | Alta                                                                                                                                                                                                                                                         |
@@ -324,12 +324,9 @@ En este módulo del sistema, los docentes tendrán funcionalidades para realizar
 
 **Visualización y reportes del progreso de alumnos**
 
-Los docentes podrán consultar y realizar reportes del progreso de los alumnos tanto de la historia en general como de los capítulos específicos de los diferentes cursos que tenga a cargo.
+Los docentes podrán consultar y realizar reportes del progreso de los alumnos tanto de la historia en general como de los capítulos específicos de los diferentes cursos que tenga a cargo. Se podrán visualizar los siguientes datos:
 
-**Avance en la historia**
-En el apartado de historia general, se podrá visualizar:
-
-- Porcentaje de avance del curso en la historia
+- Porcentaje de avance en general del curso
 - Porcentaje de avance del curso en el último capítulo habilitado
 - Estadísticas individuales del alumno
   - Nombre completo del alumno
@@ -343,52 +340,42 @@ En el apartado de historia general, se podrá visualizar:
   - Promedio de intentos por misión
   - Fecha y hora del ultimo inicio de sesión en el videojuego.
   - Ultima actividad (Activo hace x día(s))
-- Filtros por:
-  - Búsqueda por nombre y/o apellido del alumno
-  - Porcentaje de avance en la historia
-  - Promedio de intentos por misión
-    - 1 a 3 intentos: alumnos con buen rendimiento
-    - 3 a 6 intentos: alumnos con rendimiento moderado
-    - 6 a 9 intentos: alumnos con dificultades
-    - Más de 10 intentos: alumnos con muchas dificultades
-  - Ultimo ingreso (por días de inactividad) - Activo hasta hace 3 días. - Activo hasta hace 7 días. - Activo hace más de 10 días.
-    Todos los datos se podrán ordenar de manera ascendente o descendente.
 
-**Avance en los capítulos (temas)**
-En el apartado de capítulos primeramente se deberá seleccionar el capítulo, luego se podrá visualizar:
+También, se podrán aplicar los siguientes filtros:
+
+- Búsqueda por nombre y/o apellido del alumno
+- Capítulo en específico
+- Porcentaje de avance
+- Promedio de intentos por misión
+  - 1 a 3 intentos: alumnos con buen rendimiento
+  - 3 a 6 intentos: alumnos con rendimiento moderado
+  - 6 a 9 intentos: alumnos con dificultades
+  - Más de 10 intentos: alumnos con muchas dificultades
+- Días de inactividad: 3, 5 y 7 días.
+
+Si se filtra por capítulo, todas las estadísticas individuales de cada alumno serán de ese capítulo en específico. Además, se añadirán los siguientes filtros adicionales:
 
 - Estado del capítulo: "En curso" o "Finalizado"
 - Porcentaje de avance del curso en el capítulo
   - Si está en curso, se muestra el porcentaje de avance
   - Si está finalizado, se muestra el porcentaje de avance cuando finalizó y el porcentaje de avance actual, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos finalizados.
-- Estadísticas individuales del alumno
-  - Nombre completo del alumno
-  - Misión actual
-  - Porcentaje de avance en el capítulo
-  - Nivel actual
-  - Total de puntos de experiencia (EXP) obtenidos en el capítulo
-  - Cantidad de misiones completadas en el capitulo
-  - Cantidad de estrellas obtenidas en el capitulo
-  - Promedio de intentos por misión en el capitulo
-  - Fecha y hora del ultimo inicio de sesión en el videojuego.
-  - Ultima actividad (Activo hace x día(s))
-- Filtros por:
-  - Capítulo
-  - Búsqueda por nombre y/o apellido del alumno
-  - Porcentaje de avance en el capitulo
-  - Promedio de intentos por misión en el capítulo - 1 a 3 intentos: alumnos con buen rendimiento - 3 a 6 intentos: alumnos con rendimiento moderado - 6 a 9 intentos: alumnos con dificultades - Más de 10 intentos: alumnos con muchas dificultades
-    Todos los datos se podrán ordenar de manera ascendente o descendente.
 
-La vista permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
+Todos los datos se podrán ordenar de manera ascendente o descendente.
+
+Este módulo le permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
 
 - **Alumnos atrasados en color amarillo suave**: Son aquellos alumnos que tienen algunas dificultades específicas al resolver misiones. Tambien se marcarán en amarillo aquellos que posean una actividad reciente (hasta 3 días de inactividad) y/o auqellos en donde su porcentaje de progreso en el capítulo actual está por debajo del promedio del curso.
 - **Alumnos en estado crítico en color rojo suave**: Son aquellos alumnos que tienen muchas dificultades específicas al resolver misiones. Tambien se marcarán en rojo los alumnos que tengan una prolongada inactividad en la plataforma (+5 días de inactividad) y/o aquellos en donde su porcentaje de progreso en el capítulo actual está muy por debajo del promedio del curso.
+
+Los alumnos tambien podrán visualizar sus estadísticas de progreso y sus dificultades específicas en su perfil.
 
 #### 3.4.5 Gestión de sesiones de refuerzo
 
 Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a desempeño y dificultades. Este módulo del sistema permite a los docentes identificar a aquellos alumnos que tienen dificultades para resolver las misiones y/o una inactividad prolongada detectando a tiempo a los alumnos rezagados para tratar de resolver sus dificultades lo antes posible.
 
-Los docentes podrán coordinar una sesión de refuerzo para aquellos alumnos que posean dificultades al resolver misiones o con una inactividad prolongada en la plataforma. Para la sesión de refuerzo se dentrá:
+Los docentes tendrán una lista de todos los alumnos del curso en cuestión. Se podrá filtrar por tipo de dificultad y la gravedad de la misma (determinada por la cantidad de errores acumulados de ese tipo de dificultad).
+
+Los docentes podrán coordinar una sesión de refuerzo para aquellos alumnos que posean dificultades al resolver misiones o con una inactividad prolongada en la plataforma. Para la sesión de refuerzo se tendrá:
 
 - **Alumnos involucrados**: se deberá seleccionar a los alumnos a involucrar en la sesión. Se mostrarán de manera prioritaria los alumnos resaltados en rojo y amarillo.
 - **Dificultades de los alumnos**: de cada alumno seleccionado, se mostrarán las dificultades específicas y el nivel de inactividad de cada uno.
