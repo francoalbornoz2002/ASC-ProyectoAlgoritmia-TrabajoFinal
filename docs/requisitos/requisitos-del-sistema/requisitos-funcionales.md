@@ -93,7 +93,7 @@ El sistema debe permitir al docente visualizar y generar reportes de las estadí
 **Comentarios**
 El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.
 
-## RF-07 Determinar las dificultades específicas de los alumnos
+## RF-06 Determinar las dificultades específicas de los alumnos
 
 **Objetivos relacionados**
 
@@ -107,7 +107,7 @@ El sistema tambien deberá realizar la generación automática de un reporte de 
 **Descripción**
 El sistema debe analizar y determinar las dificultades que posean los alumnos a partir de los recopilación de errores en resolución de misiones realizada por el videojuego. Además, estas deben poder ser visualizadas por los docentes tanto en el perfil del alumno como en las sesiones de refuerzo, pudiendo filtrar por tipo de dificultad y estado de gravedad.
 
-## RF-08 Controlar la curva de aprendizaje mediante habilitación de capitulos
+## RF-07 Controlar la curva de aprendizaje mediante habilitación de capitulos
 
 **Objetivos relacionados**
 

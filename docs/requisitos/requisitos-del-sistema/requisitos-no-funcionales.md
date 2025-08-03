@@ -16,6 +16,8 @@
 - RI-07 Información de dificultades de los alumnos
 - RI-09 Información de capítulos
 - RI-10 Información de misiones
+- RF-05 Visualizar el progreso de alumnos
+- RF-06 Determinar las dificultades específicas de los alumnos
 
 **Descripción**
 El sistema deberá permitir que los alumnos puedan avanzar en la resolución de misiones dentro del videojuego sin necesidad de conexión a internet permanente. El progreso alcanzado (misiones completadas, intentos, estrellas obtenidas y experiencia) deberá almacenarse de forma local. Cuando se complete una misión o se cierre sesión en el videojuego, se deberán sincronizar los datos de progreso locales junto con la recopilación de errores de cada alumno a la plataforma web, garantizando así continuidad en el seguimiento académico por parte del docente y manteniendo la trazabilidad de la experiencia de aprendizaje.
@@ -30,7 +32,7 @@ El sistema deberá permitir que los alumnos puedan avanzar en la resolución de 
 - RI-03 Información de cursos
 - RI-04 Información de docentes
 - RI-05 Información de alumnos
-- RI-18 Información de auditoría
+- RI-11 Información de auditoría
 
 **Descripción**
 El sistema deberá registrar en una bitácora de auditoría todas las acciones críticas realizadas sobre los módulos de usuarios, instituciones, cursos, sesiones de refuerzo, docentes y alumnos. Estas acciones incluirán altas, bajas, modificaciones y asignaciones, indicando el usuario que realizó la acción, la fecha y hora exacta, y los datos afectados.
@@ -45,9 +47,9 @@ El módulo de auditoría solo estará disponible para el administrador del siste
 - RI-01 Información de usuarios
 - RI-04 Información de docentes
 - RI-05 Información de alumnos
-- RI-18 Información de auditoría
+- RI-11 Información de auditoría
 - RF-01 Gestionar usuarios
-- RF-11 Registro y autenticación con Google
+- RF-08 Registro y autenticación con Google
 
 **Descripción**
 El sistema deberá garantizar la seguridad en el manejo de credenciales mediante transmisión cifrada (HTTPS), almacenamiento de contraseñas con hashing seguro (bcrypt) y validación de accesos según rol. La autenticación con Google deberá seguir el estándar OAuth 2.0, validando tokens en cada sesión. Se deberán aplicar restricciones ante intentos fallidos, control de sesiones activas y validaciones contra ataques comunes como inyecciones SQL o XSS. El videojuego validará el inicio de sesión vía API segura sin exponer credenciales localmente.
