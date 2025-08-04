@@ -320,7 +320,7 @@ Los docentes podrán habilitar los capítulos de la historia a medida que se vay
 
 #### 3.4.4 Progreso y estadísticas
 
-En este módulo del sistema, los docentes tendrán funcionalidades para realizar el seguimiento de progreso a sus alumnos.
+En este módulo del sistema, los docentes tendrán funcionalidades para realizar el seguimiento de progreso a sus alumnos. Podrán consultar las estadísticas de progreso en el videojuego en tiempo real y las dificultades que tenga cada alumno al intentar resolver las misiones.
 
 **Visualización y reportes del progreso de alumnos**
 
@@ -367,13 +367,21 @@ Este módulo le permitirá a los docentes visualizar e identificar a los alumnos
 - **Alumnos atrasados en color amarillo suave**: Son aquellos alumnos que tienen algunas dificultades específicas al resolver misiones. Tambien se marcarán en amarillo aquellos que posean una actividad reciente (hasta 3 días de inactividad) y/o auqellos en donde su porcentaje de progreso en el capítulo actual está por debajo del promedio del curso.
 - **Alumnos en estado crítico en color rojo suave**: Son aquellos alumnos que tienen muchas dificultades específicas al resolver misiones. Tambien se marcarán en rojo los alumnos que tengan una prolongada inactividad en la plataforma (+5 días de inactividad) y/o aquellos en donde su porcentaje de progreso en el capítulo actual está muy por debajo del promedio del curso.
 
-Los alumnos tambien podrán visualizar sus estadísticas de progreso y sus dificultades específicas en su perfil.
+**Visualización y reporte de dificultades de alumnos**
+
+En cuanto a las dificultades de los alumnos, los docentes tendrán una lista de todos los alumnos del curso en cuestión con sus dificultades específicas, puediendo filtrar por:
+
+- Búsqueda por nombre y/o apellido del alumno
+- Tipo de dificultad
+- Dificultad específica
+- Gravedad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
+
+**Funcionalidades para alumnos**
+Los alumnos tambien podrán acceder y visualizar sus estadísticas de progreso individuales y sus dificultades específicas de la misma forma que los docentes, pero sin posibilidad de emitir reportes.
 
 #### 3.4.5 Gestión de sesiones de refuerzo
 
 Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a desempeño y dificultades. Este módulo del sistema permite a los docentes identificar a aquellos alumnos que tienen dificultades para resolver las misiones y/o una inactividad prolongada detectando a tiempo a los alumnos rezagados para tratar de resolver sus dificultades lo antes posible.
-
-Los docentes tendrán una lista de todos los alumnos del curso en cuestión. Se podrá filtrar por tipo de dificultad y la gravedad de la misma (determinada por la cantidad de errores acumulados de ese tipo de dificultad).
 
 Los docentes podrán coordinar una sesión de refuerzo para aquellos alumnos que posean dificultades al resolver misiones o con una inactividad prolongada en la plataforma. Para la sesión de refuerzo se tendrá:
 

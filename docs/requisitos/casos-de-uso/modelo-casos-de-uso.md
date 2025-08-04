@@ -24,8 +24,6 @@ Dentro de la plataforma web, podrán realizar las siguientes acciones:
 - Descargar el videojuego para ejecutarlo en su PC.
 - Confirmar asistencia a sesiones de refuerzo, ya sea desde la web o a través del enlace recibido por correo electrónico.
 
----
-
 ### ACT-02 Docente
 
 Representa al personal docente encargado de dictar la materia y brindar seguimiento académico a los alumnos. Los docentes utilizarán exclusivamente la plataforma web, donde tendrán acceso a diversas funcionalidades de seguimiento.
@@ -38,8 +36,6 @@ Sus principales responsabilidades incluyen:
 - Visualizar en tiempo real el avance y desempeño de sus alumnos (misiones resueltas, dificultades específicas, actividad reciente, entre otros).
 - Generar reportes de progreso con diferentes filtros.
 - Programar sesiones de refuerzo para alumnos con bajo rendimiento, dificultades o inactividad prolongada.
-
----
 
 ### ACT-03 Administrador
 
@@ -54,18 +50,14 @@ Entre sus funciones se destacan:
 
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
 
----
-
 ### ACT-04 Google OAuth 2.0
 Representa al servicio externo de autenticación de Google utilizado por la plataforma web para permitir el inicio de sesión o registro de alumnos mediante sus cuentas de Google. Es un actor externo que colabora en los procesos de autenticación sin intervención directa del usuario sobre sus mecanismos internos.
-
----
 
 ### ACT-05 Videojuego
 Representa al videojuego desarrollado en Godot que enviará los datos de progreso de cada alumno a la plataforma web para que sea visualizado por los docentes. Recibirá los datos de la web en caso de que se tenga que sincronizar el progreso de un alumno en el videojuego.
 
+---
 
-<!--
 ## Casos de uso del sistema
 
 ### Administrador
@@ -89,10 +81,10 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 
 #### Gestión de cursos
 
-- **UC-10** Alta de curso  
+- **UC-10** Alta curso  
 - **UC-11** Modificar curso  
   - INCLUDE: **UC-12** Buscar curso  
-- **UC-13** Baja de curso  
+- **UC-13** Baja curso  
   - INCLUDE: **UC-12** Buscar curso  
 - **UC-14** Asignar docente a curso  
   - INCLUDE: **UC-15** Buscar docente
@@ -108,50 +100,62 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 
 ### Docentes
 
-#### Seguimiento académico
+#### Progreso y estadísticas
 
 - **UC-19** Consultar progreso de alumnos
-  - EXTEND: **UC-20** Ver progreso general (historia)
-  - EXTEND: **UC-21** Ver progreso por capítulo
+  - EXTEND: **UC-20** Ver progreso general
+  - EXTEND: **UC-21** Ver progreso en capítulo
 - **UC-22** Generar reporte de progreso de alumnos
+- **UC-23** Consultar dificultades de alumnos
 
-#### Gestionar sesiones de refuerzo
-- **UC-23** Crear sesión de refuerzo
-- **UC-24** Modificar sesión de refuerzo
-  - INCLUDE: **UC-25** Buscar sesión de refuerzo
-- **UC-26** Cancelar sesión de refuerzo
-  - INCLUDE: **UC-25** Buscar sesión de refuerzo 
-- **UC-27** Aceptar sesión de refuerzo automática
+#### Gestión de sesiones de refuerzo
+- **UC-24** Crear sesión de refuerzo
+- **UC-25** Modificar sesión de refuerzo
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo
+- **UC-27** Cancelar sesión de refuerzo
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo 
+- **UC-28** Indicar asistencia a sesión
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo 
 
-#### Gestionar cursos (docente)
-- **UC-28** Definir días y horarios del curso
-- **UC-29** Cambiar contraseña de acceso a curso
-- **UC-30** Aprobar solicitud de ingreso al curso
-- **UC-31** Habilitar capítulo
-  - INCLUDE: **UC-32** Buscar capítulo
-- **UC-33** Consultar dificultades de alumno
-  - INCLUDE: **UC-34** Buscar alumno
+#### Gestión de cursos
+- **UC-29** Definir días y horarios del curso
+- **UC-30** Cambiar contraseña de acceso a curso
+- **UC-31** Aprobar solicitud de ingreso al curso
+- **UC-32** Habilitar capítulo
+  - INCLUDE: **UC-33** Buscar capítulo
 
-#### Gestión de cuenta
+
+#### Gestión de usuarios
 - **UC-05** Iniciar sesión
-- **UC-35** Modificar datos personales
+- **UC-34** Modificar datos personales
 
 ### Alumnos
 
-#### Gestión de cuenta
-- **UC-36** Registrarse
-  - EXTEND: **UC-37** Registro normal
-  - EXTEND: **UC-38** Registro con Google
-- **UC-39** Iniciar sesión
-  - EXTEND: **UC-40** Iniciar sesión normal
-  - EXTEND: **UC-41** Inicar sesión con Google
-- **UC-35** Modificar datos personales
-- **UC-42** Consultar mi progreso
+#### Gestión de usuarios
+- **UC-35** Registrarse
+  - EXTEND: **UC-36** Registro normal
+  - EXTEND: **UC-37** Registro con Google
+- **UC-05** Iniciar sesión
+  - EXTEND: **UC-38** Iniciar sesión normal
+  - EXTEND: **UC-39** Inicar sesión con Google
+- **UC-34** Modificar datos personales
 
-#### Cursos
-- **UC-43** Solicitar ingreso a curso
-- **UC-44** Confirmar asistencia a sesión de refuerzo
--->
+#### Progreso y estadísticas
+- **UC-40** Consultar mi progreso
+- **UC-41** Consultar dificultades
+
+#### Gestión de cursos
+- **UC-42** Solicitar ingreso a curso
+
+#### Gestión de sesiones de refuerzo
+- **UC-28** Indicar asistencia a sesión
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo 
+
+### Videojuego
+
+#### Progreso y estadísticas
+- **UC-43** Sincronizar progreso de alumno
+- **UC-44** Sincronizar dificultades de alumno
 
 
 ## Diagrama de Casos de Uso
