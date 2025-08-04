@@ -164,7 +164,7 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 #### Progreso y estadísticas
 
 - **UC-43** Sincronizar progreso de alumno
-- **UC-44** Sincronizar dificultades de alumno
+- **UC-44** Actualizar dificultades de alumno
 
 ## Diagrama de Casos de Uso
 

@@ -24,7 +24,7 @@ package "Plataforma Web"{
         usecase "UC-40 Consultar mi progreso" as UC40
         usecase "UC-41 Consultar dificultades" as UC41
         usecase "UC-43 Sincronizar progreso de alumno" as UC43
-        usecase "UC-44 Sincronizar dificultades de alumno" as UC44
+        usecase "UC-44 Actualizar dificultades de alumno" as UC44
     }
 }
 
