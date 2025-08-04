@@ -51,10 +51,12 @@ Entre sus funciones se destacan:
 En esta versión inicial, se prevé que exista un único administrador central. En versiones futuras, podría habilitarse un esquema con administradores por institución.
 
 ### ACT-04 Google OAuth 2.0
+
 Representa al servicio externo de autenticación de Google utilizado por la plataforma web para permitir el inicio de sesión o registro de alumnos mediante sus cuentas de Google. Es un actor externo que colabora en los procesos de autenticación sin intervención directa del usuario sobre sus mecanismos internos.
 
 ### ACT-05 Videojuego
-Representa al videojuego desarrollado en Godot que enviará los datos de progreso de cada alumno a la plataforma web para que sea visualizado por los docentes. Recibirá los datos de la web en caso de que se tenga que sincronizar el progreso de un alumno en el videojuego.
+
+Representa al videojuego desarrollado en Godot que enviará los datos de progreso de cada alumno a la plataforma web para que sea visualizado por los docentes. Recibirá los datos de la web en caso de que se tenga que sincronizar el progreso de un alumno en el videojuego. Tambien será el encargado de, dentro de la lógica del videojuego, registrar los errores cometidos en la resolución de misiones de los alumnos y determinar las dificultades específicas de cada uno para posteriormente enviarlas a la plataforma web para la visualización del docente.
 
 ---
 
@@ -64,29 +66,29 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 
 #### Gestión de usuarios
 
-- **UC-01** Alta usuario  
-- **UC-02** Modificar usuario  
-  - INCLUDE: **UC-03** Buscar usuario  
-- **UC-04** Baja usuario  
-  - INCLUDE: **UC-03** Buscar usuario  
+- **UC-01** Alta usuario
+- **UC-02** Modificar usuario
+  - INCLUDE: **UC-03** Buscar usuario
+- **UC-04** Baja usuario
+  - INCLUDE: **UC-03** Buscar usuario
 - **UC-05** Iniciar sesión
 
 #### Gestión de instituciones
 
-- **UC-06** Alta de institución  
-- **UC-07** Modificar institución  
-  - INCLUDE: **UC-08** Buscar institución  
-- **UC-09** Baja de institución  
-  - INCLUDE: **UC-08** Buscar institución  
+- **UC-06** Alta de institución
+- **UC-07** Modificar institución
+  - INCLUDE: **UC-08** Buscar institución
+- **UC-09** Baja de institución
+  - INCLUDE: **UC-08** Buscar institución
 
 #### Gestión de cursos
 
-- **UC-10** Alta curso  
-- **UC-11** Modificar curso  
-  - INCLUDE: **UC-12** Buscar curso  
-- **UC-13** Baja curso  
-  - INCLUDE: **UC-12** Buscar curso  
-- **UC-14** Asignar docente a curso  
+- **UC-10** Alta curso
+- **UC-11** Modificar curso
+  - INCLUDE: **UC-12** Buscar curso
+- **UC-13** Baja curso
+  - INCLUDE: **UC-12** Buscar curso
+- **UC-14** Asignar docente a curso
   - INCLUDE: **UC-15** Buscar docente
 - **UC-16** Remover docente de curso
   - INCLUDE: **UC-15** Buscar docente
@@ -105,33 +107,36 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 - **UC-19** Consultar progreso de alumnos
   - EXTEND: **UC-20** Ver progreso general
   - EXTEND: **UC-21** Ver progreso en capítulo
-- **UC-22** Generar reporte de progreso de alumnos
+- **UC-22** Generar reporte de progreso
 - **UC-23** Consultar dificultades de alumnos
 
 #### Gestión de sesiones de refuerzo
+
 - **UC-24** Crear sesión de refuerzo
 - **UC-25** Modificar sesión de refuerzo
   - INCLUDE: **UC-26** Buscar sesión de refuerzo
 - **UC-27** Cancelar sesión de refuerzo
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo 
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo
 - **UC-28** Indicar asistencia a sesión
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo 
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo
 
 #### Gestión de cursos
+
 - **UC-29** Definir días y horarios del curso
 - **UC-30** Cambiar contraseña de acceso a curso
 - **UC-31** Aprobar solicitud de ingreso al curso
 - **UC-32** Habilitar capítulo
   - INCLUDE: **UC-33** Buscar capítulo
 
-
 #### Gestión de usuarios
+
 - **UC-05** Iniciar sesión
 - **UC-34** Modificar datos personales
 
 ### Alumnos
 
 #### Gestión de usuarios
+
 - **UC-35** Registrarse
   - EXTEND: **UC-36** Registro normal
   - EXTEND: **UC-37** Registro con Google
@@ -141,35 +146,52 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 - **UC-34** Modificar datos personales
 
 #### Progreso y estadísticas
+
 - **UC-40** Consultar mi progreso
 - **UC-41** Consultar dificultades
 
 #### Gestión de cursos
+
 - **UC-42** Solicitar ingreso a curso
 
 #### Gestión de sesiones de refuerzo
+
 - **UC-28** Indicar asistencia a sesión
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo 
+  - INCLUDE: **UC-26** Buscar sesión de refuerzo
 
 ### Videojuego
 
 #### Progreso y estadísticas
+
 - **UC-43** Sincronizar progreso de alumno
 - **UC-44** Sincronizar dificultades de alumno
 
-
 ## Diagrama de Casos de Uso
 
-### DCU de alto nivel / Diagrama de subsistemas
+### DCU de alto nivel / Diagrama de Subsistemas
 
+![DCU de alto nivel o Diagrama de Subsistemas](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/DCU_AltoNivel.png)
 
-## Diagrama de Casos de Uso – Plataforma Web
-### DCU de alto nivel / Diagrama de subsistemas
+### Subsistema Gestión de Usuarios
 
+![Subsistema Gestión de Usuarios](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionUsuarios.png)
 
+### Subsistema Gestión de Instituciones
 
+![Subsistema Gestión de Instituciones](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionInstituciones.png)
 
+### Subsistema Gestión de Cursos
 
+![Subsistema Gestión de Cursos](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionCursos.png)
 
+### Subsistema Progreso y Estadísticas
 
+![Subsistema Progreso y Estadísticas](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_ProgresoEstadisticas.png)
 
+### Subsistema Gestión de Sesiones de refuerzo
+
+![Subsistema Gestión de Sesiones de refuerzo](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionSesionesRefuerzo.png)
+
+### Subsistema Gestión de Auditoría
+
+![Subsistema Gestión de Auditoría](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionAuditoria.png)

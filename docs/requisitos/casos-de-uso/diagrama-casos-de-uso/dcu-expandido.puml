@@ -1,4 +1,4 @@
-@startuml DCU_PlataformaWebExpandido
+@startuml DCU_Expandido
 left to right direction
 
 skinparam dpi 150
@@ -107,7 +107,7 @@ Docente --> UC29
 Docente --> UC30
 Docente --> UC31
 Docente --> UC32
-UC32 ..> UC33
+UC32 ..> UC33 : <<include>>
 
 Alumno --> UC42
 
