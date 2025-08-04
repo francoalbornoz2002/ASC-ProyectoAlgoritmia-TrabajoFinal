@@ -25,7 +25,7 @@ Administrador --> UC06
 Administrador --> UC07
 Administrador --> UC09
 
-UC07 --> UC08 : <<include>>
-UC09 --> UC08 : <<include>>
+UC07 ..> UC08 : <<include>>
+UC09 ..> UC08 : <<include>>
 
 @enduml

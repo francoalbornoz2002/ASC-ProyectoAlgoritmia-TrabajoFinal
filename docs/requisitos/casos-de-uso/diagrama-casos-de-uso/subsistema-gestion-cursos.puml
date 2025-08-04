@@ -8,7 +8,7 @@ skinparam packagePadding 50
 skinparam wrapWidth 200
 
 skinparam nodesep 20
-skinparam ranksep 100
+skinparam ranksep 50
 
 actor Alumno
 actor Docente
@@ -22,10 +22,13 @@ package "Plataforma Web"{
         usecase "UC-13 Baja curso" as UC13
         usecase "UC-14 Asignar docente a curso" as UC14
         usecase "UC-15 Buscar docente" as UC15
-        usecase "UC-26 Definir días y horarios del curso" as UC26
-        usecase "UC-27 Cambiar contraseña de acceso a curso" as UC27
-        usecase "UC-28 Aprobar solicitud de ingreso al curso" as UC28
-        usecase "UC-39 Solicitar ingreso a curso" as UC39
+        usecase "UC-16 Remover docente de curso" as UC16
+        usecase "UC-29 Definir días y horarios del curso" as UC29
+        usecase "UC-30 Cambiar contraseña de acceso a curso" as UC30
+        usecase "UC-31 Aprobar solicitud de ingreso al curso" as UC31
+        usecase "UC-32 Habilitar capítulo" as UC32
+        usecase "UC-33 Buscar capítulo" as UC33
+        usecase "UC-42 Solicitar ingreso a curso" as UC43
     }
 }
 
@@ -33,17 +36,22 @@ Administrador --> UC10
 Administrador --> UC11
 Administrador --> UC13
 
-UC11 --> UC12 : <<include>>
-UC13 --> UC12 : <<include>>
+UC11 ..> UC12 : <<include>>
+UC13 ..> UC12 : <<include>>
 
 Administrador --> UC14
-UC14 --> UC15 : <<include>>
-UC14 --> UC12 : <<include>>
+Administrador --> UC16
+UC14 ..> UC15 : <<include>>
+UC14 ..> UC12 : <<include>>
+UC16 ..> UC15 : <<include>>
+UC16 ..> UC12 : <<include>>
 
-Docente --> UC26
-Docente --> UC27
-Docente --> UC28
+Docente --> UC29
+Docente --> UC30
+Docente --> UC31
+Docente --> UC32
+UC32 ..> UC33
 
-Alumno --> UC39
+Alumno --> UC42
 
 @enduml

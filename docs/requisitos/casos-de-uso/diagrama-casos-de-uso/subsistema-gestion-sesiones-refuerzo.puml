@@ -1,0 +1,37 @@
+@startuml SUBSISTEMA_GestionSesionesRefuerzo
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Alumno
+actor Docente
+
+package "Plataforma Web"{
+    package "Gestión sesiones de refuerzo"{
+        usecase "UC-24 Crear sesión de refuerzo" as UC24
+        usecase "UC-25 Modificar sesión de refuerzo" as UC25
+        usecase "UC-26 Buscar sesión de refuerzo" as UC26
+        usecase "UC-27 Cancelar sesión de refuerzo" as UC27
+        usecase "UC-28 Indicar asistencia a sesión" as UC28
+    }
+}
+
+Docente --> UC24
+Docente --> UC25
+Docente --> UC27
+Docente --> UC28
+UC25 ..> UC26 : <<include>>
+UC27 ..> UC26 : <<include>>
+UC28 ..> UC26 : <<include>>
+
+Alumno --> UC28
+
+
+@enduml

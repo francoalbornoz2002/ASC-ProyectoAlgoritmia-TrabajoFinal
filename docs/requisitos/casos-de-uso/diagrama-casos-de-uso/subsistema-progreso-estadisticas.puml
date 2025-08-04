@@ -1,0 +1,41 @@
+@startuml SUBSISTEMA_ProgresoEstadisticas
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Alumno
+actor Docente
+actor Videojuego
+
+package "Plataforma Web"{
+    package "Progreso y Estadísticas"{
+        usecase "UC-19 Consultar progreso de alumnos" as UC19
+        usecase "UC-20 Ver progreso general" as UC20
+        usecase "UC-21 Ver progreso en capítulo" as UC21
+        usecase "UC-22 Generar reporte de progreso" as UC22
+        usecase "UC-23 Consultar dificultades de alumnos" as UC23
+        usecase "UC-40 Consultar mi progreso" as UC40
+        usecase "UC-41 Consultar dificultades" as UC41
+        usecase "UC-43 Sincronizar progreso de alumno" as UC43
+        usecase "UC-44 Sincronizar dificultades de alumno" as UC44
+    }
+}
+
+Docente --> UC19
+UC19 <.. UC20 : <<extend>>
+UC19 <.. UC21 : <<extend>>
+Docente --> UC22
+Docente --> UC23
+
+Alumno --> UC40
+Alumno --> UC41
+
+Videojuego --> UC43
+Videojuego --> UC44

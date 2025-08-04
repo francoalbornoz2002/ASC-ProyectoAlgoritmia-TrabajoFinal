@@ -14,6 +14,7 @@ actor Alumno
 actor Docente
 actor Administrador
 actor "Google OAuth 2.0" as GoogleOAuth2
+actor Videojuego
 
 package "Plataforma Gamificada Algoritmia (PGA)"{
     package "Plataforma web"{
@@ -28,6 +29,7 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
     Alumno --> GestionUsuarios
     Alumno --> GestionCursos
     Alumno --> ProgresoEstadisticas
+    Alumno --> GestionSesionesRefuerzo
     
     Administrador -up-> GestionUsuarios
     Administrador -up-> GestionInstituciones
@@ -40,6 +42,7 @@ package "Plataforma Gamificada Algoritmia (PGA)"{
     Docente --> ProgresoEstadisticas
 
     GoogleOAuth2 -up-> GestionUsuarios
+    Videojuego -up-> ProgresoEstadisticas
 }
 
 @enduml

@@ -3,12 +3,12 @@ left to right direction
 
 skinparam dpi 150
 skinparam usecasePadding 25
-skinparam actorPadding 80
+skinparam actorPadding 100
 skinparam packagePadding 20
 skinparam wrapWidth 200
 
-skinparam nodesep 25
-skinparam ranksep 200
+skinparam nodesep 30
+skinparam ranksep 300
 
 skinparam ArrowThickness 0.5
 skinparam ArrowColor Black
@@ -17,6 +17,7 @@ actor Alumno
 actor Administrador
 actor Docente
 actor "Google OAuth 2.0" as GoogleOAuth2
+actor Videojuego
 
 package "Plataforma Web"{
   package "Gestión de instituciones"{
@@ -27,24 +28,11 @@ package "Plataforma Web"{
   }
 
   package "Gestión de auditoría"{
-    usecase "UC-16 Consultar registros de auditoría" as UC16
-    usecase "UC-59 Exportar registros de auditoría" as UC59
+    usecase "UC-17 Consultar registros de auditoría" as UC17
+    usecase "UC-18 Exportar registros de auditoría" as UC18
   }
 
-  package "Gestión de usuarios"{
-    usecase "UC-01 Alta usuario" as UC01
-    usecase "UC-02 Modificar usuario" as UC02
-    usecase "UC-03 Buscar usuario" as UC03
-    usecase "UC-04 Baja usuario" as UC04
-    usecase "UC-05 Iniciar sesión" as UC05
-    usecase "UC-32 Registrarse en la plataforma" as UC32
-    usecase "UC-33 Registro normal" as UC33
-    usecase "UC-34 Registro con Google" as UC34
-    usecase "UC-35 Iniciar sesión en la plataforma web" as UC35
-    usecase "UC-36 Iniciar sesión normal" as UC36
-    usecase "UC-37 Iniciar sesión con Google" as UC37
-    usecase "UC-31 Modificar datos personales" as UC31
-  }
+  
 
   package "Gestión de cursos"{
     usecase "UC-10 Alta curso" as UC10
@@ -53,86 +41,124 @@ package "Plataforma Web"{
     usecase "UC-13 Baja curso" as UC13
     usecase "UC-14 Asignar docente a curso" as UC14
     usecase "UC-15 Buscar docente" as UC15
-    usecase "UC-26 Definir días y horarios del curso" as UC26
-    usecase "UC-27 Cambiar contraseña de acceso a curso" as UC27
-    usecase "UC-28 Aprobar solicitud de ingreso al curso" as UC28
-    usecase "UC-39 Solicitar ingreso a curso" as UC39
+    usecase "UC-16 Remover docente de curso" as UC16
+    usecase "UC-29 Definir días y horarios del curso" as UC29
+    usecase "UC-30 Cambiar contraseña de acceso a curso" as UC30
+    usecase "UC-31 Aprobar solicitud de ingreso al curso" as UC31
+    usecase "UC-32 Habilitar capítulo" as UC32
+    usecase "UC-33 Buscar capítulo" as UC33
+    usecase "UC-42 Solicitar ingreso a curso" as UC42
   }
 
+  package "Gestión de usuarios"{
+    usecase "UC-01 Alta usuario" as UC01
+    usecase "UC-02 Modificar usuario" as UC02
+    usecase "UC-03 Buscar usuario" as UC03
+    usecase "UC-04 Baja usuario" as UC04
+    usecase "UC-05 Iniciar sesión" as UC05
+    usecase "UC-35 Registrarse" as UC35
+    usecase "UC-36 Registro normal" as UC36
+    usecase "UC-37 Registro con Google" as UC37
+    usecase "UC-38 Iniciar sesión normal" as UC38
+    usecase "UC-39 Iniciar sesión con Google" as UC39
+    usecase "UC-34 Modificar datos personales" as UC34
+  }
 
+  package "Gestión sesiones de refuerzo"{
+    usecase "UC-24 Crear sesión de refuerzo" as UC24
+    usecase "UC-25 Modificar sesión de refuerzo" as UC25
+    usecase "UC-26 Buscar sesión de refuerzo" as UC26
+    usecase "UC-27 Cancelar sesión de refuerzo" as UC27
+    usecase "UC-28 Indicar asistencia a sesión" as UC28
+  }
 
-  package "Seguimiento académico"{
-    usecase "UC-17 Consultar progreso de alumnos" as UC17
-    usecase "UC-18 Ver progreso general (historia)" as UC18
-    usecase "UC-19 Ver progreso por capítulo" as UC19
-    usecase "UC-20 Generar reporte de progreso" as UC20
-    usecase "UC-21 Crear sesión de refuerzo" as UC21
-    usecase "UC-22 Modificar sesión de refuerzo" as UC22
-    usecase "UC-23 Buscar sesión de refuerzo" as UC23
-    usecase "UC-24 Cancelar sesión de refuerzo" as UC24
-    usecase "UC-25 Aceptar sesión de refuerzo automática" as UC25
-    usecase "UC-29 Habilitar capítulo" as UC29
-    usecase "UC-30 Buscar capítulo" as UC30
-    usecase "UC-38 Ver progreso en la web" as UC38
-    usecase "UC-40 Confirmar asistencia a sesión de refuerzo" as UC40
-    usecase "UC-60 Generar reporte de progreso y sesión de refuerzo (automatización)" as UC60
+  package "Progreso y Estadísticas"{
+    usecase "UC-19 Consultar progreso de alumnos" as UC19
+    usecase "UC-20 Ver progreso general" as UC20
+    usecase "UC-21 Ver progreso en capítulo" as UC21
+    usecase "UC-22 Generar reporte de progreso" as UC22
+    usecase "UC-23 Consultar dificultades de alumnos" as UC23
+    usecase "UC-40 Consultar mi progreso" as UC40
+    usecase "UC-41 Consultar dificultades" as UC41
+    usecase "UC-43 Sincronizar progreso de alumno" as UC43
+    usecase "UC-44 Sincronizar dificultades de alumno" as UC44
   }
 
 }
 
-Administrador --> UC01
-Administrador --> UC02
-UC02 --> UC03 : <<include>>
-Administrador --> UC04
-UC04 --> UC03 : <<include>>
-Administrador --> UC05
-Administrador --> UC06
-Administrador --> UC07
-Administrador --> UC09
-UC07 --> UC08 : <<include>>
-UC09 --> UC08 : <<include>>
+Administrador --> UC17
+UC17 <.. UC18 : <<extend>>
+
 Administrador --> UC10
 Administrador --> UC11
 Administrador --> UC13
-UC11 --> UC12 : <<include>>
-UC13 --> UC12 : <<include>>
+
+UC11 ..> UC12 : <<include>>
+UC13 ..> UC12 : <<include>>
+
 Administrador --> UC14
-UC14 --> UC15 : <<include>>
-UC14 --> UC12 : <<include>>
 Administrador --> UC16
-UC16 --> UC59 : <<extend>>
+UC14 ..> UC15 : <<include>>
+UC14 ..> UC12 : <<include>>
+UC16 ..> UC15 : <<include>>
+UC16 ..> UC12 : <<include>>
 
-Alumno --> UC31
-Alumno --> UC32
-UC32 --> UC33 : <<extend>>
-UC32 --> UC34 : <<extend>>
-Alumno --> UC35
-UC35 --> UC36 : <<extend>>
-UC35 --> UC37 : <<extend>>
-Alumno --> UC38
-Alumno --> UC39
-Alumno --> UC40
-GoogleOAuth2 -up-> UC34
-GoogleOAuth2 -up-> UC37
+Docente --> UC29
+Docente --> UC30
+Docente --> UC31
+Docente --> UC32
+UC32 ..> UC33
 
+Alumno --> UC42
 
-Docente --> UC05
-Docente --> UC17
-UC17 --> UC18 : <<include>>
-UC17 --> UC19 : <<include>>
-Docente --> UC20
-Docente --> UC21
-Docente --> UC22
+Administrador --> UC06
+Administrador --> UC07
+Administrador --> UC09
+
+UC07 ..> UC08 : <<include>>
+UC09 ..> UC08 : <<include>>
+
 Docente --> UC24
-UC22 --> UC23 : <<include>>
-UC24 --> UC23 : <<include>>
 Docente --> UC25
-Docente --> UC26
 Docente --> UC27
 Docente --> UC28
-Docente --> UC29
-UC29 --> UC30 : <<include>>
-Docente --> UC31
+UC25 ..> UC26 : <<include>>
+UC27 ..> UC26 : <<include>>
+UC28 ..> UC26 : <<include>>
 
+Alumno --> UC28
+
+Administrador --> UC01
+Administrador --> UC02
+UC02 ..> UC03 : <<include>>
+Administrador --> UC04
+UC04 ..> UC03 : <<include>>
+Administrador --> UC05
+
+Alumno --> UC34
+Alumno --> UC35
+UC35 <.. UC36 : <<extend>>
+UC35 <.. UC37 : <<extend>>
+Alumno --> UC05
+UC05 <.. UC38 : <<extend>>
+UC05 <.. UC39 : <<extend>>
+
+Docente --> UC34
+Docente --> UC05
+
+GoogleOAuth2 -up-> UC37
+GoogleOAuth2 -up-> UC39
+
+Docente --> UC19
+UC19 <.. UC20 : <<extend>>
+UC19 <.. UC21 : <<extend>>
+Docente --> UC22
+Docente --> UC23
+
+Alumno --> UC40
+Alumno --> UC41
+
+Videojuego --> UC43
+Videojuego --> UC44
 
 @enduml
