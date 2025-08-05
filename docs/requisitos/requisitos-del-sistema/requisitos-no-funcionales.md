@@ -34,7 +34,7 @@ El sistema deberá permitir que los alumnos puedan avanzar en la resolución de 
 **Requisitos asociados**
 
 - RI-01 Información de usuarios
-- RI-02 Información de instituciones
+- RI-02 Información de la institución
 - RI-03 Información de cursos
 - RI-04 Información de docentes
 - RI-05 Información de alumnos
