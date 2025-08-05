@@ -31,6 +31,8 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - Id de usuario
 - Nombre de usuario
 - Contraseña de usuario
+- Nombre/s y Apellido/s del usuario
+- Género (Masculino, Femenino u Otro)
 - Correo electrónico
 - Rol de usuario (alumno, docente o administrador)
 - Fecha de creación de la cuenta
@@ -105,13 +107,10 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 - UC-XX Buscar docente
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los docentes del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los docentes del sistema teniendo como base la información de usuarios del RI-01. Adicionalmente, se deberá almacenar:
 
 **Datos específicos**
 
-- Id de docente (Id de usuario)
-- Nombre/s y Apellido/s del docente
-- Género (Masculino, Femenino u Otro)
 - Institucion/es a la que pertenece el docente
 - Cursos a cargo del docente
 - Sesiones de refuerzo creadas y dictadas por el docente
@@ -129,13 +128,10 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 - UC-XX Buscar alumno
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los alumnos dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los alumnos dentro del sistema teniendo como base la información de usuarios del RI-01. Adicionalmente, se deberá almacenar:
 
 **Datos específicos**
 
-- Id de alumno (Id de usuario)
-- Nombre/s y Apellido/s del alumno
-- Género (Masculino, Femenino u Otro)
 - Cursos a los que está asociado
 - Dificultades que posee
 - Método de registro
