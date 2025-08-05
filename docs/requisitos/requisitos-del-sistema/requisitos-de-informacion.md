@@ -38,7 +38,7 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - Fecha de creación de la cuenta
 - Estado (activo/inactivo)
 
-## RI-02 Información de instituciones
+## RI-02 Información de la institución
 
 **Objetivos asociados**
 
@@ -46,17 +46,14 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 
 **Requisitos asociados**
 
-- UC-XX Alta de institución
-- UC-XX Modificar institución
-- UC-XX Baja de institución
-- UC-XX Buscar institución
+- UC-XX Configurar datos de institución
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a la institución educativa que utilizará el sistema. En concreto:
 
 **Datos específicos**
 
-- Id de institución (CUE)
+- Id de institución
 - Provincia
 - Localidad
 - Nombre
