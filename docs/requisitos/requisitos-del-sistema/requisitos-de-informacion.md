@@ -52,15 +52,17 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 - UC-XX Buscar institución
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a las instituciones del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a la institución educativa que utilizará el sistema. En concreto:
 
 **Datos específicos**
 
-- Id de institución
-- Nombre de la institución
-- Dirección de la institución
-- Teléfono de contacto
-- Correo electrónico de contacto
+- Id de institución (CUE)
+- Provincia
+- Localidad
+- Nombre
+- Domicilio
+- Teléfono
+- Correo electrónico
 
 ## RI-03 Información de cursos
 

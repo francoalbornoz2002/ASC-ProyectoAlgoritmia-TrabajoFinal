@@ -23,7 +23,7 @@ En este documento contiene la lista de los requisitos funcionales del sistema ex
 **Descripción**
 El sistema debe permitir la alta, baja y modificación de usuarios, la asignación de los roles de administrador, docente y alumno y el inicio de sesión en el sistema mediante usuario y contraseña y autenticación con Google en caso de alumnos.
 
-## RF-02 Gestionar instituciones
+## RF-02 Configurar datos de la institución
 
 **Objetivos relacionados**
 
@@ -31,12 +31,12 @@ El sistema debe permitir la alta, baja y modificación de usuarios, la asignaci�
 
 **Requisitos asociados**
 
-- RI-02 Información de instituciones
+- RI-02 Información de la institución
 
 **Descripción**
-El sistema debe permitir, para el rol de administrador, la alta, baja y modificación de las instituciones educativas.
+El sistema debe permitir, para el rol de administrador, configuración de los datos de la institución que utilice el sistema.
 
-## RF-03 Gestión de cursos
+## RF-03 Gestionar de cursos
 
 **Objetivos relacionados**
 
