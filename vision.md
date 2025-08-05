@@ -289,9 +289,9 @@ Consulte el Game Design Document ubicado en `docs/game-design/gdd.md` para obten
 
 En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acceso al sistema:
 
-- **Administrador**: Acceso a los módulos de gestión de instituciones, gestión de cursos, ABM de docentes, asignar o remover docentes a cursos correspondientes y consultas de auditoría.
-- **Alumno**: Acceso en la web para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego y modificar perfil. Tendrá acceso a la descarga exclusiva del videojuego.
-- **Docente**: Acceso principal y completo al módulo de Seguimiento académico donde podrá realizar los reportes, consultar el estadísticas de progreso de los alumnos, administrar sesiones de refuerzo y acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de alumnos.
+- **Administrador**: Acceso a los módulos de gestión de instituciones, gestión de cursos y tareas de gestión de docentes, como la alta, baja, modificación y también el asignar o remover docentes a cursos correspondientes. Es el unico usuario que poseerá acceso al módulo de auditoría para consulta y exportación.
+- **Alumno**: Acceso en la web para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego, dificultades y modificación del perfil. Tendrá acceso a la descarga exclusiva del videojuego.
+- **Docente**: Acceso principal y completo al módulo de Progreso y estadísticas donde podrá  visualizar y realizar reportes de progreso de los alumnos y visualizar sus dificultades. En el módulo de Gestion de sesiones de refuerzo podrá coordinar sesiones de refuerzo para los alumnos. También tendrá acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de sus alumnos.
 
 #### 3.4.2 Gestión de instituciones
 
