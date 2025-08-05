@@ -185,14 +185,15 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 - UC-XX Consultar dificultades de alumno
 
 **Descripción**
-El sistema deberá almacenar la información de las dificultades específicas de cada alumno dentro del sistema. Estas dificultades se determinarán a partir del registro de errores comunes de un alumno que el videojuego envíe a la plataforma web. En concreto:
+El sistema deberá almacenar la información de las dificultades específicas de cada alumno dentro del sistema y sus categorias correspondientes. Estas dificultades se determinarán a partir del registro de errores comunes de un alumno que el videojuego envíe a la plataforma web. En concreto:
 
 **Datos específicos**
 - Id de dificultad
-- Tipo de dificultad
-- Descripción específica de la dificultad
-- Cantidad de errores relacionados a esa dificultad
-- Gravedad de la dificultad
+- Categoría de la dificultad
+- Dificultad específica
+- Descripción de la dificultad específica
+- Cantidad de errores relacionados a esa dificultad específica.
+- Gravedad de la dificultad específica
 
 **Comentarios**
 Los tipos de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. La descripción implica detallar especificamente en qué tiene dificultad el alumno, por ejemplo: Si tiene dificultades en "Lógica" -> Podría hacer un mal uso de los conectivos lógicos, variables mal evaluadas, condiciones siempre falsas, etc.
@@ -211,8 +212,7 @@ Los tipos de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de
 - UC-24 Modificar sesión de refuerzo
 - UC-XX Cancelar sesión de refuerzo
 - UC-XX Buscar sesión de refuerzo
-- UC-XX Confirmar asistencia a sesión de refuerzo
-- UC-XX Aceptar sesión de refuerzo automática
+- UC-XX Indicar asistencia a sesión
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a las sesiones de refuerzo de contenidos dentro del sistema. En concreto:
