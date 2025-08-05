@@ -340,8 +340,8 @@ Los docentes podrán consultar y realizar reportes del progreso de los alumnos t
 
 También, se podrán aplicar los siguientes filtros:
 
+- Selección de capítulo
 - Búsqueda por nombre y/o apellido del alumno
-- Capítulo en específico
 - Porcentaje de avance
 - Promedio de intentos por misión
   - 1 a 3 intentos: alumnos con buen rendimiento
@@ -349,8 +349,9 @@ También, se podrán aplicar los siguientes filtros:
   - 6 a 9 intentos: alumnos con dificultades
   - Más de 10 intentos: alumnos con muchas dificultades
 - Días de inactividad: 3, 5 y 7 días.
+- Fechas desde - hasta
 
-Si se filtra por capítulo, todas las estadísticas individuales de cada alumno serán de ese capítulo en específico. Además, se añadirán los siguientes filtros adicionales:
+Si se selecciona un capítulo específico, todas las estadísticas de progreso de cada alumno serán de ese capítulo. Además, se añadirán los siguientes datos adicionales:
 
 - Estado del capítulo: "En curso" o "Finalizado"
 - Porcentaje de avance del curso en el capítulo
@@ -396,7 +397,9 @@ Una vez creada la sesión, los alumnos involucrados serán notificados vía corr
 
 El sistema tendrá como uno de los procesos automatizados la generación de un reporte de progreso semanal de los alumnos de un curso (individual y grupal) junto con la creación de la sesión de refuerzo de contenidos.
 
-En este proceso automatizado, el sistema generará automáticamente todos los días sábado a las 18:00 un reporte de progreso de todos los alumnos de un curso y lo enviará a los docentes del curso por correo electrónico. Adicionalmente, el sistema creará una sesión de refuerzo de contenidos con una duración de 25 minutos planeada a realizarse _antes_ de la próxima clase presencial del curso. Esta sesión incluirá como prioridad a todos los alumnos en estado crítico (rojo), las dificultades específicas de cada uno y los temas a reforzar propuestos por el sistema.
+En este proceso automatizado, trabajarán en conjunto el módulo de Progreso y estadísticas y el módulo de Gestión de sesiones de refuerzo.
+El sistema generará automáticamente todos los días sábado a las 18:00 un reporte de progreso de todos los alumnos de un curso, ordenado por capítulos (solo los capítulos "Finalizados" y los que estén "En curso"). Este reporte será enviado a los docentes del curso por correo electrónico.
+Adicionalmente, el sistema creará una sesión de refuerzo de contenidos con una duración de 25 minutos planeada a realizarse _antes_ de la próxima clase presencial del curso. Esta sesión incluirá como prioridad a todos los alumnos en estado crítico (rojo), las dificultades específicas de cada uno y los temas a reforzar propuestos por el sistema.
 
 Para que la sesión sea válida, uno y solo uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para confirmar si se realizó la sesión de refuerzo e indicar los temas abordados.
 
@@ -430,16 +433,16 @@ El registro de alumnos estará habilitado desde el sistema (se pueden registrar 
 - **Opción 2**: Registro en la web con Google (autenticación con Google y luego completar datos adicionales el formulario).
 - Almacenamiento en la base de datos con posibilidad de iniciar sesión en la plataforma web por cualquiera de los dos medios (usuario/contraseña o Google).
 
-El **incio de sesión** en el videojuego se realizará unicamente con usuario y contraseña definidos en el registro en la parte web, el videojuego validará los datos y sincronizará el progreso del alumno, guardando su progreso posterior localmente.
+El **incio de sesión** en el videojuego se realizará unicamente con usuario y contraseña definidos en el registro en la parte web. Al inciar sesión, el videojuego validará y sincronizará los datos del alumno en el videojuego para guardar el progreso localmente y, cuando comience a progresar en el videojuego, el progreso local se sincronizará a la web.
 
 **Docentes**
-El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden registrar solos).
+El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden registrar solos) y el inicio de sesión solo será mediante usuario y contraseña (sin autenticación con Google).
 
 - Los docentes deberán proporcionar sus datos al administrador del sistema mediante un formulario.
-- El administrador se encargará de verificar los datos del docente y deberá darlo de alta manualmente desde un panel interno.
-- El administrador crea el usuario del docente con los datos necesarios
+- El administrador se encargará de verificar los datos del docente y deberá darlo de alta manualmente en el sistema.
+- El administrador crea el usuario del docente con los datos declarados.
 - Luego, el sistema envía automáticamente el usuario y contraseña inciales del docente al correo declarado.
-- El inicio de sesión en la web del docente solo será por usuario y contraseña (sin Google).
+- Luego del primer inicio de sesión del docente, el sistema exigirá que cambie la contraseña de su usuario por seguridad.
 
 #### 3.4.6 Auditoría
 
@@ -448,13 +451,12 @@ Este módulo estará principalmente disponible para el rol **administrador**, qu
 ##### Tareas de Auditoría que podrá realizar el Administrador
 
 1. **Revisar inicios de sesión**: Ver quién, cuándo y desde dónde se accede a la plataforma (docentes, alumnos, admin).
-2. **Auditar cambios en instituciones**: Ver cuándo se crean, modifican o eliminan instituciones y quién lo hizo.
-3. **Auditar cambios en cursos**: Ver cuándo se crean, modifican o eliminan cursos y quién lo hizo.
-4. **Auditar altas y bajas de docentes**: Trazabilidad sobre qué docente fue creado, editado o eliminado, por quién y cuándo.
-5. **Auditar asignaciones de docentes a cursos**: Ver cuándo se asignó o removió un docente de un curso.
-6. **Auditar configuraciones de sesiones de refuerzo**: Ver cuándo se programaron, aprobaron o marcaron como realizadas las sesiones de refuerzo.
-7. **Auditar acciones críticas del sistema**: Cambios de contraseña de administrador.
-8. **Auditar registros fallidos de inicio de sesión**: Intentos fallidos que pueden revelar problemas o accesos no autorizados.
+2. **Auditar la gestión de usuarios**: Revisar la alta, baja y modificación de usuarios del sistema por quién y cuándo.
+3. **Auditar cambios en los datos de la institución**: Ver cuándo se configuran y modifican los datos de la institución dentro del sistema y quien realiza las acciones.
+4. **Auditar cambios en cursos**: Ver cuándo se crean, modifican o eliminan cursos, asi como también la asignación y desasignación de docentes a los cursos y quién lo hizo.
+5. **Auditar configuraciones de sesiones de refuerzo**: Ver cuándo se programaron, aprobaron o marcaron como realizadas las sesiones de refuerzo.
+6. **Auditar acciones críticas del sistema**: Cambios de contraseña de administrador.
+7. **Auditar registros fallidos de inicio de sesión**: Intentos fallidos que pueden revelar problemas o accesos no autorizados.
 
 Entonces, dentro del módulo de auditoría, el administrador podrá:
 
@@ -462,22 +464,22 @@ Entonces, dentro del módulo de auditoría, el administrador podrá:
 2. Según lo seleccionado, ver un historial de los eventos ordenados cronológicamente.
 3. Filtrar por tipo de evento, usuario, fecha o rol.
 4. Buscar eventos específicos (por palabra clave).
-5. Exportar el historial como CSV o PDF (opcional).
+5. Exportar el historial como PDF (opcional).
 6. Ver detalles expandibles de cada entrada (antes y después del cambio).
 
 ##### Qué se registra en la auditoría
 
 Cada entrada de auditoría contendrá los siguientes campos:
 
-| Campo             | Descripción                                                       |
-| ----------------- | ----------------------------------------------------------------- |
-| `timestamp`       | Fecha y hora del evento                                           |
-| `usuario`         | ID o nombre del usuario que realizó la acción                     |
-| `rol`             | Rol del usuario (admin, docente, alumno)                          |
-| `acción`          | Tipo de evento (inicio de sesión, creación de curso, etc.)        |
-| `objeto_afectado` | A qué recurso afectó (curso, usuario, sesión de refuerzo, etc.)   |
-| `datos_antes`     | Estado anterior del recurso (si aplica, por ejemplo en ediciones) |
-| `datos_despues`   | Estado posterior del recurso (si aplica)                          |
+| Campo              | Descripción                                                       |
+| ------------------ | ----------------------------------------------------------------- |
+| `timestamp`        | Fecha y hora del evento                                           |
+| `usuario`          | ID o nombre del usuario que realizó la acción                     |
+| `rol`              | Rol del usuario (admin, docente, alumno)                          |
+| `acción`           | Tipo de evento (inicio de sesión, creación de curso, etc.)        |
+| `recurso_afectado` | A qué recurso afectó (curso, usuario, sesión de refuerzo, etc.)   |
+| `datos_antes`      | Estado anterior del recurso (si aplica, por ejemplo en ediciones) |
+| `datos_despues`    | Estado posterior del recurso (si aplica)                          |
 
 ##### Seguridad y privacidad
 
