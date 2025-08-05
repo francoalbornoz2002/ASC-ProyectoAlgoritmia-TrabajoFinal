@@ -27,7 +27,7 @@ El sistema debe permitir la alta, baja y modificación de usuarios, la asignaci�
 
 **Objetivos relacionados**
 
-- OBJ-07 Gestión Académica
+- OBJ-07 Gestión de instituciones y cursos
 
 **Requisitos asociados**
 
@@ -40,7 +40,7 @@ El sistema debe permitir, para el rol de administrador, la alta, baja y modifica
 
 **Objetivos relacionados**
 
-- OBJ-07 Gestión Académica
+- OBJ-07 Gestión de instituciones y cursos
 
 **Requisitos asociados**
 

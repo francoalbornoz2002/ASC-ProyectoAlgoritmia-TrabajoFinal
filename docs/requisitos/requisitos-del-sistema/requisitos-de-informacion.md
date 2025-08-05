@@ -40,7 +40,7 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 
 **Objetivos asociados**
 
-- OBJ-07 Gestión Académica
+- OBJ-07 Gestionar de instituciones y cursos
 
 **Requisitos asociados**
 
@@ -64,7 +64,7 @@ El sistema deberá almacenar la información correspondiente a las instituciones
 
 **Objetivos asociados**
 
-- OBJ-07 Gestión Académica
+- OBJ-07 Gestionar de instituciones y cursos
 
 **Requisitos asociados**
 
@@ -96,7 +96,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 
 **Objetivos asociados**
 
-- OBJ-07 Gestión Académica
+- OBJ-07 Gestionar de instituciones y cursos
 - OBJ-08 Gestionar usuarios y roles del sistema
 
 **Requisitos asociados**
@@ -281,7 +281,7 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 
 **Objetivos asociados**
 
-- OBJ-09 Gestión de auditoría
+- OBJ-09 Gestionar la auditoría del sistema
 
 **Requisitos asociados**
 

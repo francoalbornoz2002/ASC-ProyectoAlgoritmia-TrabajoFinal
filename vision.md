@@ -151,28 +151,28 @@ El pixel art es un estilo artístico digital utilizado para crear imágenes con 
 El desarrollo de este sistema ofrece varias oportunidades tanto a alumnos como a docentes.
 **Para alumnos**:
 
-- Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de misiones y ejecución en tiempo real de sus algoritmos mediante un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
+- Podrán aprender y practicar acerca de los contenidos dados en la materia mediante la resolución de misiones y ejecución en tiempo real de sus algoritmos con un escenario de videojuego con estética visual Pixel Art, estusiasmando y enganchando al alumno durante sus prácticas.
 - Mediante gamificación, los alumnos podrán ganar experiencia, subir de nivel y desbloquear nuevas misiones y habilidades manteniendo la participación y motivación en utilizar el sistema.
-- El sistema detectará los errores cometidos y propondrá mejoras al algoritmo, todo a modo de feedback formativo para que el alumno pueda mejorar constantemente sus soluciones futuras, además de recopilar estos mismos datos para informar a los docentes acerca de las dificultades de los alumnos.
+- El sistema detectará los errores cometidos y propondrá mejoras al algoritmo para que el alumno pueda mejorar constantemente, además de recopilar estos mismos datos para informar a los docentes acerca de las dificultades de los alumnos.
 
 **Para docentes**:
 
 - Podrán contar con un seguimiento académico exhaustivo de todos sus alumnos.
 - Ver las estadisticas, rendimiento de la semana y porcentaje de avance en los temas de cada alumno.
-- Detectar a aquellos alumnos rezagados o con bajo rendimiento en los contenidos para la toma de decisiones.
+- Detectar a aquellos alumnos atrasados o con dificultades en los contenidos para la toma de decisiones.
 
 #### Beneficios
 
 Con el desarrollo del sistema se esperan los siguientes beneficios a corto plazo:
 
 1. **Alumnos motivados**: se espera que los alumnos se sientan enganchados y atraídos con el entorno de videojuego con gamificación y estética pixel art.
-2. **Seguimiento global e individual del grupo de alumnos**: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos. Podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos en la siguiente clase si asi lo requiere.
-3. **Proceso de aprendizaje dinámico**: con las mejoras y feedback formativo que brindará el sistema, se espera que los alumnos puedan comprender y aprender los contenidos de manera rápida y puedan diseñar mejores soluciones a otros problemas a futuro.
+2. **Seguimiento global e individual del grupo de alumnos**: el docente cada semana podrá revisar el estado de avance global e individual y la evolución de cada uno de los alumnos y podrá detectar aquellos alumnos que quedaron atrasados y reforzar los contenidos.
+3. **Proceso de aprendizaje dinámico**: con las mejoras, la detección de errores y la asignación de ejercicios para resolver las dificultades, se espera que los alumnos puedan aprender de manera eficiente los contenidos y corregir o mitigar sus errores rápidamente para poder diseñar mejores algoritmos para otros problemas a futuro.
 
 Los beneficios a largo plazo:
 
 1. **Menos alumnos atrasados**: con el seguimiento academico y mejora constante, Se espera que se tome menos tiempo de cursada "oficial" para el refuerzo de los contenidos y que haya una menor cantidad de alumnos atrasados al momento de, por ejemplo, la toma de exámenes o al final de la cursada.
-2. **Alumnos con conocimientos solidificados**: mediante la resolución de ejercicios y feedback formativo constante, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores soluciones a futuro.
+2. **Alumnos con conocimientos solidificados**: mediante la resolución de ejercicios y ejercicios especiales para mitigar errores, se espera que los alumnos cuenten con una base sólida en cada contenido dado en la plataforma y sean capaces de diseñar mejores algoritmos a futuro.
 3. **Plataforma oficial para el dictado en la cátedra**: se espera que a largo plazo el sistema quede consolidado como herramienta principal en el dictado de la cátedra reemplazando al Visual DaVinci, integrando la resolución de ejercicios y seguimiento académico de los alumnos en un solo lugar.
 
 ---
@@ -184,7 +184,7 @@ Los beneficios a largo plazo:
 El desarrollo e implementación de este sistema encaja perfecamente en la situación y escenario actual debido a los siguientes puntos:
 
 - **Facil adaptación**: el sistema seguirá con la dinámica de aprendizaje de edición de código y ejecución de la "prueba de escritorio" mediante un visor, con la principal diferencia que tendrá un contexto gamificado con visuales y componentes propios de los videojuegos.
-- **Seguimiento docente**: los docentes carecen de un seguimiendo académico exhaustivo de cada uno de los alumnos. La incorporación del seguimiento académico mediante el sistema hará que los docentes tengan una mejor visión del estado de avance tanto del grupo de alumnos como cada uno individualmente.
+- **Seguimiento docente**: los docentes carecen de un seguimiendo académico exhaustivo de cada uno de los alumnos. La incorporación del seguimiento académico mediante el sistema hará que los docentes tengan una mejor visión del estado de avance tanto del grupo de alumnos como el progreso y dificultades de cada uno.
 - **Producto propio de la FCEQyN**: el Visual Da Vinci es un proyecto de Tesis de la Universidad Nacional de La Plata (UNLP). Entonces, al desarrollar e implementar un proyecto propio y desarrollado en la misma FCEQyN, engrandecerá el sentido de pertenencia e identidad de los docentes y alumnos.
 
 ### 3.2 Objetivos del sistema
@@ -227,11 +227,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 | OBJ-06      | Generar reportes semanales y sesiones de refuerzo automáticos                                                                                                                                                                                                                                                                                   |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Configurar reportes automáticos semanales para que el docente pueda visualizar el progreso y rendimiento semanal de los alumnos de forma individual y grupal. En conjunto, implementar detección automática de alumnos con menor progreso, inactividad y dificultades y generar de una sesión de refuerzo de contenidos para la siguiente clase |
+| Descripción | Configurar reportes semanales automáticos para que el docente pueda visualizar el progreso semanal de los alumnos de forma individual y grupal. En conjunto, implementar detección automática de alumnos con menor progreso, inactividad y dificultades y generar de una sesión de refuerzo de contenidos para la siguiente clase |
 | Estabilidad | Media                                                                                                                                                                                                                                                                                                                                           |
 | Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                                        |
 
-| OBJ-07      | Gestión Académica                                                                                                                                                                                                                       |
+| OBJ-07      | Gestionar instituciones y cursos                                                                                                                                                                                                                       |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda incorporar y utilizar el sistema en su metodología de enseñanza                                                                         |
 | Estabilidad | Alta                                                                                                                                                                                                                                    |
@@ -243,7 +243,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                           |
 | Comentarios | Los alumnos podrán registrarse e iniciar sesión en la web mediante autenticación con Google y en el videojuego solo por el usuario y contraseña. Docentes y administradores solamente con usuario y contraseña |
 
-| OBJ-09      | Gestión de auditoría                                                                                                    |
+| OBJ-09      | Gestionar la auditoría del sistema                                                                                                    |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Proporcionar a los administradores un módulo de auditoría que les permita visualizar los diferentes eventos del sistema |
 | Estabilidad | Media                                                                                                                   |
@@ -399,7 +399,7 @@ Una vez creada la sesión, los alumnos involucrados serán notificados vía corr
 
 El sistema tendrá como uno de los procesos automatizados la generación de un reporte de progreso semanal de los alumnos de un curso (individual y grupal) junto con la creación de la sesión de refuerzo de contenidos.
 
-En este proceso automatizado, el sistema generará automaticamente todos los días sábado a las 18:00 un reporte progreso de todos los alumnos de un curso y lo enviará a los docentes del curso por correo electrónico. Adicionalmente, el sistema creará una sesión de refuerzo de contenidos con una duración de 25 minutos planeada a realizarse _antes_ de la próxima clase presencial del curso. Esta sesión incluirá como prioridad a todos los alumnos en estado crítico (rojo), las dificultades específicas de cada uno y los temas a reforzar propuestos por el sistema.
+En este proceso automatizado, el sistema generará automáticamente todos los días sábado a las 18:00 un reporte de progreso de todos los alumnos de un curso y lo enviará a los docentes del curso por correo electrónico. Adicionalmente, el sistema creará una sesión de refuerzo de contenidos con una duración de 25 minutos planeada a realizarse _antes_ de la próxima clase presencial del curso. Esta sesión incluirá como prioridad a todos los alumnos en estado crítico (rojo), las dificultades específicas de cada uno y los temas a reforzar propuestos por el sistema.
 
 Para que la sesión sea válida, uno y solo uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para confirmar si se realizó la sesión de refuerzo e indicar los temas abordados.
 
@@ -408,7 +408,7 @@ Para que la sesión sea válida, uno y solo uno de los docentes a cargo del curs
 1. **Si un docente confirma la sesión antes que un alumno**, se notifica a todos los alumnos involucrados vía mail avisando que el docente está dispuesto a dar la sesión y para que confirmen su asistencia con recordatorios cada 2 horas. Dado este caso
 
    1. **Si mínimamente un alumno confirma la asistencia** a la sesión en el tiempo determinado, se realiza la sesión de refuerzo de los contenidos propuestos y en el día y horario definidos por el sistema.
-   2. **Si ningún alumno confirma la asistencia a la sesión** en el tiempo determinado (no confirman o no responden), se le notificará esto a los involucrados y se reagendará la sesión para la proxima clase prevista de manera automática.
+   2. **Si ningún alumno confirma la asistencia a la sesión** en el tiempo determinado (no confirman o no responden), se le notificará esto a los involucrados y se reagendará la sesión para la próxima clase prevista de manera automática.
 
 2. **Si un alumno confirma su asistencia antes del docente**, se notifica a todos los docentes vía mail de forma urgente solicitando la realización de la sesión debido a que minimamente un alumno requiere un refuerzo de contenidos la misma. Dado este caso.
 
