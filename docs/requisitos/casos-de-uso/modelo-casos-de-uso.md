@@ -62,8 +62,6 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 
 ## Casos de uso del sistema
 
-### Administrador
-
 #### Gestión de usuarios
 
 - **UC-01** Alta usuario
@@ -71,100 +69,63 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
   - INCLUDE: **UC-03** Buscar usuario
 - **UC-04** Baja usuario
   - INCLUDE: **UC-03** Buscar usuario
-- **UC-05** Iniciar sesión
+- **UC-05** Modificar datos personales
 
-#### Gestión de instituciones
+#### Gestión de institución y cursos
 
-- **UC-06** Alta de institución
+- **UC-06** Alta institución
 - **UC-07** Modificar institución
-  - INCLUDE: **UC-08** Buscar institución
-- **UC-09** Baja de institución
-  - INCLUDE: **UC-08** Buscar institución
+- **UC-08** Alta curso
+- **UC-09** Modificar curso
+  - INCLUDE: **UC-10** Buscar curso
+- **UC-11** Baja curso
+  - INCLUDE: **UC-10** Buscar curso
+- **UC-12** Asignar docente a curso
+  - INCLUDE: **UC-13** Buscar docente
+- **UC-14** Remover docente de curso
+  - INCLUDE: **UC-13** Buscar docente
+- **UC-15** Definir días y horarios del curso
+- **UC-16** Cambiar contraseña de acceso a curso
+- **UC-17** Unirse a un curso
+  - INCLUDE: **UC-10** Buscar curso
+- **UC-18** Habilitar capítulo
+  - INCLUDE: **UC-19** Buscar capítulo
 
-#### Gestión de cursos
+#### Progreso y estadísticas
 
-- **UC-10** Alta curso
-- **UC-11** Modificar curso
-  - INCLUDE: **UC-12** Buscar curso
-- **UC-13** Baja curso
-  - INCLUDE: **UC-12** Buscar curso
-- **UC-14** Asignar docente a curso
-  - INCLUDE: **UC-15** Buscar docente
-- **UC-16** Remover docente de curso
-  - INCLUDE: **UC-15** Buscar docente
+- **UC-20** Consultar progreso de alumnos
+  - EXTEND: **UC-21** Ver progreso general
+  - EXTEND: **UC-22** Ver progreso en capítulo
+- **UC-23** Generar reporte de progreso
+- **UC-24** Consultar dificultades de alumnos
+- **UC-25** Sincronizar progreso de alumno
+- **UC-26** Actualizar dificultades de alumno
+- **UC-27** Consultar mi progreso
+- **UC-28** Consultar mis dificultades
+
+#### Gestión de sesiones de refuerzo
+
+- **UC-29** Crear sesión de refuerzo
+- **UC-30** Modificar sesión de refuerzo
+  - INCLUDE: **UC-31** Buscar sesión de refuerzo
+- **UC-32** Cancelar sesión de refuerzo
+  - INCLUDE: **UC-31** Buscar sesión de refuerzo
+- **UC-33** Indicar asistencia a sesión
+  - INCLUDE: **UC-31** Buscar sesión de refuerzo
 
 #### Auditoría
 
-- **UC-17** Consultar registros de auditoría
-  - EXTEND: **UC-18** Exportar registros de auditoría
+- **UC-34** Consultar registros de auditoría
+  - EXTEND: **UC-35** Exportar registros de auditoría
 
----
+#### Seguridad y autenticación
 
-### Docentes
-
-#### Progreso y estadísticas
-
-- **UC-19** Consultar progreso de alumnos
-  - EXTEND: **UC-20** Ver progreso general
-  - EXTEND: **UC-21** Ver progreso en capítulo
-- **UC-22** Generar reporte de progreso
-- **UC-23** Consultar dificultades de alumnos
-
-#### Gestión de sesiones de refuerzo
-
-- **UC-24** Crear sesión de refuerzo
-- **UC-25** Modificar sesión de refuerzo
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo
-- **UC-27** Cancelar sesión de refuerzo
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo
-- **UC-28** Indicar asistencia a sesión
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo
-
-#### Gestión de cursos
-
-- **UC-29** Definir días y horarios del curso
-- **UC-30** Cambiar contraseña de acceso a curso
-- **UC-31** Aprobar solicitud de ingreso al curso
-- **UC-32** Habilitar capítulo
-  - INCLUDE: **UC-33** Buscar capítulo
-
-#### Gestión de usuarios
-
-- **UC-05** Iniciar sesión
-- **UC-34** Modificar datos personales
-
-### Alumnos
-
-#### Gestión de usuarios
-
-- **UC-35** Registrarse
-  - EXTEND: **UC-36** Registro normal
-  - EXTEND: **UC-37** Registro con Google
-- **UC-05** Iniciar sesión
-  - EXTEND: **UC-38** Iniciar sesión normal
-  - EXTEND: **UC-39** Inicar sesión con Google
-- **UC-34** Modificar datos personales
-
-#### Progreso y estadísticas
-
-- **UC-40** Consultar mi progreso
-- **UC-41** Consultar dificultades
-
-#### Gestión de cursos
-
-- **UC-42** Solicitar ingreso a curso
-
-#### Gestión de sesiones de refuerzo
-
-- **UC-28** Indicar asistencia a sesión
-  - INCLUDE: **UC-26** Buscar sesión de refuerzo
-
-### Videojuego
-
-#### Progreso y estadísticas
-
-- **UC-43** Sincronizar progreso de alumno
-- **UC-44** Actualizar dificultades de alumno
+- **UC-36** Iniciar sesión
+  - EXTEND: **UC-37** Iniciar sesión normal
+  - EXTEND: **UC-38** Inicar sesión con Google
+- **UC-39** Registrarse
+  - EXTEND: **UC-40** Registro normal
+  - EXTEND: **UC-41** Registro con Google
 
 ## Diagrama de Casos de Uso
 
