@@ -225,17 +225,17 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                                                                                     |
 | Comentarios | Los docentes podrán consultar el progeso tanto en la historia en general como en cada capítulo de la historia                                                                                                                                                            |
 
-| OBJ-06      | Generar reportes semanales y sesiones de refuerzo automáticos                                                                                                                                                                                                                                                                                   |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OBJ-06      | Generar reportes semanales y sesiones de refuerzo automáticos                                                                                                                                                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Configurar reportes semanales automáticos para que el docente pueda visualizar el progreso semanal de los alumnos de forma individual y grupal. En conjunto, implementar detección automática de alumnos con menor progreso, inactividad y dificultades y generar de una sesión de refuerzo de contenidos para la siguiente clase |
-| Estabilidad | Media                                                                                                                                                                                                                                                                                                                                           |
-| Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                                        |
+| Estabilidad | Media                                                                                                                                                                                                                                                                                                                             |
+| Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                          |
 
-| OBJ-07      | Gestionar instituciones y cursos                                                                                                                                                                                                                       |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir la gestión de instituciones, cursos y docentes de modo que cualquier institución pueda incorporar y utilizar el sistema en su metodología de enseñanza                                                                         |
-| Estabilidad | Alta                                                                                                                                                                                                                                    |
-| Comentarios | El rol de administrador se encargará de la gestión de instituciones, cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
+| OBJ-07      | Gestionar instituciones y cursos                                                                                                                                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Descripción | Permitir el despliegue del sistema a cualquier institución educativa que quiera incorporar el sistema a su metodología de enseñanza, ofreciendo la gestión de sus cursos y docentes correspondientes                                                                      |
+| Estabilidad | Alta                                                                                                                                                                                                                                                                      |
+| Comentarios | El rol de administrador se encargará de la configuración de los datos de la institución, la gestión de cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
 | OBJ-08      | Gestionar usuarios y roles del sistema                                                                                                                                                                         |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -243,7 +243,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Alta                                                                                                                                                                                                           |
 | Comentarios | Los alumnos podrán registrarse e iniciar sesión en la web mediante autenticación con Google y en el videojuego solo por el usuario y contraseña. Docentes y administradores solamente con usuario y contraseña |
 
-| OBJ-09      | Gestionar la auditoría del sistema                                                                                                    |
+| OBJ-09      | Gestionar la auditoría del sistema                                                                                      |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Descripción | Proporcionar a los administradores un módulo de auditoría que les permita visualizar los diferentes eventos del sistema |
 | Estabilidad | Media                                                                                                                   |
@@ -268,8 +268,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 **Funcionales**
 
 - Gestión de usuarios
-- Gestión de instituciones
-- Gestión de cursos
+- Gestión de institución y cursos
 - Progreso y estadísticas
 - Gestión de sesiones de refuerzo
 
@@ -291,21 +290,19 @@ En la gestión de usuarios, se tendrán tres roles diferentes que servirán para
 
 - **Administrador**: Acceso a los módulos de gestión de instituciones, gestión de cursos y tareas de gestión de docentes, como la alta, baja, modificación y también el asignar o remover docentes a cursos correspondientes. Es el unico usuario que poseerá acceso al módulo de auditoría para consulta y exportación.
 - **Alumno**: Acceso en la web para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego, dificultades y modificación del perfil. Tendrá acceso a la descarga exclusiva del videojuego.
-- **Docente**: Acceso principal y completo al módulo de Progreso y estadísticas donde podrá  visualizar y realizar reportes de progreso de los alumnos y visualizar sus dificultades. En el módulo de Gestion de sesiones de refuerzo podrá coordinar sesiones de refuerzo para los alumnos. También tendrá acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de sus alumnos.
+- **Docente**: Acceso principal y completo al módulo de Progreso y estadísticas donde podrá visualizar y realizar reportes de progreso de los alumnos y visualizar sus dificultades. En el módulo de Gestion de sesiones de refuerzo podrá coordinar sesiones de refuerzo para los alumnos. También tendrá acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de sus alumnos.
 
-#### 3.4.2 Gestión de instituciones
-
-Este módulo del sistema estará controlado unicamente por el administrador del sistema.
-El administrador podrá dar de alta, modificar y dar de baja las instituciones que soliciten el uso del sistema, indicando: Nombre de la institución, dirección y contacto: teléfono y email.
-
-#### 3.4.3 Gestión de cursos
+#### 3.4.2 Gestión de institución y cursos
 
 Este modulo del sistema estará controlado en su mayor medida por el administrador del sistema y algunas funcionalidades para los docentes.
 
 El administrador del sistema tendrá las siguientes funcionalidades:
 
-**ABM de Cursos**
-Encargado de la alta, baja y modificación de los cursos del sistema
+**Dar de alta los datos de la institución**
+El administrador, al instalar el sistema en la institución educativa, deberá configurar y dar de alta los datos específicos de la misma, los cuales estarán disponibles en el sistema a partir del Padron Oficial de Establecimientos Educativos.
+
+**Gestión de Cursos**
+El administrador podrá realizar tareas de alta, baja y modificación de los cursos dentro del sistema.
 
 **Asignación de docentes a los cursos**
 El administrador tambien se encargará de asignar a los docentes a sus cursos correspondientes asi como también remover a un docente de un curso cuando corresponda.
@@ -318,7 +315,7 @@ Los docentes podrán configurar los días, horarios y modalidad (presencial, vir
 **Habilitación de capítulos**
 Los docentes podrán habilitar los capítulos de la historia a medida que se vayan dando los contenidos en la materia para garantizar una curva de aprendizaje controlada y seguimiento académico ordenado de los alumnos.
 
-#### 3.4.4 Progreso y estadísticas
+#### 3.4.3 Progreso y estadísticas
 
 En este módulo del sistema, los docentes tendrán funcionalidades para realizar el seguimiento de progreso a sus alumnos. Podrán consultar las estadísticas de progreso en el videojuego en tiempo real y las dificultades que tenga cada alumno al intentar resolver las misiones.
 
@@ -379,7 +376,7 @@ En cuanto a las dificultades de los alumnos, los docentes tendrán una lista de 
 **Funcionalidades para alumnos**
 Los alumnos tambien podrán acceder y visualizar sus estadísticas de progreso individuales y sus dificultades específicas de la misma forma que los docentes, pero sin posibilidad de emitir reportes.
 
-#### 3.4.5 Gestión de sesiones de refuerzo
+#### 3.4.4 Gestión de sesiones de refuerzo
 
 Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a desempeño y dificultades. Este módulo del sistema permite a los docentes identificar a aquellos alumnos que tienen dificultades para resolver las misiones y/o una inactividad prolongada detectando a tiempo a los alumnos rezagados para tratar de resolver sus dificultades lo antes posible.
 
