@@ -19,7 +19,7 @@
 - RI-07 Información de dificultades de los alumnos
 - RI-09 Información de capítulos
 - RI-10 Información de misiones
-- RF-05 Visualizar el progreso de alumnos
+- RF-05 Visualizar y generar reportes del progreso de alumnos
 - RF-06 Determinar las dificultades específicas de los alumnos
 
 **Descripción**

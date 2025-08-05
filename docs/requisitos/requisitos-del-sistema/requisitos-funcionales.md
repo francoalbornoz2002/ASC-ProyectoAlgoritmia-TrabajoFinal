@@ -49,9 +49,7 @@ El sistema debe permitir, para el rol de administrador, configuración de los da
 - RI-05 Información de alumnos
 
 **Descripción**
-El sistema debe permitir, para el rol de administrador, la alta, baja y modificación de cursos asi como también las acciones de asignar docentes a cursos y removerlos cuando sea necesario.
-El sistema debe permitir, para el rol de docente, cambiar la contraseña de acceso al curso y aceptar las solicitudes de ingreso al curso de cada alumno verificando su identidad.
-El sistema debe permitir, para el rol de alumno, ingresar a cursos con el nombre del curso y contraseña proporcionados por el docente.
+El sistema debe permitir, para el rol de administrador, la alta, baja y modificación de cursos asi como también las acciones de asignar o desasignar docentes de los cursos del sistema. Para el rol de docente, le debe permitir cambiar la contraseña de acceso al curso. Para el rol de alumno, ingresar a cursos con el nombre del curso y contraseña proporcionados por el docente.
 
 ## RF-04 Gestionar sesiones de refuerzo
 
@@ -69,7 +67,7 @@ El sistema debe permitir, para el rol de alumno, ingresar a cursos con el nombre
 **Descripción**
 El sistema debe permitir al docente la creación, modificación y cancelación de sesiones de refuerzo y la generación automática de la sesión de refuerzo semanal todos los sábados a las 18:00 hs notificando por correo electrónico al docente y alumnos involucrados.
 
-## RF-05 Visualizar el progreso de alumnos
+## RF-05 Visualizar y generar reportes del progreso de alumnos
 
 **Objetivos relacionados**
 
@@ -84,21 +82,22 @@ El sistema debe permitir al docente la creación, modificación y cancelación d
 **Descripción**
 El sistema debe permitir al docente visualizar y generar reportes de las estadísticas de progreso de todos los alumnos, tanto en la historia general como en cada capítulo, de cada curso que esté a cargo, pudiendo aplicar los siguientes filtros:
 
+- Selección de capítulo
 - Búsqueda por nombre y/o apellido del alumno
-- Capítulo específico
 - Porcentaje de avance
 - Promedio de intentos por misión
 - Estado de un capítulo (En curso o Finalizado)
 - Días de inactividad
+- Fechas desde - hasta
 
-Si se filtra por capítulo, todas las estadísticas individuales de cada alumno serán de ese capítulo en específico. Además, se añadirán los siguientes filtros adicionales:
+Si se filtra por capítulo, todas las estadísticas individuales de cada alumno serán de ese capítulo en específico. Además, se añadirán los siguientes datos adicionales:
 - Estado del capítulo: "En curso" o "Finalizado"
 - Porcentaje de avance del curso en el capítulo
   - Si está en curso, se muestra el porcentaje de avance
-  - Si está finalizado, se muestra el porcentaje de avance cuando finalizó y el porcentaje de avance actual, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos finalizados.
+  - Si está finalizado, se muestra el porcentaje de avance cuando finalizó y el porcentaje de avance actualizable post-finalización, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos finalizados.
 
 **Comentarios**
-El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.
+El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos, ordenado por capítulos (solo los capítulos finalizados y los que estén curso) todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.
 
 ## RF-06 Determinar las dificultades específicas de los alumnos
 
