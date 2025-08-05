@@ -190,13 +190,13 @@ El sistema deberá almacenar la información de las dificultades específicas de
 **Datos específicos**
 - Id de dificultad
 - Categoría de la dificultad
-- Dificultad específica
+- Nombre de la dificultad específica
 - Descripción de la dificultad específica
 - Cantidad de errores relacionados a esa dificultad específica.
 - Gravedad de la dificultad específica
 
 **Comentarios**
-Los tipos de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. La descripción implica detallar especificamente en qué tiene dificultad el alumno, por ejemplo: Si tiene dificultades en "Lógica" -> Podría hacer un mal uso de los conectivos lógicos, variables mal evaluadas, condiciones siempre falsas, etc.
+Los categorías de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad específica estará asociada a una y solo una categoría.
 
 ## RI-08 Información de sesiones de refuerzo
 
