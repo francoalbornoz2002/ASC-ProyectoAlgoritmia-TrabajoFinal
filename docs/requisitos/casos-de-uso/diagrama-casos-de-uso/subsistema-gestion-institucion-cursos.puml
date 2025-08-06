@@ -14,44 +14,49 @@ actor Alumno
 actor Docente
 actor Administrador
 
-package "Plataforma Web"{
-    package "Gestión de cursos"{
-        usecase "UC-10 Alta curso" as UC10
-        usecase "UC-11 Modificar curso" as UC11
-        usecase "UC-12 Buscar curso" as UC12
-        usecase "UC-13 Baja curso" as UC13
-        usecase "UC-14 Asignar docente a curso" as UC14
-        usecase "UC-15 Buscar docente" as UC15
-        usecase "UC-16 Remover docente de curso" as UC16
-        usecase "UC-29 Definir días y horarios del curso" as UC29
-        usecase "UC-30 Cambiar contraseña de acceso a curso" as UC30
-        usecase "UC-31 Aprobar solicitud de ingreso al curso" as UC31
-        usecase "UC-32 Habilitar capítulo" as UC32
-        usecase "UC-33 Buscar capítulo" as UC33
-        usecase "UC-42 Solicitar ingreso a curso" as UC43
+package "Plataforma Web - PGA"{
+    package "Gestión de institución y cursos" {
+        usecase "UC-06 Alta institución" as UC06
+        usecase "UC-07 Modificar institución" as UC07
+        usecase "UC-08 Alta curso" as UC08
+        usecase "UC-09 Modificar curso" as UC09
+        usecase "UC-10 Buscar curso" as UC10
+        usecase "UC-11 Baja curso" as UC11
+        usecase "UC-12 Asignar docente a curso" as UC12
+        usecase "UC-13 Buscar docente" as UC13
+        usecase "UC-14 Desasignar docente de curso" as UC14
+        usecase "UC-15 Definir días y horarios del curso" as UC15
+        usecase "UC-16 Cambiar contraseña de acceso a curso" as UC16
+        usecase "UC-17 Unirse a un curso" as UC17
+        usecase "UC-18 Habilitar capítulo" as UC18
+        usecase "UC-19 Buscar capítulo" as UC19
+        usecase "UC-20 Finalizar curso" as UC20
     }
 }
 
-Administrador --> UC10
+Administrador --> UC06
+Administrador --> UC07
+
+Administrador --> UC08
+Administrador --> UC09
 Administrador --> UC11
-Administrador --> UC13
+UC09 ..> UC10 : <<include>>
+UC11 ..> UC10 : <<include>>
 
-UC11 ..> UC12 : <<include>>
-UC13 ..> UC12 : <<include>>
-
+Administrador --> UC12
+UC12 ..> UC10 : <<include>>
+UC12 ..> UC13 : <<include>>
 Administrador --> UC14
-Administrador --> UC16
-UC14 ..> UC15 : <<include>>
-UC14 ..> UC12 : <<include>>
-UC16 ..> UC15 : <<include>>
-UC16 ..> UC12 : <<include>>
+UC14 ..> UC10 : <<include>>
+UC14 ..> UC13 : <<include>>
 
-Docente --> UC29
-Docente --> UC30
-Docente --> UC31
-Docente --> UC32
-UC32 ..> UC33 : <<include>>
+Docente --> UC15
+Docente --> UC16
 
-Alumno --> UC42
+Alumno --> UC17
+Docente --> UC18
+UC18 ..> UC19 : <<include>>
+Docente --> UC20
+UC20 ..> UC10 : <<include>>
 
 @enduml

@@ -1,0 +1,25 @@
+@startuml SUBSISTEMA_Auditoria
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Administrador
+
+package "Plataforma Web - PGA"{
+    package "Auditoría" {
+        usecase "UC-34 Consultar registros de auditoría" as UC34
+        usecase "UC-35 Exportar registros de auditoría" as UC35
+    }
+}
+
+Administrador --> UC34
+UC34 <.. UC35 : <<extend>>
+
+@enduml

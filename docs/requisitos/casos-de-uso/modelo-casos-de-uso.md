@@ -93,38 +93,38 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 #### Progreso y estadísticas
 
 - **UC-21** Consultar progreso de alumnos
-  - EXTEND: **UC-22** Ver progreso general
-  - EXTEND: **UC-23** Ver progreso en capítulo
-- **UC-24** Generar reporte de progreso
-- **UC-25** Consultar dificultades de alumnos
-- **UC-26** Sincronizar progreso de alumno
-- **UC-27** Actualizar dificultades de alumno
-- **UC-28** Consultar mi progreso
-- **UC-29** Consultar mis dificultades
+  - EXTEND: **UC-22** Consultar progreso en capítulo
+- **UC-23** Generar reporte de progreso
+- **UC-24** Consultar dificultades de alumnos
+- **UC-25** Sincronizar progreso de alumno
+- **UC-26** Actualizar dificultades de alumno
+- **UC-27** Consultar mi progreso
+- **UC-28** Consultar mis dificultades
 
 #### Gestión de sesiones de refuerzo
 
-- **UC-30** Crear sesión de refuerzo
-- **UC-31** Modificar sesión de refuerzo
-  - INCLUDE: **UC-32** Buscar sesión de refuerzo
-- **UC-33** Cancelar sesión de refuerzo
-  - INCLUDE: **UC-32** Buscar sesión de refuerzo
-- **UC-34** Indicar asistencia a sesión
-  - INCLUDE: **UC-32** Buscar sesión de refuerzo
+- **UC-29** Crear sesión de refuerzo
+- **UC-30** Modificar sesión de refuerzo
+  - INCLUDE: **UC-31** Buscar sesión de refuerzo
+- **UC-32** Cancelar sesión de refuerzo
+  - INCLUDE: **UC-31** Buscar sesión de refuerzo
+- **UC-33** Indicar asistencia a sesión
+  - INCLUDE: **UC-31** Buscar sesión de refuerzo
 
 #### Auditoría
 
-- **UC-35** Consultar registros de auditoría
-  - EXTEND: **UC-36** Exportar registros de auditoría
+- **UC-34** Consultar registros de auditoría
+  - EXTEND: **UC-35** Exportar registros de auditoría
 
 #### Seguridad y autenticación
 
-- **UC-37** Iniciar sesión
-  - EXTEND: **UC-38** Iniciar sesión normal
-  - EXTEND: **UC-39** Inicar sesión con Google
-- **UC-40** Registrarse
-  - EXTEND: **UC-41** Registro normal
-  - EXTEND: **UC-42** Registro con Google
+- **UC-36** Iniciar sesión
+  - EXTEND: **UC-37** Iniciar sesión normal
+  - EXTEND: **UC-38** Inicar sesión con Google
+- **UC-39** Registrarse
+  - EXTEND: **UC-40** Registro normal
+  - EXTEND: **UC-41** Registro con Google
+- **UC-42** Cerrar sesión
 
 ## Diagrama de Casos de Uso
 

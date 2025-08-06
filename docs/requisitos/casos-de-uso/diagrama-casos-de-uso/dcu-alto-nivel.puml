@@ -19,29 +19,31 @@ actor Videojuego
 package "Plataforma Gamificada Algoritmia (PGA)"{
     package "Plataforma web"{
         usecase "Gestión de usuarios" as GestionUsuarios
-        usecase "Gestión de instituciones" as GestionInstituciones
-        usecase "Gestión de cursos" as GestionCursos
+        usecase "Gestión de institución y cursos" as GestionInstitucionCursos
         usecase "Gestión de sesiones de refuerzo" as GestionSesionesRefuerzo
         usecase "Progreso y estadísticas" as ProgresoEstadisticas
-        usecase "Gestión de auditoría" as GestionAuditoria
+        usecase "Auditoría" as GestionAuditoria
+        usecase "Seguridad y autenticación" as SeguridadAutenticacion
     }
 
     Alumno --> GestionUsuarios
-    Alumno --> GestionCursos
+    Alumno --> GestionInstitucionCursos
     Alumno --> ProgresoEstadisticas
     Alumno --> GestionSesionesRefuerzo
+    Alumno --> SeguridadAutenticacion
     
-    Administrador -up-> GestionUsuarios
-    Administrador -up-> GestionInstituciones
-    Administrador -up-> GestionCursos
-    Administrador -up-> GestionAuditoria
+    Administrador --> GestionUsuarios
+    Administrador --> GestionInstitucionCursos
+    Administrador --> GestionAuditoria
+    Administrador --> SeguridadAutenticacion
 
-    Docente --> GestionUsuarios
-    Docente --> GestionCursos
-    Docente --> GestionSesionesRefuerzo
-    Docente --> ProgresoEstadisticas
+    Docente -up-> GestionUsuarios
+    Docente -up-> GestionInstitucionCursos
+    Docente -up-> GestionSesionesRefuerzo
+    Docente -up-> ProgresoEstadisticas
+    Docente -up-> SeguridadAutenticacion
 
-    GoogleOAuth2 -up-> GestionUsuarios
+    GoogleOAuth2 -up-> SeguridadAutenticacion
     Videojuego -up-> ProgresoEstadisticas
 }
 

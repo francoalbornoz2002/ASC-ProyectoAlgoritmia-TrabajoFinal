@@ -1,0 +1,45 @@
+@startuml SUBSISTEMA_SeguridadAutenticacion
+left to right direction
+
+skinparam dpi 150
+skinparam usecasePadding 25
+skinparam actorPadding 80
+skinparam packagePadding 50
+skinparam wrapWidth 200
+
+skinparam nodesep 20
+skinparam ranksep 100
+
+actor Administrador
+actor Docente
+actor Alumno
+actor "Google OAuth 2.0" as GoogleOAuth2
+
+package "Plataforma Web - PGA"{
+    package "Seguridad y autenticación" {
+        usecase "UC-36 Iniciar sesión" as UC36
+        usecase "UC-37 Iniciar sesión normal" as UC37
+        usecase "UC-38 Iniciar sesión con Google" as UC38
+        usecase "UC-39 Registrarse" as UC39
+        usecase "UC-40 Registro normal" as UC40
+        usecase "UC-41 Registro con Google" as UC41
+        usecase "UC-42 Cerrar sesión" as UC42
+    }
+}
+
+Administrador --> UC36
+Administrador --> UC42
+Docente --> UC36
+Docente --> UC42
+Alumno --> UC36
+Alumno --> UC39
+Alumno --> UC42
+
+UC36 <.. UC37 : <<extend>>
+UC36 <.. UC38 : <<extend>>
+UC39 <.. UC40 : <<extend>>
+UC39 <.. UC41 : <<extend>>
+
+GoogleOAuth2 -up-> UC38
+GoogleOAuth2 -up-> UC41
+@enduml

@@ -13,41 +13,21 @@ skinparam ranksep 100
 actor Alumno
 actor Docente
 actor Administrador
-actor "Google OAuth 2.0" as GoogleOAuth2
 
-package "Plataforma Web"{
-    package "Gestión de usuarios"{
+package "Plataforma Web - PGA"{
+    package "Gestión de usuarios" {
         usecase "UC-01 Alta usuario" as UC01
         usecase "UC-02 Modificar usuario" as UC02
         usecase "UC-03 Buscar usuario" as UC03
         usecase "UC-04 Baja usuario" as UC04
-        usecase "UC-05 Iniciar sesión" as UC05
-        usecase "UC-35 Registrarse" as UC35
-        usecase "UC-36 Registro normal" as UC36
-        usecase "UC-37 Registro con Google" as UC37
-        usecase "UC-38 Iniciar sesión normal" as UC38
-        usecase "UC-39 Iniciar sesión con Google" as UC39
-        usecase "UC-34 Modificar datos personales" as UC34
+        usecase "UC-05 Modificar datos personales" as UC05
     }
-
 }
 Administrador --> UC01
 Administrador --> UC02
 UC02 ..> UC03 : <<include>>
 Administrador --> UC04
 UC04 ..> UC03 : <<include>>
-Administrador --> UC05
 
-Alumno --> UC34
-Alumno --> UC35
-UC35 <.. UC36 : <<extend>>
-UC35 <.. UC37 : <<extend>>
 Alumno --> UC05
-UC05 <.. UC38 : <<extend>>
-UC05 <.. UC39 : <<extend>>
-
-Docente --> UC34
 Docente --> UC05
-
-GoogleOAuth2 -up-> UC37
-GoogleOAuth2 -up-> UC39
