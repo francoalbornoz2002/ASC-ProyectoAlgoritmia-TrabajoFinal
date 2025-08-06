@@ -99,7 +99,7 @@ Si se filtra por capítulo, todas las estadísticas individuales de cada alumno 
 **Comentarios**
 El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos, ordenado por capítulos (solo los capítulos finalizados y los que estén curso) todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.
 
-## RF-06 Determinar las dificultades específicas de los alumnos
+## RF-06 Determinar las dificultades de los alumnos
 
 **Objetivos relacionados**
 

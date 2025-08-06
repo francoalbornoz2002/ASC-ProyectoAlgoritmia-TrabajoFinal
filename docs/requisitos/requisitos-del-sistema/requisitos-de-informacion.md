@@ -74,9 +74,9 @@ El sistema deberá almacenar la información correspondiente a la institución e
 - UC-XX Modificar curso
 - UC-XX Baja de curso
 - UC-XX Buscar curso
-- UC-XX Solicitar ingreso a curso
+- UC-XX Unirse a un curso
 - UC-XX Asignar docente a curso
-- UC-XX Aprobar solicitud de ingreso al curso
+- UC-XX Desasignar docente de curso
 - UC-XX Cambiar contraseña de acceso a curso
 - UC-XX Definir días y horarios del curso
 
@@ -87,9 +87,10 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 
 - Id de curso
 - Nombre del curso
-- Institución a la que pertenece el curso
-- Días y horarios de cursada
+- Descripción del curso
 - Docente/s a cargo del curso
+- Días y horarios de cursada
+- Modalidad de cursada (presencial, virtual o mixta)
 - Alumnos asociados al curso
 - Contraseña para el ingreso al curso
 - Estado del curso (activo/finalizado)
@@ -111,9 +112,9 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 
 **Datos específicos**
 
-- Institucion/es a la que pertenece el docente
-- Cursos a cargo del docente
-- Sesiones de refuerzo creadas y dictadas por el docente
+- Cursos a los que está asociado
+- Sesiones de refuerzo creadas por el docente
+- Sesiones de refuerzo dictadas por el docente
 
 ## RI-05 Información de alumnos
 
