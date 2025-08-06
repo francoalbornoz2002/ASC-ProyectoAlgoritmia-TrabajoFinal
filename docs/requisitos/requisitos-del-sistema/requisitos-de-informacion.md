@@ -46,7 +46,8 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 
 **Requisitos asociados**
 
-- UC-XX Configurar datos de institución
+- UC-06 Alta institución
+- UC-07 Modificar institución
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a la institución educativa que utilizará el sistema. En concreto:
@@ -54,7 +55,7 @@ El sistema deberá almacenar la información correspondiente a la institución e
 **Datos específicos**
 
 - Id de institución
-- Provincia
+- Jurisdicción
 - Localidad
 - Nombre
 - Domicilio
