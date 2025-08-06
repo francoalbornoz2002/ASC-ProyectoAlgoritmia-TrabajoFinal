@@ -132,26 +132,28 @@ Representa al videojuego desarrollado en Godot que enviará los datos de progres
 
 ![DCU de alto nivel o Diagrama de Subsistemas](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/DCU_AltoNivel.png)
 
-### Subsistema Gestión de Usuarios
+#### Subsistema Gestión de Usuarios
 
 ![Subsistema Gestión de Usuarios](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionUsuarios.png)
 
-### Subsistema Gestión de Instituciones
+#### Subsistema Gestión de institución y cursos
 
-![Subsistema Gestión de Instituciones](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionInstituciones.png)
+![Subsistema Gestión de Cursos](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionInstitucionCursos.png)
 
-### Subsistema Gestión de Cursos
-
-![Subsistema Gestión de Cursos](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionCursos.png)
-
-### Subsistema Progreso y Estadísticas
+#### Subsistema Progreso y Estadísticas
 
 ![Subsistema Progreso y Estadísticas](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_ProgresoEstadisticas.png)
 
-### Subsistema Gestión de Sesiones de refuerzo
+#### Subsistema Gestión de Sesiones de refuerzo
 
 ![Subsistema Gestión de Sesiones de refuerzo](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionSesionesRefuerzo.png)
 
-### Subsistema Gestión de Auditoría
+#### Subsistema Auditoría
 
-![Subsistema Gestión de Auditoría](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_GestionAuditoria.png)
+![Subsistema Auditoría](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_Auditoria.png)
+
+#### Subsistema Seguridad y autenticación
+![Subsistema Seguridad y autenticación](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/SUBSISTEMA_SeguridadAutenticacion.png)
+
+### DCU Expandido
+![DCU Expandido](/docs/requisitos/casos-de-uso/diagrama-casos-de-uso/DCU_Expandido.png)
