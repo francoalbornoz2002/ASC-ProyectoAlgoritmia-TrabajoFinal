@@ -2,17 +2,17 @@
 
 #### Objetivos asociados
 
-- OBJ-08 Gestionar usuarios y roles del sistema
+- **OBJ-08** Gestionar usuarios y roles del sistema
 
 #### Requisitos funcionales y no funcionales asociados
 
-- RF-01 Gestionar usuarios
-- RNF-02 Auditoría
-- RNF-03 Seguridad de la información
+- **RF-01** Gestionar usuarios
+- **RNF-02** Auditoría
+- **RNF-03** Seguridad de la información
 
 #### Requisitos de información utilizados
 
-- RI-01 Información de usuarios
+- **RI-01** Información de usuarios
 
 #### Actor principal
 
@@ -24,11 +24,11 @@ El administrador realiza la alta de un usuario en el sistema indicando los datos
 
 #### Precondición
 
-- 
+- ...
 
 #### Postcondición
 
-El usuario está dado de alta en el sistema.
+- El usuario está dado de alta en el sistema.
 
 #### Flujo principal
 
@@ -40,15 +40,15 @@ El usuario está dado de alta en el sistema.
 
 #### Excepciones
 
-- Paso 4: El nombre de usuario y/o correo electrónico del usuario que se desea dar de alta ya existe en el sistema. El sistema indica el error y solicita que se ingrese un nuevo nombre de usuario y/o correo electrónico.
+- **Paso 4**: El nombre de usuario y/o correo electrónico del usuario que se desea dar de alta ya existe en el sistema. El sistema indica el error y solicita que se ingrese un nuevo nombre de usuario y/o correo electrónico.
 
 #### Rendimiento
 
-- Paso 5: 1 segundo
+- **Paso 5**: 1 segundo
 
 #### Frecuencia
 
-- 5 veces/mes
+- 5 veces / mes
 
 #### Estabilidad: Alta
 

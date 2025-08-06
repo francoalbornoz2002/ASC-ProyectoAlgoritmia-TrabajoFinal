@@ -2,16 +2,16 @@
 
 #### Objetivos asociados
 
-- OBJ-07 Gestionar instituciones y cursos
+- **OBJ-07** Gestionar instituciones y cursos
 
 #### Requisitos funcionales y no funcionales asociados
 
-- RF-02 Configurar datos de la institución
-- RNF-02 Auditoría
+- **RF-02** Configurar datos de la institución
+- **RNF-02** Auditoría
 
 #### Requisitos de información utilizados
 
-- RI-02 Información de la institución
+- **RI-02** Información de la institución
 
 #### Actor principal
 
@@ -40,11 +40,11 @@ Los datos de la institución quedan establecidos en el sistema y la plataforma q
 
 #### Excepciones
 
-- Paso 3: El establecimiento educativo en cuestión no aparece en el Padrón Oficial de Establecimientos Educativos. El administrador del sistema se debe ponerse en contacto con soporte técnico para dar de alta manualmente los datos de la institución y termina el caso de uso.
+- **Paso 3**: El establecimiento educativo en cuestión no aparece en el Padrón Oficial de Establecimientos Educativos. El administrador del sistema se debe ponerse en contacto con soporte técnico para dar de alta manualmente los datos de la institución y termina el caso de uso.
 
 #### Rendimiento
 
-- Paso 2: 1 segundo
+- **Paso 2**: 1 segundo
 
 #### Frecuencia
 
