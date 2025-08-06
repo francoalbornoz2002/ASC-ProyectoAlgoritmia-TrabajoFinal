@@ -81,7 +81,7 @@ El sistema deberá almacenar la información correspondiente a la institución e
 - UC-XX Definir días y horarios del curso
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los cursos del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los cursos del sistema asi como también la configuración de los días de clase. En concreto:
 
 **Datos específicos**
 
@@ -89,10 +89,11 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 - Nombre del curso
 - Descripción del curso
 - Docente/s a cargo del curso
-- Días y horarios de cursada
 - Modalidad de cursada (presencial, virtual o mixta)
+- Días, horarios y modalidad de clase
 - Alumnos asociados al curso
 - Contraseña para el ingreso al curso
+- Fecha de creación
 - Estado del curso (activo/finalizado)
 
 ## RI-04 Información de docentes
