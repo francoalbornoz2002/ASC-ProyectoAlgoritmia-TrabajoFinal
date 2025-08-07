@@ -48,17 +48,16 @@ package "Plataforma Web - PGA"{
     usecase "UC-08 Modificar curso" as UC08
     usecase "UC-09 Buscar curso" as UC09
     usecase "UC-10 Baja curso" as UC10
-    usecase "UC-11 Asignar docente a curso" as UC11
-    usecase "UC-12 Buscar docente" as UC12
-    usecase "UC-13 Desasignar docente de curso" as UC13
-    usecase "UC-14 Unirse a un curso" as UC14
-    usecase "UC-15 Habilitar capítulo" as UC15
-    usecase "UC-16 Buscar capítulo" as UC16
-    usecase "UC-17 Finalizar curso" as UC17
+    usecase "UC-11 Unirse a un curso" as UC11
+    usecase "UC-12 Habilitar capítulo" as UC12
+    usecase "UC-13 Buscar capítulo" as UC13
+    usecase "UC-14 Finalizar curso" as UC14
 
     'Relaciones'
+    'AM Institución
     Administrador --> UC05
     Administrador --> UC06
+    'ABM Cursos
     Administrador --> UC07
     UC07 <.. UC07A : <<extend>>
     UC07 <.. UC07B : <<extend>>
@@ -68,17 +67,13 @@ package "Plataforma Web - PGA"{
     Administrador --> UC10
     UC08 ..> UC09 : <<include>>
     UC10 ..> UC09 : <<include>>
-    Administrador --> UC11
-    UC11 ..> UC09 : <<include>>
-    UC11 ..> UC12 : <<include>>
-    Administrador --> UC13
-    UC13 ..> UC09 : <<include>>
-    UC13 ..> UC12 : <<include>>
-    Alumno --> UC14
-    Docente --> UC15
-    UC15 ..> UC16 : <<include>>
-    Docente --> UC17
-    UC17 ..> UC09 : <<include>>
+    'Unirse a curso
+    Alumno --> UC11
+    'Habilitar capítulo
+    Docente --> UC12
+    UC12 ..> UC13 : <<include>>
+    Docente --> UC14
+    UC14 ..> UC09 : <<include>>
   }
 
   package "Progreso y estadísticas" {

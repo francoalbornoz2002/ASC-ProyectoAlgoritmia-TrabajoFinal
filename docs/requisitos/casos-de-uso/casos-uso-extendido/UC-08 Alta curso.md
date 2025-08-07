@@ -35,7 +35,7 @@ El administrador realiza la alta de un curso en el sistema indicando los datos c
 1. Este caso de uso comienza cuando el administrador quiere dar de alta un curso en el sistema.
 2. El sistema solicita al administrador ingrese el nombre y descripción del curso
 3. El administrador ingresa el nombre y descripción del curso.
-4. El sistema solicita al administrador que seleccione a los docentes que estarán a cargo del curso.
+4. El sistema lista a los docentes dados de alta en el sistema y solicita al administrador que seleccione a los docentes que estarán a cargo del curso.
 5. El administrador selecciona a los docentes a cargo del curso.
 6. El sistema solicita que indique la modalidad de cursada.
 7. El administrador selecciona la modalidad de cursada eligiendo entre: presencial, virtual o mixta.
