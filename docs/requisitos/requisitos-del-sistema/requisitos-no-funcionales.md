@@ -43,7 +43,7 @@ El sistema deberá permitir que los alumnos puedan avanzar en la resolución de 
 - RI-11 Información de auditoría
 
 **Descripción**
-El sistema deberá registrar en una bitácora de auditoría todas las acciones críticas realizadas sobre los módulos de usuarios, instituciones, cursos, sesiones de refuerzo, docentes y alumnos. Estas acciones incluirán altas, bajas, modificaciones y asignaciones, indicando el usuario que realizó la acción, la fecha y hora exacta, y los datos afectados.
+El sistema deberá registrar en una bitácora de auditoría todas las acciones críticas realizadas sobre los módulos de usuarios, instituciones, cursos, sesiones de refuerzo, docentes y alumnos. Estas acciones incluirán altas, bajas y modificaciones, indicando el usuario que realizó la acción, la fecha y hora exacta, los recursos y datos afectados.
 El módulo de auditoría solo estará disponible para el administrador del sistema, éste debe permitir consultar, filtrar y exportar los registros según diferentes criterios (tipo de acción, entidad afectada, responsable y rango de fechas).
 
 ## RNF-03 Seguridad de la información

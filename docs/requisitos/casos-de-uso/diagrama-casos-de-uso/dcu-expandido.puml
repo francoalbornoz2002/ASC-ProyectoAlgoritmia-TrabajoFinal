@@ -75,24 +75,24 @@ package "Plataforma Web - PGA"{
   }
 
   package "Progreso y estadísticas" {
-    usecase "UC-18 Consultar progreso de alumnos" as UC18
-    usecase "Consultar progreso en capítulo" as UC18A
-    usecase "UC-19 Generar reporte de progreso" as UC19
-    usecase "UC-20 Consultar dificultades de alumnos" as UC20
-    usecase "UC-21 Sincronizar progreso de alumno" as UC21
-    usecase "UC-22 Actualizar dificultades de alumno" as UC22
-    usecase "UC-23 Consultar mi progreso" as UC23
-    usecase "UC-24 Consultar mis dificultades" as UC24
+    usecase "UC-14 Consultar progreso de alumnos" as UC14
+    usecase "Consultar progreso en capítulo" as UC14A
+    usecase "UC-15 Generar reporte de progreso" as UC15
+    usecase "UC-16 Consultar dificultades de alumnos" as UC16
+    usecase "UC-17 Sincronizar progreso de alumno" as UC17
+    usecase "UC-18 Actualizar dificultades de alumno" as UC18
+    usecase "UC-19 Consultar mi progreso" as UC19
+    usecase "UC-20 Consultar mis dificultades" as UC20
 
     'Relaciones'
-    Docente --> UC18
-    UC18 <.. UC18A : <<extend>>
-    Docente --> UC19
-    Docente --> UC20
-    Videojuego --> UC21
-    Videojuego --> UC22
-    Alumno --> UC23
-    Alumno --> UC24
+    Docente --> UC14
+    UC14 <.. UC14A : <<extend>>
+    Docente --> UC15
+    Docente --> UC16
+    Videojuego --> UC17
+    Videojuego --> UC18
+    Alumno --> UC19
+    Alumno --> UC20
   }
 
   package "Gestión de sesiones de refuerzo" {

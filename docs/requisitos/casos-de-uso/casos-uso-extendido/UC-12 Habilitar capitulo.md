@@ -1,17 +1,17 @@
-### UC-XX Nombre del caso de uso
+### UC-12 Habilitar capítulo
 
 #### Objetivos asociados
 
-- OBJ-02 Ofrecer misiones con dificultad progresiva y curva de aprendizaje controlada
+- **OBJ-02** Ofrecer misiones con dificultad progresiva y curva de aprendizaje controlada
 
 #### Requisitos funcionales y no funcionales asociados
 
-- RF-07 Controlar la curva de aprendizaje mediante habilitación de capitulos
-- RNF-02 Auditoría
+- **RF-07** Controlar la curva de aprendizaje mediante habilitación de capitulos
+- **RNF-02** Auditoría
 
 #### Requisitos de información utilizados
 
-- RI-09 Información de capítulos
+- **RI-09** Información de capítulos
 
 #### Actor principal
 

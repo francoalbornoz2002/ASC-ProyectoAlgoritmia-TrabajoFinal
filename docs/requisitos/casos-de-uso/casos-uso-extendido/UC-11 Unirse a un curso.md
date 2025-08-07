@@ -2,7 +2,7 @@
 
 #### Objetivos asociados
 
-- OBJ-07 Gestionar de instituciones y cursos
+- **OBJ-07** Gestionar de instituciones y cursos
 
 #### Requisitos funcionales y no funcionales asociados
 
