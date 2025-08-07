@@ -38,6 +38,8 @@ El sistema deberá permitir que los alumnos puedan avanzar en la resolución de 
 - RI-03 Información de cursos
 - RI-04 Información de docentes
 - RI-05 Información de alumnos
+- RI-08 Información de sesiones de refuerzo
+- RI-09 Información de capítulos
 - RI-11 Información de auditoría
 
 **Descripción**

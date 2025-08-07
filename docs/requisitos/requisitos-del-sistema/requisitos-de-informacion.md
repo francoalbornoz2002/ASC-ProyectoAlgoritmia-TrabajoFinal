@@ -176,6 +176,7 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 
 **Objetivos asociados**
 
+- OBJ-04 Identificar dificultades en los alumnos y ofrecer ayudas para mejorar los algoritmos
 - OBJ-05 Proveer seguimiento académico exhaustivo
 
 **Requisitos asociados**
@@ -231,7 +232,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 **Objetivos asociados**
 
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
+- OBJ-02 Ofrecer misiones con dificultad progresiva y curva de aprendizaje controlada
 
 **Requisitos asociados**
 
@@ -256,7 +257,7 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 **Objetivos asociados**
 
 - OBJ-01 Crear y diseñar un videojuego para el aprendizaje gamificado
-- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
+- OBJ-02 Ofrecer misiones con dificultad progresiva y curva de aprendizaje controlada
 
 **Requisitos asociados**
 

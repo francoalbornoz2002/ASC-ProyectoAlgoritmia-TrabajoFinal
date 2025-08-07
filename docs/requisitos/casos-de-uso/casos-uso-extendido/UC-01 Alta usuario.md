@@ -28,7 +28,7 @@ El administrador realiza la alta de un usuario en el sistema indicando los datos
 
 #### Postcondición
 
-- El usuario está dado de alta en el sistema.
+- El usuario es dado de alta en el sistema.
 
 #### Flujo principal
 
@@ -53,4 +53,5 @@ El administrador realiza la alta de un usuario en el sistema indicando los datos
 #### Estabilidad: Alta
 
 #### Comentarios
+
 Si el administrador da de alta a un usuario con el rol de alumno, el método de registro del usuario será registrado como "Manual".

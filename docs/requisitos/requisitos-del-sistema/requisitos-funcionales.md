@@ -47,9 +47,10 @@ El sistema debe permitir, para el rol de administrador, configuración de los da
 - RI-03 Información de cursos
 - RI-04 Información de docentes
 - RI-05 Información de alumnos
+- RI-09 Información de capítulos
 
 **Descripción**
-El sistema debe permitir, para el rol de administrador, la alta, baja y modificación de cursos asi como también las acciones de asignar o desasignar docentes de los cursos del sistema. Para el rol de docente, le debe permitir cambiar la contraseña de acceso al curso. Para el rol de alumno, ingresar a cursos con el nombre del curso y contraseña proporcionados por el docente.
+El sistema debe permitir, para el rol de administrador, la alta, baja y modificación de cursos del sistema. Para el rol de docente, le debe permitir la modificación de los datos del curso (de manera restringida) y la habilitación de capítulos para controlar la curva de aprendizaje. Para el rol de alumno, le debe permitir ingresar a cursos con la contraseña de acceso proporcionada por el docente.
 
 ## RF-04 Gestionar sesiones de refuerzo
 
@@ -59,6 +60,7 @@ El sistema debe permitir, para el rol de administrador, la alta, baja y modifica
 
 **Requisitos asociados**
 
+- RI-03 Información de cursos
 - RI-05 Información de docentes
 - RI-05 Información de alumnos
 - RI-06 Información de estadísticas de progreso de los alumnos
@@ -75,9 +77,11 @@ El sistema debe permitir al docente la creación, modificación y cancelación d
 
 **Requisitos asociados**
 
+- RI-03 Información de cursos
 - RI-05 Información de alumnos
 - RI-06 Información de estadísticas de progreso de los alumnos
 - RI-09 Información de capítulos
+- RI-10 Información de misiones
 
 **Descripción**
 El sistema debe permitir al docente visualizar y generar reportes de las estadísticas de progreso de todos los alumnos, tanto en la historia general como en cada capítulo, de cada curso que esté a cargo, pudiendo aplicar los siguientes filtros:
@@ -103,10 +107,12 @@ El sistema tambien deberá realizar la generación automática de un reporte de 
 
 **Objetivos relacionados**
 
+- OBJ-04 Identificar dificultades en los alumnos y ofrecer ayudas para mejorar los algoritmos
 - OBJ-05 Proveer seguimiento académico exhaustivo
 
 **Requisitos asociados**
 
+- RI-03 Información de cursos
 - RI-05 Información de alumnos
 - RI-07 Información de dificultades de los alumnos
 
@@ -117,11 +123,12 @@ El sistema debe analizar y determinar las dificultades que posean los alumnos a 
 
 **Objetivos relacionados**
 
-- OBJ-02 Ofrecer misiones con dificultad progresiva y contenido desbloqueable
+- OBJ-02 Ofrecer misiones con dificultad progresiva y curva de aprendizaje controlada
 - OBJ-05 Proveer seguimiento académico exhaustivo
 
 **Requisitos asociados**
 
+- RI-03 Información de cursos
 - RI-09 Información de capítulos
 
 **Descripción**
