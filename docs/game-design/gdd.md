@@ -6,6 +6,40 @@
 
 ---
 
+## 0. Borrador rápido
+
+Qué hará el videojuego o qué habrá.
+
+****
+
+**Login (inicio de sesión)**
+
+- Petición a la web para verificar los datos.
+- Sincronización de progreso al local si hubiere progreso previo.
+- Si se inicia sesión con otro usuario, se limpia la bd local y se sincronizan los nuevos datos.
+- Verificación de actualizaciones: habilitación de capítulos, etc.
+
+**Logout (cierre de sesión)**
+- Envío de progreso a la web: misiones completadas, estrellas obtenidas y experiencia adquirida.
+
+**Pantalla de inicio**
+- Menu selector: Jugar, Opciones, Cerrar sesión
+
+**Jugar**
+- Si es la primera vez, cinemática (puede ser estática) introductoria.
+- Luego de la cinemática, lista de capítulos con el 1 marcado para jugar. Los demás bloqueados.
+- Al seleccionar capítulo, se muestra el mapa ficticio con un camino dividido por nodos que representarán cada misión. El jugador posicionado en el primer nodo (primera misión) con un botón de jugar o indicador para jugar.
+- Al presionar jugar, el personaje hace una animación e ingresa a la misión.
+- Al ingresar, se muestra una pantalla previa a la misión que muestra el numero de capítulo - número de misión, titulo de la misión, descripción (enunciado) y la dificultad. Debajo un botón de inciar la misión.
+
+**Jugando**
+- Cuando se presiona iniciar, en la parte superior muestra el título de la misión y el enunciado a resolver. La pantalla de abajo se divide en un rectangulo vertical que será el área de codificación y un cuadrado que será el escenario donde ocurrirá todo. En la esquina inferior derecha del
+
+**Proceso automatizado**
+Detección de dificultades y asignación de misiones especiales. Se determinarán las dificultades de los alumnos y cuando escalen, se asignaran misiones especiales con 3 preguntas teóricas a modo de repaso y una misión práctica para resolver.
+
+****
+
 ## 1. Título
 
 El título del juego será "Algoritmia".
