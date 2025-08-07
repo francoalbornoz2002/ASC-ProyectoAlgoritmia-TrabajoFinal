@@ -50,8 +50,7 @@ package "Plataforma Web - PGA"{
     usecase "UC-10 Baja curso" as UC10
     usecase "UC-11 Unirse a un curso" as UC11
     usecase "UC-12 Habilitar capítulo" as UC12
-    usecase "UC-13 Buscar capítulo" as UC13
-    usecase "UC-14 Finalizar curso" as UC14
+    usecase "UC-13 Finalizar curso" as UC13
 
     'Relaciones'
     'AM Institución
@@ -71,9 +70,8 @@ package "Plataforma Web - PGA"{
     Alumno --> UC11
     'Habilitar capítulo
     Docente --> UC12
-    UC12 ..> UC13 : <<include>>
-    Docente --> UC14
-    UC14 ..> UC09 : <<include>>
+    Docente --> UC13
+    UC13 ..> UC09 : <<include>>
   }
 
   package "Progreso y estadísticas" {
