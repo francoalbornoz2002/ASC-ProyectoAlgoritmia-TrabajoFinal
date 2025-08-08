@@ -10,7 +10,7 @@ skinparam wrapWidth 200
 skinparam nodesep 30
 skinparam ranksep 300
 
-skinparam ArrowThickness 0.5
+skinparam ArrowThickness 1
 skinparam ArrowColor Black
 
 
@@ -78,8 +78,11 @@ package "Plataforma Web - PGA"{
     usecase "UC-14 Consultar progreso de alumnos" as UC14
     usecase "Progreso total" as UC14A
     usecase "Progreso en capítulo" as UC14B
-    usecase "UC-15 Generar reporte de progreso" as UC15
-    usecase "UC-16 Consultar dificultades de alumnos" as UC16
+    usecase "UC-15 Consultar dificultades de alumnos" as UC15
+    usecase "UC-16 Generar reporte de alumnos" as UC16
+    usecase "Reporte de progreso" as UC16A
+    usecase "Reporte de dificultades" as UC16B
+    usecase "Reporte completo" as UC16C
     usecase "UC-17 Sincronizar progreso de alumno" as UC17
     usecase "UC-18 Actualizar dificultades de alumno" as UC18
     usecase "UC-19 Consultar mi progreso" as UC19
@@ -91,6 +94,9 @@ package "Plataforma Web - PGA"{
     UC14 <.. UC14B : <<extend>>
     Docente --> UC15
     Docente --> UC16
+    UC16 <.. UC16A : <<extend>>
+    UC16 <.. UC16B : <<extend>>
+    UC16 <.. UC16C : <<extend>>
     Videojuego --> UC17
     Videojuego --> UC18
     Alumno --> UC19

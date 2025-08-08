@@ -319,7 +319,7 @@ Los docentes podrán habilitar los capítulos de la historia a medida que se vay
 
 En este módulo del sistema, los docentes tendrán funcionalidades para realizar el seguimiento de progreso a sus alumnos. Podrán consultar las estadísticas de progreso en el videojuego en tiempo real y las dificultades que tenga cada alumno al intentar resolver las misiones.
 
-**Visualización y reportes del progreso de alumnos**
+**Visualización y reportes del progreso y dificultades de alumnos**
 
 Los docentes podrán consultar y realizar reportes del progreso de los alumnos del curso, tanto el progreso total como el progreso en cada capítulo. Por cada curso, se podrán visualizar los siguientes datos:
 
@@ -377,8 +377,6 @@ Este módulo le permitirá a los docentes visualizar e identificar a los alumnos
 **Alumnos resaltados en color rojo suave**: Son aquellos alumnos que posean: 
 - Más de 5 dificultades al resolver misiones.
 - Inactividad de más de 3 días
-
-**Visualización y reporte de dificultades de alumnos**
 
 En cuanto a las dificultades de los alumnos, los docentes tendrán una lista de todos los alumnos del curso en cuestión con sus dificultades específicas, puediendo filtrar por:
 

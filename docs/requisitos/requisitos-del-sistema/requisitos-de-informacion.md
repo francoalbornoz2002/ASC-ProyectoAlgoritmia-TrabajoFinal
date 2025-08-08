@@ -244,8 +244,7 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 - Descripción del capítulo
 - Tema/s clave del capítulo (Secuencia, Lógica, Estructuras de Control, Variables o Procedimientos)
 - Cantidad de misiones del capítulo
-- Habilitación del docente (habilitado o no)
-- Estado del capítulo (En curso o Finalizado)
+- Estado del capítulo (Bloqueado, En curso o Finalizado)
 
 ## RI-10 Información de misiones
 

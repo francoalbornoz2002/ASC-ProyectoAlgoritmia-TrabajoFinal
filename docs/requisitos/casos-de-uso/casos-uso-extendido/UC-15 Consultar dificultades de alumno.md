@@ -1,30 +1,28 @@
-### UC-22 Generar reporte de progreso
+### UC-15 Consultar dificultades de alumno
 
 #### Objetivos asociados
 
-- **OBJ-05** Proveer seguimiento académico exhaustivo
+- OBJ-X
 
 #### Requisitos funcionales y no funcionales asociados
 
-- **RF-05** Visualizar y generar reportes del progreso de alumnos
+- RF-X
 
 #### Requisitos de información utilizados
 
-- **RI-06** Información del progreso de los alumnos
-- **RI-09** Información de capítulos
+- RI-X
 
 #### Actor principal
 
-- Docente
+- Actor/es
 
 #### Descripción
 
-El docente genera un reporte de progreso de los alumnos aplicando los filtros disponibles en el sistema. El sistema genera el reporte en formato PDF segun los filtros aplicados.
+Descripción breve
 
 #### Precondición
 
-- El curso debe tener al menos un alumno asociado.
-- El curso debe tener al menos una misión completada por un alumno.
+Estado en el que el sistema debe encontrarse para ejecutar el caso de uso.
 
 #### Postcondición
 
