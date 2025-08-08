@@ -49,7 +49,7 @@ package "Plataforma Web - PGA"{
     usecase "UC-09 Buscar curso" as UC09
     usecase "UC-10 Baja curso" as UC10
     usecase "UC-11 Unirse a un curso" as UC11
-    usecase "UC-12 Habilitar capítulo" as UC12
+    usecase "UC-12 Habilitar siguiente capítulo" as UC12
     usecase "UC-13 Finalizar curso" as UC13
 
     'Relaciones'
@@ -76,7 +76,8 @@ package "Plataforma Web - PGA"{
 
   package "Progreso y estadísticas" {
     usecase "UC-14 Consultar progreso de alumnos" as UC14
-    usecase "Consultar progreso en capítulo" as UC14A
+    usecase "Progreso total" as UC14A
+    usecase "Progreso en capítulo" as UC14B
     usecase "UC-15 Generar reporte de progreso" as UC15
     usecase "UC-16 Consultar dificultades de alumnos" as UC16
     usecase "UC-17 Sincronizar progreso de alumno" as UC17
@@ -87,6 +88,7 @@ package "Plataforma Web - PGA"{
     'Relaciones'
     Docente --> UC14
     UC14 <.. UC14A : <<extend>>
+    UC14 <.. UC14B : <<extend>>
     Docente --> UC15
     Docente --> UC16
     Videojuego --> UC17

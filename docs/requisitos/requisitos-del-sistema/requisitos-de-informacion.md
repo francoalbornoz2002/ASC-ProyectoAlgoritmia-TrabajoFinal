@@ -75,10 +75,7 @@ El sistema deberá almacenar la información correspondiente a la institución e
 - UC-XX Baja de curso
 - UC-XX Buscar curso
 - UC-XX Unirse a un curso
-- UC-XX Asignar docente a curso
-- UC-XX Desasignar docente de curso
-- UC-XX Cambiar contraseña de acceso a curso
-- UC-XX Definir días y horarios del curso
+- UC-13 Finalizar curso
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los cursos del sistema asi como también la configuración de los días de clase. En concreto:
@@ -141,7 +138,7 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 **Comentarios**
 Las dificultades de un alumno son aquellos temas puntuales en los cuales se le dificulta al diseñar los algoritmos para resolver las misiones. Por ejemplo, una dificultad podría ser "Manejo de variables", "Condicionales", etc.
 
-## RI-06 Información de estadísticas de progreso de los alumnos
+## RI-06 Información del progreso de los alumnos
 
 **Objetivos asociados**
 
@@ -155,22 +152,20 @@ Las dificultades de un alumno son aquellos temas puntuales en los cuales se le d
 - UC-XX Generar reporte de progreso de alumnos
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a las estadísticas de progreso de cada alumno en el videojuego. En concreto:
+El sistema deberá almacenar la información correspondiente a las estadísticas de progreso en el videojuego de cada alumno del curso. En concreto:
 
 **Datos específicos**
 
-- Id de alumno (Id de usuario)
 - Nombre/s y Apellido/s del alumno
-- Nivel actual
-- Total de puntos de experiencia (EXP) obtenidos
-- Capítulo y misión actual
+- Capítulo y Misión en la que se encuentra
 - Cantidad de misiones completadas
-- Cantidad de estrellas obtenidas
+- Porcentaje total de misiones completadas
+- Porcentaje de misiones completadas en el capítulo actual
 - Promedio de intentos por misión
-- Porcentaje de avance en un capítulo
-- Porcentaje de avance en la historia
+- Cantidad de estrellas obtenidas
+- Total de puntos de experiencia (EXP) acumulados
 - Fecha y hora del ultimo inicio de sesión en el videojuego.
-- Cantidad de días de inactividad
+- Ultima actividad (Activo hace N minuto(s) / hora(s) / día(s))
 
 ## RI-07 Información de dificultades de los alumnos
 
@@ -195,7 +190,7 @@ El sistema deberá almacenar la información de las dificultades específicas de
 - Gravedad de la dificultad específica
 
 **Comentarios**
-Los categorías de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad específica estará asociada a una y solo una categoría.
+Los categorías de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad específica estará asociada a una o más categorías. Por ejemplo, una dificultad en "Conectivos lógicos" puede ser de categoría de "Lógica" y de "Estructuras de control", ya que se utilizan proposiciones con conectivos lógicos para armar las condiciones de bucles y condicionales.
 
 ## RI-08 Información de sesiones de refuerzo
 

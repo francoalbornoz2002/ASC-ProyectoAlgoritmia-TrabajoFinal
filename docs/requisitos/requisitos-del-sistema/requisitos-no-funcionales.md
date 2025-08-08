@@ -15,7 +15,7 @@
 **Requisitos asociados**
 
 - RI-05 Información de alumnos
-- RI-06 Información de estadísticas de progreso de los alumnos
+- RI-06 Información del progreso de los alumnos
 - RI-07 Información de dificultades de los alumnos
 - RI-09 Información de capítulos
 - RI-10 Información de misiones

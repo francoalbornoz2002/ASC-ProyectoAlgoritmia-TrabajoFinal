@@ -63,7 +63,7 @@ El sistema debe permitir, para el rol de administrador, la alta, baja y modifica
 - RI-03 Información de cursos
 - RI-05 Información de docentes
 - RI-05 Información de alumnos
-- RI-06 Información de estadísticas de progreso de los alumnos
+- RI-06 Información del progreso de los alumnos
 - RI-08 Información de sesiones de refuerzo
 
 **Descripción**
@@ -79,7 +79,7 @@ El sistema debe permitir al docente la creación, modificación y cancelación d
 
 - RI-03 Información de cursos
 - RI-05 Información de alumnos
-- RI-06 Información de estadísticas de progreso de los alumnos
+- RI-06 Información del progreso de los alumnos
 - RI-09 Información de capítulos
 - RI-10 Información de misiones
 

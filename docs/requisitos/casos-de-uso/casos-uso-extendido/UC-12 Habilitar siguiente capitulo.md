@@ -1,4 +1,4 @@
-### UC-12 Habilitar capítulo
+### UC-12 Habilitar siguiente capítulo
 
 #### Objetivos asociados
 

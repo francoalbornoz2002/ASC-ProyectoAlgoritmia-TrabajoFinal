@@ -321,28 +321,31 @@ En este módulo del sistema, los docentes tendrán funcionalidades para realizar
 
 **Visualización y reportes del progreso de alumnos**
 
-Los docentes podrán consultar y realizar reportes del progreso de los alumnos tanto de la historia en general como de los capítulos específicos de los diferentes cursos que tenga a cargo. Se podrán visualizar los siguientes datos:
+Los docentes podrán consultar y realizar reportes del progreso de los alumnos del curso, tanto el progreso total como el progreso en cada capítulo. Por cada curso, se podrán visualizar los siguientes datos:
 
-- Porcentaje de avance en general del curso
-- Porcentaje de avance del curso en el último capítulo habilitado
-- Estadísticas individuales del alumno
-  - Nombre completo del alumno
-  - Capítulo y Misión actual
-  - Porcentaje de avance en la historia
-  - Porcentaje de avance en su capítulo actual
-  - Nivel actual
-  - Cantidad de misiones completadas
-  - Cantidad de estrellas obtenidas
-  - Total de puntos de experiencia (EXP)
-  - Promedio de intentos por misión
-  - Fecha y hora del ultimo inicio de sesión en el videojuego.
-  - Ultima actividad (Activo hace x día(s))
+**Estadísticas del curso**
 
-También, se podrán aplicar los siguientes filtros:
+- Porcentaje total de misiones completadas
+- Porcentaje de misiones completadas en el capítulo actual
+
+**Estadísticas individuales del alumno**
+
+- Nombre/s y Apellido/s del alumno
+- Capítulo y Misión en la que se encuentra
+- Cantidad de misiones completadas
+- Porcentaje total de misiones completadas
+- Porcentaje de misiones completadas en el capítulo actual
+- Promedio de intentos por misión
+- Cantidad de estrellas obtenidas
+- Total de puntos de experiencia (EXP) acumulados
+- Fecha y hora del ultimo inicio de sesión en el videojuego.
+- Ultima actividad (Activo hace N minuto(s) / hora(s) / día(s))
+
+También, se podrán aplicar los siguientes filtros de búsqueda:
 
 - Selección de capítulo
 - Búsqueda por nombre y/o apellido del alumno
-- Porcentaje de avance
+- Porcentaje total de misiones completadas
 - Promedio de intentos por misión
   - 1 a 3 intentos: alumnos con buen rendimiento
   - 3 a 6 intentos: alumnos con rendimiento moderado
@@ -351,28 +354,38 @@ También, se podrán aplicar los siguientes filtros:
 - Días de inactividad: 3, 5 y 7 días.
 - Fechas desde - hasta
 
-Si se selecciona un capítulo específico, todas las estadísticas de progreso de cada alumno serán de ese capítulo. Además, se añadirán los siguientes datos adicionales:
+Si se selecciona un capítulo específico, se mostrarán algunos datos adicionales como el estado del curso y porcentajes dividido de misiones completadas.
 
-- Estado del capítulo: "En curso" o "Finalizado"
+**Estadísticas del curso en el capítulo**
 - Porcentaje de avance del curso en el capítulo
-  - Si está en curso, se muestra el porcentaje de avance
-  - Si está finalizado, se muestra el porcentaje de avance cuando finalizó y el porcentaje de avance actual, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos finalizados.
+  - Si está "En curso", se muestra el porcentaje de misiones completadas hasta el momento.
+  - Si está "Finalizado", se muestra el porcentaje de misiones completadas cuando finalizó y el porcentaje de misiones completadas hasta el momento, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos con estado "Finalizado".
+- Estado del capítulo: "En curso" o "Finalizado"
+
+**Estadísticas individuales del alumno**
+
+Todas las estadísticas de progreso de cada alumno serán las mismas pero correspondientes al capítulo seleccionado.
 
 Todos los datos se podrán ordenar de manera ascendente o descendente.
 
 Este módulo le permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
 
-- **Alumnos atrasados en color amarillo suave**: Son aquellos alumnos que tienen algunas dificultades específicas al resolver misiones. Tambien se marcarán en amarillo aquellos que posean una actividad reciente (hasta 3 días de inactividad) y/o auqellos en donde su porcentaje de progreso en el capítulo actual está por debajo del promedio del curso.
-- **Alumnos en estado crítico en color rojo suave**: Son aquellos alumnos que tienen muchas dificultades específicas al resolver misiones. Tambien se marcarán en rojo los alumnos que tengan una prolongada inactividad en la plataforma (+5 días de inactividad) y/o aquellos en donde su porcentaje de progreso en el capítulo actual está muy por debajo del promedio del curso.
+**Alumnos resaltados en color amarillo suave**: Son aquellos alumnos que posean:
+- De 3 a 5 dificultades al resolver misiones.
+- Inactividad de hasta 3 días.
+
+**Alumnos resaltados en color rojo suave**: Son aquellos alumnos que posean: 
+- Más de 5 dificultades al resolver misiones.
+- Inactividad de más de 3 días
 
 **Visualización y reporte de dificultades de alumnos**
 
 En cuanto a las dificultades de los alumnos, los docentes tendrán una lista de todos los alumnos del curso en cuestión con sus dificultades específicas, puediendo filtrar por:
 
 - Búsqueda por nombre y/o apellido del alumno
-- Tipo de dificultad
+- Categoría de dificultad
 - Dificultad específica
-- Gravedad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
+- Nivel de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
 
 **Funcionalidades para alumnos**
 Los alumnos tambien podrán acceder y visualizar sus estadísticas de progreso individuales y sus dificultades específicas de la misma forma que los docentes, pero sin posibilidad de emitir reportes.
