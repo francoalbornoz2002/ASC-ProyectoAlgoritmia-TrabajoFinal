@@ -57,3 +57,4 @@ Como máximo 7 veces durante todo el curso
 #### Estabilidad: Media
 
 #### Comentarios
+El primer capítuloe es habilitado automáticamente cuando se da de alta el curso.

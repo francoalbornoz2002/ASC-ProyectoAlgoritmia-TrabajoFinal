@@ -10,7 +10,7 @@
 
 #### Requisitos de información utilizados
 
-- **RI-06** Información de estadísticas de progreso de los alumnos
+- **RI-06** Información del progreso de los alumnos
 - **RI-09** Información de capítulos
 
 #### Actor principal

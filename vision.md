@@ -368,7 +368,7 @@ Todas las estadísticas de progreso de cada alumno serán las mismas pero corres
 
 Todos los datos se podrán ordenar de manera ascendente o descendente.
 
-Este módulo le permitirá a los docentes visualizar e identificar a los alumnos rezagados con la siguiente clasificación:
+Este módulo le permitirá a los docentes visualizar e identificar a los alumnos con dificultades e inactividad con la siguiente clasificación:
 
 **Alumnos resaltados en color amarillo suave**: Son aquellos alumnos que posean:
 - De 3 a 5 dificultades al resolver misiones.
