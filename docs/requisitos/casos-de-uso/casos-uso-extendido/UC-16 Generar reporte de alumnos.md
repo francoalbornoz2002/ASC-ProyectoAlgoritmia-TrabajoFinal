@@ -7,11 +7,12 @@
 #### Requisitos funcionales y no funcionales asociados
 
 - **RF-05** Visualizar y generar reportes del progreso de alumnos
-- 
+- **RF-06** Visualizar y generar reportes de las dificultades de los alumnos
 
 #### Requisitos de información utilizados
 
 - **RI-06** Información del progreso de los alumnos
+- **RI-07** Información de dificultades de los alumnos
 - **RI-09** Información de capítulos
 
 #### Actor principal
@@ -25,7 +26,7 @@ El docente genera un reporte de los alumnos del curso. Puede generar reportes de
 #### Precondición
 
 - El curso debe tener al menos un alumno asociado.
-- El curso debe tener al menos una misión completada por un alumno.
+- Al menos un alumno del curso debe tener una misión completada.
 
 #### Postcondición
 
@@ -39,12 +40,8 @@ El docente genera un reporte de los alumnos del curso. Puede generar reportes de
    2. Si el docente elije reporte de dificultades, ver sección *Reporte de dificultades*.
    3. Si el docente quiere realizar un reporte completo, ver sección *Reporte completo*.
 3. El docente detalla la configuración del reporte
-   - Tipo de reporte: de progreso, de dificultades o de progreso y dificultades
-   - Rango de fechas
-   - Selección (múltiple) de capítulos
-   - Selección (múltiple) de misiones
    - Cantidad de misiones completadas por día o por semana.
-   - Selección de dificultades de alumnos por categoría o dificultad específica
+   - Selección de dificultades de alumnos por tipo o dificultad específica
    - Tipo de detalle: detallado o resumido
    - Agrupación por: capítulo, misión o capítulo y misión.
 

@@ -20,7 +20,7 @@
 - RI-09 Información de capítulos
 - RI-10 Información de misiones
 - RF-05 Visualizar y generar reportes del progreso de alumnos
-- RF-06 Determinar las dificultades de los alumnos
+- RF-06 Visualizar las dificultades de los alumnos
 
 **Descripción**
 El sistema deberá permitir que los alumnos puedan avanzar en la resolución de misiones dentro del videojuego sin necesidad de conexión a internet permanente. El progreso alcanzado (misiones completadas, intentos, estrellas obtenidas y experiencia) deberá almacenarse de forma local. Cuando se complete una misión o se cierre sesión en el videojuego, se deberán sincronizar los datos de progreso locales junto con la recopilación de errores de cada alumno a la plataforma web, garantizando así continuidad en el seguimiento académico por parte del docente y manteniendo la trazabilidad de la experiencia de aprendizaje.

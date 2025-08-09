@@ -76,8 +76,6 @@ package "Plataforma Web - PGA"{
 
   package "Progreso y estadísticas" {
     usecase "UC-14 Consultar progreso de alumnos" as UC14
-    usecase "Progreso total" as UC14A
-    usecase "Progreso en capítulo" as UC14B
     usecase "UC-15 Consultar dificultades de alumnos" as UC15
     usecase "UC-16 Generar reporte de alumnos" as UC16
     usecase "Reporte de progreso" as UC16A
@@ -90,8 +88,6 @@ package "Plataforma Web - PGA"{
 
     'Relaciones'
     Docente --> UC14
-    UC14 <.. UC14A : <<extend>>
-    UC14 <.. UC14B : <<extend>>
     Docente --> UC15
     Docente --> UC16
     UC16 <.. UC16A : <<extend>>

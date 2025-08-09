@@ -179,18 +179,18 @@ El sistema deberá almacenar la información correspondiente a las estadísticas
 - UC-XX Consultar dificultades de alumno
 
 **Descripción**
-El sistema deberá almacenar la información de las dificultades específicas de cada alumno dentro del sistema y sus categorias correspondientes. Estas dificultades se determinarán a partir del registro de errores comunes de un alumno que el videojuego envíe a la plataforma web. En concreto:
+El sistema deberá almacenar la información de las dificultades de cada alumno dentro del sistema. Estas dificultades se determinarán a partir del registro de errores comunes de un alumno que el videojuego envíe a la plataforma web. En concreto:
 
 **Datos específicos**
 - Id de dificultad
-- Categoría de la dificultad
-- Nombre de la dificultad específica
-- Descripción de la dificultad específica
-- Cantidad de errores relacionados a esa dificultad específica.
-- Gravedad de la dificultad específica
+- Tipo de dificultad
+- Nombre de la dificultad
+- Descripción de la dificultad
+- Cantidad de errores cometidos de esa dificultad.
+- Grado de dificultad
 
 **Comentarios**
-Los categorías de dificultades de los alumnos son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad específica estará asociada a una o más categorías. Por ejemplo, una dificultad en "Conectivos lógicos" puede ser de categoría de "Lógica" y de "Estructuras de control", ya que se utilizan proposiciones con conectivos lógicos para armar las condiciones de bucles y condicionales.
+Los tipos de dificultad son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad corresponderá a un solo tipo de dificultad y tendrá un grado entre "Alto", "Medio, "Bajo" y "Ninguno", éste ultimo será el por defecto cuando el alumno recien es dado de alta en el sistema.
 
 ## RI-08 Información de sesiones de refuerzo
 

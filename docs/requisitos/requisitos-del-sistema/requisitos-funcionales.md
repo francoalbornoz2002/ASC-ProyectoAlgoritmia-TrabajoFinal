@@ -95,6 +95,7 @@ El sistema debe permitir al docente visualizar y generar reportes de las estadí
 - Fechas desde - hasta
 
 Si se filtra por capítulo, todas las estadísticas individuales de cada alumno serán de ese capítulo en específico. Además, se añadirán los siguientes datos adicionales:
+
 - Estado del capítulo: "En curso" o "Finalizado"
 - Porcentaje de avance del curso en el capítulo
   - Si está en curso, se muestra el porcentaje de avance
@@ -103,7 +104,7 @@ Si se filtra por capítulo, todas las estadísticas individuales de cada alumno 
 **Comentarios**
 El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos, ordenado por capítulos (solo los capítulos finalizados y los que estén curso) todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.
 
-## RF-06 Determinar las dificultades de los alumnos
+## RF-06 Visualizar y generar reportes de las dificultades de los alumnos
 
 **Objetivos relacionados**
 
@@ -117,7 +118,7 @@ El sistema tambien deberá realizar la generación automática de un reporte de 
 - RI-07 Información de dificultades de los alumnos
 
 **Descripción**
-El sistema debe analizar y determinar las dificultades que posean los alumnos a partir de los recopilación de errores en resolución de misiones realizada por el videojuego. Además, estas deben poder ser visualizadas por los docentes tanto en el perfil del alumno como en las sesiones de refuerzo, pudiendo filtrar por tipo de dificultad y estado de gravedad.
+El sistema debe permitir visualizar y generar reportes de las dificultades que posean los alumnos a partir en resolución de misiones en el videojuego. Las dificultades deben poder ser visualizadas tanto por los docentes como por los alumnos individualmente pudiendo filtrar por dificultad, tipo de dificultad y/o grado de dificultad.
 
 ## RF-07 Controlar la curva de aprendizaje mediante habilitación de capitulos
 

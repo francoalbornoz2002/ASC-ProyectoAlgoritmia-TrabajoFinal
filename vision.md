@@ -343,20 +343,40 @@ Los docentes podrán consultar y realizar reportes del progreso de los alumnos d
 
 También, se podrán aplicar los siguientes filtros de búsqueda:
 
-- Selección de capítulo
-- Búsqueda por nombre y/o apellido del alumno
-- Porcentaje total de misiones completadas
-- Promedio de intentos por misión
-  - 1 a 3 intentos: alumnos con buen rendimiento
-  - 3 a 6 intentos: alumnos con rendimiento moderado
-  - 6 a 9 intentos: alumnos con dificultades
-  - Más de 10 intentos: alumnos con muchas dificultades
-- Días de inactividad: 3, 5 y 7 días.
-- Fechas desde - hasta
+- Busqueda por nombre(s) y/o apellido(s)
+- Filtro por fechas desde - hasta
+- Filtro por capítulo(s)
+- Filtro por porcentaje de misiones completadas
+  - más del 25%
+  - más del 50%
+  - más del 75%
+  - más del 90%
+- Filtro por promedio de intentos por misión
+  - 1 a 3 intentos
+  - 3 a 6 intentos
+  - 6 a 9 intentos
+  - Más de 10 intentos
+- Filtro por días de inactividad
+  - hasta 3 días
+  - hasta 5 días
+  - hasta 7 días
+  - más de 7 días
 
-Si se selecciona un capítulo específico, se mostrarán algunos datos adicionales como el estado del curso y porcentajes dividido de misiones completadas.
+Este módulo le permitirá a los docentes visualizar e identificar a los alumnos con dificultades e inactividad con la siguiente clasificación:
+
+**Alumnos resaltados en color amarillo suave**: Son aquellos alumnos que posean:
+
+- De 3 a 5 dificultades al resolver misiones.
+- Inactividad de hasta 3 días.
+
+**Alumnos resaltados en color rojo suave**: Son aquellos alumnos que posean:
+
+- Más de 5 dificultades al resolver misiones.
+- Inactividad de más de 3 días
 
 **Estadísticas del curso en el capítulo**
+Si filtra la búsqueda por un capítulo específico, se mostrarán algunos datos adicionales:
+
 - Porcentaje de avance del curso en el capítulo
   - Si está "En curso", se muestra el porcentaje de misiones completadas hasta el momento.
   - Si está "Finalizado", se muestra el porcentaje de misiones completadas cuando finalizó y el porcentaje de misiones completadas hasta el momento, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos con estado "Finalizado".
@@ -368,22 +388,12 @@ Todas las estadísticas de progreso de cada alumno serán las mismas pero corres
 
 Todos los datos se podrán ordenar de manera ascendente o descendente.
 
-Este módulo le permitirá a los docentes visualizar e identificar a los alumnos con dificultades e inactividad con la siguiente clasificación:
-
-**Alumnos resaltados en color amarillo suave**: Son aquellos alumnos que posean:
-- De 3 a 5 dificultades al resolver misiones.
-- Inactividad de hasta 3 días.
-
-**Alumnos resaltados en color rojo suave**: Son aquellos alumnos que posean: 
-- Más de 5 dificultades al resolver misiones.
-- Inactividad de más de 3 días
-
 En cuanto a las dificultades de los alumnos, los docentes tendrán una lista de todos los alumnos del curso en cuestión con sus dificultades específicas, puediendo filtrar por:
 
-- Búsqueda por nombre y/o apellido del alumno
-- Categoría de dificultad
-- Dificultad específica
-- Nivel de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
+- Busqueda por nombre(s) y/o apellido(s)
+- Filtro por Tipo(s) de dificultad
+- Filtro por dificultad(es)
+- Filtro por nivel(es) de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
 
 **Funcionalidades para alumnos**
 Los alumnos tambien podrán acceder y visualizar sus estadísticas de progreso individuales y sus dificultades específicas de la misma forma que los docentes, pero sin posibilidad de emitir reportes.

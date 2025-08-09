@@ -2,51 +2,71 @@
 
 #### Objetivos asociados
 
-- OBJ-X
+- **OBJ-05** Proveer seguimiento académico exhaustivo
 
 #### Requisitos funcionales y no funcionales asociados
 
-- RF-X
+- **RF-06** Visualizar y generar reportes de las dificultades de los alumnos
 
 #### Requisitos de información utilizados
 
-- RI-X
+- **RI-07** Información de dificultades de los alumnos
 
 #### Actor principal
 
-- Actor/es
+- Docente
 
 #### Descripción
 
-Descripción breve
+El docente consulta las dificultades de los alumnos del curso. El sistema muestra, por cada alumno, la lista de sus dificultades por tipo de dificultad y grado de dificultad.
 
 #### Precondición
 
-Estado en el que el sistema debe encontrarse para ejecutar el caso de uso.
+- El curso debe tener al menos un alumno asociado
+- Al menos un alumno del curso debe tener una misión completada.
 
 #### Postcondición
 
-Estado en el que queda el sistema luego del caso de uso.
+- 
 
 #### Flujo principal
 
-1. Paso 1
-2. 2...
-3. 3...
+1. Este caso de uso comienza cuando el docente quiere consultar las dificultades de los alumnos del curso.
+2. El sistema muestra, por cada alumno del curso, los siguientes datos:
+   - Nombre(s) y Apellido(s) del alumno
+   - Tipo(s) de dificultad
+   - Dificultad(es) de cada tipo(s)
+   - Cantidad de errores cometidos en cada dificultad
+   - Grado(s) de cada dificultad(es)
+3. El sistema permite aplicar los siguientes filtros de búsqueda:
+   - Busqueda por nombre(s) y/o apellido(s)
+   - Filtro por Tipo(s) de dificultad
+     - Secuencia
+     - Lógica
+     - Estructuras de control
+     - Variables
+     - Procedimientos
+   - Filtro por dificultad(es)
+     - (determinar)
+   - Filtro por grado(s) de dificultad
+     - Alto
+     - Medio
+     - Bajo
+     - Ninguno
 
 #### Excepciones
 
-1. Paso de la excepción
+- 
 
 #### Rendimiento
 
-1. Paso - tiempo (seg, min, h)
+**Paso 2**: 1 segundo
 
 #### Frecuencia
 
-N veces por día/mes
+1 vez por día
 
-#### Estabilidad: Alta/Media/Baja
+#### Estabilidad: Media
 
 #### Comentarios
-Comentarios o reglas de negocio específicas que condicionan este caso de uso.
+- 
