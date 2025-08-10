@@ -190,7 +190,7 @@ El sistema deberá almacenar la información de las dificultades de cada alumno 
 - Grado de dificultad
 
 **Comentarios**
-Los tipos de dificultad son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad corresponderá a un solo tipo de dificultad y tendrá un grado entre "Alto", "Medio, "Bajo" y "Ninguno", éste ultimo será el por defecto cuando el alumno recien es dado de alta en el sistema.
+Los tipos de dificultad son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad podrá estar asociada a uno o más tipos de dificultad y tendrá un grado entre "Alto", "Medio, "Bajo" y "Ninguno", éste ultimo será el por defecto cuando el alumno recien es dado de alta en el sistema.
 
 ## RI-08 Información de sesiones de refuerzo
 
@@ -221,6 +221,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 - Modalidad de la sesión (presencial o virtual)
   - Si es virtual: URL de la reunión en Google Meet o Zoom
   - Si es presencial: Momento de realización (antes o después de la clase)
+- Realizada o no
 
 ## RI-09 Información de capítulos
 

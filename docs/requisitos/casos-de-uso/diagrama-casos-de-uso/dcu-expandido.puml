@@ -22,7 +22,7 @@ actor Videojuego
 
 package "Plataforma Web - PGA"{
   'Subsistemas'
-  package "Gestión de usuarios" {
+  package "Usuarios" {
     usecase "UC-01 Alta usuario" as UC01
     usecase "UC-02 Modificar usuario" as UC02
     usecase "UC-03 Buscar usuario" as UC03
@@ -38,7 +38,7 @@ package "Plataforma Web - PGA"{
     UC04 ..> UC03 : <<include>>
   }
 
-  package "Gestión de institución y cursos" {
+  package "Institución y cursos" {
     usecase "UC-05 Alta institución" as UC05
     usecase "UC-06 Modificar institución" as UC06
     usecase "UC-07 Alta curso" as UC07
@@ -74,32 +74,58 @@ package "Plataforma Web - PGA"{
     UC13 ..> UC09 : <<include>>
   }
 
-  package "Progreso y estadísticas" {
+  package "Progreso" {
     usecase "UC-14 Consultar progreso de alumnos" as UC14
-    usecase "UC-15 Consultar dificultades de alumnos" as UC15
-    usecase "UC-16 Generar reporte de alumnos" as UC16
-    usecase "Reporte de progreso" as UC16A
-    usecase "Reporte de dificultades" as UC16B
-    usecase "Reporte completo" as UC16C
-    usecase "UC-17 Sincronizar progreso de alumno" as UC17
-    usecase "UC-18 Actualizar dificultades de alumno" as UC18
-    usecase "UC-19 Consultar mi progreso" as UC19
-    usecase "UC-20 Consultar mis dificultades" as UC20
+    usecase "UC-15 Consultar mi progreso" as UC15
+    usecase "UC-16 Sincronizar progreso de alumno" as UC16
 
     'Relaciones'
     Docente --> UC14
-    Docente --> UC15
-    Docente --> UC16
-    UC16 <.. UC16A : <<extend>>
-    UC16 <.. UC16B : <<extend>>
-    UC16 <.. UC16C : <<extend>>
-    Videojuego --> UC17
-    Videojuego --> UC18
-    Alumno --> UC19
-    Alumno --> UC20
+    Alumno --> UC15
+    Videojuego --> UC16
   }
 
-  package "Gestión de sesiones de refuerzo" {
+
+  package "Dificultades"{
+    usecase "UC-17 Consultar dificultades de alumnos" as UC17
+    usecase "UC-18 Consultar mis dificultades" as UC18
+    usecase "UC-19 Sincronizar dificultades de alumno" as UC19
+    
+    'Relaciones'
+    Docente --> UC17
+    Alumno --> UC18
+    Videojuego --> UC19
+  }
+
+  package "Estadísticas"{
+    usecase "UC-20 Consultar estadísticas del curso" as UC20
+    usecase "Estadísticas de progreso" as UC20A
+    usecase "Estadísticas de dificultades" as UC20B
+    usecase "Estadísticas completas del curso" as UC20C
+
+    'Relaciones'
+    Docente --> UC20
+    Administrador --> UC20
+    UC20 <.. UC20A : <<extend>>
+    UC20 <.. UC20B : <<extend>>
+    UC20 <.. UC20C : <<extend>>
+  }
+
+  package "Reportes"{
+    usecase "UC-21 Generar reporte" as UC21
+    usecase "Reporte de progreso" as UC21A
+    usecase "Reporte de dificultades" as UC21B
+    usecase "Reporte completo del curso" as UC21C
+
+    'Relaciones'
+    Docente --> UC21
+    Administrador --> UC21
+    UC21 <.. UC21A : <<extend>>
+    UC21 <.. UC21B : <<extend>>
+    UC21 <.. UC21C : <<extend>>
+  } 
+
+  package "Sesiones de refuerzo" {
     usecase "UC-25 Crear sesión de refuerzo" as UC25
     usecase "UC-26 Modificar sesión de refuerzo" as UC26
     usecase "UC-27 Buscar sesión de refuerzo" as UC27

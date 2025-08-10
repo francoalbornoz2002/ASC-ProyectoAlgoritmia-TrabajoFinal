@@ -267,10 +267,13 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 **Funcionales**
 
-- Gestión de usuarios
-- Gestión de institución y cursos
-- Progreso y estadísticas
-- Gestión de sesiones de refuerzo
+- Usuarios
+- Institución y cursos
+- Progreso
+- Dificultades
+- Estadísticas
+- Reportes
+- Sesiones de refuerzo
 
 **No funcionales**
 
@@ -280,11 +283,11 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 #### 3.3.2 Videojuego
 
 No se divide en módulos como un sistema tradicional. No se desarrollará ni diseñará como un sistema software tradicional y no se utilizarán metodologías de desarrollo de software tradicionales.
-Consulte el Game Design Document ubicado en `docs/game-design/gdd.md` para obtener la información necesaria de todas las funcionalidades y componentes de diseño del videojuego.
+Consulte el Game Design Document ubicado en `docs/game-design/gdd.md` para obtener la información necesaria de todas las funcionalidades, diseño y componentes del videojuego.
 
-### 3.4 Alcance y Limitaciones
+### 3.4 Alcance y Limitaciones por módulo
 
-#### 3.4.1 Gestión de usuarios
+#### 3.4.1 Usuarios
 
 En la gestión de usuarios, se tendrán tres roles diferentes que servirán para definir los niveles de acceso al sistema:
 
@@ -292,7 +295,7 @@ En la gestión de usuarios, se tendrán tres roles diferentes que servirán para
 - **Alumno**: Acceso en la web para registrarse sea con Google o mediante formulario, inciar sesión, unirse a un curso, revisión de sus estadísticas de juego, dificultades y modificación del perfil. Tendrá acceso a la descarga exclusiva del videojuego.
 - **Docente**: Acceso principal y completo al módulo de Progreso y estadísticas donde podrá visualizar y realizar reportes de progreso de los alumnos y visualizar sus dificultades. En el módulo de Gestion de sesiones de refuerzo podrá coordinar sesiones de refuerzo para los alumnos. También tendrá acceso parcial a la gestión de cursos, para visualizarlos, cambiar contraseña de acceso y permitir el acceso de sus alumnos.
 
-#### 3.4.2 Gestión de institución y cursos
+#### 3.4.2 Institución y cursos
 
 Este modulo del sistema estará controlado en su mayor medida por el administrador del sistema y algunas funcionalidades para los docentes.
 
@@ -315,20 +318,20 @@ Los docentes podrán configurar los días, horarios y modalidad (presencial, vir
 **Habilitación de capítulos**
 Los docentes podrán habilitar los capítulos de la historia a medida que se vayan dando los contenidos en la materia para garantizar una curva de aprendizaje controlada y seguimiento académico ordenado de los alumnos.
 
-#### 3.4.3 Progreso y estadísticas
+#### 3.4.3 Progreso
 
-En este módulo del sistema, los docentes tendrán funcionalidades para realizar el seguimiento de progreso a sus alumnos. Podrán consultar las estadísticas de progreso en el videojuego en tiempo real y las dificultades que tenga cada alumno al intentar resolver las misiones.
+En este módulo del sistema, los docentes tendrán funcionalidades para realizar el seguimiento de progreso a sus alumnos. Podrán consultar el progreso en el videojuego en tiempo real y las dificultades que tenga cada alumno al intentar resolver las misiones.
 
 **Visualización y reportes del progreso y dificultades de alumnos**
 
 Los docentes podrán consultar y realizar reportes del progreso de los alumnos del curso, tanto el progreso total como el progreso en cada capítulo. Por cada curso, se podrán visualizar los siguientes datos:
 
-**Estadísticas del curso**
+**Progreso del curso**
 
 - Porcentaje total de misiones completadas
 - Porcentaje de misiones completadas en el capítulo actual
 
-**Estadísticas individuales del alumno**
+**Progreso individuales del alumno**
 
 - Nombre/s y Apellido/s del alumno
 - Capítulo y Misión en la que se encuentra
@@ -374,7 +377,7 @@ Este módulo le permitirá a los docentes visualizar e identificar a los alumnos
 - Más de 5 dificultades al resolver misiones.
 - Inactividad de más de 3 días
 
-**Estadísticas del curso en el capítulo**
+**Progreso del curso en el capítulo**
 Si filtra la búsqueda por un capítulo específico, se mostrarán algunos datos adicionales:
 
 - Porcentaje de avance del curso en el capítulo
@@ -382,21 +385,69 @@ Si filtra la búsqueda por un capítulo específico, se mostrarán algunos datos
   - Si está "Finalizado", se muestra el porcentaje de misiones completadas cuando finalizó y el porcentaje de misiones completadas hasta el momento, ya que los alumnos podrán seguir jugando misiones que no hayan completado de capitulos con estado "Finalizado".
 - Estado del capítulo: "En curso" o "Finalizado"
 
-**Estadísticas individuales del alumno**
+**Progreso individual del alumno**
 
-Todas las estadísticas de progreso de cada alumno serán las mismas pero correspondientes al capítulo seleccionado.
+Todas los datos de progreso de cada alumno serán las mismas pero correspondientes al capítulo seleccionado.
 
 Todos los datos se podrán ordenar de manera ascendente o descendente.
 
-En cuanto a las dificultades de los alumnos, los docentes tendrán una lista de todos los alumnos del curso en cuestión con sus dificultades específicas, puediendo filtrar por:
+#### 3.4.4 Dificultades
 
-- Busqueda por nombre(s) y/o apellido(s)
+En este módulo del sistema, los docentes podrán consultar las dificultades de todos los alumnos del curso.
+Se tendrán distintas dificultades agrupadas por tipo, los cuales son: Secuencia, Lógica proposicional, Estructuras de control, Variables y Procedimientos. La lista de las dificultades posibles son las siguientes:
+**Secuencia**
+- Errores de sintaxis
+- Instrucciones redundantes
+
+
+**Lógica proposicional**
+- Condiciones mal formuladas
+- Uso incorrecto de operadores lógicos
+
+**Estructuras de control**
+- Bucle infinito
+
+**Variables**
+- 
+
+**Procedimientos**
+- Mal pasaje de parámetros
+
+
+El sistema permitirá aplicar los siguientes filtros de búsqueda:
+- Búsqueda por nombre(s) y/o apellido(s)
 - Filtro por Tipo(s) de dificultad
 - Filtro por dificultad(es)
 - Filtro por nivel(es) de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
 
-**Funcionalidades para alumnos**
-Los alumnos tambien podrán acceder y visualizar sus estadísticas de progreso individuales y sus dificultades específicas de la misma forma que los docentes, pero sin posibilidad de emitir reportes.
+(COMPLETAR CUANDO SE VEAN LOS CASOS DE EVALUACIÓN DE DIFICULTAD)
+
+#### 3.4.5 Estadísticas
+
+En el módulo de estadísticas, los docentes podrán consultar estadísticas de interés a partir de los datos acumulados del progreso y las dificultades de los alumnos del curso.
+
+**Estadísticas del progreso de los alumnos**
+
+- Recuento de misiones completadas en el día: tambien disponible como resumen en el dashboard docente en la página de inicio.
+- Recuento de misiones completadas en la semana: tambien disponible como resumen en el dashboard docente en la página de inicio.
+- Recuento de misiones completadas en un intervalo de fechas (desde-hasta)
+- Recuento de intentos por misión en un capítulo
+
+**Estadísticas de las dificultades de los alumnos**
+
+- Recuento de alumnos
+  - por tipo de dificultad
+  - por dificultad
+- Recuento de dificultades por nivel
+- Nivel estimado de dificultad por tipo: también disponible como resumen en el dashboard docente
+- Evolución de las dificultades de un alumno (cambios del nivel de dificultad)
+
+**Estadísticas de las sesiones de refuerzo**
+Este parte del módulo solo será accesible por el administrador del sistema. Se tendrá:
+- Recuento de sesiones de refuerzo realizadas y no realizadas
+- Recuento de sesiones de refuerzo creadas por docente
+- Recuento de sesiones de refuerzo automáticas aceptadas por docente
+- Recuento de docentes que cambiaron su asistencia positivamente (rechazó y luego aceptó) y negativamente (aceptó pero luego rechazó)
 
 #### 3.4.4 Gestión de sesiones de refuerzo
 
