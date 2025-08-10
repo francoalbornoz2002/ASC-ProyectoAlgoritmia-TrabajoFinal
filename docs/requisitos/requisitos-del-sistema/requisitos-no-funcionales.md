@@ -50,7 +50,7 @@ El módulo de auditoría solo estará disponible para el administrador del siste
 
 **Objetivos relacionados**
 
-- OBJ-07 Gestionar de instituciones y cursos
+- OBJ-07 Gestionar cursos y datos de la institución
 - OBJ-08 Gestionar usuarios y roles del sistema
 
 **Requisitos asociados**

@@ -27,7 +27,7 @@ El sistema debe permitir la alta, baja y modificaci처n de usuarios, la asignaci�
 
 **Objetivos relacionados**
 
-- OBJ-07 Gesti처n de instituciones y cursos
+- OBJ-07 Gestionar cursos y datos de la instituci처n
 
 **Requisitos asociados**
 
@@ -40,7 +40,7 @@ El sistema debe permitir, para el rol de administrador, configuraci처n de los da
 
 **Objetivos relacionados**
 
-- OBJ-07 Gesti처n de instituciones y cursos
+- OBJ-07 Gestionar cursos y datos de la instituci처n
 
 **Requisitos asociados**
 

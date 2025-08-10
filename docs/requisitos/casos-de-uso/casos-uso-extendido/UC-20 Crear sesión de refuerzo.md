@@ -11,6 +11,7 @@
 
 #### Requisitos de información utilizados
 
+- **RI-03** Información de cursos
 - **RI-05** Información de alumnos
 - **RI-06** Información del progreso de los alumnos
 - **RI-07** Información de dificultades de los alumnos
@@ -22,7 +23,7 @@
 
 #### Descripción
 
-Descripción breve
+El docente crea una sesión de refuerzo
 
 #### Precondición
 

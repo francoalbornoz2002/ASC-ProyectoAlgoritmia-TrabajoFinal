@@ -42,12 +42,11 @@ El sistema deberá almacenar la información correspondiente a los usuarios del 
 
 **Objetivos asociados**
 
-- OBJ-07 Gestionar de instituciones y cursos
+- OBJ-07 Gestionar cursos y datos de la institución
 
 **Requisitos asociados**
 
-- UC-06 Alta institución
-- UC-07 Modificar institución
+- UC-06 Configurar institución
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a la institución educativa que utilizará el sistema. En concreto:
@@ -66,7 +65,7 @@ El sistema deberá almacenar la información correspondiente a la institución e
 
 **Objetivos asociados**
 
-- OBJ-07 Gestionar de instituciones y cursos
+- OBJ-07 Gestionar cursos y datos de la institución
 
 **Requisitos asociados**
 
@@ -97,7 +96,7 @@ El sistema deberá almacenar la información correspondiente a los cursos del si
 
 **Objetivos asociados**
 
-- OBJ-07 Gestionar de instituciones y cursos
+- OBJ-07 Gestionar cursos y datos de la institución
 - OBJ-08 Gestionar usuarios y roles del sistema
 
 **Requisitos asociados**
