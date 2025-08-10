@@ -7,7 +7,7 @@ skinparam actorPadding 100
 skinparam packagePadding 20
 skinparam wrapWidth 200
 
-skinparam nodesep 30
+skinparam nodesep 50
 skinparam ranksep 300
 
 skinparam ArrowThickness 1
@@ -27,6 +27,7 @@ package "Plataforma Web - PGA"{
     usecase "UC-02 Modificar usuario" as UC02
     usecase "UC-03 Buscar usuario" as UC03
     usecase "UC-04 Baja usuario" as UC04
+    usecase "UC-05 Generar reporte de usuarios" as UC05
 
     'Relaciones'
     Administrador --> UC01
@@ -36,11 +37,11 @@ package "Plataforma Web - PGA"{
     UC02 ..> UC03 : <<include>>
     Administrador --> UC04
     UC04 ..> UC03 : <<include>>
+    Administrador --> UC05
   }
 
   package "Institución y cursos" {
-    usecase "UC-05 Alta institución" as UC05
-    usecase "UC-06 Modificar institución" as UC06
+    usecase "UC-06 Configurar institución" as UC06
     usecase "UC-07 Alta curso" as UC07
     usecase "Modalidad presencial" as UC07A
     usecase "Modalidad virtual" as UC07B
@@ -53,8 +54,7 @@ package "Plataforma Web - PGA"{
     usecase "UC-13 Finalizar curso" as UC13
 
     'Relaciones'
-    'AM Institución
-    Administrador --> UC05
+    'Institución
     Administrador --> UC06
     'ABM Cursos
     Administrador --> UC07
@@ -82,99 +82,98 @@ package "Plataforma Web - PGA"{
     'Relaciones'
     Docente --> UC14
     Alumno --> UC15
-    Videojuego --> UC16
+    Videojuego -up-> UC16
   }
-
 
   package "Dificultades"{
     usecase "UC-17 Consultar dificultades de alumnos" as UC17
     usecase "UC-18 Consultar mis dificultades" as UC18
     usecase "UC-19 Sincronizar dificultades de alumno" as UC19
-    
+
     'Relaciones'
     Docente --> UC17
     Alumno --> UC18
-    Videojuego --> UC19
+    Videojuego -up-> UC19
   }
 
-  package "Estadísticas"{
-    usecase "UC-20 Consultar estadísticas del curso" as UC20
-    usecase "Estadísticas de progreso" as UC20A
-    usecase "Estadísticas de dificultades" as UC20B
-    usecase "Estadísticas completas del curso" as UC20C
+  package "Sesiones de refuerzo" {
+    usecase "UC-20 Crear sesión de refuerzo" as UC20
+    usecase "UC-21 Modificar sesión de refuerzo" as UC21
+    usecase "UC-22 Buscar sesión de refuerzo" as UC22
+    usecase "UC-23 Cancelar sesión de refuerzo" as UC23
+    usecase "UC-24 Indicar asistencia a sesión" as UC24
 
     'Relaciones'
     Docente --> UC20
-    Administrador --> UC20
-    UC20 <.. UC20A : <<extend>>
-    UC20 <.. UC20B : <<extend>>
-    UC20 <.. UC20C : <<extend>>
+    Docente --> UC21
+    Docente --> UC23
+    UC21 ..> UC22 : <<include>>
+    UC23 ..> UC22 : <<include>>
+    Docente --> UC24
+    Alumno --> UC24
+    UC24 ..> UC22 : <<include>>
   }
 
-  package "Reportes"{
-    usecase "UC-21 Generar reporte" as UC21
-    usecase "Reporte de progreso" as UC21A
-    usecase "Reporte de dificultades" as UC21B
-    usecase "Reporte completo del curso" as UC21C
-
-    'Relaciones'
-    Docente --> UC21
-    Administrador --> UC21
-    UC21 <.. UC21A : <<extend>>
-    UC21 <.. UC21B : <<extend>>
-    UC21 <.. UC21C : <<extend>>
-  } 
-
-  package "Sesiones de refuerzo" {
-    usecase "UC-25 Crear sesión de refuerzo" as UC25
-    usecase "UC-26 Modificar sesión de refuerzo" as UC26
-    usecase "UC-27 Buscar sesión de refuerzo" as UC27
-    usecase "UC-28 Cancelar sesión de refuerzo" as UC28
-    usecase "UC-29 Indicar asistencia a sesión" as UC29
+  package "Estadísticas"{
+    usecase "UC-25 Consultar estadísticas de curso" as UC25
+    usecase "Estadísticas de progreso" as UC25A
+    usecase "Estadísticas de dificultades" as UC25B
+    usecase "Estadísticas de sesiones de refuerzo" as UC25C
 
     'Relaciones'
     Docente --> UC25
+    Administrador --> UC25
+    UC25 <.. UC25A : <<extend>>
+    UC25 <.. UC25B : <<extend>>
+    UC25 <.. UC25C : <<extend>>
+  }
+
+  package "Reportes"{
+    usecase "UC-26 Generar reporte de curso" as UC26
+    usecase "Reporte de progreso" as UC26A
+    usecase "Reporte de dificultades" as UC26B
+    usecase "Reporte de sesiones de refuerzo" as UC26C
+
+    'Relaciones'
     Docente --> UC26
-    Docente --> UC28
-    UC26 ..> UC27 : <<include>>
-    UC28 ..> UC27 : <<include>>
-    Docente --> UC29
-    Alumno --> UC29
-    UC29 ..> UC27 : <<include>>
+    Administrador --> UC26
+    UC26 <.. UC26A : <<extend>>
+    UC26 <.. UC26B : <<extend>>
+    UC26 <.. UC26C : <<extend>>
   }
 
   package "Auditoría" {
-    usecase "UC-30 Consultar registros de auditoría" as UC30
-    usecase "Exportar registros de auditoría" as UC30A
+    usecase "UC-27 Consultar registros de auditoría" as UC27
+    usecase "Exportar registros de auditoría" as UC27A
 
     'Relaciones'
-    Administrador --> UC30
-    UC30 <.. UC30A : <<extend>>
+    Administrador --> UC27
+    UC27 <.. UC27A : <<extend>>
   }
 
   package "Seguridad y autenticación" {
-    usecase "UC-31 Iniciar sesión" as UC31
-    usecase "Iniciar sesión normal" as UC31A
-    usecase "Iniciar sesión con Google" as UC31B
-    usecase "UC-32 Registrarse" as UC32
-    usecase "Registro normal" as UC32A
-    usecase "Registro con Google" as UC32B
-    usecase "UC-33 Cerrar sesión" as UC33
+    usecase "UC-28 Iniciar sesión" as UC28
+    usecase "Iniciar sesión normal" as UC28A
+    usecase "Iniciar sesión con Google" as UC28B
+    usecase "UC-29 Registrarse" as UC29
+    usecase "Registro normal" as UC29A
+    usecase "Registro con Google" as UC29B
+    usecase "UC-30 Cerrar sesión" as UC30
 
     'Relaciones'
-    Administrador --> UC31
-    Administrador --> UC33
-    Docente --> UC31
-    Docente --> UC33
-    Alumno --> UC31
-    Alumno --> UC32
-    Alumno --> UC33
-    UC31 <.. UC31A : <<extend>>
-    UC31 <.. UC31B : <<extend>>
-    UC32 <.. UC32A : <<extend>>
-    UC32 <.. UC32B : <<extend>>
-    GoogleOAuth2 -up-> UC31B
-    GoogleOAuth2 -up-> UC32B
+    Administrador --> UC28
+    Administrador --> UC30
+    Docente --> UC28
+    Docente --> UC30
+    Alumno --> UC28
+    Alumno --> UC29
+    Alumno --> UC30
+    UC28 <.. UC28A : <<extend>>
+    UC28 <.. UC28B : <<extend>>
+    UC29 <.. UC29A : <<extend>>
+    UC29 <.. UC29B : <<extend>>
+    GoogleOAuth2 -up-> UC28B
+    GoogleOAuth2 -up-> UC29B
   }
 
 }

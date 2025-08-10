@@ -1,4 +1,4 @@
-### UC-06 Alta institución
+### UC-06 Configurar institución
 
 #### Objetivos asociados
 

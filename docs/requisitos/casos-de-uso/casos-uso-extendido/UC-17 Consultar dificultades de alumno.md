@@ -10,6 +10,7 @@
 
 #### Requisitos de información utilizados
 
+- **RI-05** Información de alumnos
 - **RI-07** Información de dificultades de los alumnos
 
 #### Actor principal

@@ -1,4 +1,4 @@
-### UC-22 Generar reporte de alumnos
+### UC-22 Generar reporte de curso
 
 #### Objetivos asociados
 

@@ -233,7 +233,7 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 
 | OBJ-07      | Gestionar instituciones y cursos                                                                                                                                                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir el despliegue del sistema a cualquier institución educativa que quiera incorporar el sistema a su metodología de enseñanza, ofreciendo la gestión de sus cursos y docentes correspondientes                                                                      |
+| Descripción | Permitir el despliegue del sistema a cualquier institución educativa que quiera incorporar el sistema a su metodología de enseñanza, ofreciendo la gestión de sus cursos y personal docentes correspondientes                                                                      |
 | Estabilidad | Alta                                                                                                                                                                                                                                                                      |
 | Comentarios | El rol de administrador se encargará de la configuración de los datos de la institución, la gestión de cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
@@ -422,34 +422,7 @@ El sistema permitirá aplicar los siguientes filtros de búsqueda:
 
 (COMPLETAR CUANDO SE VEAN LOS CASOS DE EVALUACIÓN DE DIFICULTAD)
 
-#### 3.4.5 Estadísticas
-
-En el módulo de estadísticas, los docentes podrán consultar estadísticas de interés a partir de los datos acumulados del progreso y las dificultades de los alumnos del curso.
-
-**Estadísticas del progreso de los alumnos**
-
-- Recuento de misiones completadas en el día: tambien disponible como resumen en el dashboard docente en la página de inicio.
-- Recuento de misiones completadas en la semana: tambien disponible como resumen en el dashboard docente en la página de inicio.
-- Recuento de misiones completadas en un intervalo de fechas (desde-hasta)
-- Recuento de intentos por misión en un capítulo
-
-**Estadísticas de las dificultades de los alumnos**
-
-- Recuento de alumnos
-  - por tipo de dificultad
-  - por dificultad
-- Recuento de dificultades por nivel
-- Nivel estimado de dificultad por tipo: también disponible como resumen en el dashboard docente
-- Evolución de las dificultades de un alumno (cambios del nivel de dificultad)
-
-**Estadísticas de las sesiones de refuerzo**
-Este parte del módulo solo será accesible por el administrador del sistema. Se tendrá:
-- Recuento de sesiones de refuerzo realizadas y no realizadas
-- Recuento de sesiones de refuerzo creadas por docente
-- Recuento de sesiones de refuerzo automáticas aceptadas por docente
-- Recuento de docentes que cambiaron su asistencia positivamente (rechazó y luego aceptó) y negativamente (aceptó pero luego rechazó)
-
-#### 3.4.4 Gestión de sesiones de refuerzo
+#### 3.4.7 Sesiones de refuerzo
 
 Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a desempeño y dificultades. Este módulo del sistema permite a los docentes identificar a aquellos alumnos que tienen dificultades para resolver las misiones y/o una inactividad prolongada detectando a tiempo a los alumnos rezagados para tratar de resolver sus dificultades lo antes posible.
 
@@ -492,7 +465,38 @@ Para que la sesión sea válida, uno y solo uno de los docentes a cargo del curs
    1. **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
    2. **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
 
-#### 3.4.5 Seguridad y autenticación
+#### 3.4.5 Estadísticas
+
+En el módulo de estadísticas, los docentes podrán consultar estadísticas de interés a partir de los datos acumulados del progreso y las dificultades de los alumnos del curso.
+
+**Estadísticas del progreso de los alumnos**
+
+- Recuento de misiones completadas en el día: tambien disponible como resumen en el dashboard docente en la página de inicio.
+- Recuento de misiones completadas en la semana: tambien disponible como resumen en el dashboard docente en la página de inicio.
+- Recuento de misiones completadas en un intervalo de fechas (desde-hasta)
+- Recuento de intentos por misión en un capítulo
+
+**Estadísticas de las dificultades de los alumnos**
+- Recuento de alumnos
+  - por tipo de dificultad
+  - por dificultad
+- Recuento de dificultades por nivel
+- Nivel estimado de dificultad por tipo: también disponible como resumen en el dashboard docente
+- Evolución de las dificultades de un alumno (cambios del nivel de dificultad)
+
+**Estadísticas de las sesiones de refuerzo**
+Este parte del módulo solo será accesible por el administrador del sistema. Se tendrá:
+- Recuento de sesiones de refuerzo realizadas y no realizadas
+- Recuento de sesiones de refuerzo creadas por docente
+- Recuento de sesiones de refuerzo automáticas aceptadas por docente
+- Recuento de docentes que cambiaron su asistencia positivamente (rechazó y luego aceptó) y negativamente (aceptó pero luego rechazó)
+
+#### 3.4.6 Reportes
+
+
+
+
+#### 3.4.8 Seguridad y autenticación
 
 El manejo de la seguridad y autenticación en los alumnos y docentes es un tanto diferente, asi que se definirán algunas reglas de autenticación para cada rol en el sistema.
 
@@ -516,7 +520,7 @@ El registro de docentes NO ESTARÁ habilitado desde el sistema (NO se pueden reg
 - Luego, el sistema envía automáticamente el usuario y contraseña inciales del docente al correo declarado.
 - Luego del primer inicio de sesión del docente, el sistema exigirá que cambie la contraseña de su usuario por seguridad.
 
-#### 3.4.6 Auditoría
+#### 3.4.9 Auditoría
 
 Este módulo estará principalmente disponible para el rol **administrador**, que es quien supervisa el uso y funcionamiento general de la plataforma.
 
