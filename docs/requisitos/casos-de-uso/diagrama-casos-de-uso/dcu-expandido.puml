@@ -102,6 +102,7 @@ package "Plataforma Web - PGA"{
     usecase "UC-22 Buscar sesión de refuerzo" as UC22
     usecase "UC-23 Cancelar sesión de refuerzo" as UC23
     usecase "UC-24 Indicar asistencia a sesión" as UC24
+    usecase "Escribir consulta y/o duda específica" as UC24A
 
     'Relaciones'
     Docente --> UC20
@@ -112,6 +113,7 @@ package "Plataforma Web - PGA"{
     Docente --> UC24
     Alumno --> UC24
     UC24 ..> UC22 : <<include>>
+    UC24 <.. UC24A : <<extend>>
   }
 
   package "Estadísticas"{

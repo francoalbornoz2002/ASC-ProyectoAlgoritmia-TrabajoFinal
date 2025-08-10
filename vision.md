@@ -231,9 +231,9 @@ Desarrollar la Plataforma Gamificada "Algoritmia" (PGA) para el aprendizaje de L
 | Estabilidad | Media                                                                                                                                                                                                                                                                                                                             |
 | Comentarios | El docente podrá confirmar la sesión de refuerzos y los alumnos indicarán su asistencia.                                                                                                                                                                                                                                          |
 
-| OBJ-07      | Gestionar cursos y datos de la institución                                                                                                                                                                                                                                          |
+| OBJ-07      | Gestionar cursos y datos de la institución                                                                                                                                                                                                                                |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Descripción | Permitir el despliegue del sistema a cualquier institución educativa que quiera incorporar el sistema a su metodología de enseñanza, ofreciendo la gestión de sus cursos y personal docentes correspondientes                                                                      |
+| Descripción | Permitir el despliegue del sistema a cualquier institución educativa que quiera incorporar el sistema a su metodología de enseñanza, ofreciendo la gestión de sus cursos y personal docentes correspondientes                                                             |
 | Estabilidad | Alta                                                                                                                                                                                                                                                                      |
 | Comentarios | El rol de administrador se encargará de la configuración de los datos de la institución, la gestión de cursos, docentes y la asignación de docentes a los cursos. El docente puede cambiar la contraseña del curso la cual informará a sus alumnos para que puedan unirse |
 
@@ -396,74 +396,117 @@ Todos los datos se podrán ordenar de manera ascendente o descendente.
 En este módulo del sistema, los docentes podrán consultar las dificultades de todos los alumnos del curso.
 Se tendrán distintas dificultades agrupadas por tipo, los cuales son: Secuencia, Lógica proposicional, Estructuras de control, Variables y Procedimientos. La lista de las dificultades posibles son las siguientes:
 **Secuencia**
+
 - Errores de sintaxis
 - Instrucciones redundantes
 
-
 **Lógica proposicional**
+
 - Condiciones mal formuladas
 - Uso incorrecto de operadores lógicos
 
 **Estructuras de control**
+
 - Bucle infinito
 
 **Variables**
-- 
+
+-
 
 **Procedimientos**
+
 - Mal pasaje de parámetros
 
-
 El sistema permitirá aplicar los siguientes filtros de búsqueda:
+
 - Búsqueda por nombre(s) y/o apellido(s)
-- Filtro por Tipo(s) de dificultad
+- Filtro por tipo(s) de dificultad
 - Filtro por dificultad(es)
-- Filtro por nivel(es) de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
+- Filtro por grado(s) de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
 
 (COMPLETAR CUANDO SE VEAN LOS CASOS DE EVALUACIÓN DE DIFICULTAD)
 
 #### 3.4.7 Sesiones de refuerzo
 
-Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a desempeño y dificultades. Este módulo del sistema permite a los docentes identificar a aquellos alumnos que tienen dificultades para resolver las misiones y/o una inactividad prolongada detectando a tiempo a los alumnos rezagados para tratar de resolver sus dificultades lo antes posible.
+Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a progreso y dificultades. Este módulo del sistema permite a los docentes coordinar sesiones de refuerzo para aquellos alumnos que posean dificultades para resolver las misiones y/o una inactividad prolongada en la plataforma, pudiendo así identificar y detectar a tiempo a los alumnos con bajo progreso y dificultades.
 
-Los docentes podrán coordinar una sesión de refuerzo para aquellos alumnos que posean dificultades al resolver misiones o con una inactividad prolongada en la plataforma. Para la sesión de refuerzo se tendrá:
+Para cada sesión de refuerzo se deberá completar:
 
-- **Alumnos involucrados**: se deberá seleccionar a los alumnos a involucrar en la sesión. Se mostrarán de manera prioritaria los alumnos resaltados en rojo y amarillo.
-- **Dificultades de los alumnos**: de cada alumno seleccionado, se mostrarán las dificultades específicas y el nivel de inactividad de cada uno.
-- **Descripción de la sesión**: en base a las dificultades de cada alumno, el sistema propondrá los temas específicos a reforzar. El docente podrá modificar la descripción de la sesión a su gusto agregando o eliminando información.
-- **Fecha, hora y duración de la sesión**: se deberá especificar la fecha, hora y duración (en minutos) de la sesión de refuerzo.
-- **Modalidad de la sesión**: se deberá especificar como se realizará la sesión de refuerzo: presencial o virtual.
-  - Si es **presencial**, se deberá elegir uno de los días de cursada definidos y elegir el momento de realización de la sesión: antes o después de la clase.
-  - Si es **virtual**, se deberá colocar la URL de la sesión programada en alguna plataforma de reuniones remotas, como Zoom, Google Meet, etc. De manera opcional el ID de reunión y/o contraseña si requiere.
+**Alumnos involucrados**: se deberá seleccionar a los alumnos a involucrar en la sesión. Se mostrarán de manera prioritaria los alumnos resaltados en rojo y amarillo.
+
+**Dificultades de los alumnos**: de cada alumno seleccionado, se mostrarán las dificultades con su respectivo grado y los días de inactividad.
+
+**Descripción de la sesión**: en base a las dificultades de cada alumno, el sistema propondrá como tratar y mitigar las dificultades. El docente podrá modificar la descripción de la sesión a su gusto agregando o eliminando información.
+
+**Modalidad de la sesión**: se deberá especificar como se realizará la sesión de refuerzo: presencial o virtual.
+
+**Fecha**: El sistema, como recomendación, propondrá la fecha de la siguiente clase presencial del curso, por disponibilidad de los alumnos. De todas maneras, el docente puede elegir la fecha que desee en un rango de 7 días hacia adelante.
+
+**Duración**: se debe colocar la duración de la sesión en minutos, el sistema recomendará 20 minutos.
+
+**Hora**: aquí dependerá si el docente eligió una fecha correspondiente a un día de clases o una fecha libre.
+- **Fecha de clases**: el docente podrá elegir cuándo realizar la sesión de refuerzo: antes o después de la clase. Dependiendo de la elección, el sistema autocompletará la hora de la sesión:
+  - Si se eligió antes de la clase: a la hora de incio de clase se restan los minutos de duración de la sesión
+  - Si se eligió después de la clase: a la hora de fin de clase se suman los minutos de duración de la sesión
+- **Fecha libre**: el docente elige la hora libremente con las siguientes reglas:
+  - Se pueden coordinar sesiones de refuerzo a partir de las 07:00.
+  - Se pueden coordinar sesiones hasta cierto horario dependiendo de la duración de la sesión, terminando como máximo a las 23:00. Es decir, Si la duración de la sesión de refuerzo es de 30 minutos, como máximo se podrá coordinar a las 22:30. A partir de las 22:31 ya no se pueden coordinar sesiones para ese día.
+
+**Sesión virtual**: si la sesión será virtual, se deberán completar datos adicionales:
+- **URL de la reunión**: puede ser la misma URL recurrente de reunión del curso o de alguna URL programada en alguna plataforma de reuniones virtuales, como Zoom, Google Meet, etc.
+- **ID o código de reunión**: Opcional, debido a que en algunas plataformas basta con la URL y permiso del anfitrión para ingresar a la reunión.
+- **Contraseña de acceso**: Opcional, por el mismo motivo del ID o codigo de reunión.
 
 Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible de hasta 2 horas antes de la sesión, se enviarán recordatorios cada 6 horas. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia y el docente mantener la sesión en pie.
 
+Cuando un alumno indica que asistirá a la sesion de refuerzo, éste podrá escribir sus dudas o consultas específicas al docente. Esto servirá para que el docente pueda saber de antemano, además de las dificultas del alumno, sus dudas o consultas específicas para preparar mejor la sesión.
+
 ##### Progreso semanal y sesión de refuerzo automatizada
 
-El sistema tendrá como uno de los procesos automatizados la generación de un reporte de progreso semanal de los alumnos de un curso (individual y grupal) junto con la creación de la sesión de refuerzo de contenidos.
+El sistema tendrá como uno de los procesos automatizados la generación de un reporte resumido de progreso y dificultades de los alumnos del curso junto con la creación de una sesión de refuerzo. Este proceso automatizado se realizará semanalmente los días sábado a las 18:00 y para su realización trabajarán en conjunto el módulo de Progreso y el módulo de Sesiones de refuerzo.
 
-En este proceso automatizado, trabajarán en conjunto el módulo de Progreso y estadísticas y el módulo de Gestión de sesiones de refuerzo.
-El sistema generará automáticamente todos los días sábado a las 18:00 un reporte de progreso de todos los alumnos de un curso, ordenado por capítulos (solo los capítulos "Finalizados" y los que estén "En curso"). Este reporte será enviado a los docentes del curso por correo electrónico.
-Adicionalmente, el sistema creará una sesión de refuerzo de contenidos con una duración de 25 minutos planeada a realizarse _antes_ de la próxima clase presencial del curso. Esta sesión incluirá como prioridad a todos los alumnos en estado crítico (rojo), las dificultades específicas de cada uno y los temas a reforzar propuestos por el sistema.
+El objetivo de este proceso automatizado es que el docente pueda tener una vista rápida y resumida del progreso de los alumnos durante la semana asi como también las dificultades determinadas automáticamente por el videojuego. Con ello, tener programada automáticamente una sesión de refuerzo con aquellos alumnos con más dificultades e inactividad para poder atender sus dudas y consultas en la siguiente clase del curso.
 
-Para que la sesión sea válida, uno y solo uno de los docentes a cargo del curso deberá confirmar la realización de la sesión y mínimamente un alumno, los cuales dispondrán de un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes del inicio de la sesión. El docente que confirme la sesión será el responsable de llevarla a cabo. Luego de la sesión de refuerzo el docente a cargo de la sesión tendrá 24 horas con recordatorios por correo electrónico cada 6 horas para confirmar si se realizó la sesión de refuerzo e indicar los temas abordados.
+En el reporte se incluirán el progreso y las dificultades de los alumnos del curso. El progreso estará agrupado por capítulos (solo los capítulos "Finalizados" y los que estén "En curso") y las dificultades agrupadas por tipo y dificultad. El reporte será enviado a todos los docentes del curso a su correo electrónico.
+
+A partir de los datos procesados durante la semana, el sistema creará una sesión de refuerzo automáticamente con la siguiente configuración:
+- **Alumnos involucrados**: todos los alumnos resaltados en rojo en el reporte.
+- **Dificultades de los alumnos**: todas las de los alumnos involucrados.
+- **Descripción de la sesión**: propuesta automática del sistema en base a las dificultades de los alumnos involucrados.
+- **Modalidad**: la definida en el curso.
+- **Fecha**: siguiente clase del curso.
+- **Duración**: 20 minutos.
+- **Hora**: antes de la clase.
+
+Para que la sesión sea confirmada, deben confirmar su asistencia:
+- Uno de los docentes a cargo del curso (el cual será el responsable de dirigirla) y 
+- Un alumno (mínimamente).
+
+Tanto los docentes como los alumnos tendrán un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes de la hora de inicio de la sesión.
 
 **Flujo de decisión**
 
-1. **Si un docente confirma la sesión antes que un alumno**, se notifica a todos los alumnos involucrados vía mail avisando que el docente está dispuesto a dar la sesión y para que confirmen su asistencia con recordatorios cada 2 horas. Dado este caso
+1. **Si un docente confirma su asistencia antes que un alumno**: se notifica a todos los alumnos involucrados vía mail avisando que el docente está dispuesto a dar la sesión y para recordar que confirmen su asistencia. Se enviarán recordatorios cada 6 horas. Dado este caso:
 
-   1. **Si mínimamente un alumno confirma la asistencia** a la sesión en el tiempo determinado, se realiza la sesión de refuerzo de los contenidos propuestos y en el día y horario definidos por el sistema.
-   2. **Si ningún alumno confirma la asistencia a la sesión** en el tiempo determinado (no confirman o no responden), se le notificará esto a los involucrados y se reagendará la sesión para la próxima clase prevista de manera automática.
+   1. **Un alumno confirma la asistencia**: si mínimamente un alumno confirma su asistencia y mantiene su decisión hasta las 2 horas antes del inicio de la sesión, el sistema asumirá que la sesión de refuerzo se llevará a cabo.
+   
+   2. **Ningún alumno confirma la asistencia**: si ningun alumno confirma la asistencia en el tiempo determinado (hasta las 2 horas antes del inicio de la sesión), el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases y re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrá la asistencia del docente para la sesión re-agendada.
 
-2. **Si un alumno confirma su asistencia antes del docente**, se notifica a todos los docentes vía mail de forma urgente solicitando la realización de la sesión debido a que minimamente un alumno requiere un refuerzo de contenidos la misma. Dado este caso.
+2. **Si un alumno confirma su asistencia antes del docente**: se notifica por correo electrócnio a todos los docentes del curso solicitando que uno confirme su asistencia a la sesión. Se enviarán recordatorios cada 2 horas. Dado este caso:
+   
+   1. **Un docente confirma la asistencia**: si un docente confirma su asistencia a la sesión y mantiene su decisión hasta las 2 horas antes del inicio de la sesión y si el alumno que confirmó mantiene su decisión hasta las 2 horas antes del incio de la sesión, el sistema asumirá que la sesión de refuerzo se llevará a cabo.
 
-   1. Si ningún docente confirma la sesión en el tiempo determinado (no confirman o no responden), el sistema notificará esto a los involucrados y reagendará la sesión para la próxima clase de manera automática.
+   2. **Ningún docente confirma su asistencia** si ningun docente confirma la asistencia en el tiempo determinado (hasta las 2 horas antes del inicio de la sesión), el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrá la asistencia del alumno para la sesión re-agendada.
 
-3. **Si ninguno de los involucrados confirma ni responde** a la sesión en el tiempo determinado, el sistema reagendará la sesión para la próxima clase de manera automática.
+3. **Ninguno de los involucrados confirma su asistencia**: si ningun docente ni alumno confirma la asistencia en el tiempo determinado (hasta las 2 horas antes del inicio de la sesión), el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos).
 
-4. **Cuando existe una sesión de refuerzo en pie**:
-   1. **Si el docente a cargo cambia su respuesta y no confirma la sesión**, el sistema notificará esto a los alumnos involucrados y reagendará la sesión para la próxima clase prevista de manera automática.
-   2. **Si todos los alumnos que confirmaron su asistencia cambian su respuesta indicando que no asistirán**, el sistema notificará esto al docente a cargo de la sesión y reagendará la sesión para la próxima clase prevista de manera automática.
+4. **Cambios en una sesión de refuerzo encaminada**
+   
+   1. **El docente a cargo indica que no asistirá**: si el docente había confirmado su asistencia y si antes de llegar a las 2 horas previas al inicio de la sesión indica que no podrá asistir y mantiene su decisión hasta las 2 horas antes del inicio de la sesión, el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrán las asistencias de los alumnos que así la mantuvieron.
+   
+   2. **Todos los alumnos que iban a asistir indican que no asistirán**: si *todos* los alumnos que confirmaron su asistencia cambian su respuesta e indican que no asistirán, y esto se mantiene así hasta las 2 horas previas al incio de la sesión sin que, mínimamente, un alumno confirme su asistencia, el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrán la asistencia del docente para la sesión re-agendada.
+
+Cuando llega el horario de fin la sesión de refuerzo, el docente y alumnos involucrados tendrán 12 horas para confirmar si efectivamente asistieron a la sesión.
 
 #### 3.4.5 Estadísticas
 
@@ -477,24 +520,23 @@ En el módulo de estadísticas, los docentes podrán consultar estadísticas de 
 - Recuento de intentos por misión en un capítulo
 
 **Estadísticas de las dificultades de los alumnos**
+
 - Recuento de alumnos
   - por tipo de dificultad
   - por dificultad
-- Recuento de dificultades por nivel
-- Nivel estimado de dificultad por tipo: también disponible como resumen en el dashboard docente
-- Evolución de las dificultades de un alumno (cambios del nivel de dificultad)
+- Recuento de dificultades por grado
+- Grado estimado de dificultad por tipo: también disponible como resumen en el dashboard docente
+- Evolución de las dificultades de un alumno (cambios del grado de dificultad)
 
 **Estadísticas de las sesiones de refuerzo**
 Este parte del módulo solo será accesible por el administrador del sistema. Se tendrá:
+
 - Recuento de sesiones de refuerzo realizadas y no realizadas
 - Recuento de sesiones de refuerzo creadas por docente
 - Recuento de sesiones de refuerzo automáticas aceptadas por docente
 - Recuento de docentes que cambiaron su asistencia positivamente (rechazó y luego aceptó) y negativamente (aceptó pero luego rechazó)
 
 #### 3.4.6 Reportes
-
-
-
 
 #### 3.4.8 Seguridad y autenticación
 

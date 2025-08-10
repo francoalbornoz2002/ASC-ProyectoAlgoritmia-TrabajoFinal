@@ -23,7 +23,7 @@
 
 #### Descripción
 
-El docente crea una sesión de refuerzo
+El docente crea una sesión de refuerzo destinada a los alumnos con bajo progreso
 
 #### Precondición
 

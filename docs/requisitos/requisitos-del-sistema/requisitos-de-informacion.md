@@ -214,12 +214,15 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 
 - Id sesión de refuerzo
 - Docente a cargo de la sesión de refuerzo
-- Alumnos involucrados y sus dificultades específicas
+- Alumnos involucrados
+- Dificultades de cada alumno
 - Descripción de la sesión
-- Fecha, hora y duración en minutos de la sesión
 - Modalidad de la sesión (presencial o virtual)
-  - Si es virtual: URL de la reunión en Google Meet o Zoom
-  - Si es presencial: Momento de realización (antes o después de la clase)
+- Fecha de la sesión
+- Duración (en minutos) de la sesión
+- Hora de inicio de la sesión
+- Hora de fin de la sesión
+
 - Realizada o no
 
 ## RI-09 Información de capítulos
