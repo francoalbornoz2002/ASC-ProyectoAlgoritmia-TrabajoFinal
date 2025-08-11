@@ -365,18 +365,6 @@ También, se podrán aplicar los siguientes filtros de búsqueda:
   - hasta 7 días
   - más de 7 días
 
-Este módulo le permitirá a los docentes visualizar e identificar a los alumnos con dificultades e inactividad con la siguiente clasificación:
-
-**Alumnos resaltados en color amarillo suave**: Son aquellos alumnos que posean:
-
-- De 3 a 5 dificultades al resolver misiones.
-- Inactividad de hasta 3 días.
-
-**Alumnos resaltados en color rojo suave**: Son aquellos alumnos que posean:
-
-- Más de 5 dificultades al resolver misiones.
-- Inactividad de más de 3 días
-
 **Progreso del curso en el capítulo**
 Si filtra la búsqueda por un capítulo específico, se mostrarán algunos datos adicionales:
 
@@ -411,9 +399,7 @@ Se tendrán distintas dificultades agrupadas por tipo, los cuales son: Secuencia
 
 **Variables**
 
--
-
-**Procedimientos**
+- **Procedimientos**
 
 - Mal pasaje de parámetros
 
@@ -428,11 +414,29 @@ El sistema permitirá aplicar los siguientes filtros de búsqueda:
 
 #### 3.4.7 Sesiones de refuerzo
 
-Las sesiones de refuerzo son la forma que ofrece la plataforma para mostrar e informar a los docentes acerca del estado de cada alumno en cuanto a progreso y dificultades. Este módulo del sistema permite a los docentes coordinar sesiones de refuerzo para aquellos alumnos que posean dificultades para resolver las misiones y/o una inactividad prolongada en la plataforma, pudiendo así identificar y detectar a tiempo a los alumnos con bajo progreso y dificultades.
+Las de sesiones de refuerzo son la forma por la cual el sistema ofrece, a docentes y alumnos, la coordinación de un espacio de resolución de dudas, consultas y dificultades.
 
+Este módulo le permitirá a los docentes visualizar e identificar el estado de cada alumno en cuando a progreso, dificultades y/o inactividad en la plataforma. Mediante un algoritmo, el sistema clasificará a los alumnos en diferentes niveles de riesgo académico. Con riesgo académico nos referimos a la probabilidad de que el alumno no alcance el nivel de dominio o avance esperado en el videojuego y en el curso. La clasificación es la siguiente:
+
+**Riesgo bajo (resaltados en color amarillo suave)**: Son aquellos alumnos que posean:
+
+- De 1 a 3 dificultades al resolver misiones.
+- Inactividad de hasta 2 días.
+
+**Riesgo medio (resaltados en color naranja suave)**: Son aquellos alumnos que posean:
+
+- De 3 a 5 dificultades al resolver misiones.
+- Inactividad de hasta 4 días.
+
+**Riesgo alto (resaltados en color rojo suave)**: Son aquellos alumnos que posean:
+
+- Más de 5 dificultades al resolver misiones.
+- Inactividad de más de 5 días
+
+##### Creación de una sesión de refuerzo
 Para cada sesión de refuerzo se deberá completar:
 
-**Alumnos involucrados**: se deberá seleccionar a los alumnos a involucrar en la sesión. Se mostrarán de manera prioritaria los alumnos resaltados en rojo y amarillo.
+**Alumnos involucrados**: se deberá seleccionar a los alumnos a involucrar en la sesión. Se mostrarán a los alumnos dentro de la clasificación mencionada anteriormente.
 
 **Dificultades de los alumnos**: de cada alumno seleccionado, se mostrarán las dificultades con su respectivo grado y los días de inactividad.
 
@@ -445,14 +449,16 @@ Para cada sesión de refuerzo se deberá completar:
 **Duración**: se debe colocar la duración de la sesión en minutos, el sistema recomendará 20 minutos.
 
 **Hora**: aquí dependerá si el docente eligió una fecha correspondiente a un día de clases o una fecha libre.
+
 - **Fecha de clases**: el docente podrá elegir cuándo realizar la sesión de refuerzo: antes o después de la clase. Dependiendo de la elección, el sistema autocompletará la hora de la sesión:
-  - Si se eligió antes de la clase: a la hora de incio de clase se restan los minutos de duración de la sesión
-  - Si se eligió después de la clase: a la hora de fin de clase se suman los minutos de duración de la sesión
+  - Si se eligió _antes_ de la clase: a la hora de incio de clase se restan los minutos de duración de la sesión
+  - Si se eligió _después_ de la clase: a la hora de fin de clase se suman los minutos de duración de la sesión
 - **Fecha libre**: el docente elige la hora libremente con las siguientes reglas:
   - Se pueden coordinar sesiones de refuerzo a partir de las 07:00.
   - Se pueden coordinar sesiones hasta cierto horario dependiendo de la duración de la sesión, terminando como máximo a las 23:00. Es decir, Si la duración de la sesión de refuerzo es de 30 minutos, como máximo se podrá coordinar a las 22:30. A partir de las 22:31 ya no se pueden coordinar sesiones para ese día.
 
 **Sesión virtual**: si la sesión será virtual, se deberán completar datos adicionales:
+
 - **URL de la reunión**: puede ser la misma URL recurrente de reunión del curso o de alguna URL programada en alguna plataforma de reuniones virtuales, como Zoom, Google Meet, etc.
 - **ID o código de reunión**: Opcional, debido a que en algunas plataformas basta con la URL y permiso del anfitrión para ingresar a la reunión.
 - **Contraseña de acceso**: Opcional, por el mismo motivo del ID o codigo de reunión.
@@ -470,6 +476,7 @@ El objetivo de este proceso automatizado es que el docente pueda tener una vista
 En el reporte se incluirán el progreso y las dificultades de los alumnos del curso. El progreso estará agrupado por capítulos (solo los capítulos "Finalizados" y los que estén "En curso") y las dificultades agrupadas por tipo y dificultad. El reporte será enviado a todos los docentes del curso a su correo electrónico.
 
 A partir de los datos procesados durante la semana, el sistema creará una sesión de refuerzo automáticamente con la siguiente configuración:
+
 - **Alumnos involucrados**: todos los alumnos resaltados en rojo en el reporte.
 - **Dificultades de los alumnos**: todas las de los alumnos involucrados.
 - **Descripción de la sesión**: propuesta automática del sistema en base a las dificultades de los alumnos involucrados.
@@ -479,7 +486,8 @@ A partir de los datos procesados durante la semana, el sistema creará una sesi�
 - **Hora**: antes de la clase.
 
 Para que la sesión sea confirmada, deben confirmar su asistencia:
-- Uno de los docentes a cargo del curso (el cual será el responsable de dirigirla) y 
+
+- Uno de los docentes a cargo del curso (el cual será el responsable de dirigirla) y
 - Un alumno (mínimamente).
 
 Tanto los docentes como los alumnos tendrán un tiempo límite para confirmar o modificar su respuesta hasta 2 horas antes de la hora de inicio de la sesión.
@@ -489,11 +497,11 @@ Tanto los docentes como los alumnos tendrán un tiempo límite para confirmar o 
 1. **Si un docente confirma su asistencia antes que un alumno**: se notifica a todos los alumnos involucrados vía mail avisando que el docente está dispuesto a dar la sesión y para recordar que confirmen su asistencia. Se enviarán recordatorios cada 6 horas. Dado este caso:
 
    1. **Un alumno confirma la asistencia**: si mínimamente un alumno confirma su asistencia y mantiene su decisión hasta las 2 horas antes del inicio de la sesión, el sistema asumirá que la sesión de refuerzo se llevará a cabo.
-   
+
    2. **Ningún alumno confirma la asistencia**: si ningun alumno confirma la asistencia en el tiempo determinado (hasta las 2 horas antes del inicio de la sesión), el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases y re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrá la asistencia del docente para la sesión re-agendada.
 
 2. **Si un alumno confirma su asistencia antes del docente**: se notifica por correo electrócnio a todos los docentes del curso solicitando que uno confirme su asistencia a la sesión. Se enviarán recordatorios cada 2 horas. Dado este caso:
-   
+
    1. **Un docente confirma la asistencia**: si un docente confirma su asistencia a la sesión y mantiene su decisión hasta las 2 horas antes del inicio de la sesión y si el alumno que confirmó mantiene su decisión hasta las 2 horas antes del incio de la sesión, el sistema asumirá que la sesión de refuerzo se llevará a cabo.
 
    2. **Ningún docente confirma su asistencia** si ningun docente confirma la asistencia en el tiempo determinado (hasta las 2 horas antes del inicio de la sesión), el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrá la asistencia del alumno para la sesión re-agendada.
@@ -501,10 +509,10 @@ Tanto los docentes como los alumnos tendrán un tiempo límite para confirmar o 
 3. **Ninguno de los involucrados confirma su asistencia**: si ningun docente ni alumno confirma la asistencia en el tiempo determinado (hasta las 2 horas antes del inicio de la sesión), el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos).
 
 4. **Cambios en una sesión de refuerzo encaminada**
-   
+
    1. **El docente a cargo indica que no asistirá**: si el docente había confirmado su asistencia y si antes de llegar a las 2 horas previas al inicio de la sesión indica que no podrá asistir y mantiene su decisión hasta las 2 horas antes del inicio de la sesión, el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrán las asistencias de los alumnos que así la mantuvieron.
-   
-   2. **Todos los alumnos que iban a asistir indican que no asistirán**: si *todos* los alumnos que confirmaron su asistencia cambian su respuesta e indican que no asistirán, y esto se mantiene así hasta las 2 horas previas al incio de la sesión sin que, mínimamente, un alumno confirme su asistencia, el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrán la asistencia del docente para la sesión re-agendada.
+
+   2. **Todos los alumnos que iban a asistir indican que no asistirán**: si _todos_ los alumnos que confirmaron su asistencia cambian su respuesta e indican que no asistirán, y esto se mantiene así hasta las 2 horas previas al incio de la sesión sin que, mínimamente, un alumno confirme su asistencia, el sistema asume que la sesión no se llevará a cabo. El sistema buscará en los proximos 5 días el siguiente día de clases, re-agendará la sesión para esa fecha y se le notificará a los involucrados (docentes y alumnos). Se mantendrán la asistencia del docente para la sesión re-agendada.
 
 Cuando llega el horario de fin la sesión de refuerzo, el docente y alumnos involucrados tendrán 12 horas para confirmar si efectivamente asistieron a la sesión.
 

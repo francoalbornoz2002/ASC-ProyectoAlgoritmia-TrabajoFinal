@@ -2,7 +2,7 @@
 
 #### Objetivos asociados
 
-- **OBJ-05** Proveer seguimiento académico exhaustivo 
+- **OBJ-05** Proveer seguimiento académico exhaustivo
 
 #### Requisitos funcionales y no funcionales asociados
 
@@ -23,21 +23,31 @@
 
 #### Descripción
 
-El docente crea una sesión de refuerzo destinada a los alumnos con bajo progreso
+El docente crea una sesión de refuerzo eligiendo a los alumnos que considere que la necesiten. Selecciona a los alumnos, el sistema muestra las dificultades de cada uno y propone los pasos para tratar las mismas. Elige la modalidad de la sesión (presencial o virtual), fecha, duración y hora. El sistema crea la sesión de refuerzo y notifica a los alumnos involucrados.
 
 #### Precondición
 
-Estado en el que el sistema debe encontrarse para ejecutar el caso de uso.
+- El curso debe tener al menos un alumno asociado
+- Al menos un alumno del curso debe tener mínimamente una misión completada.
 
 #### Postcondición
 
-Estado en el que queda el sistema luego del caso de uso.
+- La sesión queda registrada en el sistema
+- Se envía una notificación a los alumnos involucrados
 
 #### Flujo principal
 
-1. Paso 1
-2. 2...
-3. 3...
+1. Este caso de uso comienza cuando un docente quiere crear una sesión de refuerzo.
+2. El sistema solicita al docente que seleccione a los alumnos a involucrar, mostrando de manera prioritaria a los alumnos con dificultades e inactividad en diferentes niveles de riesgo académico:
+   - Bajo: de 1 a 3 dificultades y hasta 2 días de inactividad
+   - Medio: de 3 a 5 dificultades y hasta 4 días de inactividad.
+   - Alto: más de 5 dificultades y más de 5 días de inactividad.
+3. El docente selecciona a los alumnos deseados. El sistema sugiere agregar, de manera prioritaria, a todos los que tengan riesgo alto.
+4. El sistema muestra las dificultades de cada alumno seleccionado.
+5. El sistema autocompleta la descripción de la sesión proponiendo un plan resumido para tratar y mitigar las dificultades de cada uno.
+6. El sistema informa que el docente puede modificar la descripción si lo desea
+7. El docente agrega, quita o modifica la descripción de la sesión
+8. El sistema solicita que el docente seleccione la modalidad de la sesión entre presencial o virtual
 
 #### Excepciones
 
@@ -54,4 +64,5 @@ N veces por día/mes
 #### Estabilidad: Alta/Media/Baja
 
 #### Comentarios
+
 Comentarios o reglas de negocio específicas que condicionan este caso de uso.

@@ -25,6 +25,7 @@ El docente realiza la consulta del progreso de los alumnos del curso. El sistema
 #### Precondición
 
 - El curso debe tener al menos un alumno asociado
+- Al menos un alumno del curso debe tener mínimamente una misión completada.
 
 #### Postcondición
 

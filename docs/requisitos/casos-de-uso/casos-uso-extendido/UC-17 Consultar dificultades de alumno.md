@@ -24,7 +24,7 @@ El docente consulta las dificultades de los alumnos del curso. El sistema muestr
 #### Precondición
 
 - El curso debe tener al menos un alumno asociado
-- Al menos un alumno del curso debe tener una misión completada.
+- Al menos un alumno del curso debe tener mínimamente una misión completada.
 
 #### Postcondición
 
