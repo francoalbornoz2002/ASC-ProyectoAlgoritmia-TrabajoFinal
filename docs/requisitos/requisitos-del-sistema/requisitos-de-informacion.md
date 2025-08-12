@@ -218,8 +218,8 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 - Dificultades de cada alumno
 - Descripción de la sesión
 - Modalidad de la sesión (presencial o virtual)
+- Duración (en minutos) de la sesió
 - Fecha de la sesión
-- Duración (en minutos) de la sesión
 - Hora de inicio de la sesión
 - Hora de fin de la sesión
 

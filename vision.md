@@ -444,16 +444,16 @@ Para cada sesión de refuerzo se deberá completar:
 
 **Modalidad de la sesión**: se deberá especificar como se realizará la sesión de refuerzo: presencial o virtual.
 
-**Fecha**: El sistema, como recomendación, propondrá la fecha de la siguiente clase presencial del curso, por disponibilidad de los alumnos. De todas maneras, el docente puede elegir la fecha que desee en un rango de 7 días hacia adelante.
-
 **Duración**: se debe colocar la duración de la sesión en minutos, el sistema recomendará 20 minutos.
+
+**Fecha**: El sistema, como recomendación, propondrá la fecha de la siguiente clase del curso, por disponibilidad de los alumnos. De todas maneras, el docente puede elegir la fecha que desee en un rango de 7 días hacia adelante.
 
 **Hora**: aquí dependerá si el docente eligió una fecha correspondiente a un día de clases o una fecha libre.
 
-- **Fecha de clases**: el docente podrá elegir cuándo realizar la sesión de refuerzo: antes o después de la clase. Dependiendo de la elección, el sistema autocompletará la hora de la sesión:
+- **Fecha de clases**: si se eligió una fecha de clases, el docente podrá elegir cuándo realizar la sesión de refuerzo: antes o después de la clase. Dependiendo de la elección, el sistema autocompletará la hora de la sesión:
   - Si se eligió _antes_ de la clase: a la hora de incio de clase se restan los minutos de duración de la sesión
   - Si se eligió _después_ de la clase: a la hora de fin de clase se suman los minutos de duración de la sesión
-- **Fecha libre**: el docente elige la hora libremente con las siguientes reglas:
+- **Fecha libre**: si se eligió una fecha libre, el docente elige la hora libremente con las siguientes reglas:
   - Se pueden coordinar sesiones de refuerzo a partir de las 07:00.
   - Se pueden coordinar sesiones hasta cierto horario dependiendo de la duración de la sesión, terminando como máximo a las 23:00. Es decir, Si la duración de la sesión de refuerzo es de 30 minutos, como máximo se podrá coordinar a las 22:30. A partir de las 22:31 ya no se pueden coordinar sesiones para ese día.
 
@@ -461,9 +461,9 @@ Para cada sesión de refuerzo se deberá completar:
 
 - **URL de la reunión**: puede ser la misma URL recurrente de reunión del curso o de alguna URL programada en alguna plataforma de reuniones virtuales, como Zoom, Google Meet, etc.
 - **ID o código de reunión**: Opcional, debido a que en algunas plataformas basta con la URL y permiso del anfitrión para ingresar a la reunión.
-- **Contraseña de acceso**: Opcional, por el mismo motivo del ID o codigo de reunión.
+- **Contraseña de acceso a la reunión**: Opcional, por el mismo motivo del ID o codigo de reunión.
 
-Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible de hasta 2 horas antes de la sesión, se enviarán recordatorios cada 6 horas. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia y el docente mantener la sesión en pie.
+Una vez creada la sesión, los alumnos involucrados serán notificados vía correo eletrónico y deberan confirmar su asistencia a la misma con un tiempo disponible de hasta 2 horas antes del inicio de la sesión, se enviarán recordatorios cada 6 horas. Para que la sesión sea válida, minimamente un alumno debe confirmar su asistencia y el docente mantener la sesión en pie.
 
 Cuando un alumno indica que asistirá a la sesion de refuerzo, éste podrá escribir sus dudas o consultas específicas al docente. Esto servirá para que el docente pueda saber de antemano, además de las dificultas del alumno, sus dudas o consultas específicas para preparar mejor la sesión.
 
@@ -481,8 +481,8 @@ A partir de los datos procesados durante la semana, el sistema creará una sesi�
 - **Dificultades de los alumnos**: todas las de los alumnos involucrados.
 - **Descripción de la sesión**: propuesta automática del sistema en base a las dificultades de los alumnos involucrados.
 - **Modalidad**: la definida en el curso.
-- **Fecha**: siguiente clase del curso.
 - **Duración**: 20 minutos.
+- **Fecha**: siguiente clase del curso.
 - **Hora**: antes de la clase.
 
 Para que la sesión sea confirmada, deben confirmar su asistencia:
