@@ -69,7 +69,33 @@ El sistema debe permitir, para el rol de administrador, la alta, baja y modifica
 **Descripción**
 El sistema debe permitir al docente la creación, modificación y cancelación de sesiones de refuerzo y la generación automática de la sesión de refuerzo semanal todos los sábados a las 18:00 hs notificando por correo electrónico al docente y alumnos involucrados.
 
-## RF-05 Visualizar y generar reportes del progreso de alumnos
+## RF-05 Sincronizar y mantener actualizado el progreso de los alumnos
+
+**Objetivos relacionados**
+
+- OBJ-05 Proveer seguimiento académico exhaustivo
+- OBJ-10 Persistir el progreso de manera local y sincronizarlo luego
+
+**Requisitos asociados**
+
+- RI-03 Información de cursos
+- RI-05 Información de alumnos
+- RI-06 Información del progreso de los alumnos
+- RI-09 Información de capítulos
+- RI-10 Información de misiones
+- RNF-01 Progreso offline y sincronización
+
+**Descripción**
+El sistema debe permitir la sincronización y actualización del progreso de cada alumno del curso proveniente del videojuego (externo). El sistema debe ser capaz de recibir los datos de una o varias misiones.
+Cada sincronización será iniciada por el videojuego, al completar una misión exitosamente o al cerrar sesión en el mismo. Por cada misión, el sistema debe recibir:
+
+- Misión completada
+- Capítulo al que pertenece la misión completada
+- Puntuación obtenida (estrellas)
+- Puntos de experiencia obtenidos (EXP)
+- Cantidad de intentos registrados
+
+## RF-06 Visualizar y generar reportes del progreso de alumnos
 
 **Objetivos relacionados**
 
@@ -103,6 +129,27 @@ Si se filtra por capítulo, todas las estadísticas individuales de cada alumno 
 
 **Comentarios**
 El sistema tambien deberá realizar la generación automática de un reporte de progreso semanal de los alumnos, ordenado por capítulos (solo los capítulos finalizados y los que estén curso) todos los sábados a las 18:00 hs enviandola por correo electrónico a todos los docentes del curso.
+
+## RF-07 Sincronizar y mantener actualizado las dificultades de los alumnos
+
+**Objetivos relacionados**
+
+- OBJ-04 Identificar dificultades en los alumnos y ofrecer ayudas para mejorar los algoritmos
+- OBJ-05 Proveer seguimiento académico exhaustivo
+- OBJ-10 Persistir el progreso de manera local y sincronizarlo luego
+
+**Requisitos asociados**
+
+- RI-03 Información de cursos
+- RI-05 Información de alumnos
+- RI-07 Información de dificultades de los alumnos
+
+**Descripción**
+El sistema debe permitir la sincronización y actualización de las dificultades de cada alumno del curso proveniente del videojuego (externo). Cada sincronización será iniciada por el videojuego al completar una misión exitosamente o al cerrar sesión en el mismo. El sistema deberá recibir:
+
+- Tipo de dificultad
+- Dificultad
+- Grado
 
 ## RF-06 Visualizar y generar reportes de las dificultades de los alumnos
 
@@ -151,3 +198,16 @@ Un capítulo estará "En curso" mientras el capitulo siguiente no sea habilitado
 
 **Descripción**
 El sistema debe permitir a los alumnos registrarse y autenticarse utilizando su cuenta de Google mediante el protocolo OAuth 2.0. Durante el registro, se solicitará acceso a los datos básicos del perfil (nombre, correo electrónico) y, en caso de ser un nuevo usuario, se completarán los datos restantes requeridos por la plataforma. Una vez registrado, el alumno podrá iniciar sesión y autenticarse posteriormente utilizando el mismo método.
+
+## RF-XX DDD
+
+**Objetivos relacionados**
+
+- s
+
+**Requisitos asociados**
+
+- s
+
+**Descripción**
+s

@@ -6,7 +6,7 @@
 
 #### Requisitos funcionales y no funcionales asociados
 
-- **RF-05** Visualizar y generar reportes del progreso de alumnos
+- **RF-06** Visualizar y generar reportes del progreso de alumnos
 
 #### Requisitos de información utilizados
 

@@ -122,8 +122,6 @@ El sistema deberá almacenar la información correspondiente a los docentes del 
 **Requisitos asociados**
 
 - UC-XX Registrarse
-- UC-XX Modificar datos personales
-- UC-XX Buscar alumno
 
 **Descripción**
 El sistema deberá almacenar la información correspondiente a los alumnos dentro del sistema teniendo como base la información de usuarios del RI-01. Adicionalmente, se deberá almacenar:
@@ -131,11 +129,13 @@ El sistema deberá almacenar la información correspondiente a los alumnos dentr
 **Datos específicos**
 
 - Cursos a los que está asociado
-- Dificultades que posee
+- Dificultades que posee y grado de las mismas
+- Nivel de riesgo académico
 - Método de registro
 
 **Comentarios**
-Las dificultades de un alumno son aquellos temas puntuales en los cuales se le dificulta al diseñar los algoritmos para resolver las misiones. Por ejemplo, una dificultad podría ser "Manejo de variables", "Condicionales", etc.
+Las *dificultades* de un alumno son aquellos temas puntuales en los cuales se le dificulta al diseñar los algoritmos para resolver las misiones. Por ejemplo, una dificultad podría ser "Manejo de variables", "Condicionales", etc.
+Por otro aldo, con *riesgo* académico nos referimos a la probabilidad de que el alumno no alcance el nivel de dominio o avance esperado en el videojuego y en el curso
 
 ## RI-06 Información del progreso de los alumnos
 
@@ -151,18 +151,19 @@ Las dificultades de un alumno son aquellos temas puntuales en los cuales se le d
 - UC-XX Generar reporte de progreso de alumnos
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a las estadísticas de progreso en el videojuego de cada alumno del curso. En concreto:
+El sistema deberá almacenar la información correspondiente al progreso de cada alumno del curso en el videojuego dentro del sistema. En concreto:
 
 **Datos específicos**
 
 - Nombre/s y Apellido/s del alumno
-- Capítulo y Misión en la que se encuentra
+- Capítulo en el que se encuentra
+- Misión en la que se encuentra
 - Cantidad de misiones completadas
 - Porcentaje total de misiones completadas
 - Porcentaje de misiones completadas en el capítulo actual
+- Puntuación acumulada (estrellas)
+- Puntos de experiencia (EXP) acumulados
 - Promedio de intentos por misión
-- Cantidad de estrellas obtenidas
-- Total de puntos de experiencia (EXP) acumulados
 - Fecha y hora del ultimo inicio de sesión en el videojuego.
 - Ultima actividad (Activo hace N minuto(s) / hora(s) / día(s))
 
@@ -191,7 +192,14 @@ El sistema deberá almacenar la información de las dificultades de cada alumno 
 **Comentarios**
 Los tipos de dificultad son: Secuencia, Lógica, Estructuras de Control, Variables y Procedimientos. Cada dificultad podrá estar asociada a uno o más tipos de dificultad y tendrá un grado entre "Alto", "Medio, "Bajo" y "Ninguno", éste ultimo será el por defecto cuando el alumno recien es dado de alta en el sistema.
 
-## RI-08 Información de sesiones de refuerzo
+<!-- ## RI-08 Información del riesgo académico de los alumnos
+
+**Objetivos asociados**
+**Requisitos asociados**
+**Descripción**
+**Datos específicos**'/-->
+
+## RI-08 Información de sesiones de refuerzo 
 
 **Objetivos asociados**
 
@@ -218,7 +226,7 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 - Dificultades de cada alumno
 - Descripción de la sesión
 - Modalidad de la sesión (presencial o virtual)
-- Duración (en minutos) de la sesió
+- Duración (en minutos) de la sesión
 - Fecha de la sesión
 - Hora de inicio de la sesión
 - Hora de fin de la sesión
@@ -234,19 +242,17 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 
 **Requisitos asociados**
 
-- UC-XX Habilitar capítulo
-- UC-XX Buscar capítulo
+- UC-XX Habilitar siguiente capítulo
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a los capítulos (temas) de la historia dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a los capítulos del videojuego dentro del sistema. En concreto:
 
 **Datos específicos**
 
 - Id de capítulo
 - Nombre del capítulo
 - Descripción del capítulo
-- Tema/s clave del capítulo (Secuencia, Lógica, Estructuras de Control, Variables o Procedimientos)
-- Cantidad de misiones del capítulo
+- Misiones pertenencientes al capítulo
 - Estado del capítulo (Bloqueado, En curso o Finalizado)
 
 ## RI-10 Información de misiones
@@ -258,10 +264,10 @@ El sistema deberá almacenar la información correspondiente a los capítulos (t
 
 **Requisitos asociados**
 
-- UC-XX Buscar misión
+
 
 **Descripción**
-El sistema deberá almacenar la información correspondiente a las misiones (ejercicios) de cada capítulo de la historia dentro del sistema. En concreto:
+El sistema deberá almacenar la información correspondiente a cada mision (ejercicio) que completen los alumnos en cada capítulo del videojuego dentro del sistema. En concreto:
 
 **Datos específicos**
 
@@ -270,8 +276,10 @@ El sistema deberá almacenar la información correspondiente a las misiones (eje
 - Capítulo al que pertenece la misión
 - Dificultad de la misión (Fácil, Normal o Difícil)
 - Descripción (Enunciado) de la misión
-- Cantidad y porcentaje de alumnos que completaron la misión
-- Promedio de la puntuación obtenida por los alumnos
+- Puntuación obtenida (estrellas)
+- Puntos de experiencia obtenidos (EXP)
+- Cantidad de intentos registrados
+- Estado (Pendiente o Completada)
 
 ## RI-11 Información de auditoría
 

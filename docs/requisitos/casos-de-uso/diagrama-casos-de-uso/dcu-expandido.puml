@@ -2,17 +2,15 @@
 left to right direction
 
 skinparam dpi 150
-skinparam usecasePadding 25
-skinparam actorPadding 100
-skinparam packagePadding 20
-skinparam wrapWidth 200
-
-skinparam nodesep 50
-skinparam ranksep 300
-
-skinparam ArrowThickness 1
+skinparam wrapWidth 250
+skinparam nodesep 70
+skinparam ranksep 350
+skinparam UsecaseFontSize 20
+scale 1.5
+'scale 1.5 | scale 200 width | scale 100 height | scale [max] 200x100
+skinparam ActorFontSize 20
+skinparam ArrowThickness 0.5
 skinparam ArrowColor Black
-
 
 actor Administrador
 actor Docente
@@ -78,22 +76,26 @@ package "Plataforma Web - PGA"{
     usecase "UC-14 Consultar progreso de alumnos" as UC14
     usecase "UC-15 Consultar mi progreso" as UC15
     usecase "UC-16 Sincronizar progreso de alumno" as UC16
+    usecase "Actualizar riesgo académico" as UC16A
 
     'Relaciones'
     Docente --> UC14
     Alumno --> UC15
-    Videojuego -up-> UC16
+    Videojuego --> UC16
+    UC16 ..> UC16A : <<include>>
   }
 
   package "Dificultades"{
     usecase "UC-17 Consultar dificultades de alumnos" as UC17
     usecase "UC-18 Consultar mis dificultades" as UC18
     usecase "UC-19 Sincronizar dificultades de alumno" as UC19
+    usecase "Actualizar riesgo académico" as UC19A
 
     'Relaciones'
     Docente --> UC17
     Alumno --> UC18
-    Videojuego -up-> UC19
+    Videojuego --> UC19
+    UC19 ..> UC19A : <<include>>
   }
 
   package "Sesiones de refuerzo" {

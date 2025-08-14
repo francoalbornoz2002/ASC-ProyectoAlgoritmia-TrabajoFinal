@@ -6,7 +6,7 @@
 
 #### Requisitos funcionales y no funcionales asociados
 
-- **RF-06** Visualizar y generar reportes de las dificultades de los alumnos
+- **RF-08** Visualizar y generar reportes de las dificultades de los alumnos
 
 #### Requisitos de información utilizados
 
