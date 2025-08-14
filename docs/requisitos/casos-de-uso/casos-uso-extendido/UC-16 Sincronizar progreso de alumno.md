@@ -11,8 +11,11 @@
 
 #### Requisitos de información utilizados
 
+- **RI-03** Información de cursos
+- **RI-05** Información de alumnos
 - **RI-09** Información de capítulos
 - **RI-10** Información de misiones
+- **RI-06** Información del progreso de los alumnos
 
 #### Actor principal
 
@@ -49,19 +52,17 @@ El videojuego sincroniza todos los datos de progreso del alumno, el sistema los 
 
 #### Excepciones
 
-1. Paso de la excepción
-
-#### Sección
+**Paso 1**: La sincronización falla por algun factor externo (como internet). Se cancela la sincronización y el progreso se mantiene localmente en el videojuego hasta el próximo intento de sincronización.
 
 #### Rendimiento
 
-1. Paso - tiempo (seg, min, h)
+**Paso 3, 4 y 5**: 3 segundos
 
 #### Frecuencia
 
-N veces por día/mes
+Varias veces por día (depende de la cantidad de alumnos en el curso y su actividad en el videojuego)
 
-#### Estabilidad: Alta/Media/Baja
+#### Estabilidad: Alta
 
 #### Comentarios
-Comentarios o reglas de negocio específicas que condicionan este caso de uso.
+- 

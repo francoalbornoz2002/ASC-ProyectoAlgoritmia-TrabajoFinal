@@ -169,6 +169,7 @@ El sistema debe permitir visualizar y generar reportes de las dificultades que p
 
 **Requisitos asociados**
 
+- RI-03 Información de cursos
 - RI-05 Información de alumnos 
 - RI-06 Información del progreso de los alumnos
 - RI-07 Información de dificultades de los alumnos

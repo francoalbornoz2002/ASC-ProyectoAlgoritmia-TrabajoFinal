@@ -6,27 +6,30 @@
 
 #### Requisitos funcionales y no funcionales asociados
 
-- RF-X
+- **RF-09** Determinar el riesgo académico de los alumnos
 
 #### Requisitos de información utilizados
 
-- RI-X
+- RI-03 Información de cursos
+- RI-05 Información de alumnos 
+- RI-06 Información del progreso de los alumnos
+- RI-07 Información de dificultades de los alumnos
 
 #### Actor principal
 
-- Actor/es
+- Sistema (interno)
 
 #### Descripción
 
-Descripción breve
+El sistema actualiza el riesgo académico del alumno mediante un algoritmo utilizando los datos de progreso y dificultades del alumno.
 
 #### Precondición
 
-Estado en el que el sistema debe encontrarse para ejecutar el caso de uso.
+- La sincronización del progreso y/o dificultades debió ser exitoso
 
 #### Postcondición
 
-Estado en el que queda el sistema luego del caso de uso.
+- El riesgo académico del alumno queda actualizado
 
 #### Flujo principal
 
