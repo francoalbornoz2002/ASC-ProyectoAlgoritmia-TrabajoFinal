@@ -36,7 +36,9 @@ El videojuego sincroniza todos los datos de progreso del alumno, el sistema los 
 
 1. Este caso de uso comienza cuando el videojuego (sistema externo) intenta sincronizar los datos de progreso del alumno a la plataforma web al terminar una misión o al cerrar la sesión en el videojuego.
 2. El sistema recibe los datos de progreso del alumno, por cada misión completada se recibe:
-   - Misión completada
+   - Id del alumno
+   - Id del curso al que pertenece
+   - Id de la misión completada
    - Capítulo al que pertenece la misión completada
    - Puntuación obtenida (estrellas)
    - Puntos de experiencia obtenidos (EXP)

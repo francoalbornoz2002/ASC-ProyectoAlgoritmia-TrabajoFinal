@@ -6,7 +6,7 @@
 
 #### Requisitos funcionales y no funcionales asociados
 
-- **RF-07** Controlar la curva de aprendizaje mediante habilitación de capitulos
+- **RF-10** Controlar la curva de aprendizaje mediante habilitación de capitulos
 - **RNF-02** Auditoría
 
 #### Requisitos de información utilizados

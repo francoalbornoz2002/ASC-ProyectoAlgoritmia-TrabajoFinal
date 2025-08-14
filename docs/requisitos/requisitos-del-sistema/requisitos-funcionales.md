@@ -89,6 +89,8 @@ El sistema debe permitir al docente la creación, modificación y cancelación d
 El sistema debe permitir la sincronización y actualización del progreso de cada alumno del curso proveniente del videojuego (externo). El sistema debe ser capaz de recibir los datos de una o varias misiones.
 Cada sincronización será iniciada por el videojuego, al completar una misión exitosamente o al cerrar sesión en el mismo. Por cada misión, el sistema debe recibir:
 
+- Alumno que completó la misión
+- Curso al que pertenece
 - Misión completada
 - Capítulo al que pertenece la misión completada
 - Puntuación obtenida (estrellas)
@@ -114,7 +116,7 @@ El sistema debe permitir al docente visualizar y generar reportes de las estadí
 
 - Selección de capítulo
 - Búsqueda por nombre y/o apellido del alumno
-- Porcentaje de avance
+- Porcentaje de misiones completadas
 - Promedio de intentos por misión
 - Estado de un capítulo (En curso o Finalizado)
 - Días de inactividad
@@ -145,13 +147,15 @@ El sistema tambien deberá realizar la generación automática de un reporte de 
 - RI-07 Información de dificultades de los alumnos
 
 **Descripción**
-El sistema debe permitir la sincronización y actualización de las dificultades de cada alumno del curso proveniente del videojuego (externo). Cada sincronización será iniciada por el videojuego al completar una misión exitosamente o al cerrar sesión en el mismo. El sistema deberá recibir:
+El sistema debe permitir la sincronización y actualización de las dificultades de cada alumno del curso proveniente del videojuego (externo). Cada sincronización será iniciada por el videojuego al completar una misión exitosamente o al cerrar sesión en el mismo. El sistema deberá recibir los datos de:
 
+- Alumno
+- Curso al que pertenece
 - Tipo de dificultad
 - Dificultad
 - Grado
 
-## RF-06 Visualizar y generar reportes de las dificultades de los alumnos
+## RF-08 Visualizar y generar reportes de las dificultades de los alumnos
 
 **Objetivos relacionados**
 
@@ -165,9 +169,29 @@ El sistema debe permitir la sincronización y actualización de las dificultades
 - RI-07 Información de dificultades de los alumnos
 
 **Descripción**
-El sistema debe permitir visualizar y generar reportes de las dificultades que posean los alumnos a partir en resolución de misiones en el videojuego. Las dificultades deben poder ser visualizadas tanto por los docentes como por los alumnos individualmente pudiendo filtrar por dificultad, tipo de dificultad y/o grado de dificultad.
+El sistema debe permitir visualizar y generar reportes de las dificultades que posean los alumnos a partir en resolución de misiones en el videojuego. Las dificultades deben poder ser visualizadas tanto por los docentes como por los alumnos individualmente pudiendo filtrar por dificultad, tipo de dificultad y/o grado de dificultad. El sistema permitirá aplicar los siguientes filtros de búsqueda:
 
-## RF-07 Controlar la curva de aprendizaje mediante habilitación de capitulos
+- Búsqueda por nombre(s) y/o apellido(s)
+- Filtro por tipo(s) de dificultad
+- Filtro por dificultad(es)
+- Filtro por grado(s) de dificultad (determinada por la cantidad de errores acumulados de ese tipo de dificultad)
+
+## RF-09 Determinar el riesgo académico de los alumnos
+
+**Objetivos relacionados**
+
+- OBJ-05 Proveer seguimiento académico exhaustivo
+
+**Requisitos asociados**
+
+- RI-05 Información de alumnos 
+- RI-06 Información del progreso de los alumnos
+- RI-07 Información de dificultades de los alumnos
+
+**Descripción**
+El sistema debe determinar el riesgo académico del alumno mediante un algoritmo que utilizará los datos de progreso y las dificultades y grado del alumno. En el contexto del sistema, *riesgo* académico se referiere a la probabilidad de que el alumno no alcance el nivel de dominio o avance esperado en el videojuego y en el curso
+
+## RF-10 Controlar la curva de aprendizaje mediante habilitación de capitulos
 
 **Objetivos relacionados**
 
@@ -185,7 +209,7 @@ El sistema debe permitir al docente habilitar y finalizar los capítulos a medid
 **Comentarios**
 Un capítulo estará "En curso" mientras el capitulo siguiente no sea habilitado por el docente. Si el docente habilita un capítulo, el anterior se considerará con estado "Finalizado". El docente solo podrá habilitar los capítulos de manera secuencial y NO desordenada. Los alumnos podrán jugar misiones que no hayan completado de capitulos finalizados igualmente.
 
-## RF-08 Registro y autenticación con Google
+## RF-11 Registro y autenticación con Google
 
 **Objetivos relacionados**
 
@@ -199,6 +223,8 @@ Un capítulo estará "En curso" mientras el capitulo siguiente no sea habilitado
 **Descripción**
 El sistema debe permitir a los alumnos registrarse y autenticarse utilizando su cuenta de Google mediante el protocolo OAuth 2.0. Durante el registro, se solicitará acceso a los datos básicos del perfil (nombre, correo electrónico) y, en caso de ser un nuevo usuario, se completarán los datos restantes requeridos por la plataforma. Una vez registrado, el alumno podrá iniciar sesión y autenticarse posteriormente utilizando el mismo método.
 
+<!-- Plantilla
+
 ## RF-XX DDD
 
 **Objetivos relacionados**
@@ -211,3 +237,5 @@ El sistema debe permitir a los alumnos registrarse y autenticarse utilizando su 
 
 **Descripción**
 s
+
+-->
