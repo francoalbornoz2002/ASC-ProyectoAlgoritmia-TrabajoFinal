@@ -86,16 +86,7 @@ El sistema debe permitir al docente la creación, modificación y cancelación d
 - RNF-01 Progreso offline y sincronización
 
 **Descripción**
-El sistema debe permitir la sincronización y actualización del progreso de cada alumno del curso proveniente del videojuego (externo). El sistema debe ser capaz de recibir los datos de una o varias misiones.
-Cada sincronización será iniciada por el videojuego, al completar una misión exitosamente o al cerrar sesión en el mismo. Por cada misión, el sistema debe recibir:
-
-- Alumno que completó la misión
-- Curso al que pertenece
-- Misión completada
-- Capítulo al que pertenece la misión completada
-- Puntuación obtenida (estrellas)
-- Puntos de experiencia obtenidos (EXP)
-- Cantidad de intentos registrados
+El sistema debe permitir la sincronización y actualización del progreso de cada alumno del curso proveniente del videojuego (externo). Cada sincronización será iniciada por el videojuego al completar una misión exitosamente o al cerrar sesión en el mismo y el sistema debe ser capaz de recibir los datos de una misión o de varias misiones en caso de que se haya acumulado localmente.
 
 ## RF-06 Visualizar y generar reportes del progreso de alumnos
 
@@ -147,13 +138,7 @@ El sistema tambien deberá realizar la generación automática de un reporte de 
 - RI-07 Información de dificultades de los alumnos
 
 **Descripción**
-El sistema debe permitir la sincronización y actualización de las dificultades de cada alumno del curso proveniente del videojuego (externo). Cada sincronización será iniciada por el videojuego al completar una misión exitosamente o al cerrar sesión en el mismo. El sistema deberá recibir los datos de:
-
-- Alumno
-- Curso al que pertenece
-- Tipo de dificultad
-- Dificultad
-- Grado
+El sistema debe permitir la sincronización y actualización de las dificultades de cada alumno del curso proveniente del videojuego (externo). Cada sincronización será iniciada por el videojuego al completar una misión exitosamente o al cerrar sesión en el mismo.
 
 ## RF-08 Visualizar y generar reportes de las dificultades de los alumnos
 
