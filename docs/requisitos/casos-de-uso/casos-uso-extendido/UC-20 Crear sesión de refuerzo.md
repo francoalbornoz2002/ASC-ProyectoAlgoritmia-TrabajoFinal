@@ -1,8 +1,9 @@
-### UC-XX Nombre del caso de uso
+### UC-20 Crear sesión de refuerzo
 
 #### Objetivos asociados
 
 - **OBJ-05** Proveer seguimiento académico exhaustivo
+- **OBJ-06** Gestionar reportes y sesiones de refuerzo
 
 #### Requisitos funcionales y no funcionales asociados
 
@@ -32,7 +33,7 @@ El docente crea una sesión de refuerzo eligiendo a los alumnos que considere qu
 
 #### Postcondición
 
-- La sesión queda registrada en el sistema
+- La sesión queda registrada en el sistema con estado "Programada"
 - Se envía una notificación a los alumnos involucrados
 
 #### Flujo principal
@@ -53,7 +54,7 @@ El docente crea una sesión de refuerzo eligiendo a los alumnos que considere qu
     1. **Si la fecha corresponde a un día de clases**: el docente elige si la sesión se realizará antes o después de la clase. Según la opción, el sistema calcula automáticamente la hora restando o sumando la duración de la sesión respecto al horario de inicio o fin de la clase. La hora de fin se calcula automáticamente.
     2. **Si la fecha es libre**: el docente selecciona la hora manualmente, pudiendo programar la sesión a partir de las 07:00 y hasta un horario que permita finalizarla antes de las 23:00. Elegida la hora de inicio, la hora de fin se calcula automáticamente.
 11. El docente solicita crear la sesión de refuerzo.
-12. El sistema verifica que todos los datos estén correctos y registra la sesión de refuerzo.
+12. El sistema verifica que todos los datos estén correctos y registra la sesión de refuerzo colocando su estado en "Programada".
 13. El sistema notifica a los alumnos involucrados acerca de la sesión de refuerzo por correo electrónico.
 
 #### Excepciones
@@ -76,5 +77,6 @@ El docente crea una sesión de refuerzo eligiendo a los alumnos que considere qu
 
 #### Comentarios
 
+- Un alumno puede estar involucrado en una sola sesión de refuerzo a la vez.
 - La fecha de la sesión no debe ser anterior a la fecha actual y posterior a la fecha actual mas 7 días.
 - En caso de que la sesión sea virtual, el docente deberá indicar la URL de la reunión (obligatoria) y, de forma opcional, el ID/código y la contraseña de acceso, según lo requiera la plataforma utilizada.

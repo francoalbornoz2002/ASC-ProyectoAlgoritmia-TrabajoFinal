@@ -230,8 +230,8 @@ El sistema deberá almacenar la información correspondiente a las sesiones de r
 - Fecha de la sesión
 - Hora de inicio de la sesión
 - Hora de fin de la sesión
-
-- Realizada o no
+- Estado (En espera, Programada, Re-programada, A realizarse, En curso, Cancelada, Realizada, No realizada)
+- Dudas o consultas previas de alumnos
 
 ## RI-09 Información de capítulos
 

@@ -66,20 +66,25 @@ package "Plataforma Web - PGA"{
     UC10 ..> UC09 : <<include>>
     'Unirse a curso
     Alumno --> UC11
-    'Habilitar capítulo
+    UC11 ..> UC09 : <<include>>
+    'Habilitar siguiente capítulo
     Docente --> UC12
+    UC12 ..> UC09 : <<include>>
+    'Finalizar curso
     Docente --> UC13
     UC13 ..> UC09 : <<include>>
   }
 
   package "Progreso" {
     usecase "UC-14 Consultar progreso de alumnos" as UC14
+    usecase "UC-09 Buscar curso" as UC09A
     usecase "UC-15 Consultar mi progreso" as UC15
     usecase "UC-16 Sincronizar progreso de alumno" as UC16
     usecase "Actualizar riesgo académico" as UC16A
 
     'Relaciones'
     Docente --> UC14
+    UC14 ..> UC09A : <<include>>
     Alumno --> UC15
     Videojuego --> UC16
     UC16 ..> UC16A : <<include>>
@@ -87,12 +92,14 @@ package "Plataforma Web - PGA"{
 
   package "Dificultades"{
     usecase "UC-17 Consultar dificultades de alumnos" as UC17
+    usecase "UC-09 Buscar curso" as UC09B
     usecase "UC-18 Consultar mis dificultades" as UC18
     usecase "UC-19 Sincronizar dificultades de alumno" as UC19
     usecase "Actualizar riesgo académico" as UC19A
 
     'Relaciones'
     Docente --> UC17
+    UC17 ..> UC09B : <<include>>
     Alumno --> UC18
     Videojuego --> UC19
     UC19 ..> UC19A : <<include>>
@@ -103,8 +110,11 @@ package "Plataforma Web - PGA"{
     usecase "UC-21 Modificar sesión de refuerzo" as UC21
     usecase "UC-22 Buscar sesión de refuerzo" as UC22
     usecase "UC-23 Cancelar sesión de refuerzo" as UC23
-    usecase "UC-24 Indicar asistencia a sesión" as UC24
-    usecase "Escribir consulta" as UC24A
+    usecase "UC-24 Marcar asistencia a sesión" as UC24
+    usecase "Marcar docente" as UC24A
+    usecase "Marcar alumno" as UC24B
+    usecase "UC-25 Desmarcar asistencia a sesión" as UC25
+
 
     'Relaciones'
     Docente --> UC20
@@ -116,68 +126,77 @@ package "Plataforma Web - PGA"{
     Alumno --> UC24
     UC24 ..> UC22 : <<include>>
     UC24 <.. UC24A : <<extend>>
+    UC24 <.. UC24B : <<extend>>
+    Docente --> UC25
+    Alumno --> UC25
+    UC25 ..> UC22 : <<include>>
+
   }
 
   package "Estadísticas"{
-    usecase "UC-25 Consultar estadísticas de curso" as UC25
-    usecase "Estadísticas de progreso" as UC25A
-    usecase "Estadísticas de dificultades" as UC25B
-    usecase "Estadísticas de sesiones de refuerzo" as UC25C
-
-    'Relaciones'
-    Docente --> UC25
-    Administrador --> UC25
-    UC25 <.. UC25A : <<extend>>
-    UC25 <.. UC25B : <<extend>>
-    UC25 <.. UC25C : <<extend>>
-  }
-
-  package "Reportes"{
-    usecase "UC-26 Generar reporte de curso" as UC26
-    usecase "Reporte de progreso" as UC26A
-    usecase "Reporte de dificultades" as UC26B
-    usecase "Reporte de sesiones de refuerzo" as UC26C
+    usecase "UC-26 Consultar estadísticas de curso" as UC26
+    usecase "UC-09 Buscar curso" as UC09C
+    usecase "Estadísticas de progreso" as UC26A
+    usecase "Estadísticas de dificultades" as UC26B
+    usecase "Estadísticas de sesiones de refuerzo" as UC26C
 
     'Relaciones'
     Docente --> UC26
     Administrador --> UC26
+    UC26 ..> UC09C : <<include>>
     UC26 <.. UC26A : <<extend>>
     UC26 <.. UC26B : <<extend>>
     UC26 <.. UC26C : <<extend>>
   }
 
-  package "Auditoría" {
-    usecase "UC-27 Consultar registros de auditoría" as UC27
-    usecase "Exportar registros de auditoría" as UC27A
+  package "Reportes"{
+    usecase "UC-27 Generar reporte de curso" as UC27
+    usecase "UC-09 Buscar curso" as UC09D
+    usecase "Reporte de progreso" as UC27A
+    usecase "Reporte de dificultades" as UC27B
+    usecase "Reporte de sesiones de refuerzo" as UC27C
 
     'Relaciones'
+    Docente --> UC27
     Administrador --> UC27
+    UC27 ..> UC09D : <<include>>
     UC27 <.. UC27A : <<extend>>
+    UC27 <.. UC27B : <<extend>>
+    UC27 <.. UC27C : <<extend>>
   }
 
-  package "Seguridad y autenticación" {
-    usecase "UC-28 Iniciar sesión" as UC28
-    usecase "Iniciar sesión normal" as UC28A
-    usecase "Iniciar sesión con Google" as UC28B
-    usecase "UC-29 Registrarse" as UC29
-    usecase "Registro normal" as UC29A
-    usecase "Registro con Google" as UC29B
-    usecase "UC-30 Cerrar sesión" as UC30
+  package "Auditoría" {
+    usecase "UC-28 Consultar registros de auditoría" as UC28
+    usecase "Exportar registros de auditoría" as UC28A
 
     'Relaciones'
     Administrador --> UC28
-    Administrador --> UC30
-    Docente --> UC28
-    Docente --> UC30
-    Alumno --> UC28
+    UC28 <.. UC28A : <<extend>>
+  }
+
+  package "Seguridad y autenticación" {
+    usecase "UC-29 Iniciar sesión" as UC29
+    usecase "Iniciar sesión normal" as UC29A
+    usecase "Iniciar sesión con Google" as UC29B
+    usecase "UC-30 Registrarse" as UC30
+    usecase "Registro normal" as UC30A
+    usecase "Registro con Google" as UC30B
+    usecase "UC-31 Cerrar sesión" as UC31
+
+    'Relaciones'
+    Administrador --> UC29
+    Administrador --> UC31
+    Docente --> UC29
+    Docente --> UC31
     Alumno --> UC29
     Alumno --> UC30
-    UC28 <.. UC28A : <<extend>>
-    UC28 <.. UC28B : <<extend>>
+    Alumno --> UC31
     UC29 <.. UC29A : <<extend>>
     UC29 <.. UC29B : <<extend>>
-    GoogleOAuth2 -up-> UC28B
+    UC30 <.. UC30A : <<extend>>
+    UC30 <.. UC30B : <<extend>>
     GoogleOAuth2 -up-> UC29B
+    GoogleOAuth2 -up-> UC30B
   }
 
 }

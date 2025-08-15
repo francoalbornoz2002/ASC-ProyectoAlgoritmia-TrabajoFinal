@@ -3,6 +3,7 @@
 #### Objetivos asociados
 
 - **OBJ-05** Proveer seguimiento académico exhaustivo
+- **OBJ-06** Gestionar reportes y sesiones de refuerzo
 
 #### Requisitos funcionales y no funcionales asociados
 
@@ -11,6 +12,8 @@
 
 #### Requisitos de información utilizados
 
+- **RI-03** Información de cursos
+- **RI-05** Información de alumnos
 - **RI-06** Información del progreso de los alumnos
 - **RI-07** Información de dificultades de los alumnos
 - **RI-09** Información de capítulos

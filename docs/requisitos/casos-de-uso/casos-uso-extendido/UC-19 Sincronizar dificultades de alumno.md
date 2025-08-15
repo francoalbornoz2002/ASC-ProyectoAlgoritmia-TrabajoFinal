@@ -1,4 +1,4 @@
-### UC-XX Nombre del caso de uso
+### UC-19 Sincronizar dificultades de alumno
 
 #### Objetivos asociados
 
